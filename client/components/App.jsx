@@ -1,6 +1,7 @@
 var React = require('react');
 var mui = require('material-ui');
 var Header = require('./Header.jsx')
+var SearchForm = require('./SearchForm.jsx')
 
 var App = React.createClass({
 
@@ -10,6 +11,7 @@ var App = React.createClass({
 
       <div>
         <Header/>
+        <SearchForm/>
       </div>
 
 

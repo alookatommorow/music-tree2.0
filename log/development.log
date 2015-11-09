@@ -116,3 +116,15 @@ ActionController::RoutingError (undefined method `protect_from_forgery' for Appl
   Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
   Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.2ms)
+
+
+Started GET "/bundle.js" for ::1 at 2015-11-08 19:26:49 -0800
+Processing by HomeController#index as JS
+  Parameters: {"path"=>"bundle"}
+Completed 200 OK in 0ms
+
+
+Started GET "/search" for ::1 at 2015-11-08 19:27:05 -0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"search"}
+Completed 200 OK in 0ms
