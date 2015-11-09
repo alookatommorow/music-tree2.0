@@ -1,5 +1,6 @@
 var React = require('react');
 var mui = require('material-ui');
+var Header = require('./Header.jsx')
 
 var App = React.createClass({
 
@@ -8,9 +9,7 @@ var App = React.createClass({
     return (
 
       <div>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <div>butt</div>
+        <Header/>
       </div>
 
 
