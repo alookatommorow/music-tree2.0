@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-
-  Rails.application.routes.draw do
+    match '*all', to: 'application#preflight', via: [:options]
 
     ACCEPT_JSON = -> (request) {
         request.accepts.include?(:json)
     }
 
-    scope constraints: ACCEPT_JSON do
-        post '/search', to: 'home#search'
-        post '/subsearch', to: 'home#subsearch'
-    end
+    # scope constraints: ACCEPT_JSON do
+    #     post '/search', to: 'home#search'
+    #     post '/subsearch', to: 'home#subsearch'
+    # end
 
-    get '*path', to: 'home#index'
+    get '/search', to: 'home#search', as: 'search'
+    # get  '*path', to: 'home#index'
     root         to: 'home#index'
 
 end
@@ -69,4 +69,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

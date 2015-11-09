@@ -1,6 +1,5 @@
 module Discogs
   class Client
-
     include HTTParty
     base_uri "https://api.discogs.com"
 
@@ -8,9 +7,9 @@ module Discogs
       self.class.get("/artists/#{artist_id}")
     end
 
-    def search(query, specs)
+    def search(query)
       puts "*"* 100
-        self.class.get("/database/search?q=#{query}&?#{specs}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
+        self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
     end
 
     def discog(id)

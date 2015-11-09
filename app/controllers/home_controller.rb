@@ -1,13 +1,13 @@
 class HomeController < ApplicationController
-    skip_before_filter  :verify_authenticity_token
+    # skip_before_filter  :verify_authenticity_token
 
     def index
-
+        p "*"*100
+        p ENV['CONSUMER_KEY']
     end
 
     def search
-        p params
-        results = Discogs::Client.new.search(params[:query], params[:specs])
+        results = Discogs::Client.new.search(params[:query])
         render json: results
     end
 
