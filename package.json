@@ -23,6 +23,7 @@
     "jsx-loader": "^0.12.2",
     "material-ui": "0.10.4",
     "react": "^0.14.0",
+    "react-ajax": "^0.1.1",
     "reqwest": "^1.1.5",
     "style-loader": "^0.8.3",
     "webpack": "^1.6.0",

@@ -1196,3 +1196,15 @@ Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-08 20:52:15 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"thin lizzy"}
 Completed 200 OK in 507ms (Views: 21.6ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-08 22:20:29 -0800
+Processing by HomeController#search as */*
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 232ms (Views: 23.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-08 22:23:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 239ms (Views: 23.8ms)
