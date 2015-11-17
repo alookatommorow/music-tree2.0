@@ -1,7 +1,6 @@
 var React = require('react');
-var mui = require('material-ui');
 var Header = require('./Header.jsx')
-var SearchForm = require('./SearchForm.jsx')
+var SearchContainer = require('./SearchContainer.jsx')
 
 var App = React.createClass({
   getDefaultProps: function() {
@@ -16,9 +15,9 @@ var App = React.createClass({
 
     return (
 
-      <div>
+      <div className='center-text'>
         <Header/>
-        <SearchForm/>
+        <SearchContainer/>
       </div>
 
 

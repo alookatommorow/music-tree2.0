@@ -9,7 +9,8 @@ module Discogs
 
     def search(query)
       puts "*"* 100
-        self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
+        # self.class.get("/database/search?q=#{query}&{?artist}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
+        self.class.get("/database/search?artist=#{query}&type=master&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
     end
 
     def discog(id)
