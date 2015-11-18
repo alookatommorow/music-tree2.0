@@ -29,7 +29,7 @@ var SearchContainer = React.createClass({
   handleSubmit: function(event) {
 
     event.preventDefault();
-    console.log(event.target.text)
+    console.log(SearchForm.refs.query)
     // var firstName = React.findDOMNode(this.refs.firstName).getValue()
     this.setState({query: event.target.value});
     console.log("hella tite");
