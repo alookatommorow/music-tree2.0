@@ -1,12 +1,26 @@
 var React = require('react');
+var Header = require('./Header.jsx')
+var SearchContainer = require('./SearchContainer.jsx')
 
 var App = React.createClass({
+  getDefaultProps: function() {
+    // use this for heroku deployment
+    // return {origin: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : ''};
+
+    // use this when in development
+    return {origin: 'http://localhost:3000'};
+  },
 
   render: function () {
 
     return (
 
-      <h1>Hello world!</h1>
+      <div className='center-text'>
+        <Header/>
+        <SearchContainer/>
+      </div>
+
+
 
          );
 

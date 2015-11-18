@@ -7,6 +7,35 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
+gem 'pg'
+
+gem 'jquery-rails'
+
+gem 'therubyracer'
+
+gem 'httparty'
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'dotenv-rails'
+
+
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+end
+
+
+group :production do
+  gem 'rails_12factor'
+
+end
+
+
 
 
 
