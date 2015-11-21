@@ -8,8 +8,10 @@ var ResultsContainer = React.createClass ({
       var searchResult = "Enter search terms"
     } else {
       var searchResult = this.props.results.map(function(result){
-      if (result.type == "artist") {
-        return <li key={result.id}> {result.title} </li>;
+      if (this.props.selection == "artist") {
+        if (result.type == "artist") {
+          return <li key={result.id}> {result.title} </li>;
+        }
       }
     });
     };

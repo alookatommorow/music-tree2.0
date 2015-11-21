@@ -9,11 +9,20 @@ var SearchContainer = React.createClass({
       formAction: 'http://localhost:3000/search',
       formMethod: 'get',
       query: null,
+      selection: "artist",
+
     };
   },
   handleChange: function(event) {
     this.setState({query: event.target.value});
   },
+
+  handleSelect: function(event){
+    console.log(event.target.value)
+    this.setState({selection: event.target.value});
+
+  },
+
   executeSearch: function(query) {
     var data = {
       query: query,
@@ -42,8 +51,8 @@ var SearchContainer = React.createClass({
   render: function () {
     return (
       <div className='center-text'>
-        <SearchForm handleChange={this.handleChange} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results}/>
+        <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
+        <ResultsContainer results={this.state.results} selection={this.state.selection} />
       </div>
     );
   },

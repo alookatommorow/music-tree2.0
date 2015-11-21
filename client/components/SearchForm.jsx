@@ -9,8 +9,9 @@ var SearchForm = React.createClass ({
       <div>
         <form action={this.props.formAction} method={this.props.formMethod} onSubmit={this.props.handleSubmit} >
           <input className="query" type="text" placeholder="Search..." onChange={this.props.handleChange}></input>
-          <select name="select">
-            <option value="artist" selected>Artist</option>
+          <select name="select" value={this.props.selection} onChange={this.props.handleSelect}>
+
+            <option value="artist">Artist</option>
             <option value="album">Album</option>
             <option value="song">Song</option>
           </select>
