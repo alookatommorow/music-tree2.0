@@ -7500,3 +7500,135 @@ Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 17:56:31 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"thin lizzy"}
 Completed 200 OK in 1468ms (Views: 15.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:08:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 237ms (Views: 16.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:14:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 268ms (Views: 19.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:17:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 257ms (Views: 23.8ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:18:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 270ms (Views: 24.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:19:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 366ms (Views: 24.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:20:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 253ms (Views: 26.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:20:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 273ms (Views: 23.5ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 19:23:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 278ms (Views: 24.4ms)
+
+
+Started GET "/search?query=nevermind" for ::1 at 2015-11-20 19:29:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"nevermind"}
+Completed 200 OK in 1923ms (Views: 28.7ms)
+
+
+Started GET "/search?query=nevermind" for ::1 at 2015-11-20 19:30:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"nevermind"}
+Completed 200 OK in 278ms (Views: 26.7ms)
+
+
+Started GET "/search?query=nevermind" for ::1 at 2015-11-20 19:32:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"nevermind"}
+Completed 200 OK in 307ms (Views: 28.3ms)
+
+
+Started GET "/search?query=nevermind" for ::1 at 2015-11-20 19:32:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"nevermind"}
+Completed 200 OK in 442ms (Views: 25.4ms)
+
+
+Started GET "/search?query=nevermind" for ::1 at 2015-11-20 19:33:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"nevermind"}
+Completed 200 OK in 284ms (Views: 30.8ms)
+
+
+Started GET "/search?query=smells+like+teen+spirit" for ::1 at 2015-11-20 19:55:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"smells like teen spirit"}
+Completed 200 OK in 1220ms (Views: 22.9ms)
+
+
+Started GET "/search?query=smells+like+teen" for ::1 at 2015-11-20 19:55:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"smells like teen"}
+Completed 200 OK in 2711ms (Views: 20.6ms)
+
+
+Started GET "/search?query=smells+like+teen" for ::1 at 2015-11-20 19:56:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"smells like teen"}
+Completed 200 OK in 246ms (Views: 19.8ms)
+
+
+Started GET "/search?query=johnny+the+fox" for ::1 at 2015-11-20 19:57:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"johnny the fox"}
+Completed 200 OK in 839ms (Views: 24.1ms)
+
+
+Started GET "/search?query=diddy+levine" for ::1 at 2015-11-20 19:58:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"diddy levine"}
+Completed 200 OK in 483ms (Views: 25.1ms)
+
+
+Started GET "/search?query=diddy+levine" for ::1 at 2015-11-20 20:00:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"diddy levine"}
+Completed 200 OK in 292ms (Views: 25.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 20:32:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 508ms (Views: 19.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 20:35:07 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 238ms (Views: 19.3ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 20:37:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 264ms (Views: 19.9ms)
