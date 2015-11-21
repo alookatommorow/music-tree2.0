@@ -8,10 +8,13 @@ var SearchContainer = React.createClass({
       results: null,
       formAction: 'http://localhost:3000/search',
       formMethod: 'get',
+      query: null,
     };
   },
+  handleChange: function(event) {
+    this.setState({query: event.target.value});
+  },
   executeSearch: function(query) {
-    console.log("executing search");
     var data = {
       query: query,
     };
@@ -25,18 +28,13 @@ var SearchContainer = React.createClass({
     });
   },
 
-  handleSearch: function(query) {
-
-    // var firstName = React.findDOMNode(this.refs.firstName).getValue()
-    console.log(query);
-    console.log("hella tite");
-    console.log(this.state.formAction);
-    this.executeSearch(query);
+  handleSubmit: function(event) {
+    event.preventDefault();
+    this.executeSearch(this.state.query);
   },
   successFunction: function(response){
-    console.log("success");
-    console.log(response["results"].length);
-    this.setState({results: response["results"]});
+    this.setState({results: response});
+    console.log(this.state.results)
   },
   errorFunction: function(){
     console.log("error");
@@ -44,7 +42,7 @@ var SearchContainer = React.createClass({
   render: function () {
     return (
       <div className='center-text'>
-        <SearchForm formAction={this.state.formAction} formMethod={this.state.formMethod} handleSearch={this.handleSearch}/>
+        <SearchForm handleChange={this.handleChange} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
         <ResultsContainer results={this.state.results}/>
       </div>
     );

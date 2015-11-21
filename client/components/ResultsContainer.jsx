@@ -5,9 +5,13 @@ var ResultsContainer = React.createClass ({
 
   render: function () {
     if (this.props.results == null) {
-        var searchResult = "Enter search terms"
+      var searchResult = "Enter search terms"
     } else {
-      var searchResult = "There are results"
+      var searchResult = this.props.results.map(function(result){
+      if (result.type == "artist") {
+        return <li key={result.id}> {result.title} </li>;
+      }
+    });
     };
     return (
         <div>
