@@ -1,4 +1,5 @@
 var React = require('react');
+var DetailsContainer = require('./DetailsContainer.jsx')
 
 
 var ResultsContainer = React.createClass ({
@@ -36,6 +37,7 @@ var ResultsContainer = React.createClass ({
     return (
         <div className="collection">
           {searchResult}
+          <DetailsContainer details={this.props.details} />
         </div>
     )
   },
