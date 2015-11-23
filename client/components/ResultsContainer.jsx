@@ -11,24 +11,24 @@ var ResultsContainer = React.createClass ({
     if (this.props.results == null) {
       var searchResult = "Enter search terms"
     } else {
-      var searchResult = this.props.results.map(function(result){
+      var searchResult = this.props.results.map(function(result, index){
         console.log(queryType)
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
-            return <li className="collection-item" key={result.id}> {result.title} </li>;
+            return <li className="collection-item" key={index}> {result.title} <button>Get details</button> </li> ;
           }
         }
         //if album search
         else if (queryType == "release_title") {
           if (result.type == "master") {
-            return <li className="collection-item" key={result.id}> {result.title} </li>;
+            return <li className="collection-item" key={index}> {result.title} </li>;
           }
         }
         //if song search
         else if (queryType == "track") {
           if (result.type == "master") {
-            return <li className="collection-item" key={result.id}> {result.title} </li>;
+            return <li className="collection-item" key={index}> {result.title} </li>;
           }
         }
       });
