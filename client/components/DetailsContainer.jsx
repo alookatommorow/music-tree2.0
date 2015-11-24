@@ -3,14 +3,31 @@ var React = require('react');
 var DetailsContainer = React.createClass({
   getInitialState: function(){
     return {
-      details: null
+      details: null,
     };
   },
 
    handleDetailClick: function() {
     console.log("shitzo")
     this.setState({details: "blarg"});
-    console.log(this.state.details)
+    // executeDetail();
+    console.log(this.props.resultKey);
+    console.log(this.props.queryType);
+  },
+
+  executeDetail: function(resultKey) {
+    var data = {
+      query: query,
+    };
+    console.log(data);
+    $.ajax({
+      url: this.state.formAction,
+      data: data,
+      dataType: 'json',
+      success: this.successFunction,
+      error: this.errorFunction,
+    });
+
   },
 
   render: function(){

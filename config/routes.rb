@@ -11,6 +11,9 @@ Rails.application.routes.draw do
     # end
 
     get '/search', to: 'home#search', as: 'search'
+    get '/artist_search', to: 'home#artist_search'
+    get '/album_search', to: 'home#album_search'
+    get '/discog', to: 'home#discog'
     # get  '*path', to: 'home#index'
     root         to: 'home#index'
 

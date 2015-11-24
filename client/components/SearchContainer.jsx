@@ -39,15 +39,8 @@ var SearchContainer = React.createClass({
     this.executeSearch(this.state.query);
   },
 
-
-
-  executeDetail: function() {
-
-  },
-
   successFunction: function(response){
     this.setState({results: response});
-    console.log(this.state.results)
   },
   errorFunction: function(){
     console.log("error");

@@ -8,9 +8,21 @@ class HomeController < ApplicationController
 
     def search
         results = Discogs::Client.new.search(params[:query]).parsed_response["results"]
-        p "*"*100
-        p results
-        p "*"*100
+        render json: results
+    end
+
+    def artist_search
+        results = Discogs::Client.new.artist_search(params[:query]).parsed_response["results"]
+        render json: results
+    end
+
+    def album_search
+        results = Discogs::Client.new.album_search(params[:query]).parsed_response["results"]
+        render json: results
+    end
+
+    def discog
+        results = Discogs::Client.new.discog(params[:query]).parsed_response["results"]
         render json: results
     end
 
