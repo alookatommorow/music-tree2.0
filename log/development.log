@@ -7632,3 +7632,27 @@ Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-20 20:37:14 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"thin lizzy"}
 Completed 200 OK in 264ms (Views: 19.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-22 21:56:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 663ms (Views: 37.1ms)
+
+
+Started GET "/search?query=beach+boys" for ::1 at 2015-11-22 22:00:57 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beach boys"}
+Completed 200 OK in 973ms (Views: 24.4ms)
+
+
+Started GET "/search?query=rolling+stones" for ::1 at 2015-11-23 06:32:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"rolling stones"}
+Completed 200 OK in 3889ms (Views: 21.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-11-23 06:38:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 609ms (Views: 23.0ms)
