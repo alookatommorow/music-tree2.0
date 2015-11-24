@@ -10,7 +10,6 @@ var SearchContainer = React.createClass({
       formMethod: 'get',
       query: null,
       queryType: "artist",
-      details: null,
     };
   },
   handleChange: function(event) {
@@ -18,9 +17,7 @@ var SearchContainer = React.createClass({
   },
 
   handleSelect: function(event){
-    console.log(event.target.value)
     this.setState({queryType: event.target.value});
-
   },
 
   executeSearch: function(query) {
@@ -41,6 +38,13 @@ var SearchContainer = React.createClass({
     event.preventDefault();
     this.executeSearch(this.state.query);
   },
+
+
+
+  executeDetail: function() {
+
+  },
+
   successFunction: function(response){
     this.setState({results: response});
     console.log(this.state.results)
@@ -52,7 +56,7 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType} details={this.state.details}/>
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType}  />
       </div>
     );
   },

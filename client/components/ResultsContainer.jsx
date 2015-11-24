@@ -8,16 +8,14 @@ var ResultsContainer = React.createClass ({
 
     var queryType = this.props.queryType;
 
-
     if (this.props.results == null) {
       var searchResult = "Enter search terms"
     } else {
       var searchResult = this.props.results.map(function(result, index){
-        console.log(queryType)
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
-            return <li className="collection-item" key={index}> {result.title} <button>Get details</button> </li> ;
+            return <li className="collection-item" key={index}> {result.title}  <DetailsContainer /> </li> ;
           }
         }
         //if album search
@@ -32,14 +30,13 @@ var ResultsContainer = React.createClass ({
             return <li className="collection-item" key={index}> {result.title} </li>;
           }
         }
-      });
+      }.bind(this));
     };
     return (
         <div className="collection">
           {searchResult}
-          <DetailsContainer details={this.props.details} />
         </div>
-    )
+    );
   },
 });
 
