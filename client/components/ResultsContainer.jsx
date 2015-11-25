@@ -15,19 +15,19 @@ var ResultsContainer = React.createClass ({
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
-            return <li className="collection-item" key={index}> {result.title}  <DetailsContainer queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li> ;
+            return <li className="collection-item" key={index}> {result.title}  <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li> ;
           }
         }
         //if album search
         else if (queryType == "release_title") {
           if (result.type == "master") {
-            return <li className="collection-item" key={index}> {result.title} <DetailsContainer queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
+            return <li className="collection-item" key={index}> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
           }
         }
         //if song search
         else if (queryType == "track") {
           if (result.type == "master") {
-            return <li className="collection-item" key={index}> {result.title} <DetailsContainer queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
+            return <li className="collection-item" key={index}> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
           }
         }
       }.bind(this));

@@ -12,11 +12,11 @@ module Discogs
     end
 
     def artist_search(id)
-      self.class.get("/artist/#{id}")
+      self.class.get("/artists/#{id}")
     end
 
     def album_search(id)
-      self.class.get("/master/#{id}")
+      self.class.get("/masters/#{id}")
     end
 
     def discog(id)

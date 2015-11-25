@@ -6,7 +6,7 @@ var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
       results: null,
-      formAction: 'http://localhost:3000/search',
+      formAction: this.props.origin + '/search',
       formMethod: 'get',
       query: null,
       queryType: "artist",
@@ -24,7 +24,6 @@ var SearchContainer = React.createClass({
     var data = {
       query: query,
     };
-    console.log(data);
     $.ajax({
       url: this.state.formAction,
       data: data,
@@ -49,7 +48,7 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType}  />
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
       </div>
     );
   },
