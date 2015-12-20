@@ -3,9 +3,9 @@ var React = require('react');
 var DetailsContainer = React.createClass({
   getInitialState: function(){
     return {
-      details: null,
-      artist_search_url: this.props.origin + "/artist_search",
-      album_search_url: this.props.origin + "/album_search",
+      details: this.props.details,
+      artist_info_url: this.props.origin + "/artist_info",
+      album_info_url: this.props.origin + "/album_info",
     };
   },
 
@@ -16,9 +16,10 @@ var DetailsContainer = React.createClass({
   executeDetail: function(resultsKey) {
     var data = {id: this.props.results[resultsKey]["id"]};
     if (this.props.queryType == "artist"){
-      var url = this.state.artist_search_url;
+      var url = this.state.artist_info_url;
     } else if (this.props.queryType == "release_title"){
-      var url = this.state.album_search_url;
+      console.log(data);
+      var url = this.state.album_info_url;
     }
 
     $.ajax({
@@ -33,6 +34,7 @@ var DetailsContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({details: response});
+    console.log(response);
   },
 
   errorFunction: function(){
@@ -41,7 +43,13 @@ var DetailsContainer = React.createClass({
 
   render: function(){
     if (this.state.details !== null) {
-      var detailsDisplay = this.state.details["profile"]
+      if (this.props.queryType == "artist"){
+        var detailsDisplay = <div>{this.state.details['profile']}</div>
+      }
+      else if (this.props.queryType == "release_title") {
+        var detailsDisplay = <button onClick={this.handleDetailClick}>Album Details</button>
+      }
+
     } else {
       if (this.props.queryType == "artist"){
         var detailsDisplay = <button onClick={this.handleDetailClick}>Artist Details</button>

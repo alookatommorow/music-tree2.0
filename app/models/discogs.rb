@@ -3,19 +3,15 @@ module Discogs
     include HTTParty
     base_uri "https://api.discogs.com"
 
-    def artist(artist_id = "108713")
-      self.class.get("/artists/#{artist_id}")
-    end
-
     def search(query)
-        self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
+      self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")
     end
 
-    def artist_search(id)
+    def artist_info(id)
       self.class.get("/artists/#{id}")
     end
 
-    def album_search(id)
+    def album_info(id)
       self.class.get("/masters/#{id}")
     end
 

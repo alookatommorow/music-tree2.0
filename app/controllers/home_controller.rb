@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-    # skip_before_filter  :verify_authenticity_token
 
     def index
 
@@ -10,17 +9,17 @@ class HomeController < ApplicationController
         render json: results
     end
 
-    def artist_search
+    def artist_info
         p params
-        results = Discogs::Client.new.artist_search(params[:id]).parsed_response
+        results = Discogs::Client.new.artist_info(params[:id]).parsed_response
         p "*"*100
         p results
         p "*"*100
         render json: results
     end
 
-    def album_search
-        results = Discogs::Client.new.album_search(params[:id]).parsed_response
+    def album_info
+        results = Discogs::Client.new.album_info(params[:id]).parsed_response
         p "*"*100
         p results
         p "*"*100

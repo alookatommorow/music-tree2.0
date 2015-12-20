@@ -6,12 +6,15 @@ var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
       results: null,
-      formAction: this.props.origin + '/search',
+      url: this.props.origin + '/search',
       formMethod: 'get',
       query: null,
       queryType: "artist",
     };
   },
+
+
+
   handleChange: function(event) {
     this.setState({query: event.target.value});
   },
@@ -21,11 +24,11 @@ var SearchContainer = React.createClass({
   },
 
   executeSearch: function(query) {
-    var data = {
-      query: query,
-    };
+    var data = {query: query,};
+    var url = this.state.url;
+
     $.ajax({
-      url: this.state.formAction,
+      url: url,
       data: data,
       dataType: 'json',
       success: this.successFunction,
@@ -40,6 +43,7 @@ var SearchContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({results: response});
+    console.log(response);
   },
   errorFunction: function(){
     console.log("error");
