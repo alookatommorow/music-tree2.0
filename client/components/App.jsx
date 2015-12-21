@@ -20,6 +20,7 @@ var App = React.createClass({
       <div className='center-text'>
         <Header/>
         <SearchContainer origin={this.props.origin}/>
+
       </div>
 
 

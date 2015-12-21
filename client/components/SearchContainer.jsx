@@ -13,8 +13,6 @@ var SearchContainer = React.createClass({
     };
   },
 
-
-
   handleChange: function(event) {
     this.setState({query: event.target.value});
   },
@@ -43,8 +41,9 @@ var SearchContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({results: response});
-    console.log(response);
+    console.log(response)
   },
+
   errorFunction: function(){
     console.log("error");
   },
