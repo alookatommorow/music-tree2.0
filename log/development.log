@@ -9939,3 +9939,57 @@ Started GET "/album_info?id=38433" for ::1 at 2015-12-20 17:22:38 -0800
 Processing by HomeController#album_info as HTML
   Parameters: {"id"=>"38433"}
 Completed 200 OK in 254ms (Views: 7.0ms)
+
+
+Started GET "/search?query=rolling+stones" for ::1 at 2015-12-20 17:29:43 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"rolling stones"}
+Completed 200 OK in 1438ms (Views: 31.0ms)
+
+
+Started GET "/artist_info?id=20991" for ::1 at 2015-12-20 17:30:07 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"20991"}
+Completed 200 OK in 2625ms (Views: 10.4ms)
+
+
+Started GET "/search?query=rush" for ::1 at 2015-12-20 17:30:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"rush"}
+Completed 200 OK in 280ms (Views: 18.1ms)
+
+
+Started GET "/album_info?id=38433" for ::1 at 2015-12-20 17:31:05 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"38433"}
+Completed 200 OK in 1931ms (Views: 2.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-21 00:29:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 3213ms (Views: 41.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2015-12-21 00:29:08 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 4344ms (Views: 3.8ms)
+
+
+Started GET "/artist_info?id=281068" for ::1 at 2015-12-21 00:29:21 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 1534ms (Views: 11.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-21 00:32:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2028ms (Views: 46.7ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2015-12-21 00:32:19 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 1651ms (Views: 2.4ms)

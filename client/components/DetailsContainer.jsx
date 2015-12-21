@@ -4,8 +4,6 @@ var DetailsContainer = React.createClass({
   getInitialState: function(){
     return {
       details: this.props.details,
-      artistDetails: this.props.details,
-      albumDetails: this.props.details,
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
     };
@@ -40,10 +38,14 @@ var DetailsContainer = React.createClass({
     console.log("error");
   },
 
+  handleCloseClick: function(){
+    this.setState({details: null});
+  },
+
   render: function(){
     if (this.state.details !== null) {
       if (this.props.queryType == "artist"){
-        var detailsDisplay = <div>{this.state.details['profile']}</div>
+        var detailsDisplay = <div><div>{this.state.details['profile']}</div><div><button onClick={this.handleCloseClick}>Close</button></div></div>
       }
       else if (this.props.queryType == "release_title") {
         var detailsDisplay = this.state.details['tracklist'].map(function(track, index){
