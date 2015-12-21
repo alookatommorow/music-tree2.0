@@ -6,6 +6,7 @@ var DetailsContainer = React.createClass({
       details: this.props.details,
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
+      showCloseButton: false,
     };
   },
 
@@ -31,7 +32,7 @@ var DetailsContainer = React.createClass({
   },
 
   successFunction: function(response){
-    this.setState({details: response});
+    this.setState({details: response, showCloseButton: true});
   },
 
   errorFunction: function(){
@@ -39,13 +40,14 @@ var DetailsContainer = React.createClass({
   },
 
   handleCloseClick: function(){
-    this.setState({details: null});
+    this.setState({details: null, showCloseButton: false});
   },
 
   render: function(){
+    var closeButton = <div><button onClick={this.handleCloseClick}>Close</button></div>
     if (this.state.details !== null) {
       if (this.props.queryType == "artist"){
-        var detailsDisplay = <div><div>{this.state.details['profile']}</div><div><button onClick={this.handleCloseClick}>Close</button></div></div>
+        var detailsDisplay = <div>{this.state.details['profile']}</div>
       }
       else if (this.props.queryType == "release_title") {
         var detailsDisplay = this.state.details['tracklist'].map(function(track, index){
@@ -64,6 +66,7 @@ var DetailsContainer = React.createClass({
     return (
         <div className="detailsDisplay">
           {detailsDisplay}
+          {this.state.showCloseButton ? closeButton : null}
         </div>
       );
   },
