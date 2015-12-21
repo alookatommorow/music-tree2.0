@@ -6,12 +6,13 @@ var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
       results: null,
-      formAction: 'http://localhost:3000/search',
+      url: this.props.origin + '/search',
       formMethod: 'get',
       query: null,
       queryType: "artist",
     };
   },
+
   handleChange: function(event) {
     this.setState({query: event.target.value});
   },
@@ -21,12 +22,11 @@ var SearchContainer = React.createClass({
   },
 
   executeSearch: function(query) {
-    var data = {
-      query: query,
-    };
-    console.log(data);
+    var data = {query: query,};
+    var url = this.state.url;
+
     $.ajax({
-      url: this.state.formAction,
+      url: url,
       data: data,
       dataType: 'json',
       success: this.successFunction,
@@ -39,16 +39,11 @@ var SearchContainer = React.createClass({
     this.executeSearch(this.state.query);
   },
 
-
-
-  executeDetail: function() {
-
-  },
-
   successFunction: function(response){
     this.setState({results: response});
-    console.log(this.state.results)
+    console.log(response)
   },
+
   errorFunction: function(){
     console.log("error");
   },
@@ -56,7 +51,7 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType}  />
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
       </div>
     );
   },

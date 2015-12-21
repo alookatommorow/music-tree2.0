@@ -8,7 +8,9 @@ var App = React.createClass({
     // return {origin: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : ''};
 
     // use this when in development
-    return {origin: 'http://localhost:3000'};
+    return {
+      origin: 'http://localhost:3000',
+    };
   },
 
   render: function () {
@@ -17,7 +19,8 @@ var App = React.createClass({
 
       <div className='center-text'>
         <Header/>
-        <SearchContainer/>
+        <SearchContainer origin={this.props.origin}/>
+
       </div>
 
 

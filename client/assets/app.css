@@ -24,3 +24,7 @@
 .inline-block {
   display: inline-block;
 }
+
+.red {
+  background-color: red;
+}

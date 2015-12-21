@@ -14,7 +14,7 @@ var SearchForm = React.createClass ({
             <option value="release_title">Album</option>
             <option value="track">Song</option>
           </select>
-          <input type="submit" value="Search" ></input>
+          <input className="" type="submit" value="Search" ></input>
         </form>
       </div>
     );

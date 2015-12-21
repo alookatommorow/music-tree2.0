@@ -7,10 +7,14 @@ Rails.application.routes.draw do
 
     # scope constraints: ACCEPT_JSON do
     #     post '/search', to: 'home#search'
-    #     post '/subsearch', to: 'home#subsearch'
+    #     post '/artist_info', to: 'home#artist_info'
+    #     post '/album_info', to: 'home#album_info'
     # end
 
-    get '/search', to: 'home#search', as: 'search'
+    get '/search', to: 'home#search'
+    get '/artist_info', to: 'home#artist_info'
+    get '/album_info', to: 'home#album_info'
+    get '/discog', to: 'home#discog'
     # get  '*path', to: 'home#index'
     root         to: 'home#index'
 
