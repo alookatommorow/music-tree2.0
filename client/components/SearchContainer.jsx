@@ -41,7 +41,6 @@ var SearchContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({results: response});
-    console.log(response)
   },
 
   errorFunction: function(){

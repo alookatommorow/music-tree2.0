@@ -17,10 +17,6 @@ var DetailsContainer = React.createClass({
     this.executeDetail(this.props.resultsKey);
   },
 
-  handleDiscogClick: function() {
-    this.executeDiscog(this.props.resultsKey);
-  },
-
   executeDetail: function(resultsKey) {
     var data = {id: this.props.results[resultsKey]["id"]};
     if (this.props.queryType == "artist"){
@@ -33,30 +29,17 @@ var DetailsContainer = React.createClass({
       url: url,
       data: data,
       dataType: 'json',
-      success: this.detailSuccessFunction,
-      error: this.detailErrorFunction,
+      success: this.successFunction,
+      error: this.errorFunction,
     });
   },
 
-  detailSuccessFunction: function(response){
+  successFunction: function(response){
     this.setState({details: response, showCloseButton: true});
   },
 
-  detailErrorFunction: function(){
+  errorFunction: function(){
     console.log("error");
-  },
-
-  executeDiscog: function(resultsKey) {
-    var data = {id: this.props.results[resultsKey]["id"]};
-
-    $.ajax({
-      url: url,
-      data: data,
-      dataType: 'json',
-      success: this.detailSuccessFunction,
-      error: this.detailErrorFunction,
-    });
-
   },
 
   handleCloseClick: function(){

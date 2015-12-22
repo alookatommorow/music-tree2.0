@@ -16,7 +16,7 @@ module Discogs
     end
 
     def discog(id)
-      self.class.get("/artists/#{id}/releases?page=1&per_page=100")
+      self.class.get("/artists/#{id}/releases?&per_page=100")
     end
 
     def headers

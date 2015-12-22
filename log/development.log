@@ -10119,3 +10119,165 @@ Started GET "/artist_info?id=252121" for ::1 at 2015-12-21 08:48:24 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"252121"}
 Completed 200 OK in 920ms (Views: 1.7ms)
+
+
+Started GET "/search?query=hellhammer" for ::1 at 2015-12-21 08:56:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"hellhammer"}
+Completed 200 OK in 867ms (Views: 17.3ms)
+
+
+Started GET "/search?query=talking+heads" for ::1 at 2015-12-21 09:09:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"talking heads"}
+Completed 200 OK in 742ms (Views: 26.4ms)
+
+
+Started GET "/search?query=talking+heads" for ::1 at 2015-12-21 09:09:49 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"talking heads"}
+Completed 200 OK in 323ms (Views: 19.3ms)
+
+
+Started GET "/search?query=talking+heads" for ::1 at 2015-12-21 09:11:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"talking heads"}
+Completed 200 OK in 329ms (Views: 26.7ms)
+
+
+Started GET "/search?query=talking+heads" for ::1 at 2015-12-21 09:13:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"talking heads"}
+Completed 200 OK in 303ms (Views: 23.5ms)
+
+
+Started GET "/search?query=chic" for ::1 at 2015-12-21 09:15:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"chic"}
+Completed 200 OK in 835ms (Views: 17.5ms)
+
+
+Started GET "/discog?id=9081" for ::1 at 2015-12-21 09:15:08 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"9081"}
+Completed 200 OK in 1052ms (Views: 14.2ms)
+
+
+Started GET "/search?query=chic" for ::1 at 2015-12-21 09:16:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"chic"}
+Completed 200 OK in 276ms (Views: 13.2ms)
+
+
+Started GET "/discog?id=9081" for ::1 at 2015-12-21 09:16:03 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"9081"}
+Completed 200 OK in 368ms (Views: 14.9ms)
+
+
+Started GET "/search?query=miles+davis" for ::1 at 2015-12-21 09:19:52 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"miles davis"}
+Completed 200 OK in 1086ms (Views: 19.7ms)
+
+
+Started GET "/discog?id=23755" for ::1 at 2015-12-21 09:19:55 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"23755"}
+Completed 200 OK in 2638ms (Views: 13.0ms)
+
+
+Started GET "/search?query=miles+davis" for ::1 at 2015-12-21 09:22:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"miles davis"}
+Completed 200 OK in 311ms (Views: 24.6ms)
+
+
+Started GET "/discog?id=23755" for ::1 at 2015-12-21 09:22:12 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"23755"}
+Completed 200 OK in 255ms (Views: 9.8ms)
+
+
+Started GET "/search?query=miles+davis" for ::1 at 2015-12-21 18:40:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"miles davis"}
+Completed 200 OK in 943ms (Views: 38.0ms)
+
+
+Started GET "/discog?id=23755" for ::1 at 2015-12-21 18:40:28 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"23755"}
+Completed 200 OK in 9702ms (Views: 0.3ms)
+
+
+Started GET "/search?query=miles+davis" for ::1 at 2015-12-21 18:41:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"miles davis"}
+Completed 200 OK in 323ms (Views: 41.7ms)
+
+
+Started GET "/discog?id=23755" for ::1 at 2015-12-21 18:41:40 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"23755"}
+Completed 200 OK in 8280ms (Views: 2.0ms)
+
+
+Started GET "/album_info?id=65664" for ::1 at 2015-12-21 18:43:02 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"65664"}
+Completed 200 OK in 250ms (Views: 1.3ms)
+
+
+Started GET "/album_info?id=166147" for ::1 at 2015-12-21 18:43:29 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"166147"}
+Completed 200 OK in 246ms (Views: 3.5ms)
+
+
+Started GET "/album_info?id=166147" for ::1 at 2015-12-21 18:43:39 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"166147"}
+Completed 200 OK in 236ms (Views: 3.3ms)
+
+
+Started GET "/album_info?id=208352" for ::1 at 2015-12-21 18:43:44 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"208352"}
+Completed 200 OK in 274ms (Views: 2.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-21 18:48:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 647ms (Views: 33.8ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2015-12-21 18:48:24 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 2491ms (Views: 17.2ms)
+
+
+Started GET "/search?query=judas+priest" for ::1 at 2015-12-21 20:30:44 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"judas priest"}
+Completed 200 OK in 789ms (Views: 20.0ms)
+
+
+Started GET "/discog?id=252121" for ::1 at 2015-12-21 20:30:47 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"252121"}
+Completed 200 OK in 2750ms (Views: 15.5ms)
+
+
+Started GET "/search?query=judas+priest" for ::1 at 2015-12-21 20:58:39 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"judas priest"}
+Completed 200 OK in 299ms (Views: 23.7ms)
+
+
+Started GET "/discog?id=252121" for ::1 at 2015-12-21 20:58:43 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"252121"}
+Completed 200 OK in 273ms (Views: 11.2ms)
