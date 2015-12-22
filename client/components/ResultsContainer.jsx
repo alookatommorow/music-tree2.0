@@ -16,7 +16,7 @@ var ResultsContainer = React.createClass ({
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
-            return  <li key={result.uri}><img src={result.thumb}></img> {result.title}  <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} details={null} /> <DiscogContainer resultsKey={index} origin={this.props.origin} results={this.props.results}/></li>;
+            return  <li key={result.uri}><img src={result.thumb}></img> {result.title}  <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} details={null} /> <DiscogContainer query={this.props.query} resultsKey={index} origin={this.props.origin} results={this.props.results}/></li>;
           }
         }
         //if album search

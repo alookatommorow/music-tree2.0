@@ -22,7 +22,7 @@ var SearchContainer = React.createClass({
   },
 
   executeSearch: function(query) {
-    var data = {query: query,};
+    var data = {query: query};
     var url = this.state.url;
 
     $.ajax({
@@ -41,6 +41,7 @@ var SearchContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({results: response});
+    console.log(response)
   },
 
   errorFunction: function(){
@@ -50,7 +51,7 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query}/>
       </div>
     );
   },
