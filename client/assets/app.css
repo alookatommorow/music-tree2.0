@@ -49,3 +49,7 @@ li {
 .header-image {
   height: 200px;
 }
+
+.big-text {
+  font-size: 1em;
+}
