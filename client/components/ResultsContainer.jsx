@@ -1,6 +1,9 @@
 var React = require('react');
 var DetailsContainer = require('./DetailsContainer.jsx');
 var DiscogContainer = require('./DiscogContainer.jsx');
+var List = require('material-ui/lib/lists/list');
+var ListItem = require('material-ui/lib/lists/list-item');
+var Avatar = require('material-ui/lib/avatar');
 
 
 var ResultsContainer = React.createClass ({
@@ -15,7 +18,7 @@ var ResultsContainer = React.createClass ({
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
-            return  <li key={result.uri}><img src={result.thumb}></img> {result.title}  <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} details={null} /> <DiscogContainer query={this.props.query} resultsKey={index} origin={this.props.origin} results={this.props.results}/></li>;
+            return  <List><ListItem key={result.uri} leftAvatar={<Avatar src={result.thumb} size={75} />} > {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} details={null} /> <DiscogContainer query={this.props.query} resultsKey={index} origin={this.props.origin} results={this.props.results}/></ListItem></List>;
           }
         }
         //if album search
