@@ -11240,3 +11240,27 @@ Started GET "/search?query=METALLICA" for ::1 at 2015-12-25 17:03:35 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"METALLICA"}
 Completed 200 OK in 910ms (Views: 24.6ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-25 17:33:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 637ms (Views: 19.3ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-25 18:36:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 323ms (Views: 19.7ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-25 18:40:43 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 302ms (Views: 17.6ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-25 18:45:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 4611ms (Views: 26.3ms)

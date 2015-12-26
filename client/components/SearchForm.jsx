@@ -1,26 +1,27 @@
 var React = require('react');
 var ResultsContainer = require('./ResultsContainer.jsx');
 var RaisedButton = require('material-ui/lib/raised-button');
+var SelectField = require('material-ui/lib/select-field');
 var TextField = require('material-ui/lib/text-field');
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 
 var SearchForm = React.createClass ({
 
   render: function () {
     return (
-      <div className="" >
-        <div className="inline-block">
-          <form action={this.props.formAction} method={this.props.formMethod} onSubmit={this.props.handleSubmit} >
-            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
+      <div>
 
-            <select name="select" value={this.props.queryType} onChange={this.props.handleSelect}>
-              <option value="artist">Artist</option>
-              <option value="release_title">Album</option>
-              <option value="track">Song</option>
-            </select>
+          <form action={this.props.formAction} method={this.props.formMethod} onSubmit={this.props.handleSubmit} >
+            <div>
+            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
+            </div>
+            <div>
+            <SelectField menuItems={this.props.menuItems} onChange={this.props.handleSelect} />
+            </div>
           </form>
-        </div>
-        <div className="inline-block search-button">
+        <div>
           <RaisedButton label="Search" secondary={true} onClick={this.props.handleSubmit} />
         </div>
 
