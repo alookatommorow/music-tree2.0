@@ -10,6 +10,7 @@ var SearchContainer = React.createClass({
       formMethod: 'get',
       query: null,
       queryType: "artist",
+      showSearchResults: false,
       menuItems: [
         { payload: 'artist', text: 'Artist' },
         { payload: 'release_title', text: 'Album' },
@@ -47,7 +48,7 @@ var SearchContainer = React.createClass({
   },
 
   successFunction: function(response){
-    this.setState({results: response});
+    this.setState({results: response, showSearchResults: true});
     console.log(response);
   },
 
@@ -58,7 +59,7 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query}/>
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
       </div>
     );
   },

@@ -11264,3 +11264,21 @@ Started GET "/search?query=motorhead" for ::1 at 2015-12-25 18:45:35 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"motorhead"}
 Completed 200 OK in 4611ms (Views: 26.3ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-25 18:56:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 316ms (Views: 23.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-25 18:58:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 589ms (Views: 23.9ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2015-12-25 18:58:41 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 1105ms (Views: 18.9ms)

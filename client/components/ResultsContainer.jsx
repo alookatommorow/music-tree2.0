@@ -9,10 +9,9 @@ var ResultsContainer = React.createClass ({
 
     var queryType = this.props.queryType;
 
-    if (this.props.results == null) {
-      var searchResult = "Enter search terms"
-    } else {
-      var searchResult = this.props.results.map(function(result, index){
+    if (this.props.results !== null) {
+
+      var searchResults = this.props.results.map(function(result, index){
         //if artist search
         if (queryType == "artist") {
           if (result.type == "artist") {
@@ -35,7 +34,7 @@ var ResultsContainer = React.createClass ({
     };
     return (
         <div>
-          {searchResult}
+          {this.props.showSearchResults ? searchResults : null }
         </div>
     );
   },
