@@ -11522,3 +11522,81 @@ Started GET "/discog?id=105730" for ::1 at 2015-12-26 00:19:04 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"105730"}
 Completed 200 OK in 790ms (Views: 8.8ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 00:29:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 321ms (Views: 21.7ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 00:30:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 2652ms (Views: 26.9ms)
+
+
+Started GET "/search?query=maids" for ::1 at 2015-12-26 00:32:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"maids"}
+Completed 200 OK in 1420ms (Views: 19.2ms)
+
+
+Started GET "/artist_info?id=444506" for ::1 at 2015-12-26 00:32:46 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"444506"}
+Completed 200 OK in 895ms (Views: 1.4ms)
+
+
+Started GET "/artist_info?id=277227" for ::1 at 2015-12-26 00:33:34 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"277227"}
+Completed 200 OK in 446ms (Views: 1.1ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 01:06:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 336ms (Views: 23.6ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 01:07:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 1891ms (Views: 31.6ms)
+
+
+Started GET "/artist_info?id=105730" for ::1 at 2015-12-26 01:07:40 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"105730"}
+Completed 200 OK in 2325ms (Views: 1.6ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 01:11:48 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 507ms (Views: 26.9ms)
+
+
+Started GET "/artist_info?id=105730" for ::1 at 2015-12-26 01:11:52 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"105730"}
+Completed 200 OK in 316ms (Views: 0.9ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 01:12:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 1984ms (Views: 28.1ms)
+
+
+Started GET "/artist_info?id=105730" for ::1 at 2015-12-26 01:12:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"105730"}
+Completed 200 OK in 3376ms (Views: 1.6ms)
+
+
+Started GET "/artist_info?id=105730" for ::1 at 2015-12-26 01:13:14 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"105730"}
+Completed 200 OK in 255ms (Views: 2.9ms)

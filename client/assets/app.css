@@ -29,6 +29,10 @@
   background-color: red;
 }
 
+.right {
+  float: right;
+}
+
 li {
     list-style-type: none;
 }
