@@ -1,6 +1,7 @@
 var React = require('react');
 var ResultsContainer = require('./ResultsContainer.jsx');
 var RaisedButton = require('material-ui/lib/raised-button');
+var TextField = require('material-ui/lib/text-field');
 
 
 var SearchForm = React.createClass ({
@@ -10,7 +11,8 @@ var SearchForm = React.createClass ({
       <div className="" >
         <div className="inline-block">
           <form action={this.props.formAction} method={this.props.formMethod} onSubmit={this.props.handleSubmit} >
-            <input className="query" type="text" placeholder="Search..." onChange={this.props.handleChange}></input>
+            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
+
             <select name="select" value={this.props.queryType} onChange={this.props.handleSelect}>
               <option value="artist">Artist</option>
               <option value="release_title">Album</option>

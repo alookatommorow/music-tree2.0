@@ -11204,3 +11204,39 @@ Started GET "/search?query=jerry+garcia" for ::1 at 2015-12-25 14:05:52 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"jerry garcia"}
 Completed 200 OK in 755ms (Views: 25.0ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2015-12-25 17:02:54 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 4317ms (Views: 29.6ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2015-12-25 17:02:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 815ms (Views: 18.5ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2015-12-25 17:03:03 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 2313ms (Views: 0.8ms)
+
+
+Started GET "/search?query=Slint" for ::1 at 2015-12-25 17:03:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"Slint"}
+Completed 200 OK in 630ms (Views: 26.1ms)
+
+
+Started GET "/search?query=Slint" for ::1 at 2015-12-25 17:03:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"Slint"}
+Completed 200 OK in 593ms (Views: 16.9ms)
+
+
+Started GET "/search?query=METALLICA" for ::1 at 2015-12-25 17:03:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"METALLICA"}
+Completed 200 OK in 910ms (Views: 24.6ms)
