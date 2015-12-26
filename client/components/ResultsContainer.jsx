@@ -1,6 +1,6 @@
 var React = require('react');
-var DetailsContainer = require('./DetailsContainer.jsx')
-var DiscogContainer = require('./DiscogContainer.jsx')
+var DetailsContainer = require('./DetailsContainer.jsx');
+var DiscogContainer = require('./DiscogContainer.jsx');
 
 
 var ResultsContainer = React.createClass ({

@@ -29,6 +29,7 @@ class HomeController < ApplicationController
     def discog
         results = Discogs::Client.new.discog(params[:id])
         p "*"*100
+        p results
         p results.length
         p "*"*100
         render json: results
