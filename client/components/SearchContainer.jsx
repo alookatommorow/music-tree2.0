@@ -10,6 +10,12 @@ var SearchContainer = React.createClass({
       formMethod: 'get',
       query: null,
       queryType: "artist",
+      showSearchResults: false,
+      menuItems: [
+        { payload: 'artist', text: 'Artist' },
+        { payload: 'release_title', text: 'Album' },
+        { payload: 'track', text: 'Song' },
+      ],
     };
   },
 
@@ -19,10 +25,12 @@ var SearchContainer = React.createClass({
 
   handleSelect: function(event){
     this.setState({queryType: event.target.value});
+    console.log(this.state.queryType);
+
   },
 
   executeSearch: function(query) {
-    var data = {query: query,};
+    var data = {query: query};
     var url = this.state.url;
 
     $.ajax({
@@ -40,8 +48,8 @@ var SearchContainer = React.createClass({
   },
 
   successFunction: function(response){
-    this.setState({results: response});
-    console.log(response)
+    this.setState({results: response, showSearchResults: true});
+    console.log(response);
   },
 
   errorFunction: function(){
@@ -50,8 +58,8 @@ var SearchContainer = React.createClass({
   render: function () {
     return (
       <div className='center-text'>
-        <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
+        <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
+        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
       </div>
     );
   },

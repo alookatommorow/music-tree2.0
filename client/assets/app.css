@@ -28,3 +28,11 @@
 .red {
   background-color: red;
 }
+
+li {
+    list-style-type: none;
+}
+
+.search-button {
+  padding-left: 3%;
+}

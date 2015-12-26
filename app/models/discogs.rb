@@ -16,7 +16,18 @@ module Discogs
     end
 
     def discog(id)
-      self.class.get("/artists/#{id}/releases?page=1&per_page=100")
+
+      # (self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")).parsed_response["results"]
+      (self.class.get("/artists/#{id}/releases?&per_page=100")).parsed_response["releases"]
+      # releases = []
+      # (1..2).each do |n|
+      #   releases.push((self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100&page=#{n}")).parsed_response["results"])
+      # end
+      # (1..2).each do |n|
+      #   releases.push((self.class.get("/artists/#{id}/releases?&per_page=100&page=#{n}")).parsed_response["releases"])
+      # end
+      # releases.flatten
+      # releases.flatten
     end
 
     def headers

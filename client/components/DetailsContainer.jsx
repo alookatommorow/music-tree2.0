@@ -3,10 +3,13 @@ var React = require('react');
 var DetailsContainer = React.createClass({
   getInitialState: function(){
     return {
-      details: this.props.details,
+      details: null,
+      discogDetails: null,
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
+      discogUrl: this.props.orgin + "/discog",
       showCloseButton: false,
+
     };
   },
 
@@ -50,8 +53,9 @@ var DetailsContainer = React.createClass({
         var detailsDisplay = <div>{this.state.details['profile']}</div>
       }
       else if (this.props.queryType == "release_title") {
+        var albumYear
         var detailsDisplay = this.state.details['tracklist'].map(function(track, index){
-          return <div>{index+1}. {track['title']}</div>
+          return <div><div>{index+1}. {track['title']}</div></div>
         });
       }
 
