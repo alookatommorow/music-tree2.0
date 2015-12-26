@@ -11414,3 +11414,111 @@ Started GET "/artist_info?id=136188" for ::1 at 2015-12-25 22:41:52 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"136188"}
 Completed 200 OK in 2834ms (Views: 1.8ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-26 00:02:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 603ms (Views: 22.0ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-26 00:03:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 742ms (Views: 23.4ms)
+
+
+Started GET "/search?query=waiting+for+the+sun" for ::1 at 2015-12-26 00:06:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"waiting for the sun"}
+Completed 200 OK in 867ms (Views: 28.5ms)
+
+
+Started GET "/search?query=waiting+for+the+sun" for ::1 at 2015-12-26 00:07:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"waiting for the sun"}
+Completed 200 OK in 332ms (Views: 28.5ms)
+
+
+Started GET "/search?query=waiting" for ::1 at 2015-12-26 00:08:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"waiting"}
+Completed 200 OK in 1226ms (Views: 19.7ms)
+
+
+Started GET "/search?query=waiting" for ::1 at 2015-12-26 00:08:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"waiting"}
+Completed 200 OK in 332ms (Views: 26.7ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-26 00:09:38 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 345ms (Views: 17.3ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2015-12-26 00:10:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 316ms (Views: 21.1ms)
+
+
+Started GET "/album_info?id=38356" for ::1 at 2015-12-26 00:11:06 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"38356"}
+Completed 200 OK in 285ms (Views: 7.4ms)
+
+
+Started GET "/search?query=deadmau5" for ::1 at 2015-12-26 00:14:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 718ms (Views: 16.9ms)
+
+
+Started GET "/artist_info?id=257938" for ::1 at 2015-12-26 00:14:38 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"257938"}
+Completed 200 OK in 638ms (Views: 1.4ms)
+
+
+Started GET "/discog?id=257938" for ::1 at 2015-12-26 00:14:59 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"257938"}
+Completed 200 OK in 967ms (Views: 11.5ms)
+
+
+Started GET "/discog?id=55905" for ::1 at 2015-12-26 00:15:17 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"55905"}
+Completed 200 OK in 590ms (Views: 6.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-26 00:15:26 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 321ms (Views: 25.8ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2015-12-26 00:15:29 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 989ms (Views: 17.0ms)
+
+
+Started GET "/discog?id=369910" for ::1 at 2015-12-26 00:16:26 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"369910"}
+Completed 200 OK in 821ms (Views: 14.1ms)
+
+
+Started GET "/search?query=weezer" for ::1 at 2015-12-26 00:18:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"weezer"}
+Completed 200 OK in 1046ms (Views: 23.7ms)
+
+
+Started GET "/discog?id=105730" for ::1 at 2015-12-26 00:19:04 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"105730"}
+Completed 200 OK in 790ms (Views: 8.8ms)

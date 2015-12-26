@@ -4,7 +4,7 @@ var Header = React.createClass ({
   render: function () {
     return (
       <div>
-        <img src="https://storage.googleapis.com/west-coast-skateparks/musictree.png"></img>
+        <img className="header-image" src="https://storage.googleapis.com/west-coast-skateparks/musictree.png"></img>
       </div>
     );
   },

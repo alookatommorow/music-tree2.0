@@ -11,19 +11,19 @@ var Result = React.createClass ({
         //if artist search
         if (this.props.queryType == "artist") {
           if (this.props.result.type == "artist") {
-            var resultDisplay = <ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} details={null} /> <DiscogContainer query={this.props.query} resultsKey={this.props.resultsKey} origin={this.props.origin} results={this.props.results}/></ListItem>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} /> <DiscogContainer query={this.props.query} resultsKey={this.props.resultsKey} origin={this.props.origin} results={this.props.results}/></ListItem></div>;
           }
         }
         //if album search
-        else if (queryType == "release_title") {
-          if (result.type == "master") {
-            var resultDisplay = <li key={result.uri}><img src={result.thumb}></img> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
+        else if (this.props.queryType == "release_title") {
+          if (this.props.result.type == "master") {
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} /> </ListItem></div>;
           }
         }
         //if song search
-        else if (queryType == "track") {
-          if (result.type == "master") {
-            var resultDisplay = <li key={result.uri}> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
+        else if (this.props.queryType == "track") {
+          if (this.props.result.type == "master") {
+            var resultDisplay = <div><ListItem> {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} /> </ListItem></div>;
           }
         }
 
