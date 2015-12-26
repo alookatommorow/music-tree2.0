@@ -11384,3 +11384,33 @@ Started GET "/artist_info?id=10671" for ::1 at 2015-12-25 21:33:00 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"10671"}
 Completed 200 OK in 3242ms (Views: 0.7ms)
+
+
+Started GET "/artist_info?id=10671" for ::1 at 2015-12-25 21:39:14 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"10671"}
+Completed 200 OK in 223ms (Views: 0.8ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-25 22:38:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1509ms (Views: 21.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-25 22:40:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 3521ms (Views: 17.7ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-25 22:41:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 772ms (Views: 22.9ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2015-12-25 22:41:52 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 2834ms (Views: 1.8ms)
