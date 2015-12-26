@@ -11600,3 +11600,27 @@ Started GET "/artist_info?id=105730" for ::1 at 2015-12-26 01:13:14 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"105730"}
 Completed 200 OK in 255ms (Views: 2.9ms)
+
+
+Started GET "/search?query=cheap+trick" for ::1 at 2015-12-26 01:16:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"cheap trick"}
+Completed 200 OK in 1435ms (Views: 31.9ms)
+
+
+Started GET "/search?query=deep+purple" for ::1 at 2015-12-26 01:17:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deep purple"}
+Completed 200 OK in 1898ms (Views: 31.7ms)
+
+
+Started GET "/album_info?id=983" for ::1 at 2015-12-26 01:17:50 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"983"}
+Completed 200 OK in 310ms (Views: 3.5ms)
+
+
+Started GET "/album_info?id=1439" for ::1 at 2015-12-26 01:18:01 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"1439"}
+Completed 200 OK in 714ms (Views: 3.6ms)

@@ -61,7 +61,7 @@ var Result = React.createClass ({
         //if album search
         else if (this.props.queryType == "release_title") {
           if (this.props.result.type == "master") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} /> </ListItem></div>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem></div>;
           }
         }
         //if song search
