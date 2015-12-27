@@ -11750,3 +11750,159 @@ Started GET "/artist_info?id=268332" for ::1 at 2015-12-26 01:36:09 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"268332"}
 Completed 200 OK in 222ms (Views: 2.0ms)
+
+
+Started GET "/search?query=blitz" for ::1 at 2015-12-26 10:46:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"blitz"}
+Completed 200 OK in 1000ms (Views: 11.8ms)
+
+
+Started GET "/artist_info?id=263624" for ::1 at 2015-12-26 10:46:47 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"263624"}
+Completed 200 OK in 2185ms (Views: 2.0ms)
+
+
+Started GET "/artist_info?id=263624" for ::1 at 2015-12-26 10:47:07 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"263624"}
+Completed 200 OK in 388ms (Views: 2.7ms)
+
+
+Started GET "/artist_info?id=263624" for ::1 at 2015-12-26 10:47:12 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"263624"}
+Completed 200 OK in 336ms (Views: 1.9ms)
+
+
+Started GET "/search?query=black+flag" for ::1 at 2015-12-26 10:48:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"black flag"}
+Completed 200 OK in 1323ms (Views: 17.6ms)
+
+
+Started GET "/artist_info?id=253278" for ::1 at 2015-12-26 10:48:54 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"253278"}
+Completed 200 OK in 885ms (Views: 7.4ms)
+
+
+Started GET "/artist_info?id=253278" for ::1 at 2015-12-26 10:49:16 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"253278"}
+Completed 200 OK in 312ms (Views: 1.9ms)
+
+
+Started GET "/search?query=black+sabbath" for ::1 at 2015-12-26 10:49:45 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"black sabbath"}
+Completed 200 OK in 2006ms (Views: 32.5ms)
+
+
+Started GET "/artist_info?id=144998" for ::1 at 2015-12-26 10:49:50 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"144998"}
+Completed 200 OK in 1722ms (Views: 7.3ms)
+
+
+Started GET "/search?query=black+sabbath" for ::1 at 2015-12-26 10:51:28 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"black sabbath"}
+Completed 200 OK in 329ms (Views: 29.5ms)
+
+
+Started GET "/artist_info?id=144998" for ::1 at 2015-12-26 10:51:32 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"144998"}
+Completed 200 OK in 269ms (Views: 3.6ms)
+
+
+Started GET "/search?query=black+sabbath" for ::1 at 2015-12-26 10:52:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"black sabbath"}
+Completed 200 OK in 369ms (Views: 23.8ms)
+
+
+Started GET "/artist_info?id=144998" for ::1 at 2015-12-26 10:52:43 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"144998"}
+Completed 200 OK in 273ms (Views: 5.3ms)
+
+
+Started GET "/search?query=black+sabbath" for ::1 at 2015-12-26 10:53:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"black sabbath"}
+Completed 200 OK in 934ms (Views: 33.9ms)
+
+
+Started GET "/artist_info?id=144998" for ::1 at 2015-12-26 10:53:18 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"144998"}
+Completed 200 OK in 1048ms (Views: 3.5ms)
+
+
+Started GET "/artist_info?id=685620" for ::1 at 2015-12-26 10:54:17 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"685620"}
+Completed 200 OK in 262ms (Views: 0.8ms)
+
+
+Started GET "/search?query=deep+purple" for ::1 at 2015-12-26 17:38:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deep purple"}
+Completed 200 OK in 4585ms (Views: 19.9ms)
+
+
+Started GET "/artist_info?id=170355" for ::1 at 2015-12-26 17:39:18 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"170355"}
+Completed 200 OK in 4109ms (Views: 3.2ms)
+
+
+Started GET "/search?query=deep+purple" for ::1 at 2015-12-26 17:41:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deep purple"}
+Completed 200 OK in 890ms (Views: 23.1ms)
+
+
+Started GET "/search?query=savoy+brown" for ::1 at 2015-12-26 17:41:43 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"savoy brown"}
+Completed 200 OK in 727ms (Views: 15.7ms)
+
+
+Started GET "/artist_info?id=243020" for ::1 at 2015-12-26 17:41:59 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"243020"}
+Completed 200 OK in 4632ms (Views: 2.0ms)
+
+
+Started GET "/search?query=devo" for ::1 at 2015-12-26 17:44:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"devo"}
+Completed 200 OK in 2678ms (Views: 16.1ms)
+
+
+Started GET "/artist_info?id=12834" for ::1 at 2015-12-26 17:44:53 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"12834"}
+Completed 200 OK in 1329ms (Views: 4.2ms)
+
+
+Started GET "/search?query=ted+nugent" for ::1 at 2015-12-26 18:10:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ted nugent"}
+Completed 200 OK in 1017ms (Views: 20.8ms)
+
+
+Started GET "/artist_info?id=265835" for ::1 at 2015-12-26 18:10:24 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"265835"}
+Completed 200 OK in 562ms (Views: 1.1ms)
+
+
+Started GET "/artist_info?id=252486" for ::1 at 2015-12-26 18:10:47 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"252486"}
+Completed 200 OK in 282ms (Views: 1.2ms)

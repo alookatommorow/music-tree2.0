@@ -1,4 +1,5 @@
 var React = require('react');
+
 var DetailsContainer = require('./DetailsContainer.jsx');
 var DiscogContainer = require('./DiscogContainer.jsx');
 var ListItem = require('material-ui/lib/lists/list-item');
@@ -55,13 +56,13 @@ var Result = React.createClass ({
         //if artist search
         if (this.props.queryType == "artist") {
           if (this.props.result.type == "artist") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > <div className='inline-block big-text' >{this.props.result.title} </div><div className='inline-block right' ><FlatButton onClick={this.handleDetailClick} label='Artist Details'/></div> <DiscogContainer query={this.props.query} resultsKey={this.props.resultsKey} origin={this.props.origin} results={this.props.results}/><DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/></ListItem> </div>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > <div className='inline-block big-text' >{this.props.result.title} </div><div className='inline-block right' ><FlatButton onClick={this.handleDetailClick} label='Artist Details'/></div> <DiscogContainer query={this.props.query} resultsKey={this.props.resultsKey} origin={this.props.origin} results={this.props.results}/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem>  </div>;
           }
         }
         //if album search
         else if (this.props.queryType == "release_title") {
           if (this.props.result.type == "master") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem></div>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem> </div>;
           }
         }
         //if song search

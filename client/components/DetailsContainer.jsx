@@ -18,9 +18,14 @@ var DetailsContainer = React.createClass({
 
     };
     return (
-        <div className="detailsDisplay">
-          {detailsDisplay}
-          {this.props.showCloseButton ? closeButton : null}
+        <div className="details-display">
+          <div className="right">
+            {this.props.showCloseButton ? closeButton : null}
+          </div>
+          <div className="left-text">
+            {detailsDisplay}
+          </div>
+
         </div>
       );
   },

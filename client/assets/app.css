@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.left-text {
+  text-align: left;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -52,4 +56,10 @@ li {
 
 .big-text {
   font-size: 1em;
+}
+
+.details-display {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%
 }
