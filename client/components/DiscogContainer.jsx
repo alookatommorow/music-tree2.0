@@ -1,10 +1,10 @@
 var React = require('react');
-
+var FlatButton = require('material-ui/lib/flat-button');
 
 var DiscogContainer = React.createClass({
 
   render: function(){
-    var closeButton = <div><button onClick={this.props.handleCloseClick}>Close</button></div>
+    var closeButton = <FlatButton label='Close' onClick={this.props.handleCloseClick}/>
 
 
     if (this.props.details !== null) {

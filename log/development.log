@@ -12056,3 +12056,15 @@ Started GET "/discog?id=51039" for ::1 at 2015-12-27 21:08:28 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"51039"}
 Completed 200 OK in 1636ms (Views: 11.1ms)
+
+
+Started GET "/search?query=tom+waits" for ::1 at 2015-12-27 21:13:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"tom waits"}
+Completed 200 OK in 1096ms (Views: 28.3ms)
+
+
+Started GET "/discog?id=82294" for ::1 at 2015-12-27 21:13:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"82294"}
+Completed 200 OK in 1453ms (Views: 12.6ms)
