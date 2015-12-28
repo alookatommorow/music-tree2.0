@@ -37,14 +37,6 @@
   float: right;
 }
 
-li {
-    list-style-type: none;
-}
-
-.search-button {
-  padding-left: 3%;
-}
-
 .results-container {
   padding-left: 15%;
   padding-right: 15%;
@@ -62,4 +54,8 @@ li {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 2%
+}
+
+.one-left {
+  padding-left: 1%;
 }

@@ -13,13 +13,22 @@ var Result = React.createClass ({
       discogDetails: null,
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
-      discogUrl: this.props.orgin + "/discog",
+      discogUrl: this.props.origin + "/discog",
       showDetailsCloseButton: false,
+      showDiscogCloseButton: false,
     };
   },
 
   handleDetailClick: function() {
     this.executeDetail(this.props.resultsKey);
+  },
+
+  handleDiscogClick: function() {
+    this.executeDiscog(this.props.resultsKey);
+  },
+
+  handleDiscogCloseClick: function(){
+    this.setState({discogDetails: null, showDiscogCloseButton: false});
   },
 
   handleDetailCloseClick: function(){
@@ -38,12 +47,33 @@ var Result = React.createClass ({
       url: url,
       data: data,
       dataType: 'json',
-      success: this.successFunction,
+      success: this.detailSuccessFunction,
       error: this.errorFunction,
     });
   },
 
-  successFunction: function(response){
+  executeDiscog: function(resultsKey) {
+    console.log(this.state.discogUrl)
+    var data = {id: this.props.results[resultsKey]["id"]};
+
+
+    $.ajax({
+      url: this.state.discogUrl,
+      // data: {query: this.props.query},
+      data: data,
+      dataType: 'json',
+      success: this.discogSuccessFunction,
+      error: this.errorFunction,
+    });
+
+  },
+
+  discogSuccessFunction: function(response){
+    this.setState({discogDetails: response, showDiscogCloseButton: true});
+    console.log(response);
+  },
+
+  detailSuccessFunction: function(response){
     this.setState({detailsDetails: response, showDetailsCloseButton: true});
   },
 
@@ -56,7 +86,7 @@ var Result = React.createClass ({
         //if artist search
         if (this.props.queryType == "artist") {
           if (this.props.result.type == "artist") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > <div className='inline-block big-text' >{this.props.result.title} </div><div className='inline-block right' ><FlatButton onClick={this.handleDetailClick} label='Artist Details'/></div> <DiscogContainer query={this.props.query} resultsKey={this.props.resultsKey} origin={this.props.origin} results={this.props.results}/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem>  </div>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <div><FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/> </div><div> <FlatButton className='right' onClick={this.handleDiscogClick} label='Discography'/> </div> <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem>  </div>;
           }
         }
         //if album search

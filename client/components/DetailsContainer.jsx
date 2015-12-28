@@ -19,13 +19,12 @@ var DetailsContainer = React.createClass({
     };
     return (
         <div className="details-display">
-          <div className="right">
+          <div className="right one-left">
             {this.props.showCloseButton ? closeButton : null}
           </div>
           <div className="left-text">
             {detailsDisplay}
           </div>
-
         </div>
       );
   },
