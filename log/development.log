@@ -12068,3 +12068,165 @@ Started GET "/discog?id=82294" for ::1 at 2015-12-27 21:13:49 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"82294"}
 Completed 200 OK in 1453ms (Views: 12.6ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2015-12-27 21:20:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 2472ms (Views: 31.4ms)
+
+
+Started GET "/discog?id=56206" for ::1 at 2015-12-27 21:20:24 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 1865ms (Views: 5.4ms)
+
+
+Started GET "/search?query=mercyful+fate" for ::1 at 2015-12-27 23:40:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"mercyful fate"}
+Completed 200 OK in 4568ms (Views: 37.9ms)
+
+
+Started GET "/discog?id=251799" for ::1 at 2015-12-27 23:40:51 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"251799"}
+Completed 200 OK in 4006ms (Views: 19.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-27 23:41:26 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2920ms (Views: 44.5ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2015-12-27 23:41:31 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 7522ms (Views: 15.0ms)
+
+
+Started GET "/search?query=gene+kroupa" for ::1 at 2015-12-27 23:43:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"gene kroupa"}
+Completed 200 OK in 3993ms (Views: 0.2ms)
+
+
+Started GET "/search?query=gene+krupa" for ::1 at 2015-12-27 23:43:49 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"gene krupa"}
+Completed 200 OK in 5035ms (Views: 37.9ms)
+
+
+Started GET "/discog?id=258689" for ::1 at 2015-12-27 23:44:08 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"258689"}
+Completed 200 OK in 4258ms (Views: 23.0ms)
+
+
+Started GET "/search?query=creedence" for ::1 at 2015-12-27 23:48:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"creedence"}
+Completed 200 OK in 5161ms (Views: 50.1ms)
+
+
+Started GET "/discog?id=252102" for ::1 at 2015-12-27 23:48:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"252102"}
+Completed 200 OK in 7391ms (Views: 14.8ms)
+
+
+Started GET "/search?query=cream" for ::1 at 2015-12-27 23:53:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"cream"}
+Completed 200 OK in 8682ms (Views: 35.0ms)
+
+
+Started GET "/discog?id=229621" for ::1 at 2015-12-27 23:53:46 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"229621"}
+Completed 200 OK in 7880ms (Views: 16.7ms)
+
+
+Started GET "/search?query=queen" for ::1 at 2015-12-29 23:31:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"queen"}
+Completed 200 OK in 1455ms (Views: 15.7ms)
+
+
+Started GET "/discog?id=81013" for ::1 at 2015-12-29 23:32:07 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"81013"}
+Completed 200 OK in 2815ms (Views: 9.0ms)
+
+
+Started GET "/search?query=allman+brothers" for ::1 at 2015-12-29 23:33:54 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"allman brothers"}
+Completed 200 OK in 776ms (Views: 23.6ms)
+
+
+Started GET "/discog?id=110253" for ::1 at 2015-12-29 23:34:08 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"110253"}
+Completed 200 OK in 985ms (Views: 10.6ms)
+
+
+Started GET "/album_info?id=17243" for ::1 at 2015-12-29 23:37:50 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"17243"}
+Completed 200 OK in 298ms (Views: 6.9ms)
+
+
+Started GET "/album_info?id=17260" for ::1 at 2015-12-29 23:39:11 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"17260"}
+Completed 200 OK in 253ms (Views: 4.0ms)
+
+
+Started GET "/album_info?id=25255" for ::1 at 2015-12-29 23:45:03 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"25255"}
+Completed 200 OK in 279ms (Views: 3.2ms)
+
+
+Started GET "/search?query=iron+maiden" for ::1 at 2015-12-29 23:47:31 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden"}
+Completed 200 OK in 983ms (Views: 26.7ms)
+
+
+Started GET "/artist_info?id=1240024" for ::1 at 2015-12-29 23:47:40 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"1240024"}
+Completed 200 OK in 758ms (Views: 0.9ms)
+
+
+Started GET "/discog?id=1240024" for ::1 at 2015-12-29 23:47:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"1240024"}
+Completed 200 OK in 269ms (Views: 2.7ms)
+
+
+Started GET "/search?query=mayhem" for ::1 at 2015-12-29 23:50:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"mayhem"}
+Completed 200 OK in 533ms (Views: 18.2ms)
+
+
+Started GET "/discog?id=14092" for ::1 at 2015-12-29 23:50:08 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"14092"}
+Completed 200 OK in 869ms (Views: 16.4ms)
+
+
+Started GET "/search?query=mayhem" for ::1 at 2015-12-29 23:50:29 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"mayhem"}
+Completed 200 OK in 227ms (Views: 17.3ms)
+
+
+Started GET "/discog?id=14092" for ::1 at 2015-12-29 23:50:32 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"14092"}
+Completed 200 OK in 289ms (Views: 21.5ms)

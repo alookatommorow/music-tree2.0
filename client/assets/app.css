@@ -13,9 +13,9 @@
   box-shadow: none;
 }
 
-/** {
+* {
   border: 1px solid red;
-}*/
+}
 
 .center-text {
   text-align: center;

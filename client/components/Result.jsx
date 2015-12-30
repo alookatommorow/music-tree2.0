@@ -86,7 +86,7 @@ var Result = React.createClass ({
         //if artist search
         if (this.props.queryType == "artist") {
           if (this.props.result.type == "artist") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <div><FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/> </div><div> <FlatButton className='right' onClick={this.handleDiscogClick} label='Discography'/> </div> <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem>  </div>;
+            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <div><FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/> </div><div> <FlatButton className='right' onClick={this.handleDiscogClick} label='Discography'/> </div> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/> </ListItem>  </div>;
           }
         }
         //if album search

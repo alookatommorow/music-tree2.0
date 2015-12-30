@@ -1,5 +1,7 @@
 var React = require('react');
 var FlatButton = require('material-ui/lib/flat-button');
+var ListItem = require('material-ui/lib/lists/list-item');
+var Album = require('./Album.jsx')
 
 var DiscogContainer = React.createClass({
 
@@ -14,7 +16,7 @@ var DiscogContainer = React.createClass({
 
       var discogDisplay = albums.map(function(album, index){
         if (album["type"] === "master"){
-          return <div>{album.title} {album.year}</div>
+          return <ListItem>{album.title} {album.year}</ListItem>
           // return <div>{album["title"]} {album.year}</div>
         }
       });
@@ -35,10 +37,10 @@ var DiscogContainer = React.createClass({
     return(
       <div>
         <div className="details-display">
-          <div className="right one-left">
+          <div className="">
             {this.props.showCloseButton ? closeButton : null}
           </div>
-          <div className="left-text">
+          <div>
             {discogDisplay}
           </div>
         </div>

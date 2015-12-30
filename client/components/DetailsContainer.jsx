@@ -1,7 +1,7 @@
 var React = require('react');
 var FlatButton = require('material-ui/lib/flat-button');
 
-var DetailsContainer = React.createClass({
+var DetailsContainer = React.createClass ({
 
   render: function(){
     var closeButton = <FlatButton label='Close' onClick={this.props.handleCloseClick}/>
