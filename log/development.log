@@ -12230,3 +12230,99 @@ Started GET "/discog?id=14092" for ::1 at 2015-12-29 23:50:32 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"14092"}
 Completed 200 OK in 289ms (Views: 21.5ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-30 19:35:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 740ms (Views: 64.0ms)
+
+
+Started GET "/search?query=van+halen" for ::1 at 2015-12-30 21:59:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"van halen"}
+Completed 200 OK in 2086ms (Views: 23.6ms)
+
+
+Started GET "/discog?id=211671" for ::1 at 2015-12-30 21:59:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"211671"}
+Completed 200 OK in 1096ms (Views: 12.7ms)
+
+
+Started GET "/search?query=devo" for ::1 at 2015-12-30 22:00:28 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"devo"}
+Completed 200 OK in 969ms (Views: 21.9ms)
+
+
+Started GET "/search?query=ratatat" for ::1 at 2015-12-30 22:08:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ratatat"}
+Completed 200 OK in 772ms (Views: 23.4ms)
+
+
+Started GET "/search?query=ratatat" for ::1 at 2015-12-30 22:08:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ratatat"}
+Completed 200 OK in 252ms (Views: 22.5ms)
+
+
+Started GET "/artist_info?id=158120" for ::1 at 2015-12-30 22:08:43 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"158120"}
+Completed 200 OK in 264ms (Views: 0.8ms)
+
+
+Started GET "/discog?id=158120" for ::1 at 2015-12-30 22:08:50 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"158120"}
+Completed 200 OK in 701ms (Views: 16.7ms)
+
+
+Started GET "/discog?id=1528044" for ::1 at 2015-12-30 22:16:22 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"1528044"}
+Completed 200 OK in 253ms (Views: 0.4ms)
+
+
+Started GET "/artist_info?id=1528044" for ::1 at 2015-12-30 22:16:26 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"1528044"}
+Completed 200 OK in 324ms (Views: 0.8ms)
+
+
+Started GET "/discog?id=620" for ::1 at 2015-12-30 22:16:32 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"620"}
+Completed 200 OK in 408ms (Views: 3.7ms)
+
+
+Started GET "/artist_info?id=803976" for ::1 at 2015-12-30 22:16:45 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"803976"}
+Completed 200 OK in 248ms (Views: 1.5ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2015-12-30 22:39:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1081ms (Views: 37.7ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2015-12-30 22:39:28 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 1101ms (Views: 9.1ms)
+
+
+Started GET "/search?query=soundgarden" for ::1 at 2015-12-30 22:40:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"soundgarden"}
+Completed 200 OK in 814ms (Views: 21.7ms)
+
+
+Started GET "/discog?id=105731" for ::1 at 2015-12-30 22:40:22 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"105731"}
+Completed 200 OK in 910ms (Views: 11.7ms)

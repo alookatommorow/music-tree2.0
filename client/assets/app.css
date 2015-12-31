@@ -13,7 +13,7 @@
   box-shadow: none;
 }
 
-* {
+.debug {
   border: 1px solid red;
 }
 
@@ -58,4 +58,8 @@
 
 .one-left {
   padding-left: 1%;
+}
+
+.relative {
+  position: relative;
 }
