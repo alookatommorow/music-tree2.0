@@ -16,7 +16,7 @@ var DiscogContainer = React.createClass({
 
       var discogDisplay = albums.map(function(album, index){
         if (album["type"] === "master"){
-          return <Album albumTitle={album.title} albumYear={album.year} />
+          return <Album key={album.id} albumTitle={album.title} albumYear={album.year} />
         }
       });
       // var discogDisplay = albums.map(function(album){

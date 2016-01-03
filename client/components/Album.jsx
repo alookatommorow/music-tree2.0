@@ -1,5 +1,6 @@
 var React = require('react');
 var ListItem = require('material-ui/lib/lists/list-item');
+var FlatButton = require('material-ui/lib/flat-button');
 
 var Album = React.createClass ({
   getInitialState: function(){
@@ -10,10 +11,28 @@ var Album = React.createClass ({
     };
   },
 
+  handleDetailClick: function() {
+    this.executeDetail(this.props.key);
+  },
+
+  executeDetail: function(albumKey) {
+    $.ajax({
+      url: this.state.url,
+      data: albumKey,
+      dataType: 'json',
+      success: this.successFunction,
+      error: this.errorFunction,
+    });
+  },
+
+  successFunction: function(response){
+    this.setState({details: response, showCloseButton: true});
+  },
+
   render: function () {
     return (
         <div>
-          <ListItem>{this.props.albumTitle} {this.props.albumYear}</ListItem>
+          <ListItem>{this.props.albumTitle} {this.props.albumYear} <FlatButton onClick={this.handleClick} className='' label='Album Details'/> </ListItem>
         </div>
     );
   },

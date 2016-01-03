@@ -12332,3 +12332,93 @@ Started GET "/artist_info?id=49143" for ::1 at 2015-12-30 23:10:26 -0800
 Processing by HomeController#artist_info as HTML
   Parameters: {"id"=>"49143"}
 Completed 200 OK in 808ms (Views: 8.8ms)
+
+
+Started GET "/search?query=reo+speedwagon" for ::1 at 2016-01-02 23:51:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"reo speedwagon"}
+Completed 200 OK in 921ms (Views: 43.2ms)
+
+
+Started GET "/discog?id=254406" for ::1 at 2016-01-02 23:51:19 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"254406"}
+Completed 200 OK in 895ms (Views: 28.9ms)
+
+
+Started GET "/search?query=grand+funk+railroad" for ::1 at 2016-01-02 23:51:45 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"grand funk railroad"}
+Completed 200 OK in 686ms (Views: 58.9ms)
+
+
+Started GET "/discog?id=122458" for ::1 at 2016-01-02 23:51:48 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"122458"}
+Completed 200 OK in 875ms (Views: 9.8ms)
+
+
+Started GET "/discog?id=122458" for ::1 at 2016-01-02 23:51:48 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"122458"}
+Completed 200 OK in 273ms (Views: 19.4ms)
+
+
+Started GET "/search?query=slayer" for ::1 at 2016-01-02 23:57:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slayer"}
+Completed 200 OK in 678ms (Views: 19.0ms)
+
+
+Started GET "/discog?id=18845" for ::1 at 2016-01-02 23:57:05 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"18845"}
+Completed 200 OK in 1211ms (Views: 14.2ms)
+
+
+Started GET "/search?query=suicidal+tendencies" for ::1 at 2016-01-03 00:01:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"suicidal tendencies"}
+Completed 200 OK in 783ms (Views: 28.0ms)
+
+
+Started GET "/discog?id=137127" for ::1 at 2016-01-03 00:01:13 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"137127"}
+Completed 200 OK in 861ms (Views: 14.1ms)
+
+
+Started GET "/search?query=mayhem" for ::1 at 2016-01-03 00:02:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"mayhem"}
+Completed 200 OK in 509ms (Views: 11.2ms)
+
+
+Started GET "/discog?id=14092" for ::1 at 2016-01-03 00:02:05 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"14092"}
+Completed 200 OK in 937ms (Views: 11.8ms)
+
+
+Started GET "/search?query=elton+john" for ::1 at 2016-01-03 00:02:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"elton john"}
+Completed 200 OK in 810ms (Views: 30.2ms)
+
+
+Started GET "/discog?id=57103" for ::1 at 2016-01-03 00:03:02 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"57103"}
+Completed 200 OK in 2854ms (Views: 10.4ms)
+
+
+Started GET "/search?query=metallica" for ::1 at 2016-01-03 00:10:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"metallica"}
+Completed 200 OK in 1367ms (Views: 26.2ms)
+
+
+Started GET "/discog?id=18839" for ::1 at 2016-01-03 00:10:18 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"18839"}
+Completed 200 OK in 1829ms (Views: 19.4ms)
