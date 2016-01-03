@@ -12326,3 +12326,9 @@ Started GET "/discog?id=105731" for ::1 at 2015-12-30 22:40:22 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"105731"}
 Completed 200 OK in 910ms (Views: 11.7ms)
+
+
+Started GET "/artist_info?id=49143" for ::1 at 2015-12-30 23:10:26 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"49143"}
+Completed 200 OK in 808ms (Views: 8.8ms)
