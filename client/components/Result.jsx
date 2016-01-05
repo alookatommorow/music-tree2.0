@@ -1,10 +1,9 @@
 var React = require('react');
-
 var DetailsContainer = require('./DetailsContainer.jsx');
 var DiscogContainer = require('./DiscogContainer.jsx');
 var ListItem = require('material-ui/lib/lists/list-item');
 var Avatar = require('material-ui/lib/avatar');
-var FlatButton = require('material-ui/lib/flat-button');
+var RaisedButton = require('material-ui/lib/raised-button');
 
 var Result = React.createClass ({
   getInitialState: function(){
@@ -89,10 +88,10 @@ var Result = React.createClass ({
               <ListItem className="left-text">
                 <div className="right center-text">
                   <div className='two-bottom'>
-                    <FlatButton secondary={true} onClick={this.handleDetailClick} label='Artist Details'/>
+                    <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
                   </div>
                   <div>
-                    <FlatButton secondary={true} onClick={this.handleDiscogClick} label='Discography'/>
+                    <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
                   </div>
                 </div>
                 <div>
@@ -113,7 +112,7 @@ var Result = React.createClass ({
             var resultDisplay =
             <ListItem className="left-text">
               <div className="right center-text">
-                <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
+                <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
               </div>
               <div>
                 <img src={this.props.picSource} className="left two-right"></img>
