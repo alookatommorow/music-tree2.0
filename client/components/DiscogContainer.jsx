@@ -1,7 +1,7 @@
 var React = require('react');
 var FlatButton = require('material-ui/lib/flat-button');
 var ListItem = require('material-ui/lib/lists/list-item');
-var Album = require('./Album.jsx')
+var AlbumContainer = require('./AlbumContainer.jsx')
 
 var DiscogContainer = React.createClass({
 
@@ -16,7 +16,7 @@ var DiscogContainer = React.createClass({
 
       var discogDisplay = albums.map(function(album, index){
         if (album["type"] === "master"){
-          return <Album key={album.id} albumTitle={album.title} albumYear={album.year} />
+          return <AlbumContainer key={album.resource_url} albumTitle={album.title} albumYear={album.year} />
         }
       });
       // var discogDisplay = albums.map(function(album){

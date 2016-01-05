@@ -37,6 +37,14 @@
   float: right;
 }
 
+.left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
 .results-container {
   padding-left: 15%;
   padding-right: 15%;
@@ -56,10 +64,28 @@
   padding-top: 2%
 }
 
+.result-title {
+  padding-left: 2%;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
 .one-left {
   padding-left: 1%;
 }
 
+.two-right {
+  padding-right: 2%;
+}
+
+.right-clear {
+  clear: right;
+}
+
 .relative {
   position: relative;
+}
+
+.query input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }

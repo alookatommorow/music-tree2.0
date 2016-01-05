@@ -69,6 +69,7 @@ var Result = React.createClass ({
 
   discogSuccessFunction: function(response){
     this.setState({discogDetails: response, showDiscogCloseButton: true});
+    console.log(response);
   },
 
   detailSuccessFunction: function(response){
@@ -84,13 +85,33 @@ var Result = React.createClass ({
         //if artist search
         if (this.props.queryType == "artist") {
           if (this.props.result.type == "artist") {
-            var resultDisplay = <div className="relative" ><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <div><FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/> </div><div> <FlatButton className='right' onClick={this.handleDiscogClick} label='Discography'/> </div> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/> </ListItem>  </div>;
+            var resultDisplay =
+              <ListItem className="left-text">
+                <img src={this.props.picSource} className="left two-right"></img>
+                <div className="result-title">
+                  {this.props.result.title}
+                </div>
+                <FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/>
+                <FlatButton className='right right-clear' onClick={this.handleDiscogClick} label='Discography'/>
+                <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+                <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
+                <div className="clear-both"></div>
+              </ListItem>;
           }
         }
         //if album search
         else if (this.props.queryType == "release_title") {
           if (this.props.result.type == "master") {
-            var resultDisplay = <div><ListItem leftAvatar={<Avatar src={this.props.picSource} size={75} />} > {this.props.result.title} <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/> <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/> </ListItem> </div>;
+            var resultDisplay =
+            <div>
+              <ListItem>
+                <img src={this.props.picSource} className="left"></img>
+                {this.props.result.title}
+                <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
+                <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+                <div className="clear-both"></div>
+              </ListItem>
+            </div>;
           }
         }
         //if song search

@@ -2,7 +2,7 @@ var React = require('react');
 var ListItem = require('material-ui/lib/lists/list-item');
 var FlatButton = require('material-ui/lib/flat-button');
 
-var Album = React.createClass ({
+var AlbumContainer = React.createClass ({
   getInitialState: function(){
     return {
       details: null,
@@ -39,4 +39,4 @@ var Album = React.createClass ({
 
 });
 
-module.exports = Album;
+module.exports = AlbumContainer;
