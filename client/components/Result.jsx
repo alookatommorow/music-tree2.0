@@ -87,12 +87,20 @@ var Result = React.createClass ({
           if (this.props.result.type == "artist") {
             var resultDisplay =
               <ListItem className="left-text">
-                <img src={this.props.picSource} className="left two-right"></img>
-                <div className="result-title">
-                  {this.props.result.title}
+                <div className="right center-text">
+                  <div className='two-bottom'>
+                    <FlatButton secondary={true} onClick={this.handleDetailClick} label='Artist Details'/>
+                  </div>
+                  <div>
+                    <FlatButton secondary={true} onClick={this.handleDiscogClick} label='Discography'/>
+                  </div>
                 </div>
-                <FlatButton className='right' onClick={this.handleDetailClick} label='Artist Details'/>
-                <FlatButton className='right right-clear' onClick={this.handleDiscogClick} label='Discography'/>
+                <div>
+                  <img src={this.props.picSource} className="left two-right"></img>
+                  <div className="result-title">
+                    {this.props.result.title}
+                  </div>
+                </div>
                 <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
                 <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
                 <div className="clear-both"></div>
@@ -103,21 +111,29 @@ var Result = React.createClass ({
         else if (this.props.queryType == "release_title") {
           if (this.props.result.type == "master") {
             var resultDisplay =
-            <div>
-              <ListItem>
-                <img src={this.props.picSource} className="left"></img>
-                {this.props.result.title}
+            <ListItem className="left-text">
+              <div className="right center-text">
                 <FlatButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
-                <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
-                <div className="clear-both"></div>
-              </ListItem>
-            </div>;
+              </div>
+              <div>
+                <img src={this.props.picSource} className="left two-right"></img>
+                <div className="result-title">
+                  {this.props.result.title}
+                </div>
+              </div>
+              <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+              <div className="clear-both"></div>
+            </ListItem>
           }
         }
         //if song search
         else if (this.props.queryType == "track") {
           if (this.props.result.type == "master") {
-            var resultDisplay = <div><ListItem> {this.props.result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} /> </ListItem></div>;
+            var resultDisplay =
+            <ListItem>
+              {this.props.result.title}
+              <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} />
+            </ListItem>;
           }
         }
 
