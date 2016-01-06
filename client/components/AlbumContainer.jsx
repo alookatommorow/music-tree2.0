@@ -1,6 +1,6 @@
 var React = require('react');
-var ListItem = require('material-ui/lib/lists/list-item');
-var FlatButton = require('material-ui/lib/flat-button');
+
+
 var Album = require('./Album.jsx')
 
 var AlbumContainer = React.createClass ({
@@ -32,9 +32,7 @@ var AlbumContainer = React.createClass ({
 
   render: function () {
     return (
-        <div>
-          <ListItem>{this.props.albumTitle} {this.props.albumYear} <FlatButton onClick={this.handleClick} className='' label='Album Details'/> </ListItem>
-        </div>
+      <Album albumTitle={this.props.albumTitle} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
     );
   },
 
