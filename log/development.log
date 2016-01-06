@@ -12926,3 +12926,183 @@ Started GET "/search?query=beyonce" for ::1 at 2016-01-04 18:57:40 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"beyonce"}
 Completed 200 OK in 446ms (Views: 22.0ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:34:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1422ms (Views: 44.7ms)
+
+
+Started GET "/discog?id=34278" for ::1 at 2016-01-05 02:36:04 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 3554ms (Views: 27.8ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:41:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 344ms (Views: 27.2ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-05 02:41:55 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 1388ms (Views: 2.1ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:43:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 284ms (Views: 31.3ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-05 02:43:15 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 240ms (Views: 1.7ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:51:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 393ms (Views: 37.7ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:53:27 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 323ms (Views: 45.5ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-05 02:53:31 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 256ms (Views: 7.9ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 02:54:52 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 306ms (Views: 30.8ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-05 02:54:56 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 248ms (Views: 2.4ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:00:45 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 331ms (Views: 32.3ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-05 03:00:49 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 240ms (Views: 1.7ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:03:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 500ms (Views: 22.4ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:04:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 298ms (Views: 28.3ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:07:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 723ms (Views: 27.5ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:07:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 338ms (Views: 35.4ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:07:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 262ms (Views: 28.6ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:08:27 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 272ms (Views: 20.7ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:17:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 337ms (Views: 33.8ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-05 03:20:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 732ms (Views: 23.2ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:22:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 692ms (Views: 26.7ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-05 03:22:25 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 262ms (Views: 2.0ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:24:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 300ms (Views: 19.9ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:25:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 294ms (Views: 19.9ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:25:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 330ms (Views: 16.4ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:25:55 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 284ms (Views: 19.9ms)
+
+
+Started GET "/artist_info?id=112751" for ::1 at 2016-01-05 03:26:11 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"112751"}
+Completed 200 OK in 578ms (Views: 1.0ms)
+
+
+Started GET "/search?query=bryonce" for ::1 at 2016-01-05 03:28:02 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"bryonce"}
+Completed 200 OK in 667ms (Views: 0.2ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-05 03:28:07 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 283ms (Views: 15.8ms)

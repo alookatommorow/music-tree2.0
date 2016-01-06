@@ -68,11 +68,11 @@ var Result = React.createClass ({
 
   discogSuccessFunction: function(response){
     this.setState({discogDetails: response, showDiscogCloseButton: true});
-    console.log(response);
   },
 
   detailSuccessFunction: function(response){
     this.setState({detailsDetails: response, showDetailsCloseButton: true});
+    console.log(response["profile"])
   },
 
   errorFunction: function(){
@@ -80,61 +80,61 @@ var Result = React.createClass ({
   },
 
   render: function () {
-
-        //if artist search
-        if (this.props.queryType == "artist") {
-          if (this.props.result.type == "artist") {
-            var resultDisplay =
-              <ListItem className="left-text">
-                <div className="right center-text">
-                  <div className='two-bottom'>
-                    <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
-                  </div>
-                  <div>
-                    <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
-                  </div>
-                </div>
-                <div>
-                  <img src={this.props.picSource} className="left two-right"></img>
-                  <div className="result-title">
-                    {this.props.result.title}
-                  </div>
-                </div>
-                <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
-                <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
-                <div className="clear-both"></div>
-              </ListItem>;
-          }
-        }
-        //if album search
-        else if (this.props.queryType == "release_title") {
-          if (this.props.result.type == "master") {
-            var resultDisplay =
-            <ListItem className="left-text">
-              <div className="right center-text">
-                <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
+    //if artist search
+    if (this.props.queryType == "artist") {
+      if (this.props.result.type == "artist") {
+        var resultDisplay =
+          <ListItem className="left-text blue">
+            <div className="right center-text">
+              <div className='two-bottom'>
+                <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
               </div>
               <div>
-                <img src={this.props.picSource} className="left two-right"></img>
-                <div className="result-title">
-                  {this.props.result.title}
-                </div>
+                <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
               </div>
-              <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
-              <div className="clear-both"></div>
-            </ListItem>
-          }
-        }
-        //if song search
-        else if (this.props.queryType == "track") {
-          if (this.props.result.type == "master") {
-            var resultDisplay =
-            <ListItem>
+            </div>
+            <div>
+              <img src={this.props.picSource} className="left two-right"></img>
+              <div className="result-title">
+                {this.props.result.title}
+              </div>
+            </div>
+            <div className="clear-both"></div>
+            <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+            <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
+
+          </ListItem>;
+      }
+    }
+    //if album search
+    else if (this.props.queryType == "release_title") {
+      if (this.props.result.type == "master") {
+        var resultDisplay =
+        <ListItem className="left-text">
+          <div className="right center-text">
+            <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
+          </div>
+          <div>
+            <img src={this.props.picSource} className="left two-right"></img>
+            <div className="result-title">
               {this.props.result.title}
-              <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} />
-            </ListItem>;
-          }
-        }
+            </div>
+          </div>
+          <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+          <div className="clear-both"></div>
+        </ListItem>
+      }
+    }
+    //if song search
+    else if (this.props.queryType == "track") {
+      if (this.props.result.type == "master") {
+        var resultDisplay =
+        <ListItem>
+          {this.props.result.title}
+          <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={this.props.resultsKey} />
+        </ListItem>;
+      }
+    }
 
 
     return (

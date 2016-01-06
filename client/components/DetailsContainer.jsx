@@ -1,10 +1,10 @@
 var React = require('react');
-var FlatButton = require('material-ui/lib/flat-button');
+var RaisedButton = require('material-ui/lib/raised-button');
 
 var DetailsContainer = React.createClass ({
 
   render: function(){
-    var closeButton = <FlatButton label='Close' onClick={this.props.handleCloseClick}/>
+    var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
     if (this.props.details !== null) {
       if (this.props.queryType == "artist"){
         var detailsDisplay = <div>{this.props.details['profile']}</div>

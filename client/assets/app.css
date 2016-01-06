@@ -13,6 +13,10 @@
   box-shadow: none;
 }
 
+.html {
+  font-family: "Geneva", Serif;
+}
+
 .debug {
   border: 1px solid red;
 }
