@@ -1,4 +1,5 @@
 var React = require('react');
+
 var ResultsContainer = require('./ResultsContainer.jsx');
 var RaisedButton = require('material-ui/lib/raised-button');
 var SelectField = require('material-ui/lib/select-field');
@@ -15,7 +16,7 @@ var SearchForm = React.createClass ({
 
           <form action={this.props.formAction} method={this.props.formMethod} onSubmit={this.props.handleSubmit} >
             <div>
-            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
+            <TextField className="query center-text" onChange={this.props.handleChange} hintText="Enter search..." />
             </div>
             <div>
             <SelectField menuItems={this.props.menuItems} onChange={this.props.handleSelect} />

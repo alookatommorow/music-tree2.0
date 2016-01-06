@@ -1,43 +1,27 @@
 var React = require('react');
-var DetailsContainer = require('./DetailsContainer.jsx');
-var DiscogContainer = require('./DiscogContainer.jsx');
+var List = require('material-ui/lib/lists/list');
+var Result = require('./Result.jsx');
+
 
 
 var ResultsContainer = React.createClass ({
 
   render: function () {
-
     var queryType = this.props.queryType;
-
     if (this.props.results !== null) {
-
       var searchResults = this.props.results.map(function(result, index){
-        //if artist search
-        if (queryType == "artist") {
-          if (result.type == "artist") {
-            return  <li key={result.uri}><img src={result.thumb}></img> {result.title}  <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} details={null} /> <DiscogContainer query={this.props.query} resultsKey={index} origin={this.props.origin} results={this.props.results}/></li>;
-          }
-        }
-        //if album search
-        else if (queryType == "release_title") {
-          if (result.type == "master") {
-            return <li key={result.uri}><img src={result.thumb}></img> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
-          }
-        }
-        //if song search
-        else if (queryType == "track") {
-          if (result.type == "master") {
-            return <li key={result.uri}> {result.title} <DetailsContainer origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} /> </li>;
-          }
-        }
+        return <Result key={result.uri} result={result} picSource={result.thumb} origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} query={this.props.query}/>
       }.bind(this));
     };
     return (
         <div>
+          <List>
           {this.props.showSearchResults ? searchResults : null }
+          </List>
         </div>
     );
   },
+
 });
 
 module.exports = ResultsContainer;

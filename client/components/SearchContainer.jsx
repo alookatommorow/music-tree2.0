@@ -1,4 +1,5 @@
 var React = require('react');
+
 var ResultsContainer = require('./ResultsContainer.jsx')
 var SearchForm = require('./SearchForm.jsx')
 
@@ -25,8 +26,6 @@ var SearchContainer = React.createClass({
 
   handleSelect: function(event){
     this.setState({queryType: event.target.value});
-    console.log(this.state.queryType);
-
   },
 
   executeSearch: function(query) {
@@ -49,7 +48,6 @@ var SearchContainer = React.createClass({
 
   successFunction: function(response){
     this.setState({results: response, showSearchResults: true});
-    console.log(response);
   },
 
   errorFunction: function(){
@@ -59,7 +57,9 @@ var SearchContainer = React.createClass({
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
+        <div className='results-container'>
         <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
+        </div>
       </div>
     );
   },
