@@ -13,8 +13,11 @@ var Result = React.createClass ({
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
       discogUrl: this.props.origin + "/discog",
+      showDetailsContainer: false,
+      showDiscogContainer: false,
       showDetailsCloseButton: false,
       showDiscogCloseButton: false,
+      altPicSource: "https://storage.googleapis.com/west-coast-skateparks/music-tree-alt.jpg"
     };
   },
 
@@ -67,11 +70,11 @@ var Result = React.createClass ({
   },
 
   discogSuccessFunction: function(response){
-    this.setState({discogDetails: response, showDiscogCloseButton: true});
+    this.setState({discogDetails: response, showDiscogCloseButton: true, showDiscogContainer: true});
   },
 
   detailSuccessFunction: function(response){
-    this.setState({detailsDetails: response, showDetailsCloseButton: true});
+    this.setState({detailsDetails: response, showDetailsCloseButton: true, showDetailsContainer: true});
     console.log(response["profile"])
   },
 
@@ -80,6 +83,8 @@ var Result = React.createClass ({
   },
 
   render: function () {
+    var detailsContainer = <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
+    var discogContainer = <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
     //if artist search
     if (this.props.queryType == "artist") {
       if (this.props.result.type == "artist") {
@@ -94,15 +99,14 @@ var Result = React.createClass ({
               </div>
             </div>
             <div>
-              <img src={this.props.picSource} className="left two-right"></img>
+              <img src={this.props.picSource} alt="Pic unavailable" className="left two-right"></img>
               <div className="result-title">
                 {this.props.result.title}
               </div>
             </div>
             <div className="clear-both"></div>
-            <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
-            <DiscogContainer handleCloseClick={this.handleDiscogCloseClick} details={this.state.discogDetails} showCloseButton={this.state.showDiscogCloseButton}/>
-
+            {this.state.showDetailsContainer ? detailsContainer : null}
+            {this.state.showDiscogContainer ? discogContainer : null}
           </ListItem>;
       }
     }
@@ -120,8 +124,8 @@ var Result = React.createClass ({
               {this.props.result.title}
             </div>
           </div>
-          <DetailsContainer handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} queryType={this.props.queryType} showCloseButton={this.state.showDetailsCloseButton}/>
           <div className="clear-both"></div>
+          {this.state.showDetailsContainer ? detailsContainer : null}
         </ListItem>
       }
     }

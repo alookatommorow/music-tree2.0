@@ -10,7 +10,7 @@ var DetailsContainer = React.createClass ({
         var detailsDisplay = <div>{this.props.details['profile']}</div>
       }
       else if (this.props.queryType == "release_title") {
-        var albumYear
+        var header
         var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
           return <div><div>{index+1}. {track['title']}</div></div>
         });
