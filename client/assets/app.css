@@ -83,9 +83,20 @@
   padding-right: 2%;
 }
 
-.two-bottom {
+.four-left {
+  padding-left: 4%;
+}
+.one-bottom {
+  padding-bottom: 1%;
+}
+.four-bottom {
   padding-bottom: 4%;
 }
+
+.two-bottom {
+  padding-bottom: 2%;
+}
+
 .right-clear {
   clear: right;
 }

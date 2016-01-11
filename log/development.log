@@ -13339,3 +13339,381 @@ Started GET "/search?query=beyonce" for ::1 at 2016-01-06 15:51:34 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"beyonce"}
 Completed 200 OK in 343ms (Views: 20.4ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-06 17:33:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 786ms (Views: 18.8ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-06 17:33:27 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 1324ms (Views: 1.8ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-06 17:34:39 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 360ms (Views: 17.4ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-06 17:34:45 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 234ms (Views: 7.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-06 17:37:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 347ms (Views: 22.2ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-06 17:37:13 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 272ms (Views: 1.3ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-06 17:44:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 426ms (Views: 20.7ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-06 17:44:42 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 290ms (Views: 3.7ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 17:51:05 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 751ms (Views: 19.9ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 17:51:10 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 314ms (Views: 1.1ms)
+
+
+Started GET "/artist_info?id=252689" for ::1 at 2016-01-06 17:52:18 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"252689"}
+Completed 200 OK in 478ms (Views: 0.8ms)
+
+
+Started GET "/discog?id=56206" for ::1 at 2016-01-06 17:52:57 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 364ms (Views: 2.4ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 17:57:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 669ms (Views: 20.8ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 17:57:57 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 267ms (Views: 0.9ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 17:58:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 636ms (Views: 17.5ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 17:58:27 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 274ms (Views: 5.2ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 17:59:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 700ms (Views: 22.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 17:59:33 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 285ms (Views: 0.7ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:00:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 642ms (Views: 25.0ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:00:14 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 236ms (Views: 0.6ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:00:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 592ms (Views: 23.6ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:00:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 637ms (Views: 32.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:00:44 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 294ms (Views: 0.7ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:02:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 658ms (Views: 20.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:02:07 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 231ms (Views: 0.9ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:03:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 2151ms (Views: 29.3ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:03:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 231ms (Views: 1.2ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:04:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 637ms (Views: 17.5ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:04:56 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 272ms (Views: 1.0ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 18:05:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 675ms (Views: 24.8ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 18:05:41 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 352ms (Views: 0.8ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:40:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 710ms (Views: 17.5ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:40:32 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 241ms (Views: 1.2ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:41:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 674ms (Views: 19.9ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:41:14 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 301ms (Views: 0.8ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:41:57 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 516ms (Views: 16.8ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:41:59 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 236ms (Views: 0.8ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:42:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 706ms (Views: 25.7ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:42:28 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 819ms (Views: 1.4ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:42:54 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 759ms (Views: 17.3ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:42:56 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 258ms (Views: 0.8ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:43:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 712ms (Views: 24.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:43:17 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 313ms (Views: 7.4ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:44:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 656ms (Views: 16.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:44:13 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 261ms (Views: 1.0ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:45:31 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 1162ms (Views: 24.6ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:45:33 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 291ms (Views: 0.8ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:46:02 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 719ms (Views: 17.0ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:46:05 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 268ms (Views: 5.2ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:49:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 651ms (Views: 18.7ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:49:53 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 371ms (Views: 2.0ms)
+
+
+Started GET "/search?query=slint" for ::1 at 2016-01-06 19:51:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"slint"}
+Completed 200 OK in 1030ms (Views: 16.5ms)
+
+
+Started GET "/artist_info?id=56206" for ::1 at 2016-01-06 19:51:05 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56206"}
+Completed 200 OK in 255ms (Views: 5.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-11 12:06:44 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 1071ms (Views: 16.9ms)
+
+
+Started GET "/discog?id=52835" for ::1 at 2016-01-11 12:06:51 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 1105ms (Views: 10.6ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-11 14:16:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 700ms (Views: 18.4ms)
+
+
+Started GET "/discog?id=52835" for ::1 at 2016-01-11 14:21:08 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 1422ms (Views: 10.0ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-11 14:27:45 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 297ms (Views: 21.3ms)
+
+
+Started GET "/discog?id=52835" for ::1 at 2016-01-11 14:27:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 212ms (Views: 10.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-11 14:28:57 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 236ms (Views: 20.8ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-11 14:29:00 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 971ms (Views: 1.9ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-11 14:30:28 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 629ms (Views: 25.0ms)
+
+
+Started GET "/discog?id=52835" for ::1 at 2016-01-11 14:30:32 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 203ms (Views: 13.5ms)
