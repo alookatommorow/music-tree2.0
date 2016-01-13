@@ -43,11 +43,13 @@ var SearchContainer = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
+    console.log("searching")
     this.executeSearch(this.state.query);
   },
 
   successFunction: function(response){
     this.setState({results: response, showSearchResults: true});
+    console.log(response);
   },
 
   errorFunction: function(){
