@@ -13735,3 +13735,9 @@ Started GET "/search?query=beyonce" for ::1 at 2016-01-13 13:47:18 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"beyonce"}
 Completed 200 OK in 277ms (Views: 21.4ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-13 14:09:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 278ms (Views: 26.9ms)
