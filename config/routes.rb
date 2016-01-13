@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
     match '*all', to: 'application#preflight', via: [:options]
 
-    ACCEPT_JSON = -> (request) {
-        request.accepts.include?(:json)
-    }
+    # ACCEPT_JSON = -> (request) {
+    #     request.accepts.include?(:json)
+    # }
 
     # scope constraints: ACCEPT_JSON do
     #     post '/search', to: 'home#search'
