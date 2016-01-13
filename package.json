@@ -12,7 +12,7 @@
     "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors",
     "probuild": "webpack -p --config webpack.pro.config.js --profile --progress --colors",
     "postinstall": "npm run probuild && npm run rejoice",
-    "rejoice": "echo yay!",
+    "rejoice": "echo yay!"
   },
   "author": "John Hess",
   "license": "ISC",
