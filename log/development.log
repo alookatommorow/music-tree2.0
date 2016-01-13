@@ -13717,3 +13717,27 @@ Started GET "/discog?id=52835" for ::1 at 2016-01-11 14:30:32 -0800
 Processing by HomeController#discog as HTML
   Parameters: {"id"=>"52835"}
 Completed 200 OK in 203ms (Views: 13.5ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-13 13:37:08 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 519ms (Views: 27.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-13 13:43:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 244ms (Views: 16.6ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-13 13:47:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 277ms (Views: 21.4ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-13 14:09:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 278ms (Views: 26.9ms)

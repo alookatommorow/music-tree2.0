@@ -108,7 +108,7 @@ var Result = React.createClass ({
               <div className="clear-both"></div>
 
 
-            </ListItem>;
+            </ListItem>
             {this.state.showDetailsContainer ? detailsContainer : null}
             {this.state.showDiscogContainer ? discogContainer : null}
           </div>
@@ -144,7 +144,7 @@ var Result = React.createClass ({
           <ListItem>
             {this.props.result.title}
             {this.state.showDetailsContainer ? detailsContainer : null}
-          </ListItem>;
+          </ListItem>
         </div>
       }
     }
