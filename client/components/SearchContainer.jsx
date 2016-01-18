@@ -28,8 +28,8 @@ var SearchContainer = React.createClass({
     this.setState({queryType: event.target.value});
   },
 
-  executeSearch: function(query) {
-    var data = {query: query};
+  executeSearch: function(query, queryType) {
+    var data = {query: query, queryType: queryType};
     var url = this.state.url;
 
     $.ajax({
@@ -43,24 +43,23 @@ var SearchContainer = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    console.log("searching")
-    this.executeSearch(this.state.query);
+    this.executeSearch(this.state.query, this.state.queryType);
   },
 
   successFunction: function(response){
     this.setState({results: response, showSearchResults: true});
-    console.log(response);
   },
 
   errorFunction: function(){
     console.log("error");
   },
   render: function () {
+    var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
     return (
       <div className='center-text'>
         <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
         <div className='results-container'>
-        <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
+        {this.state.showSearchResults ? searchResultsContainer: null}
         </div>
       </div>
     );

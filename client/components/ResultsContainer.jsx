@@ -8,15 +8,16 @@ var ResultsContainer = React.createClass ({
 
   render: function () {
     var queryType = this.props.queryType;
-    if (this.props.results !== null) {
-      var searchResults = this.props.results.map(function(result, index){
-        return <Result key={result.uri} result={result} picSource={result.thumb} origin={this.props.origin} queryType={this.props.queryType} results={this.props.results} resultsKey={index} query={this.props.query}/>
-      }.bind(this));
-    };
+    var searchResults = this.props.results.map(function(result, index){
+      if (result.type === this.props.queryType) {
+        console.log(result.type)
+        return <Result key={result.uri} result={result} picSource={result.thumb} origin={this.props.origin} queryType={this.props.queryType} title={result.title} results={this.props.results} resultsKey={index} query={this.props.query}/>
+      }
+    }.bind(this));
     return (
         <div>
           <List>
-          {this.props.showSearchResults ? searchResults : null }
+            {searchResults}
           </List>
         </div>
     );

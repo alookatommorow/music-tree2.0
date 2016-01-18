@@ -17,7 +17,7 @@
   font-family: "Geneva", Serif;
 }
 
-.debug {
+* {
   border: 1px solid red;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .results-container {
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .header-image {
@@ -63,41 +63,62 @@
 }
 
 .details-display {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 2%
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.result-title {
-  padding-left: 2%;
+.artist-result-title {
+  margin-left: 2%;
   margin-top: 2%;
   font-weight: bold;
   display: inline-block;
 }
 
+.album-result-title {
+  margin-left: 2%;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .one-left {
-  padding-left: 1%;
+  margin-left: 1%;
+}
+
+.one-bottom {
+  margin-bottom: 1%;
 }
 
 .two-right {
-  padding-right: 2%;
+  margin-right: 2%;
 }
 
-.four-left {
-  padding-left: 4%;
-}
-.one-bottom {
-  padding-bottom: 1%;
-}
-.four-bottom {
-  padding-bottom: 4%;
+.two-left {
+  margin-left: 2%;
 }
 
 .two-bottom {
-  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
-.right-clear {
+.four-left {
+  margin-left: 4%;
+}
+
+.four-bottom {
+  margin-bottom: 4%;
+}
+
+.ten-top {
+  margin-top: 10%;
+}
+
+.clear-right {
   clear: right;
 }
 
