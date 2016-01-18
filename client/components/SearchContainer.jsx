@@ -14,7 +14,7 @@ var SearchContainer = React.createClass({
       showSearchResults: false,
       menuItems: [
         { payload: 'artist', text: 'Artist' },
-        { payload: 'release_title', text: 'Album' },
+        { payload: 'master', text: 'Album' },
       ],
     };
   },
@@ -27,8 +27,8 @@ var SearchContainer = React.createClass({
     this.setState({queryType: event.target.value});
   },
 
-  executeSearch: function(query, queryType) {
-    var data = {query: query, queryType: queryType};
+  executeSearch: function(query) {
+    var data = {query: query};
     var url = this.state.url;
 
     $.ajax({

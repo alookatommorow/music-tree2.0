@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     end
 
     def search
-        results = Discogs::Client.new.search(params[:query], params[:queryType]).parsed_response["results"]
+        results = Discogs::Client.new.search(params[:query]).parsed_response["results"]
         render json: results
     end
 

@@ -9,7 +9,7 @@ var DetailsContainer = React.createClass ({
       var header = <div>{this.props.title} Profile</div>
       var detailsDisplay = <div>{this.props.details['profile']}</div>
     }
-    else if (this.props.queryType == "release_title") {
+    else if (this.props.queryType == "master") {
       var header = <div>Tracklist</div>
       var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
         return <div>{index+1}. {track['title']}</div>
