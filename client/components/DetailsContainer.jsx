@@ -18,7 +18,7 @@ var DetailsContainer = React.createClass ({
 
     return (
         <div className="details-display">
-          <div className="right two-left">
+          <div className="right two-bottom">
             {closeButton}
           </div>
           <div className="left-text bold">

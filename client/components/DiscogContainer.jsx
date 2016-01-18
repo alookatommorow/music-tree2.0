@@ -12,9 +12,7 @@ var DiscogContainer = React.createClass({
     });
     var header = <div>{this.props.title} Discography</div>
     var discogDisplay = sortedAlbums.map(function(album, index){
-      if (album["type"] === "master"){
-        return <AlbumContainer key={album.resource_url} albumTitle={album.title} albumYear={album.year} />
-      }
+      return <AlbumContainer key={album.uri} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
     });
       // var discogDisplay = albums.map(function(album){
       //     return <div>{album.title}</div>
@@ -31,7 +29,7 @@ var DiscogContainer = React.createClass({
 
     return(
         <div className="details-display">
-          <div className="right">
+          <div className="right two-bottom">
             {closeButton}
           </div>
           <div className="left-text bold">

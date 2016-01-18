@@ -56,17 +56,17 @@ var Result = React.createClass ({
     var data = {id: this.props.results[resultsKey]["id"]};
     $.ajax({
       url: this.state.discogUrl,
-      // data: {query: this.props.query},
-      data: data,
+      data: {query: this.props.query},
+      // data: data,
       dataType: 'json',
       success: this.discogSuccessFunction,
       error: this.errorFunction,
     });
-
   },
 
   discogSuccessFunction: function(response){
-    this.setState({discogDetails: response, showDiscogCloseButton: true, showDiscogContainer: true});
+    this.setState({discogDetails: response, showDiscogCloseButton: true, showDiscogContainer: true})
+    console.log(response);
   },
 
   detailSuccessFunction: function(response){
@@ -85,7 +85,7 @@ var Result = React.createClass ({
       if (this.props.result.type == "artist") {
         var resultDisplay =
           <div>
-            <ListItem className="left-text blue">
+            <ListItem className="left-text">
               <div className="right center-text">
                 <div className='four-bottom'>
                   <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
@@ -94,15 +94,13 @@ var Result = React.createClass ({
                   <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
                 </div>
               </div>
-              <div className="left two-right pic-height">
+              <div className="left two-right">
                 <img src={this.props.picSource} alt="Pic unavailable"></img>
               </div>
               <div className="artist-result-title">
                 {this.props.title}
               </div>
               <div className="clear-both"></div>
-
-
             </ListItem>
             {this.state.showDetailsContainer ? detailsContainer : null}
             {this.state.showDiscogContainer ? discogContainer : null}
@@ -119,7 +117,7 @@ var Result = React.createClass ({
                 <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
               </div>
               <div>
-                <img src={this.props.picSource} className="left two-right pic-height" ></img>
+                <img src={this.props.picSource} className="left two-right" ></img>
                 <div className="album-result-title">
                   <div className="bold">
                     {this.props.title}
@@ -134,19 +132,6 @@ var Result = React.createClass ({
             </ListItem>
             {this.state.showDetailsContainer ? detailsContainer : null}
           </div>
-      }
-    }
-    //if song search
-    else if (this.props.queryType == "track") {
-      if (this.props.result.type == "master") {
-        console.log(this.props.result)
-        var resultDisplay =
-        <div>
-          <ListItem>
-            {this.props.title}
-            {this.state.showDetailsContainer ? detailsContainer : null}
-          </ListItem>
-        </div>
       }
     }
 

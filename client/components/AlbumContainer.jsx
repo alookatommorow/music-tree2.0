@@ -32,7 +32,7 @@ var AlbumContainer = React.createClass ({
 
   render: function () {
     return (
-      <Album albumTitle={this.props.albumTitle} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
+      <Album albumTitle={this.props.albumTitle} albumImage={this.props.albumImage} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
     );
   },
 

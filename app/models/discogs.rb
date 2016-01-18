@@ -15,10 +15,10 @@ module Discogs
       self.class.get("/masters/#{id}")
     end
 
-    def discog(id)
+    def discog(query)
 
-      # (self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")).parsed_response["results"]
-      (self.class.get("/artists/#{id}/releases?&per_page=100")).parsed_response["releases"]
+      (self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")).parsed_response["results"]
+      # (self.class.get("/artists/#{id}/releases?&per_page=100")).parsed_response["releases"]
       # releases = []
       # (1..2).each do |n|
       #   releases.push((self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100&page=#{n}")).parsed_response["results"])

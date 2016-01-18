@@ -15,7 +15,6 @@ var SearchContainer = React.createClass({
       menuItems: [
         { payload: 'artist', text: 'Artist' },
         { payload: 'release_title', text: 'Album' },
-        { payload: 'track', text: 'Song' },
       ],
     };
   },
