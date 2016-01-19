@@ -10,6 +10,8 @@ var Result = React.createClass ({
     return {
       detailsDetails: null,
       discogDetails: null,
+      discogEps: null,
+      discogLps: null,
       artistInfoUrl: this.props.origin + "/artist_info",
       albumInfoUrl: this.props.origin + "/album_info",
       discogUrl: this.props.origin + "/discog",
@@ -67,7 +69,19 @@ var Result = React.createClass ({
     var sortedAlbums = response.sort(function(a, b){
       return a.year - b.year
     });
-    this.setState({discogDetails: sortedAlbums, showDiscogCloseButton: true, showDiscogContainer: true})
+    var lps = [];
+    var eps = [];
+    sortedAlbums.map(function(album) {
+      if (album.format.includes('Album') || album.format.includes('Compilation')) {
+        lps.push(album);
+      }
+      else {
+        eps.push(album)
+      }
+    });
+
+
+    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps,showDiscogContainer: true})
   },
 
   detailSuccessFunction: function(response){
@@ -80,7 +94,7 @@ var Result = React.createClass ({
 
   render: function () {
     var detailsContainer = <DetailsContainer result={this.props.result} handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} title={this.props.title} queryType={this.props.queryType} />
-    var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails}/>
+    var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     //if artist search
     if (this.props.queryType == "artist") {
       var resultDisplay =

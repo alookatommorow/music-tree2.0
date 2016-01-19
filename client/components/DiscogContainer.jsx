@@ -8,9 +8,26 @@ var DiscogContainer = React.createClass({
   render: function(){
     var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
     var header = <div>{this.props.title} Discography</div>
-    var discogDisplay = this.props.albums.map(function(album, index){
+
+    var mixed= this.props.albums.map(function(album, index){
       return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
     }.bind(this));
+
+    var discogLps= this.props.lps.map(function(album, index){
+      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+    }.bind(this));
+
+    var discogEps= this.props.eps.map(function(album, index){
+      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+    }.bind(this));
+
+    var discogDisplay =
+      <div>
+        LPs:
+        {discogLps}
+        EPs:
+        {discogEps}
+      </div>
 
     return(
       <div className="details-display">
