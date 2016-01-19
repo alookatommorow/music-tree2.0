@@ -17,31 +17,26 @@ var App = React.createClass({
     //   origin: 'http://localhost:3000',
     // };
   },
+
   childContextTypes: {
         muiTheme: React.PropTypes.object
   },
 
   getChildContext: function() {
-      return {
-          muiTheme: ThemeManager.getCurrentTheme()
-      };
+    return {
+        muiTheme: ThemeManager.getCurrentTheme()
+    };
   },
 
   render: function () {
-
     return (
-
       <div className='center-text'>
         <Header/>
         <SearchContainer origin={this.props.origin}/>
-
       </div>
-
-
-
-         );
-
+    );
   },
+
 
 });
 

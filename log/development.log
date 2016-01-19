@@ -13741,3 +13741,2557 @@ Started GET "/search?query=beyonce" for ::1 at 2016-01-13 14:09:59 -0800
 Processing by HomeController#search as HTML
   Parameters: {"query"=>"beyonce"}
 Completed 200 OK in 278ms (Views: 26.9ms)
+
+
+Started GET "/skateparks/335" for ::1 at 2016-01-17 18:09:58 -0800
+
+ActionController::RoutingError (No route matches [GET] "/skateparks/335"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.14.0) lib/puma/server.rb:541:in `handle_request'
+  puma (2.14.0) lib/puma/server.rb:388:in `process_client'
+  puma (2.14.0) lib/puma/server.rb:270:in `block in run'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.14.0) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.7ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.2ms)
+
+
+Started GET "/search" for ::1 at 2016-01-17 18:30:56 -0800
+Processing by HomeController#search as */*
+Completed 200 OK in 542ms (Views: 29.5ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-17 18:34:29 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1166ms (Views: 24.6ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-17 18:39:39 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1242ms (Views: 31.9ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-17 18:40:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1169ms (Views: 21.8ms)
+
+
+Started GET "/artist_info?id=34278" for ::1 at 2016-01-17 18:40:38 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 1499ms (Views: 2.6ms)
+
+
+Started GET "/discog?id=34278" for ::1 at 2016-01-17 18:40:41 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"34278"}
+Completed 200 OK in 3606ms (Views: 13.8ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-17 18:48:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 527ms (Views: 23.0ms)
+
+
+Started GET "/album_info?id=631282" for ::1 at 2016-01-17 18:48:42 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"631282"}
+Completed 200 OK in 416ms (Views: 48.2ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-17 19:01:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 535ms (Views: 68.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-17 19:03:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 645ms (Views: 71.1ms)
+
+
+Started GET "/search?query=beyonce" for ::1 at 2016-01-17 19:03:05 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce"}
+Completed 200 OK in 624ms (Views: 76.9ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-17 19:03:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1406ms (Views: 120.2ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-17 19:10:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1684ms (Views: 103.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:11:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 690ms (Views: 31.3ms)
+
+
+Started GET "/artist_info?id=255047" for ::1 at 2016-01-17 19:11:33 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"255047"}
+Completed 200 OK in 999ms (Views: 5.6ms)
+
+
+Started GET "/discog?id=255047" for ::1 at 2016-01-17 19:11:39 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"255047"}
+Completed 200 OK in 1190ms (Views: 33.9ms)
+
+
+Started GET "/album_info?id=72465" for ::1 at 2016-01-17 19:11:57 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"72465"}
+Completed 200 OK in 286ms (Views: 5.0ms)
+
+
+Started GET "/search?query=t+tex" for ::1 at 2016-01-17 19:17:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t tex"}
+Completed 200 OK in 818ms (Views: 51.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:17:28 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 328ms (Views: 24.9ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:17:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 313ms (Views: 39.4ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:27:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 316ms (Views: 35.9ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:28:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 262ms (Views: 25.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:28:44 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 204ms (Views: 18.9ms)
+
+
+Started GET "/album_info?id=72465" for ::1 at 2016-01-17 19:29:08 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"72465"}
+Completed 200 OK in 188ms (Views: 15.3ms)
+
+
+Started GET "/album_info?id=72465" for ::1 at 2016-01-17 19:29:16 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"72465"}
+Completed 200 OK in 282ms (Views: 2.9ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:31:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 191ms (Views: 16.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:31:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 224ms (Views: 14.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:34:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 230ms (Views: 12.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:35:07 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 238ms (Views: 16.9ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:36:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 295ms (Views: 10.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:39:48 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 227ms (Views: 12.5ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:40:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 238ms (Views: 13.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:40:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 220ms (Views: 13.9ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:40:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 190ms (Views: 14.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:40:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 194ms (Views: 14.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:41:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 212ms (Views: 16.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:42:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 189ms (Views: 14.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:43:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 226ms (Views: 14.5ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:43:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 187ms (Views: 13.5ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:49:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 232ms (Views: 15.4ms)
+
+
+Started GET "/search?query=artist" for ::1 at 2016-01-17 19:50:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"artist"}
+Completed 200 OK in 732ms (Views: 13.6ms)
+
+
+Started GET "/search?query=artist" for ::1 at 2016-01-17 19:51:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"artist"}
+Completed 200 OK in 226ms (Views: 13.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-17 19:55:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 524ms (Views: 29.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:55:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 208ms (Views: 15.6ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:56:31 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 223ms (Views: 15.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:57:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 189ms (Views: 13.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:57:55 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 226ms (Views: 14.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:58:05 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 191ms (Views: 9.5ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:58:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 202ms (Views: 14.0ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 19:59:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 198ms (Views: 18.7ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:01:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 199ms (Views: 13.3ms)
+
+
+Started GET "/album_info?id=330344" for ::1 at 2016-01-17 20:02:33 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"330344"}
+Completed 200 OK in 200ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=72465" for ::1 at 2016-01-17 20:02:50 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"72465"}
+Completed 200 OK in 172ms (Views: 3.5ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:09:07 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 234ms (Views: 9.6ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:10:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 219ms (Views: 9.7ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:11:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 217ms (Views: 13.2ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:12:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 205ms (Views: 9.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:12:28 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 234ms (Views: 21.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:13:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 223ms (Views: 14.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:14:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 182ms (Views: 13.7ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:15:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 225ms (Views: 14.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:29:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 235ms (Views: 8.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:29:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 192ms (Views: 11.1ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:29:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 236ms (Views: 14.3ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:30:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 214ms (Views: 9.0ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:32:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 221ms (Views: 8.8ms)
+
+
+Started GET "/search?query=t+rex" for ::1 at 2016-01-17 20:32:05 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"t rex"}
+Completed 200 OK in 245ms (Views: 13.8ms)
+
+
+Started GET "/search?query=album" for ::1 at 2016-01-17 20:32:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"album"}
+Completed 200 OK in 1950ms (Views: 38.3ms)
+
+
+Started GET "/search?query=macaroni" for ::1 at 2016-01-17 20:34:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"macaroni"}
+Completed 200 OK in 755ms (Views: 25.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-17 20:39:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 726ms (Views: 28.0ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=artist" for ::1 at 2016-01-17 21:13:08 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"artist"}
+Completed 200 OK in 806ms (Views: 24.6ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=artist" for ::1 at 2016-01-17 21:13:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"artist"}
+Completed 200 OK in 488ms (Views: 28.3ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=artist" for ::1 at 2016-01-17 21:13:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"artist"}
+Completed 200 OK in 509ms (Views: 25.6ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=artist" for ::1 at 2016-01-17 21:13:13 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"artist"}
+Completed 200 OK in 711ms (Views: 24.9ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=artist" for ::1 at 2016-01-17 21:13:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"artist"}
+Completed 200 OK in 612ms (Views: 25.3ms)
+
+
+Started GET "/search?query=iron+maiden&queryType=release_title" for ::1 at 2016-01-17 21:13:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"iron maiden", "queryType"=>"release_title"}
+Completed 200 OK in 540ms (Views: 30.8ms)
+
+
+Started GET "/search?query=beyonce&queryType=artist" for ::1 at 2016-01-17 21:16:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"artist"}
+Completed 200 OK in 602ms (Views: 25.1ms)
+
+
+Started GET "/search?query=beyonce&queryType=artist" for ::1 at 2016-01-17 21:17:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"artist"}
+Completed 200 OK in 542ms (Views: 20.1ms)
+
+
+Started GET "/search?query=beyonce&queryType=release_title" for ::1 at 2016-01-17 21:20:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"release_title"}
+Completed 200 OK in 692ms (Views: 22.7ms)
+
+
+Started GET "/search?query=beyonce&queryType=artist" for ::1 at 2016-01-17 21:21:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"artist"}
+Completed 200 OK in 611ms (Views: 24.9ms)
+
+
+Started GET "/search?query=beyonce&queryType=artist" for ::1 at 2016-01-17 21:28:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"artist"}
+Completed 200 OK in 343ms (Views: 8.5ms)
+
+
+Started GET "/search?query=beyonce&queryType=release_title" for ::1 at 2016-01-17 21:28:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"release_title"}
+Completed 200 OK in 475ms (Views: 21.6ms)
+
+
+Started GET "/search?query=beyonce&queryType=track" for ::1 at 2016-01-17 21:28:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"track"}
+Completed 200 OK in 866ms (Views: 17.8ms)
+
+
+Started GET "/search?query=good+golly&queryType=track" for ::1 at 2016-01-17 21:30:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"good golly", "queryType"=>"track"}
+Completed 200 OK in 621ms (Views: 25.5ms)
+
+
+Started GET "/search?query=wear+boots&queryType=track" for ::1 at 2016-01-17 21:30:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"wear boots", "queryType"=>"track"}
+Completed 200 OK in 860ms (Views: 22.1ms)
+
+
+Started GET "/search?query=wear+boots&queryType=artist" for ::1 at 2016-01-17 21:31:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"wear boots", "queryType"=>"artist"}
+Completed 200 OK in 189ms (Views: 0.2ms)
+
+
+Started GET "/search?query=wear+boots&queryType=track" for ::1 at 2016-01-17 21:31:26 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"wear boots", "queryType"=>"track"}
+Completed 200 OK in 831ms (Views: 28.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 21:35:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 319ms (Views: 4.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=master" for ::1 at 2016-01-17 21:35:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"master"}
+Completed 200 OK in 1726ms (Views: 30.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=master" for ::1 at 2016-01-17 21:35:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"master"}
+Completed 200 OK in 1638ms (Views: 24.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 21:36:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 193ms (Views: 4.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 21:36:55 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 764ms (Views: 24.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 21:37:02 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 660ms (Views: 18.9ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 21:37:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 693ms (Views: 21.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 21:40:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 682ms (Views: 22.0ms)
+
+
+Started GET "/search?query=thinz+lizzy&queryType=artist" for ::1 at 2016-01-17 21:50:54 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thinz lizzy", "queryType"=>"artist"}
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/johnhess/Desktop/music-tree2.0/app/models/discogs.rb:7: syntax error, unexpected '?'
+...base/search?q=#{query}&type=#{?query_type}&&key=#{ENV['CONSU...
+...                               ^):
+  app/models/discogs.rb:7: syntax error, unexpected '?'
+  app/controllers/home_controller.rb:11:in `search'
+
+
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.7ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (82.5ms)
+
+
+Started GET "/search?query=thinz+lizzy&queryType=artist" for ::1 at 2016-01-17 21:50:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thinz lizzy", "queryType"=>"artist"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/johnhess/Desktop/music-tree2.0/app/models/discogs.rb:7: syntax error, unexpected '?'
+...base/search?q=#{query}&type=#{?query_type}&&key=#{ENV['CONSU...
+...                               ^):
+  app/models/discogs.rb:7: syntax error, unexpected '?'
+  app/controllers/home_controller.rb:11:in `search'
+
+
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.9ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.9ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (83.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 21:54:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 554ms (Views: 21.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 21:56:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 792ms (Views: 19.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 21:56:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 479ms (Views: 21.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=track" for ::1 at 2016-01-17 21:56:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"track"}
+Completed 200 OK in 505ms (Views: 22.7ms)
+
+
+Started GET "/search?query=box+of+rain&queryType=track" for ::1 at 2016-01-17 21:57:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"box of rain", "queryType"=>"track"}
+Completed 200 OK in 874ms (Views: 30.5ms)
+
+
+Started GET "/search?query=ripple&queryType=track" for ::1 at 2016-01-17 21:57:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ripple", "queryType"=>"track"}
+Completed 200 OK in 607ms (Views: 16.2ms)
+
+
+Started GET "/search?query=ripple&queryType=track" for ::1 at 2016-01-17 21:57:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ripple", "queryType"=>"track"}
+Completed 200 OK in 256ms (Views: 26.0ms)
+
+
+Started GET "/search?query=ripple&queryType=track" for ::1 at 2016-01-17 21:57:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"ripple", "queryType"=>"track"}
+Completed 200 OK in 203ms (Views: 18.8ms)
+
+
+Started GET "/search?query=grateful+dead+ripple&queryType=track" for ::1 at 2016-01-17 21:57:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"grateful dead ripple", "queryType"=>"track"}
+Completed 200 OK in 934ms (Views: 30.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:20:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 664ms (Views: 19.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:21:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 715ms (Views: 28.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:24:38 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 696ms (Views: 22.9ms)
+
+
+Started GET "/artist_info?id=163826" for ::1 at 2016-01-17 22:24:56 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"163826"}
+Completed 200 OK in 410ms (Views: 0.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:26:26 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 520ms (Views: 26.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:27:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 823ms (Views: 22.8ms)
+
+
+Started GET "/artist_info?id=163826" for ::1 at 2016-01-17 22:27:18 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"163826"}
+Completed 200 OK in 171ms (Views: 0.4ms)
+
+
+Started GET "/discog?id=321792" for ::1 at 2016-01-17 22:27:31 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"321792"}
+Completed 200 OK in 816ms (Views: 12.8ms)
+
+
+Started GET "/artist_info?id=163826" for ::1 at 2016-01-17 22:27:40 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"163826"}
+Completed 200 OK in 174ms (Views: 1.0ms)
+
+
+Started GET "/artist_info?id=281068" for ::1 at 2016-01-17 22:27:50 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 183ms (Views: 6.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:37:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 612ms (Views: 23.5ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 22:37:32 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 749ms (Views: 2.0ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 22:37:44 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 197ms (Views: 1.8ms)
+
+
+Started GET "/album_info?id=52879" for ::1 at 2016-01-17 22:37:57 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"52879"}
+Completed 200 OK in 290ms (Views: 13.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 22:39:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 598ms (Views: 31.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 22:39:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 198ms (Views: 2.5ms)
+
+
+Started GET "/album_info?id=52879" for ::1 at 2016-01-17 22:39:28 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"52879"}
+Completed 200 OK in 172ms (Views: 4.4ms)
+
+
+Started GET "/search?query=thin+izzy&queryType=release_title" for ::1 at 2016-01-17 22:42:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin izzy", "queryType"=>"release_title"}
+Completed 200 OK in 260ms (Views: 5.9ms)
+
+
+Started GET "/album_info?id=201615" for ::1 at 2016-01-17 22:42:11 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"201615"}
+Completed 200 OK in 175ms (Views: 1.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 22:42:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 658ms (Views: 28.9ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 22:42:36 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 182ms (Views: 5.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 22:47:00 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 714ms (Views: 37.9ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 22:47:02 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 174ms (Views: 1.9ms)
+
+
+Started GET "/album_info?id=536964" for ::1 at 2016-01-17 22:48:39 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"536964"}
+Completed 200 OK in 228ms (Views: 11.8ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 22:48:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 1003ms (Views: 10.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 22:48:50 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 190ms (Views: 21.0ms)
+
+
+Started GET "/search?query=grateful+dead&queryType=artist" for ::1 at 2016-01-17 22:52:52 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"grateful dead", "queryType"=>"artist"}
+Completed 200 OK in 848ms (Views: 31.2ms)
+
+
+Started GET "/discog?id=246650" for ::1 at 2016-01-17 22:52:56 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"246650"}
+Completed 200 OK in 1016ms (Views: 16.9ms)
+
+
+Started GET "/search?query=grateful+dead&queryType=artist" for ::1 at 2016-01-17 22:53:52 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"grateful dead", "queryType"=>"artist"}
+Completed 200 OK in 919ms (Views: 32.1ms)
+
+
+Started GET "/discog?id=246650" for ::1 at 2016-01-17 22:53:57 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"246650"}
+Completed 200 OK in 205ms (Views: 11.1ms)
+
+
+Started GET "/search?query=the+doors&queryType=release_title" for ::1 at 2016-01-17 22:55:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"the doors", "queryType"=>"release_title"}
+Completed 200 OK in 868ms (Views: 31.4ms)
+
+
+Started GET "/album_info?id=45347" for ::1 at 2016-01-17 22:55:44 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"45347"}
+Completed 200 OK in 464ms (Views: 2.9ms)
+
+
+Started GET "/discog?id=56798" for ::1 at 2016-01-17 22:55:52 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"56798"}
+Completed 200 OK in 1899ms (Views: 17.1ms)
+
+
+Started GET "/artist_info?id=56798" for ::1 at 2016-01-17 22:56:43 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56798"}
+Completed 200 OK in 1210ms (Views: 1.7ms)
+
+
+Started GET "/artist_info?id=56798" for ::1 at 2016-01-17 22:57:16 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56798"}
+Completed 200 OK in 174ms (Views: 2.1ms)
+
+
+Started GET "/search?query=the+doors&queryType=artist" for ::1 at 2016-01-17 22:58:27 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"the doors", "queryType"=>"artist"}
+Completed 200 OK in 919ms (Views: 34.2ms)
+
+
+Started GET "/artist_info?id=56798" for ::1 at 2016-01-17 22:58:30 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"56798"}
+Completed 200 OK in 196ms (Views: 8.7ms)
+
+
+Started GET "/album_info?id=45347" for ::1 at 2016-01-17 22:58:42 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"45347"}
+Completed 200 OK in 189ms (Views: 11.5ms)
+
+
+Started GET "/album_info?id=45347" for ::1 at 2016-01-17 22:59:35 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"45347"}
+Completed 200 OK in 181ms (Views: 4.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 22:59:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 744ms (Views: 37.2ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 22:59:47 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 219ms (Views: 2.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:02:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 609ms (Views: 36.3ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:02:28 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 251ms (Views: 2.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:02:58 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 288ms (Views: 20.5ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:04:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 197ms (Views: 2.1ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 23:04:27 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 181ms (Views: 1.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-17 23:05:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 637ms (Views: 30.3ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 23:06:01 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 173ms (Views: 1.6ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:06:05 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 186ms (Views: 2.9ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:06:21 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 217ms (Views: 14.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:10:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 594ms (Views: 36.0ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:10:16 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 179ms (Views: 1.8ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:10:19 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 200ms (Views: 25.5ms)
+
+
+Started GET "/discog?id=446603" for ::1 at 2016-01-17 23:10:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"446603"}
+Completed 200 OK in 189ms (Views: 0.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:11:16 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 547ms (Views: 21.7ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:11:22 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 212ms (Views: 22.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:13:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 678ms (Views: 35.2ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:13:28 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 187ms (Views: 2.0ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 23:13:40 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 175ms (Views: 2.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:16:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 591ms (Views: 28.4ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:16:19 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 182ms (Views: 2.4ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:16:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 204ms (Views: 10.9ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:17:11 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 175ms (Views: 2.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:17:15 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 196ms (Views: 18.8ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:17:22 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 189ms (Views: 2.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:21:23 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 499ms (Views: 29.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:21:25 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 192ms (Views: 17.9ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:21:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 563ms (Views: 33.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:22:01 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 186ms (Views: 11.5ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:22:33 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 176ms (Views: 2.1ms)
+
+
+Started GET "/search?query=beyonce&queryType=artist" for ::1 at 2016-01-17 23:22:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"beyonce", "queryType"=>"artist"}
+Completed 200 OK in 542ms (Views: 20.1ms)
+
+
+Started GET "/artist_info?id=52835" for ::1 at 2016-01-17 23:22:56 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"52835"}
+Completed 200 OK in 187ms (Views: 1.6ms)
+
+
+Started GET "/artist_info?id=112751" for ::1 at 2016-01-17 23:23:42 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"112751"}
+Completed 200 OK in 571ms (Views: 1.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:29:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 545ms (Views: 33.8ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:29:15 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 177ms (Views: 1.7ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:29:19 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 204ms (Views: 18.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:30:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 548ms (Views: 34.7ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:30:34 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 183ms (Views: 3.7ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:30:39 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 198ms (Views: 17.6ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 23:31:03 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 205ms (Views: 1.9ms)
+
+
+Started GET "/album_info?id=52879" for ::1 at 2016-01-17 23:31:43 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"52879"}
+Completed 200 OK in 177ms (Views: 3.7ms)
+
+
+Started GET "/album_info?id=52879" for ::1 at 2016-01-17 23:31:53 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"52879"}
+Completed 200 OK in 181ms (Views: 7.4ms)
+
+
+Started GET "/album_info?id=52879" for ::1 at 2016-01-17 23:31:54 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"52879"}
+Completed 200 OK in 168ms (Views: 5.3ms)
+
+
+Started GET "/album_info?id=282989" for ::1 at 2016-01-17 23:31:57 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"282989"}
+Completed 200 OK in 195ms (Views: 3.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:41:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 564ms (Views: 28.9ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:41:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 615ms (Views: 37.6ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:41:50 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 172ms (Views: 2.7ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:41:52 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 186ms (Views: 4.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:42:00 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 220ms (Views: 17.4ms)
+
+
+Started GET "/artist_info?id=281068" for ::1 at 2016-01-17 23:45:15 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 834ms (Views: 2.3ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2016-01-17 23:45:46 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 1086ms (Views: 17.1ms)
+
+
+Started GET "/artist_info?id=281068" for ::1 at 2016-01-17 23:50:57 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 179ms (Views: 2.0ms)
+
+
+Started GET "/artist_info?id=281068" for ::1 at 2016-01-17 23:51:03 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 177ms (Views: 2.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:53:12 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 661ms (Views: 31.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:53:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 194ms (Views: 11.7ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:53:24 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 172ms (Views: 6.6ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:53:31 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 194ms (Views: 17.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-17 23:53:38 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 174ms (Views: 1.9ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-17 23:54:03 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 180ms (Views: 4.0ms)
+
+
+Started GET "/album_info?id=282989" for ::1 at 2016-01-17 23:54:25 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"282989"}
+Completed 200 OK in 195ms (Views: 1.3ms)
+
+
+Started GET "/search?query=fleetwood&queryType=release_title" for ::1 at 2016-01-17 23:54:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"fleetwood", "queryType"=>"release_title"}
+Completed 200 OK in 802ms (Views: 24.1ms)
+
+
+Started GET "/artist_info?id=47333" for ::1 at 2016-01-17 23:54:52 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 1325ms (Views: 2.0ms)
+
+
+Started GET "/discog?id=47333" for ::1 at 2016-01-17 23:55:02 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 1472ms (Views: 22.0ms)
+
+
+Started GET "/discog?id=47333" for ::1 at 2016-01-17 23:55:23 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 208ms (Views: 20.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-17 23:59:48 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 831ms (Views: 18.4ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-17 23:59:56 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 201ms (Views: 19.6ms)
+
+
+Started GET "/search?query=fleetwood&queryType=artist" for ::1 at 2016-01-18 00:00:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"fleetwood", "queryType"=>"artist"}
+Completed 200 OK in 631ms (Views: 22.5ms)
+
+
+Started GET "/discog?id=47333" for ::1 at 2016-01-18 00:01:05 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 225ms (Views: 9.4ms)
+
+
+Started GET "/search?query=fleetwood&queryType=artist" for ::1 at 2016-01-18 00:02:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"fleetwood", "queryType"=>"artist"}
+Completed 200 OK in 629ms (Views: 31.4ms)
+
+
+Started GET "/discog?id=47333" for ::1 at 2016-01-18 00:02:24 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 203ms (Views: 9.1ms)
+
+
+Started GET "/discog?id=1752554" for ::1 at 2016-01-18 00:03:36 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"1752554"}
+Completed 200 OK in 307ms (Views: 10.8ms)
+
+
+Started GET "/search?query=fleetwood&queryType=artist" for ::1 at 2016-01-18 00:07:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"fleetwood", "queryType"=>"artist"}
+Completed 200 OK in 2550ms (Views: 31.5ms)
+
+
+Started GET "/artist_info?id=47333" for ::1 at 2016-01-18 00:07:12 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 183ms (Views: 2.2ms)
+
+
+Started GET "/search?query=fleetwood&queryType=artist" for ::1 at 2016-01-18 00:11:39 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"fleetwood", "queryType"=>"artist"}
+Completed 200 OK in 571ms (Views: 27.3ms)
+
+
+Started GET "/artist_info?id=47333" for ::1 at 2016-01-18 00:11:49 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 186ms (Views: 2.9ms)
+
+
+Started GET "/discog?id=47333" for ::1 at 2016-01-18 00:12:01 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"47333"}
+Completed 200 OK in 206ms (Views: 14.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 00:13:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 709ms (Views: 32.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:13:32 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 305ms (Views: 18.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:13:36 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 197ms (Views: 15.3ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2016-01-18 00:13:42 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 204ms (Views: 22.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 00:16:46 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 726ms (Views: 22.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:16:50 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 185ms (Views: 15.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:16:54 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 217ms (Views: 16.1ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:17:05 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 213ms (Views: 15.5ms)
+
+
+Started GET "/search?query=snoop&queryType=artist" for ::1 at 2016-01-18 00:21:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"snoop", "queryType"=>"artist"}
+Completed 200 OK in 868ms (Views: 18.6ms)
+
+
+Started GET "/artist_info?id=132084" for ::1 at 2016-01-18 00:21:53 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"132084"}
+Completed 200 OK in 2099ms (Views: 2.1ms)
+
+
+Started GET "/artist_info?id=2859872" for ::1 at 2016-01-18 00:22:04 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"2859872"}
+Completed 200 OK in 196ms (Views: 0.6ms)
+
+
+Started GET "/discog?id=3518699" for ::1 at 2016-01-18 00:22:14 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"3518699"}
+Completed 200 OK in 200ms (Views: 0.4ms)
+
+
+Started GET "/discog?id=404446" for ::1 at 2016-01-18 00:22:20 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"404446"}
+Completed 200 OK in 339ms (Views: 4.0ms)
+
+
+Started GET "/album_info?id=169097" for ::1 at 2016-01-18 00:24:22 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"169097"}
+Completed 200 OK in 182ms (Views: 1.3ms)
+
+
+Started GET "/album_info?id=169097" for ::1 at 2016-01-18 00:24:28 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"169097"}
+Completed 200 OK in 192ms (Views: 2.1ms)
+
+
+Started GET "/album_info?id=151370" for ::1 at 2016-01-18 00:24:58 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"151370"}
+Completed 200 OK in 212ms (Views: 2.0ms)
+
+
+Started GET "/album_info?id=417241" for ::1 at 2016-01-18 00:25:07 -0800
+Processing by HomeController#album_info as HTML
+  Parameters: {"id"=>"417241"}
+Completed 200 OK in 207ms (Views: 0.9ms)
+
+
+Started GET "/artist_info?id=132084" for ::1 at 2016-01-18 00:25:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"132084"}
+Completed 200 OK in 175ms (Views: 1.4ms)
+
+
+Started GET "/discog?id=423784" for ::1 at 2016-01-18 00:25:34 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"423784"}
+Completed 200 OK in 191ms (Views: 1.4ms)
+
+
+Started GET "/discog?id=2859872" for ::1 at 2016-01-18 00:25:42 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"2859872"}
+Completed 200 OK in 359ms (Views: 8.2ms)
+
+
+Started GET "/artist_info?id=2583356" for ::1 at 2016-01-18 00:26:48 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"2583356"}
+Completed 200 OK in 193ms (Views: 0.4ms)
+
+
+Started GET "/artist_info?id=3518699" for ::1 at 2016-01-18 00:26:50 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"3518699"}
+Completed 200 OK in 209ms (Views: 0.5ms)
+
+
+Started GET "/discog?id=404446" for ::1 at 2016-01-18 00:27:02 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"404446"}
+Completed 200 OK in 199ms (Views: 10.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 00:37:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 630ms (Views: 34.1ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:38:00 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 228ms (Views: 28.3ms)
+
+
+Started GET "/discog?id=446603" for ::1 at 2016-01-18 00:38:26 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"446603"}
+Completed 200 OK in 187ms (Views: 0.4ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2016-01-18 00:38:37 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 209ms (Views: 24.0ms)
+
+
+Started GET "/discog?id=321792" for ::1 at 2016-01-18 00:40:36 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"321792"}
+Completed 200 OK in 874ms (Views: 19.3ms)
+
+
+Started GET "/discog?id=613397" for ::1 at 2016-01-18 00:40:58 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"613397"}
+Completed 200 OK in 799ms (Views: 9.3ms)
+
+
+Started GET "/discog?id=163826" for ::1 at 2016-01-18 00:42:27 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"163826"}
+Completed 200 OK in 748ms (Views: 13.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 00:58:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 896ms (Views: 23.1ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 00:58:33 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 898ms (Views: 9.5ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2016-01-18 00:58:45 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 203ms (Views: 15.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:01:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 770ms (Views: 20.6ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 01:02:07 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 195ms (Views: 15.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-18 01:02:11 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 859ms (Views: 2.0ms)
+
+
+Started GET "/discog?id=163826" for ::1 at 2016-01-18 01:02:45 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"163826"}
+Completed 200 OK in 199ms (Views: 10.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:12:27 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 1074ms (Views: 35.6ms)
+
+
+Started GET "/discog?id=446603" for ::1 at 2016-01-18 01:13:00 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"446603"}
+Completed 200 OK in 192ms (Views: 0.4ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 01:13:16 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 194ms (Views: 19.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:23:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 634ms (Views: 32.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:24:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 513ms (Views: 28.9ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 01:24:44 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 193ms (Views: 16.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:36:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 692ms (Views: 24.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:37:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 513ms (Views: 31.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:38:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 553ms (Views: 27.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 01:41:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 485ms (Views: 25.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 01:41:59 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 190ms (Views: 15.3ms)
+
+
+Started GET "/discog?id=281068" for ::1 at 2016-01-18 01:42:11 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"281068"}
+Completed 200 OK in 335ms (Views: 8.5ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 01:45:14 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 195ms (Views: 14.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 11:06:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 787ms (Views: 28.0ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-18 11:06:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 730ms (Views: 3.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 11:06:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 1118ms (Views: 10.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 11:09:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 725ms (Views: 18.9ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 11:09:05 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 195ms (Views: 20.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 11:10:06 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 706ms (Views: 28.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 11:10:09 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 208ms (Views: 10.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 11:12:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 654ms (Views: 24.1ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 11:12:19 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 196ms (Views: 12.1ms)
+
+
+Started GET "/artist_info?id=136188" for ::1 at 2016-01-18 11:12:23 -0800
+Processing by HomeController#artist_info as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 172ms (Views: 3.4ms)
+
+
+Started GET "/discog?id=446603" for ::1 at 2016-01-18 11:12:34 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"446603"}
+Completed 200 OK in 191ms (Views: 0.4ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:25:29 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 293ms (Views: 40.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:26:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 716ms (Views: 53.7ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:26:32 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 181ms (Views: 10.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:27:03 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 187ms (Views: 16.8ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:27:04 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 195ms (Views: 14.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:27:08 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 643ms (Views: 24.5ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:27:10 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 196ms (Views: 16.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:27:49 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 594ms (Views: 29.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:27:51 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 198ms (Views: 12.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:28:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 546ms (Views: 30.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:28:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 197ms (Views: 9.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:29:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 1104ms (Views: 32.5ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:29:28 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 204ms (Views: 19.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:29:54 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 581ms (Views: 22.3ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:29:56 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 182ms (Views: 15.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:30:43 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 618ms (Views: 23.2ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:30:45 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 200ms (Views: 10.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:31:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 681ms (Views: 22.0ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:31:23 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 193ms (Views: 16.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:33:08 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 540ms (Views: 26.5ms)
+
+
+Started GET "/discog?id=136188" for ::1 at 2016-01-18 12:33:10 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"id"=>"136188"}
+Completed 200 OK in 193ms (Views: 9.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:37:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 485ms (Views: 32.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 12:37:57 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1875ms (Views: 27.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:41:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 680ms (Views: 20.2ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 12:41:17 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1500ms (Views: 34.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 12:42:09 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1409ms (Views: 32.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:47:48 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 621ms (Views: 23.5ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 12:47:49 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1511ms (Views: 25.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 12:52:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 649ms (Views: 29.9ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 12:52:44 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1679ms (Views: 25.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:04:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 727ms (Views: 22.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:06:27 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 447ms (Views: 26.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:06:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 569ms (Views: 28.3ms)
+
+
+Started GET "/search?query=led+zeppelin&queryType=release_title" for ::1 at 2016-01-18 13:06:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin", "queryType"=>"release_title"}
+Completed 200 OK in 1238ms (Views: 28.1ms)
+
+
+Started GET "/search?query=led+zeppelin&queryType=artist" for ::1 at 2016-01-18 13:07:06 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin", "queryType"=>"artist"}
+Completed 200 OK in 1178ms (Views: 28.4ms)
+
+
+Started GET "/search?query=led+zeppelin&queryType=release_title" for ::1 at 2016-01-18 13:07:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin", "queryType"=>"release_title"}
+Completed 200 OK in 1349ms (Views: 35.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:07:37 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 662ms (Views: 17.0ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:09:17 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 484ms (Views: 21.9ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:10:31 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 487ms (Views: 23.9ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:10:42 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 481ms (Views: 27.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:14:35 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 728ms (Views: 18.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:17:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 693ms (Views: 22.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:17:39 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 699ms (Views: 17.6ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:17:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 614ms (Views: 27.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:17:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 754ms (Views: 18.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:17:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 618ms (Views: 27.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:18:58 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 672ms (Views: 23.5ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:19:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 683ms (Views: 23.8ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=release_title" for ::1 at 2016-01-18 13:19:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"release_title"}
+Completed 200 OK in 451ms (Views: 28.4ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:21:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 500 Internal Server Error in 418ms
+
+NoMethodError (undefined method `type' for #<Hash:0x007f9eeec53a48>):
+  app/controllers/home_controller.rb:11:in `block in search'
+  app/controllers/home_controller.rb:9:in `each'
+  app/controllers/home_controller.rb:9:in `search'
+
+
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.6ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (35.4ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.7ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:21:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 561ms (Views: 20.1ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:22:29 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 475ms (Views: 27.2ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:23:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 200 OK in 508ms (Views: 21.3ms)
+
+
+Started GET "/search?query=thin+lizzy&queryType=artist" for ::1 at 2016-01-18 13:26:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy", "queryType"=>"artist"}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/models/discogs.rb:6:in `search'
+  app/controllers/home_controller.rb:8:in `search'
+
+
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.2ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/johnhess/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (73.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 13:29:08 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 671ms (Views: 17.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 13:33:11 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 823ms (Views: 30.7ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 13:36:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 491ms (Views: 26.4ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-18 14:18:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1852ms (Views: 41.4ms)
+
+
+Started GET "/discog?query=led+zeppelin" for ::1 at 2016-01-18 14:19:04 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1551ms (Views: 20.3ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-18 14:37:10 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 2149ms (Views: 33.2ms)
+
+
+Started GET "/discog?query=led+zeppelin" for ::1 at 2016-01-18 14:37:17 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 2218ms (Views: 20.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:40:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 814ms (Views: 25.3ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:41:12 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1851ms (Views: 28.7ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:44:52 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 625ms (Views: 30.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:44:54 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2011ms (Views: 29.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:49:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2645ms (Views: 26.7ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:49:26 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1274ms (Views: 28.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:50:26 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 398ms (Views: 29.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:50:29 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1731ms (Views: 26.3ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:52:40 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1106ms (Views: 23.3ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:52:43 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2405ms (Views: 28.3ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 14:55:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2630ms (Views: 27.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 14:55:39 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 4073ms (Views: 29.6ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:03:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1105ms (Views: 29.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:03:56 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1615ms (Views: 29.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:06:48 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 540ms (Views: 24.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:06:51 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1381ms (Views: 25.4ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 15:06:55 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 199ms (Views: 1.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:13:19 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 706ms (Views: 24.9ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:13:24 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1450ms (Views: 27.5ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 15:13:32 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 203ms (Views: 1.0ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:49:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1149ms (Views: 28.9ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:49:37 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2263ms (Views: 23.7ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 15:49:43 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 199ms (Views: 1.5ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:51:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 483ms (Views: 21.6ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:51:12 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1914ms (Views: 28.1ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 15:51:18 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 173ms (Views: 1.3ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:53:09 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1813ms (Views: 33.4ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:53:14 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 3740ms (Views: 30.2ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 15:53:21 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 171ms (Views: 1.4ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 15:59:30 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 512ms (Views: 20.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 15:59:33 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1666ms (Views: 28.3ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 15:59:37 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 172ms (Views: 0.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:01:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 677ms (Views: 21.7ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:01:25 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1412ms (Views: 33.8ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 16:01:32 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 186ms (Views: 2.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:03:22 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 469ms (Views: 28.2ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:03:25 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1364ms (Views: 28.2ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 16:03:30 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 160ms (Views: 0.9ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:03:43 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 648ms (Views: 29.6ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:03:46 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1349ms (Views: 26.8ms)
+
+
+Started GET "/album_info?id=535794" for ::1 at 2016-01-18 16:03:51 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"535794"}
+Completed 200 OK in 178ms (Views: 1.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:04:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1066ms (Views: 27.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:04:39 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1364ms (Views: 23.8ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 16:04:45 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 186ms (Views: 1.6ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:09:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 490ms (Views: 30.7ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:09:35 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2287ms (Views: 24.6ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-18 16:09:41 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 218ms (Views: 1.6ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:11:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 811ms (Views: 26.5ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:11:21 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1762ms (Views: 30.1ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 16:11:26 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 170ms (Views: 2.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:12:34 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 547ms (Views: 30.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:12:38 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1326ms (Views: 33.7ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 16:12:41 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 186ms (Views: 1.5ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-18 16:12:53 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 176ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=150457" for ::1 at 2016-01-18 16:12:59 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"150457"}
+Completed 200 OK in 212ms (Views: 1.7ms)
+
+
+Started GET "/album_info?id=259506" for ::1 at 2016-01-18 16:13:03 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"259506"}
+Completed 200 OK in 202ms (Views: 2.2ms)
+
+
+Started GET "/album_info?id=259435" for ::1 at 2016-01-18 16:13:12 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"259435"}
+Completed 200 OK in 190ms (Views: 1.3ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:15:07 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2343ms (Views: 18.8ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:15:11 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2246ms (Views: 31.5ms)
+
+
+Started GET "/album_info?id=52815" for ::1 at 2016-01-18 16:15:18 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"52815"}
+Completed 200 OK in 214ms (Views: 1.6ms)
+
+
+Started GET "/album_info?id=553809" for ::1 at 2016-01-18 16:15:27 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"553809"}
+Completed 200 OK in 194ms (Views: 1.4ms)
+
+
+Started GET "/album_info?id=259436" for ::1 at 2016-01-18 16:15:36 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"259436"}
+Completed 200 OK in 203ms (Views: 1.2ms)
