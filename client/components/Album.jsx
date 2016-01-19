@@ -5,7 +5,7 @@ var ListItem = require('material-ui/lib/lists/list-item');
 
 var Album = React.createClass({
   render: function(){
-    var detailsContainer = <AlbumDetailsContainer handleDetailCloseClick={this.props.handleDetailCloseClick} details={this.props.details}/>
+    var detailsContainer = <AlbumDetailsContainer album={this.props.album} handleDetailCloseClick={this.props.handleDetailCloseClick} details={this.props.details}/>
     return (
       <div>
         <ListItem className="left-text">

@@ -16295,3 +16295,339 @@ Started GET "/album_info?id=259436" for ::1 at 2016-01-18 16:15:36 -0800
 Processing by HomeController#album_info as */*
   Parameters: {"id"=>"259436"}
 Completed 200 OK in 203ms (Views: 1.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:53:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1124ms (Views: 35.0ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:54:00 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1298ms (Views: 19.0ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-18 16:54:05 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 185ms (Views: 2.2ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:57:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 821ms (Views: 25.7ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:57:17 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1864ms (Views: 32.9ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-18 16:57:22 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 162ms (Views: 3.1ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 16:58:05 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 171ms (Views: 1.5ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 16:58:45 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 472ms (Views: 29.2ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 16:58:48 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 2613ms (Views: 23.6ms)
+
+
+Started GET "/album_info?id=150457" for ::1 at 2016-01-18 16:58:55 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"150457"}
+Completed 200 OK in 174ms (Views: 2.2ms)
+
+
+Started GET "/album_info?id=259506" for ::1 at 2016-01-18 16:59:14 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"259506"}
+Completed 200 OK in 186ms (Views: 5.8ms)
+
+
+Started GET "/album_info?id=260489" for ::1 at 2016-01-18 16:59:31 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"260489"}
+Completed 200 OK in 195ms (Views: 5.2ms)
+
+
+Started GET "/album_info?id=259435" for ::1 at 2016-01-18 16:59:40 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"259435"}
+Completed 200 OK in 183ms (Views: 1.3ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 16:59:46 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 164ms (Views: 1.3ms)
+
+
+Started GET "/album_info?id=560885" for ::1 at 2016-01-18 17:00:13 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"560885"}
+Completed 200 OK in 187ms (Views: 1.4ms)
+
+
+Started GET "/album_info?id=52820" for ::1 at 2016-01-18 17:00:16 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"52820"}
+Completed 200 OK in 219ms (Views: 4.5ms)
+
+
+Started GET "/album_info?id=560951" for ::1 at 2016-01-18 17:00:25 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"560951"}
+Completed 200 OK in 187ms (Views: 0.6ms)
+
+
+Started GET "/album_info?id=52829" for ::1 at 2016-01-18 17:00:41 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"52829"}
+Completed 200 OK in 225ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=150459" for ::1 at 2016-01-18 17:00:45 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"150459"}
+Completed 200 OK in 190ms (Views: 1.4ms)
+
+
+Started GET "/album_info?id=518552" for ::1 at 2016-01-18 17:00:48 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"518552"}
+Completed 200 OK in 187ms (Views: 1.2ms)
+
+
+Started GET "/search?query=deadmou5" for ::1 at 2016-01-18 17:01:18 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmou5"}
+Completed 200 OK in 196ms (Views: 0.2ms)
+
+
+Started GET "/search?query=deadmou5e" for ::1 at 2016-01-18 17:01:25 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmou5e"}
+Completed 200 OK in 182ms (Views: 0.2ms)
+
+
+Started GET "/search?query=deadmou5e" for ::1 at 2016-01-18 17:01:33 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmou5e"}
+Completed 200 OK in 176ms (Views: 0.1ms)
+
+
+Started GET "/search?query=deadmou5e" for ::1 at 2016-01-18 17:01:36 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmou5e"}
+Completed 200 OK in 168ms (Views: 0.2ms)
+
+
+Started GET "/search?query=led+zeppelin" for ::1 at 2016-01-18 17:01:41 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"led zeppelin"}
+Completed 200 OK in 1823ms (Views: 29.9ms)
+
+
+Started GET "/search?query=deadmau5" for ::1 at 2016-01-18 17:01:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 1976ms (Views: 44.6ms)
+
+
+Started GET "/discog?query=deadmau5" for ::1 at 2016-01-18 17:01:55 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 1973ms (Views: 36.7ms)
+
+
+Started GET "/album_info?id=699827" for ::1 at 2016-01-18 17:02:01 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"699827"}
+Completed 200 OK in 203ms (Views: 1.8ms)
+
+
+Started GET "/album_info?id=97873" for ::1 at 2016-01-18 17:02:08 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97873"}
+Completed 200 OK in 189ms (Views: 0.8ms)
+
+
+Started GET "/album_info?id=97871" for ::1 at 2016-01-18 17:02:17 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97871"}
+Completed 200 OK in 200ms (Views: 0.7ms)
+
+
+Started GET "/album_info?id=97854" for ::1 at 2016-01-18 17:02:21 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97854"}
+Completed 200 OK in 202ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=97858" for ::1 at 2016-01-18 17:02:28 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97858"}
+Completed 200 OK in 199ms (Views: 2.1ms)
+
+
+Started GET "/album_info?id=97889" for ::1 at 2016-01-18 17:02:32 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97889"}
+Completed 200 OK in 201ms (Views: 0.6ms)
+
+
+Started GET "/album_info?id=97855" for ::1 at 2016-01-18 17:02:36 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97855"}
+Completed 200 OK in 191ms (Views: 0.7ms)
+
+
+Started GET "/search?query=deadmau5" for ::1 at 2016-01-18 17:02:49 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 597ms (Views: 29.4ms)
+
+
+Started GET "/discog?query=deadmau5" for ::1 at 2016-01-18 17:02:53 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 205ms (Views: 18.5ms)
+
+
+Started GET "/album_info?id=699827" for ::1 at 2016-01-18 17:02:56 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"699827"}
+Completed 200 OK in 178ms (Views: 1.6ms)
+
+
+Started GET "/album_info?id=291919" for ::1 at 2016-01-18 17:04:22 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"291919"}
+Completed 200 OK in 206ms (Views: 3.7ms)
+
+
+Started GET "/search?query=deadmau5" for ::1 at 2016-01-18 17:04:55 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 2101ms (Views: 42.8ms)
+
+
+Started GET "/discog?query=deadmau5" for ::1 at 2016-01-18 17:04:59 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"deadmau5"}
+Completed 200 OK in 193ms (Views: 13.6ms)
+
+
+Started GET "/album_info?id=699827" for ::1 at 2016-01-18 17:05:02 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"699827"}
+Completed 200 OK in 184ms (Views: 2.6ms)
+
+
+Started GET "/album_info?id=97873" for ::1 at 2016-01-18 17:05:06 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97873"}
+Completed 200 OK in 230ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=97858" for ::1 at 2016-01-18 17:05:12 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"97858"}
+Completed 200 OK in 165ms (Views: 1.2ms)
+
+
+Started GET "/album_info?id=17756" for ::1 at 2016-01-18 17:05:20 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"17756"}
+Completed 200 OK in 191ms (Views: 1.0ms)
+
+
+Started GET "/album_info?id=176442" for ::1 at 2016-01-18 17:05:29 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"176442"}
+Completed 200 OK in 190ms (Views: 0.6ms)
+
+
+Started GET "/album_info?id=291919" for ::1 at 2016-01-18 17:05:36 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"291919"}
+Completed 200 OK in 172ms (Views: 1.8ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 17:05:47 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 516ms (Views: 20.9ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 17:06:02 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1814ms (Views: 34.3ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 17:06:06 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 165ms (Views: 1.5ms)
+
+
+Started GET "/album_info?id=211463" for ::1 at 2016-01-18 17:06:09 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"211463"}
+Completed 200 OK in 183ms (Views: 5.3ms)
+
+
+Started GET "/search?query=brian+eno" for ::1 at 2016-01-18 17:13:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"brian eno"}
+Completed 200 OK in 245ms (Views: 24.8ms)
+
+
+Started GET "/discog?query=brian+eno" for ::1 at 2016-01-18 17:14:03 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"brian eno"}
+Completed 200 OK in 246ms (Views: 23.4ms)
+
+
+Started GET "/album_info?id=6168" for ::1 at 2016-01-18 17:14:08 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"6168"}
+Completed 200 OK in 158ms (Views: 2.1ms)
+
+
+Started GET "/search?query=thin+lizzy" for ::1 at 2016-01-18 17:14:24 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 495ms (Views: 36.7ms)
+
+
+Started GET "/discog?query=thin+lizzy" for ::1 at 2016-01-18 17:14:27 -0800
+Processing by HomeController#discog as HTML
+  Parameters: {"query"=>"thin lizzy"}
+Completed 200 OK in 1936ms (Views: 24.1ms)
+
+
+Started GET "/album_info?id=307119" for ::1 at 2016-01-18 17:14:32 -0800
+Processing by HomeController#album_info as */*
+  Parameters: {"id"=>"307119"}
+Completed 200 OK in 194ms (Views: 1.4ms)

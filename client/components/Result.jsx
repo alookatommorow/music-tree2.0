@@ -64,7 +64,10 @@ var Result = React.createClass ({
   },
 
   discogSuccessFunction: function(response){
-    this.setState({discogDetails: response, showDiscogCloseButton: true, showDiscogContainer: true})
+    var sortedAlbums = response.sort(function(a, b){
+      return a.year - b.year
+    });
+    this.setState({discogDetails: sortedAlbums, showDiscogCloseButton: true, showDiscogContainer: true})
   },
 
   detailSuccessFunction: function(response){

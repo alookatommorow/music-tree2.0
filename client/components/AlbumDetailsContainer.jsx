@@ -4,6 +4,7 @@ var RaisedButton = require('material-ui/lib/raised-button');
 var AlbumDetailsContainer = React.createClass({
 
   render: function(){
+    console.log(this.props.album.format);
     var closeButton = <RaisedButton label='Close' onClick={this.props.handleDetailCloseClick}/>
     var header = <div>Tracklist</div>
     var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
