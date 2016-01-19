@@ -1,5 +1,4 @@
 var React = require('react');
-
 var ResultsContainer = require('./ResultsContainer.jsx')
 var SearchForm = require('./SearchForm.jsx')
 
@@ -52,6 +51,7 @@ var SearchContainer = React.createClass({
   errorFunction: function(){
     console.log("error");
   },
+
   render: function () {
     var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
     return (

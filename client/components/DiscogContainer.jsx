@@ -12,35 +12,22 @@ var DiscogContainer = React.createClass({
     });
     var header = <div>{this.props.title} Discography</div>
     var discogDisplay = sortedAlbums.map(function(album, index){
-      return <AlbumContainer key={album.uri} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
-    });
-      // var discogDisplay = albums.map(function(album){
-      //     return <div>{album.title}</div>
-      // });
-      // var albums = this.state.details.sort(function(a, b){
-      //   return a.year - b.year;
-      // });
-      // var discogDisplay = this.state.details.map(function(album){
-      //   console.log("nutsa");
-      //   if (album["type"] !== "release"){
-      //     return <div>{album.title}</div>
-      //   }
-      // });
+      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+    }.bind(this));
 
     return(
-        <div className="details-display">
-          <div className="right two-bottom">
-            {closeButton}
-          </div>
-          <div className="left-text bold">
-            {header}
-          </div>
-          <div className="clear-right left-text">
-            {discogDisplay}
-          </div>
+      <div className="details-display">
+        <div className="right two-bottom">
+          {closeButton}
         </div>
-
-      )
+        <div className="left-text bold">
+          {header}
+        </div>
+        <div className="clear-right left-text">
+          {discogDisplay}
+        </div>
+      </div>
+    )
   },
 
 });

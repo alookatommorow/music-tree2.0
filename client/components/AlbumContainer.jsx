@@ -1,6 +1,4 @@
 var React = require('react');
-
-
 var Album = require('./Album.jsx')
 
 var AlbumContainer = React.createClass ({
@@ -8,31 +6,39 @@ var AlbumContainer = React.createClass ({
     return {
       details: null,
       url: this.props.origin + "/album_info",
-      showCloseButton: false,
+      showAlbumDetailsContainer: false,
     };
   },
 
   handleDetailClick: function() {
-    this.executeDetail(this.props.key);
+    this.executeDetail(this.props.albumKey);
+  },
+
+  handleDetailCloseClick: function(){
+    this.setState({details: null, showAlbumDetailsContainer: false});
   },
 
   executeDetail: function(albumKey) {
+    var data = {id: this.props.albums[albumKey]["id"]};
     $.ajax({
       url: this.state.url,
-      data: albumKey,
-      dataType: 'json',
+      data: data,
       success: this.successFunction,
       error: this.errorFunction,
     });
   },
 
   successFunction: function(response){
-    this.setState({details: response, showCloseButton: true});
+    this.setState({details: response, showAlbumDetailsContainer: true});
+  },
+
+  errorFunction: function(response){
+    console.log("error");
   },
 
   render: function () {
     return (
-      <Album albumTitle={this.props.albumTitle} albumImage={this.props.albumImage} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
+      <Album handleDetailCloseClick={this.handleDetailCloseClick} albumTitle={this.props.albumTitle} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} details={this.state.details} albumImage={this.props.albumImage} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
     );
   },
 

@@ -65,7 +65,6 @@ var Result = React.createClass ({
 
   discogSuccessFunction: function(response){
     this.setState({discogDetails: response, showDiscogCloseButton: true, showDiscogContainer: true})
-    console.log(response);
   },
 
   detailSuccessFunction: function(response){
@@ -78,7 +77,7 @@ var Result = React.createClass ({
 
   render: function () {
     var detailsContainer = <DetailsContainer result={this.props.result} handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} title={this.props.title} queryType={this.props.queryType} />
-    var discogContainer = <DiscogContainer result={this.props.result} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails}/>
+    var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails}/>
     //if artist search
     if (this.props.queryType == "artist") {
       var resultDisplay =

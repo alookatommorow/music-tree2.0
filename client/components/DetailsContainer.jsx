@@ -1,7 +1,7 @@
 var React = require('react');
 var RaisedButton = require('material-ui/lib/raised-button');
 
-var DetailsContainer = React.createClass ({
+var DetailsContainer = React.createClass({
 
   render: function(){
     var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
@@ -17,18 +17,18 @@ var DetailsContainer = React.createClass ({
     }
 
     return (
-        <div className="details-display">
-          <div className="right two-bottom">
-            {closeButton}
-          </div>
-          <div className="left-text bold">
-            {header}
-          </div>
-          <div className="left-text clear-right">
-            {detailsDisplay}
-          </div>
+      <div className="details-display">
+        <div className="right two-bottom">
+          {closeButton}
         </div>
-      );
+        <div className="left-text bold">
+          {header}
+        </div>
+        <div className="left-text clear-right">
+          {detailsDisplay}
+        </div>
+      </div>
+    );
   },
 
 });
