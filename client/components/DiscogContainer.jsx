@@ -4,35 +4,54 @@ var ListItem = require('material-ui/lib/lists/list-item');
 var AlbumContainer = require('./AlbumContainer.jsx');
 
 var DiscogContainer = React.createClass({
+  getInitialState: function(){
+    return {
+      showMixed: true,
+      showLps: false,
+      showEps: false,
+    };
+
+  },
+
+  handleLpClick: function(){
+    this.setState({showEps: false, showMixed: false, showLps: true, })
+  },
+
+  handleEpClick: function(){
+    this.setState({showLps: false, showMixed: false, showEps: true})
+  },
 
   render: function(){
     var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
+    var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
+    var epButton = <RaisedButton label='Sings and Other' onClick={this.handleEpClick}/>
     var header = <div>{this.props.title} Discography</div>
 
-    var mixed= this.props.albums.map(function(album, index){
+    var mixed = this.props.albums.map(function(album, index){
       return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
     }.bind(this));
 
-    var discogLps= this.props.lps.map(function(album, index){
-      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
-    }.bind(this));
+    var discogLps = this.props.lps.map(function(album, index){
+          return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+        }.bind(this));
 
     var discogEps= this.props.eps.map(function(album, index){
-      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
-    }.bind(this));
+        return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+      }.bind(this));
 
     var discogDisplay =
       <div>
-        LPs:
-        {discogLps}
-        EPs:
-        {discogEps}
+        {this.state.showMixed ? mixed : null}
+        {this.state.showLps ? discogLps : null}
+        {this.state.showEps ? discogEps : null}
       </div>
 
     return(
       <div className="details-display">
         <div className="right two-bottom">
           {closeButton}
+          {lpButton}
+          {epButton}
         </div>
         <div className="left-text bold">
           {header}

@@ -101,12 +101,8 @@ var Result = React.createClass ({
         <div>
           <ListItem className="left-text">
             <div className="right center-text">
-              <div className='four-bottom'>
-                <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
-              </div>
-              <div>
-                <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
-              </div>
+              <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
+              <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
             </div>
             <div className="left two-right">
               <img src={this.props.picSource} alt="Pic unavailable"></img>
@@ -130,13 +126,13 @@ var Result = React.createClass ({
             </div>
             <div>
               <img src={this.props.picSource} className="left two-right" ></img>
-              <div className="album-result-title">
-                <div className="bold">
-                  {this.props.title}
-                </div>
-                <div className="ten-top">
-                  {this.props.result.year}
-                </div>
+            </div>
+            <div className="album-result-title">
+              <div className="bold">
+                {this.props.title}
+              </div>
+              <div className="two-top">
+                {this.props.result.year}
               </div>
             </div>
             <div className="clear-both"></div>

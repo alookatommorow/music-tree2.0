@@ -17,7 +17,7 @@
   font-family: "Geneva", Serif;
 }
 
-.debug {
+* {
   border: 1px solid red;
 }
 
@@ -70,16 +70,18 @@
 }
 
 .artist-result-title {
-  margin-left: 2%;
-  margin-top: 2%;
+  clear: right;
   font-weight: bold;
-  display: inline-block;
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .album-result-title {
-  margin-left: 2%;
-  margin-top: 2%;
-  display: inline-block;
+  clear: right;
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .bold {
@@ -100,6 +102,10 @@
 
 .two-left {
   margin-left: 2%;
+}
+
+.two-top {
+  margin-top: 2%;
 }
 
 .two-bottom {
