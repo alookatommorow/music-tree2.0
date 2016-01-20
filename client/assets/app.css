@@ -15,7 +15,10 @@
 
 .html {
   font-family: "Geneva", Serif;
-  background-color: black;
+
+}
+#page-container {
+  /*background-color: black;*/
 }
 
 .debug {
@@ -29,7 +32,6 @@
 
 .multi-button-box {
   float: right;
-  text-align: center;
   margin-bottom: 3%;
 }
 

@@ -22,9 +22,9 @@ var DiscogContainer = React.createClass({
   },
 
   render: function(){
-    var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
+
     var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
-    var epButton = <RaisedButton label='Sings and Other' onClick={this.handleEpClick}/>
+    var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div>{this.props.title} Discography</div>
 
     var mixed = this.props.albums.map(function(album, index){
@@ -49,7 +49,6 @@ var DiscogContainer = React.createClass({
     return(
       <div className="details-display">
         <div className="right two-bottom">
-          {closeButton}
           {lpButton}
           {epButton}
         </div>

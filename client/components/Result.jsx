@@ -3,7 +3,7 @@ var DetailsContainer = require('./DetailsContainer.jsx');
 var DiscogContainer = require('./DiscogContainer.jsx');
 var ListItem = require('material-ui/lib/lists/list-item');
 var RaisedButton = require('material-ui/lib/raised-button');
-var Divider = require('material-ui/lib/lists/list-divider');
+var Divider = require('material-ui/lib/divider');
 
 var Result = React.createClass ({
   getInitialState: function(){
@@ -95,12 +95,16 @@ var Result = React.createClass ({
     var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     //if artist search
     if (this.props.queryType == "artist") {
+      var detailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
+      var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
+      var detailCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
+      var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
       var resultDisplay =
         <div>
           <ListItem>
             <div className="multi-button-box">
-              <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
-              <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
+              {this.state.showDetailsContainer ? detailCloseButton : detailsOpenButton}
+              {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
             </div>
             <div className="left ten-right">
               <img src={this.props.picSource} alt="Pic unavailable"></img>

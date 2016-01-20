@@ -2,6 +2,7 @@ var React = require('react');
 var AlbumDetailsContainer = require('./AlbumDetailsContainer.jsx')
 var RaisedButton = require('material-ui/lib/raised-button');
 var ListItem = require('material-ui/lib/lists/list-item');
+var Divider = require('material-ui/lib/divider');
 
 var Album = React.createClass({
   render: function(){
@@ -26,6 +27,7 @@ var Album = React.createClass({
           <div className="clear-both"> </div>
         </ListItem>
         {this.props.showAlbumDetailsContainer ? detailsContainer : null}
+        <Divider />
       </div>
     );
   },

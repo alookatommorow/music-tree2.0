@@ -3,8 +3,8 @@ var RaisedButton = require('material-ui/lib/raised-button');
 
 var DetailsContainer = React.createClass({
 
+
   render: function(){
-    var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
     if (this.props.queryType == "artist"){
       var header = <div>{this.props.title} Profile</div>
       var detailsDisplay = <div>{this.props.details['profile']}</div>
@@ -12,17 +12,13 @@ var DetailsContainer = React.createClass({
     else if (this.props.queryType == "master") {
       var header = <div>Tracklist</div>
       var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
-              console.log(this.props.title+track['title'])
-
         return <div key={this.props.title+track['title']}>{index+1}. {track['title']}</div>
       }.bind(this));
     }
 
     return (
       <div className="details-display">
-        <div className="right two-bottom">
-          {closeButton}
-        </div>
+
         <div className="left-text bold">
           {header}
         </div>
