@@ -55,10 +55,12 @@ var SearchContainer = React.createClass({
   render: function () {
     var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
     return (
-      <div className='center-text'>
-        <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
+      <div>
+        <div className="center-text">
+          <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
+        </div>
         <div className='results-container'>
-        {this.state.showSearchResults ? searchResultsContainer: null}
+          {this.state.showSearchResults ? searchResultsContainer: null}
         </div>
       </div>
     );

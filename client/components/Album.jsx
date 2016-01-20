@@ -12,14 +12,14 @@ var Album = React.createClass({
           <div className='right'>
             <RaisedButton onClick={this.props.handleDetailClick} label='Album Details'/>
           </div>
-          <div className="left two-right">
-            <img src={this.props.albumImage} alt="Pic unavailable"></img>
+          <div>
+            <img src={this.props.albumImage} alt="Pic unavailable" className="left two-right"></img>
           </div>
           <div className="album-result-title">
             <div className="bold">
               {this.props.albumTitle}
             </div>
-            <div className="ten-top">
+            <div className="two-top">
               {this.props.albumYear}
             </div>
           </div>

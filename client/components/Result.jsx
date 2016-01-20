@@ -2,8 +2,8 @@ var React = require('react');
 var DetailsContainer = require('./DetailsContainer.jsx');
 var DiscogContainer = require('./DiscogContainer.jsx');
 var ListItem = require('material-ui/lib/lists/list-item');
-var Avatar = require('material-ui/lib/avatar');
 var RaisedButton = require('material-ui/lib/raised-button');
+var Divider = require('material-ui/lib/lists/list-divider');
 
 var Result = React.createClass ({
   getInitialState: function(){
@@ -41,7 +41,7 @@ var Result = React.createClass ({
     var data = {id: this.props.results[resultsKey]["id"]};
     if (this.props.queryType == "artist"){
       var url = this.state.artistInfoUrl;
-    } else if (this.props.queryType == "release_title"){
+    } else if (this.props.queryType == "master"){
       var url = this.state.albumInfoUrl;
     }
 
@@ -55,10 +55,10 @@ var Result = React.createClass ({
   },
 
   executeDiscog: function(resultsKey) {
-    // var data = {id: this.props.results[resultsKey]["id"]};
+    var data = {query: this.props.results[resultsKey]["title"]}
     $.ajax({
       url: this.state.discogUrl,
-      data: {query: this.props.query},
+      data: data,
       dataType: 'json',
       success: this.discogSuccessFunction,
       error: this.errorFunction,
@@ -79,9 +79,7 @@ var Result = React.createClass ({
         eps.push(album)
       }
     });
-
-
-    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps,showDiscogContainer: true})
+    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps, showDiscogContainer: true})
   },
 
   detailSuccessFunction: function(response){
@@ -99,46 +97,47 @@ var Result = React.createClass ({
     if (this.props.queryType == "artist") {
       var resultDisplay =
         <div>
-          <ListItem className="left-text">
-            <div className="right center-text">
+          <ListItem>
+            <div className="multi-button-box">
               <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
               <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
             </div>
-            <div className="left two-right">
+            <div className="left ten-right">
               <img src={this.props.picSource} alt="Pic unavailable"></img>
             </div>
-            <div className="artist-result-title">
+            <div className="clear-right bold">
               {this.props.title}
             </div>
             <div className="clear-both"></div>
           </ListItem>
           {this.state.showDetailsContainer ? detailsContainer : null}
           {this.state.showDiscogContainer ? discogContainer : null}
+          <Divider />
         </div>
     }
     //else if album search
     else if (this.props.queryType == "master") {
       var resultDisplay =
         <div>
-          <ListItem className="left-text">
-            <div className="right center-text">
+          <ListItem>
+            <div className="button-box">
               <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
             </div>
-            <div>
-              <img src={this.props.picSource} className="left two-right" ></img>
+            <div className="left ten-right">
+              <img src={this.props.picSource}  ></img>
             </div>
-            <div className="album-result-title">
+            <div className="clear-right">
               <div className="bold">
                 {this.props.title}
               </div>
-              <div className="two-top">
+              <div className="one-top">
                 {this.props.result.year}
               </div>
             </div>
             <div className="clear-both"></div>
-
           </ListItem>
           {this.state.showDetailsContainer ? detailsContainer : null}
+          <Divider />
         </div>
     }
 

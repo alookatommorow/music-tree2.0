@@ -1,7 +1,7 @@
 var React = require('react');
 var Header = require('./Header.jsx');
 var SearchContainer = require('./SearchContainer.jsx');
-var ThemeManager = require('material-ui/lib/styles/theme-manager')();
+// var ThemeManager = require('material-ui/lib/styles/theme-manager');
 var mui = require('material-ui');
 
 
@@ -22,15 +22,15 @@ var App = React.createClass({
     muiTheme: React.PropTypes.object
   },
 
-  getChildContext: function() {
-    return {
-      muiTheme: ThemeManager.getCurrentTheme()
-    };
-  },
+  // getChildContext: function() {
+  //   return {
+  //     muiTheme: ThemeManager.getCurrentTheme()
+  //   };
+  // },
 
   render: function () {
     return (
-      <div className='center-text'>
+      <div>
         <Header/>
         <SearchContainer origin={this.props.origin}/>
       </div>

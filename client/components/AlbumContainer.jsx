@@ -11,7 +11,7 @@ var AlbumContainer = React.createClass ({
   },
 
   handleDetailClick: function() {
-    this.executeDetail(this.props.albumKey);
+    this.executeDetail(this.props.album["id"]);
   },
 
   handleDetailCloseClick: function(){
@@ -19,7 +19,7 @@ var AlbumContainer = React.createClass ({
   },
 
   executeDetail: function(albumKey) {
-    var data = {id: this.props.albums[albumKey]["id"]};
+    var data = {id: albumKey};
     $.ajax({
       url: this.state.url,
       data: data,

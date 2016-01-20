@@ -12,8 +12,10 @@ var DetailsContainer = React.createClass({
     else if (this.props.queryType == "master") {
       var header = <div>Tracklist</div>
       var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
-        return <div>{index+1}. {track['title']}</div>
-      });
+              console.log(this.props.title+track['title'])
+
+        return <div key={this.props.title+track['title']}>{index+1}. {track['title']}</div>
+      }.bind(this));
     }
 
     return (
