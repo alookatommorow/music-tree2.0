@@ -22,19 +22,27 @@ var Result = React.createClass ({
   },
 
   handleDetailClick: function() {
-    this.executeDetail(this.props.resultsKey);
+    if (this.state.detailsDetails === null) {
+      this.executeDetail(this.props.resultsKey);
+    } else {
+      this.setState({showDetailsContainer: true})
+    }
   },
 
   handleDiscogClick: function() {
-    this.executeDiscog(this.props.resultsKey);
+    if (this.state.discogDetails === null) {
+      this.executeDiscog(this.props.resultsKey);
+    } else {
+      this.setState({showDiscogContainer: true});
+    }
   },
 
   handleDiscogCloseClick: function(){
-    this.setState({discogDetails: null, showDiscogContainer: false});
+    this.setState({showDiscogContainer: false});
   },
 
   handleDetailCloseClick: function(){
-    this.setState({detailsDetails: null, showDetailsContainer: false});
+    this.setState({showDetailsContainer: false});
   },
 
   executeDetail: function(resultsKey) {
@@ -83,7 +91,7 @@ var Result = React.createClass ({
   },
 
   detailSuccessFunction: function(response){
-    this.setState({detailsDetails: response, showDetailsCloseButton: true, showDetailsContainer: true});
+    this.setState({detailsDetails: response, showDetailsContainer: true});
   },
 
   errorFunction: function(response){
@@ -93,11 +101,12 @@ var Result = React.createClass ({
   render: function () {
     var detailsContainer = <DetailsContainer result={this.props.result} handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} title={this.props.title} queryType={this.props.queryType} />
     var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var detailCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
+    var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     //if artist search
     if (this.props.queryType == "artist") {
       var detailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
       var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
-      var detailCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
       var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
       var resultDisplay =
         <div>
@@ -125,7 +134,7 @@ var Result = React.createClass ({
         <div>
           <ListItem>
             <div className="button-box">
-              <RaisedButton onClick={this.handleDetailClick} className='right' label='Album Details'/>
+              {this.state.showDetailsContainer ? detailCloseButton : albumDetailsOpenButton}
             </div>
             <div className="left ten-right">
               <img src={this.props.picSource}  ></img>
