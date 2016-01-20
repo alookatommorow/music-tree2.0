@@ -42,7 +42,7 @@ var AlbumContainer = React.createClass ({
 
   render: function () {
     return (
-      <Album handleDetailCloseClick={this.handleDetailCloseClick} albumTitle={this.props.albumTitle} album={this.props.album} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} details={this.state.details} albumImage={this.props.albumImage} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
+      <Album handleDetailCloseClick={this.handleDetailCloseClick} album={this.props.album} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} details={this.state.details} handleDetailClick={this.handleDetailClick}/>
     );
   },
 

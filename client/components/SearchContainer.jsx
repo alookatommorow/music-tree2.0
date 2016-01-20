@@ -50,7 +50,7 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
+    var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
     return (
       <div>
         <div className="center-text">

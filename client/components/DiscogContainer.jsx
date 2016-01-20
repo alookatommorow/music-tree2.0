@@ -13,6 +13,10 @@ var DiscogContainer = React.createClass({
 
   },
 
+  handleAllClick: function(){
+    this.setState({showEps: false, showLps: true, showMixed: true,})
+  },
+
   handleLpClick: function(){
     this.setState({showEps: false, showMixed: false, showLps: true, })
   },
@@ -23,20 +27,21 @@ var DiscogContainer = React.createClass({
 
   render: function(){
 
+    var allButton = <RaisedButton label='All' onClick={this.handleAllClick}/>
     var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
     var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div>{this.props.title} Discography</div>
 
     var mixed = this.props.albums.map(function(album, index){
-      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+      return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
     }.bind(this));
 
     var discogLps = this.props.lps.map(function(album, index){
-          return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+          return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
         }.bind(this));
 
     var discogEps= this.props.eps.map(function(album, index){
-        return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} album={album} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+        return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
       }.bind(this));
 
     var discogDisplay =
@@ -49,6 +54,7 @@ var DiscogContainer = React.createClass({
     return(
       <div className="details-display">
         <div className="right two-bottom">
+          {allButton}
           {lpButton}
           {epButton}
         </div>

@@ -16,14 +16,14 @@ var Album = React.createClass({
             {this.props.showAlbumDetailsContainer ? closeButton : openButton }
           </div>
           <div>
-            <img src={this.props.albumImage} alt="Pic unavailable" className="left two-right"></img>
+            <img src={this.props.album.thumb} alt="Pic unavailable" className="left two-right"></img>
           </div>
           <div className="album-result-title">
             <div className="bold">
-              {this.props.albumTitle}
+              {this.props.album.title}
             </div>
             <div className="two-top">
-              {this.props.albumYear}
+              {this.props.album.year}
             </div>
           </div>
           <div className="clear-both"> </div>

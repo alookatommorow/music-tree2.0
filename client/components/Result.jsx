@@ -99,8 +99,8 @@ var Result = React.createClass ({
   },
 
   render: function () {
-    var detailsContainer = <DetailsContainer result={this.props.result} handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} title={this.props.title} queryType={this.props.queryType} />
-    var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var detailsContainer = <DetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.detailsDetails} queryType={this.props.queryType} />
+    var discogContainer = <DiscogContainer origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     //if artist search
@@ -116,10 +116,10 @@ var Result = React.createClass ({
               {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
             </div>
             <div className="left ten-right">
-              <img src={this.props.picSource} alt="Pic unavailable"></img>
+              <img src={this.props.result.thumb} alt="Pic unavailable"></img>
             </div>
             <div className="clear-right bold">
-              {this.props.title}
+              {this.props.result.title}
             </div>
             <div className="clear-both"></div>
           </ListItem>
@@ -134,14 +134,14 @@ var Result = React.createClass ({
         <div>
           <ListItem>
             <div className="button-box">
-              {this.state.showDetailsContainer ? detailCloseButton : albumDetailsOpenButton}
+              {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
             </div>
             <div className="left ten-right">
-              <img src={this.props.picSource}  ></img>
+              <img src={this.props.result.thumb}  ></img>
             </div>
             <div className="clear-right">
               <div className="bold">
-                {this.props.title}
+                {this.props.result.title}
               </div>
               <div className="one-top">
                 {this.props.result.year}
