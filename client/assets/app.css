@@ -15,10 +15,45 @@
 
 .html {
   font-family: "Geneva", Serif;
+
+}
+#page-container {
+  /*background-color: black;*/
 }
 
 .debug {
   border: 1px solid red;
+}
+
+.results-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.multi-button-box {
+  float: right;
+  margin-bottom: 3%;
+}
+
+.button-box {
+  float: right;
+  margin-bottom: 2%;
+}
+
+.details-display {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.album-result-title {
+  /*clear: right;*/
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  /*text-align: left;*/
+
 }
 
 .center-text {
@@ -49,38 +84,21 @@
   clear: both;
 }
 
-.results-container {
-  margin-left: 15%;
-  margin-right: 15%;
+.clear-right {
+  clear: right;
 }
 
+
 .header-image {
-  height: 200px;
+  margin: 0 auto;
+  width: 10%;
 }
 
 .big-text {
   font-size: 1em;
 }
 
-.details-display {
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
 
-.artist-result-title {
-  margin-left: 2%;
-  margin-top: 2%;
-  font-weight: bold;
-  display: inline-block;
-}
-
-.album-result-title {
-  margin-left: 2%;
-  margin-top: 2%;
-  display: inline-block;
-}
 
 .bold {
   font-weight: bold;
@@ -94,12 +112,20 @@
   margin-bottom: 1%;
 }
 
+.one-top {
+  margin-top: 1%;
+}
+
 .two-right {
   margin-right: 2%;
 }
 
 .two-left {
   margin-left: 2%;
+}
+
+.two-top {
+  margin-top: 2%;
 }
 
 .two-bottom {
@@ -112,6 +138,10 @@
 
 .four-bottom {
   margin-bottom: 4%;
+}
+
+.ten-right {
+  margin-right: 10%;
 }
 
 .ten-top {

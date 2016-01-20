@@ -4,21 +4,59 @@ var ListItem = require('material-ui/lib/lists/list-item');
 var AlbumContainer = require('./AlbumContainer.jsx');
 
 var DiscogContainer = React.createClass({
+  getInitialState: function(){
+    return {
+      showMixed: true,
+      showLps: false,
+      showEps: false,
+    };
+
+  },
+
+  handleAllClick: function(){
+    this.setState({showEps: false, showLps: true, showMixed: true,})
+  },
+
+  handleLpClick: function(){
+    this.setState({showEps: false, showMixed: false, showLps: true, })
+  },
+
+  handleEpClick: function(){
+    this.setState({showLps: false, showMixed: false, showEps: true})
+  },
 
   render: function(){
-    var closeButton = <RaisedButton label='Close' onClick={this.props.handleCloseClick}/>
-    var sortedAlbums = this.props.albums.sort(function(a, b){
-      return a.year - b.year;
-    });
+
+    var allButton = <RaisedButton label='All' onClick={this.handleAllClick}/>
+    var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
+    var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div>{this.props.title} Discography</div>
-    var discogDisplay = sortedAlbums.map(function(album, index){
-      return <AlbumContainer albums={this.props.albums} origin={this.props.origin} key={album.uri} albumKey={index} albumImage={album.thumb} albumTitle={album.title} albumYear={album.year} />
+
+    var mixed = this.props.albums.map(function(album, index){
+      return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
     }.bind(this));
+
+    var discogLps = this.props.lps.map(function(album, index){
+          return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+        }.bind(this));
+
+    var discogEps= this.props.eps.map(function(album, index){
+        return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+      }.bind(this));
+
+    var discogDisplay =
+      <div>
+        {this.state.showMixed ? mixed : null}
+        {this.state.showLps ? discogLps : null}
+        {this.state.showEps ? discogEps : null}
+      </div>
 
     return(
       <div className="details-display">
         <div className="right two-bottom">
-          {closeButton}
+          {allButton}
+          {lpButton}
+          {epButton}
         </div>
         <div className="left-text bold">
           {header}

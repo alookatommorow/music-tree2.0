@@ -11,15 +11,19 @@ var AlbumContainer = React.createClass ({
   },
 
   handleDetailClick: function() {
-    this.executeDetail(this.props.albumKey);
+    if (this.state.details === null) {
+      this.executeDetail(this.props.album["id"]);
+    } else {
+      this.setState({showAlbumDetailsContainer: true});
+    }
   },
 
   handleDetailCloseClick: function(){
-    this.setState({details: null, showAlbumDetailsContainer: false});
+    this.setState({showAlbumDetailsContainer: false});
   },
 
   executeDetail: function(albumKey) {
-    var data = {id: this.props.albums[albumKey]["id"]};
+    var data = {id: albumKey};
     $.ajax({
       url: this.state.url,
       data: data,
@@ -38,7 +42,7 @@ var AlbumContainer = React.createClass ({
 
   render: function () {
     return (
-      <Album handleDetailCloseClick={this.handleDetailCloseClick} albumTitle={this.props.albumTitle} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} details={this.state.details} albumImage={this.props.albumImage} albumYear={this.props.albumYear} handleDetailClick={this.handleDetailClick}/>
+      <Album handleDetailCloseClick={this.handleDetailCloseClick} album={this.props.album} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} details={this.state.details} handleDetailClick={this.handleDetailClick}/>
     );
   },
 

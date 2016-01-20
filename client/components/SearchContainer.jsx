@@ -11,10 +11,7 @@ var SearchContainer = React.createClass({
       query: null,
       queryType: "artist",
       showSearchResults: false,
-      menuItems: [
-        { payload: 'artist', text: 'Artist' },
-        { payload: 'master', text: 'Album' },
-      ],
+
     };
   },
 
@@ -22,8 +19,8 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  handleSelect: function(event){
-    this.setState({queryType: event.target.value});
+  handleSelect: function(event, index, value){
+    this.setState({queryType: value});
   },
 
   executeSearch: function(query) {
@@ -53,12 +50,14 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} query={this.state.query} showSearchResults={this.state.showSearchResults}/>
+    var searchResultsContainer = <ResultsContainer results={this.state.results} queryType={this.state.queryType} origin={this.props.origin} />
     return (
-      <div className='center-text'>
-        <SearchForm handleChange={this.handleChange} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} menuItems={this.state.menuItems} handleSubmit={this.handleSubmit} />
+      <div>
+        <div className="center-text">
+          <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
+        </div>
         <div className='results-container'>
-        {this.state.showSearchResults ? searchResultsContainer: null}
+          {this.state.showSearchResults ? searchResultsContainer: null}
         </div>
       </div>
     );

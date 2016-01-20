@@ -4,7 +4,7 @@ var React = require('react');
 var Header = React.createClass ({
   render: function () {
     return (
-      <div>
+      <div className="center-text">
         <img className="header-image" src="https://storage.googleapis.com/west-coast-skateparks/musictree.png"></img>
       </div>
     );
