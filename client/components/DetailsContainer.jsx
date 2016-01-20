@@ -18,7 +18,6 @@ var DetailsContainer = React.createClass({
 
     return (
       <div className="details-display">
-
         <div className="left-text bold">
           {header}
         </div>

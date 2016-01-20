@@ -6,12 +6,14 @@ var Divider = require('material-ui/lib/divider');
 
 var Album = React.createClass({
   render: function(){
-    var detailsContainer = <AlbumDetailsContainer album={this.props.album} handleDetailCloseClick={this.props.handleDetailCloseClick} details={this.props.details}/>
+    var detailsContainer = <AlbumDetailsContainer details={this.props.details}/>
+    var openButton = <RaisedButton onClick={this.props.handleDetailClick} label='Album Details'/>
+    var closeButton = <RaisedButton label='Close' onClick={this.props.handleDetailCloseClick}/>
     return (
       <div>
         <ListItem className="left-text">
           <div className='right'>
-            <RaisedButton onClick={this.props.handleDetailClick} label='Album Details'/>
+            {this.props.showAlbumDetailsContainer ? closeButton : openButton }
           </div>
           <div>
             <img src={this.props.albumImage} alt="Pic unavailable" className="left two-right"></img>

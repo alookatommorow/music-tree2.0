@@ -11,11 +11,15 @@ var AlbumContainer = React.createClass ({
   },
 
   handleDetailClick: function() {
-    this.executeDetail(this.props.album["id"]);
+    if (this.state.details === null) {
+      this.executeDetail(this.props.album["id"]);
+    } else {
+      this.setState({showAlbumDetailsContainer: true});
+    }
   },
 
   handleDetailCloseClick: function(){
-    this.setState({details: null, showAlbumDetailsContainer: false});
+    this.setState({showAlbumDetailsContainer: false});
   },
 
   executeDetail: function(albumKey) {

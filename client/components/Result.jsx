@@ -101,7 +101,7 @@ var Result = React.createClass ({
   render: function () {
     var detailsContainer = <DetailsContainer result={this.props.result} handleCloseClick={this.handleDetailCloseClick} details={this.state.detailsDetails} title={this.props.title} queryType={this.props.queryType} />
     var discogContainer = <DiscogContainer result={this.props.result} origin={this.props.origin} handleCloseClick={this.handleDiscogCloseClick} title={this.props.title} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
-    var detailCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
+    var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     //if artist search
     if (this.props.queryType == "artist") {
@@ -112,7 +112,7 @@ var Result = React.createClass ({
         <div>
           <ListItem>
             <div className="multi-button-box">
-              {this.state.showDetailsContainer ? detailCloseButton : detailsOpenButton}
+              {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton}
               {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
             </div>
             <div className="left ten-right">
