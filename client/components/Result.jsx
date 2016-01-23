@@ -115,21 +115,21 @@ var Result = React.createClass ({
       var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
       var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
       var resultDisplay =
-        <div>
+        <div className="result-margin">
           <ListItem>
             <div className="multi-button-box">
               {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton}
               {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
             </div>
-            <div className="left ten-right">
+            <div className="left five-right">
               <img src={picSource} className="image"></img>
             </div>
-            <div className="clear-right bold">
+            <div className="clear-right bold one-five-em">
               {this.props.result.title}
             </div>
             <div className="clear-both"></div>
-            {this.state.showDetailsContainer ? detailsContainer : null}
           </ListItem>
+          {this.state.showDetailsContainer ? detailsContainer : null}
           {this.state.showDiscogContainer ? discogContainer : null}
           <Divider />
         </div>
@@ -137,19 +137,19 @@ var Result = React.createClass ({
     //else if album search
     else if (this.props.queryType == "master") {
       var resultDisplay =
-        <div>
+        <div className="result-margin">
           <ListItem>
             <div className="button-box">
               {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
             </div>
-            <div className="left ten-right">
+            <div className="left three-right">
               <img src={picSource} className="image" ></img>
             </div>
             <div className="clear-right">
-              <div className="bold">
+              <div className="bold one-five-em">
                 {this.props.result.title}
               </div>
-              <div className="one-top">
+              <div className="two-top one-five-em">
                 {this.props.result.year}
               </div>
             </div>

@@ -6,7 +6,7 @@ var DetailsContainer = React.createClass({
 
   render: function(){
     if (this.props.queryType == "artist"){
-      var header = <div className="center-text big-text two-bottom">{this.props.title} Profile</div>
+      var header = <div className="center-text detail-discog-header">{this.props.title} Profile</div>
       var detailsDisplay = <div>{this.props.details['profile']}</div>
     }
     else if (this.props.queryType == "master") {

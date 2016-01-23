@@ -30,7 +30,7 @@ var DiscogContainer = React.createClass({
     var allButton = <RaisedButton label='All' onClick={this.handleAllClick}/>
     var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
     var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
-    var header = <div className="big-text two-bottom">{this.props.title} Discography</div>
+    var header = <div className="detail-discog-header">{this.props.title} Discography</div>
 
     var mixed = this.props.albums.map(function(album, index){
       return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
@@ -55,7 +55,7 @@ var DiscogContainer = React.createClass({
       <div className="details-display">
         <div className="center-text">
           {header}
-          <div className="two-bottom">
+          <div className="three-bottom">
             {allButton}
             {lpButton}
             {epButton}
