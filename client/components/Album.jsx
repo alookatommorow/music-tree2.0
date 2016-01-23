@@ -27,8 +27,8 @@ var Album = React.createClass({
             </div>
           </div>
           <div className="clear-both"> </div>
+          {this.props.showAlbumDetailsContainer ? detailsContainer : null}
         </ListItem>
-        {this.props.showAlbumDetailsContainer ? detailsContainer : null}
         <Divider />
       </div>
     );

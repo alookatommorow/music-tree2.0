@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 
@@ -13,31 +13,93 @@
   box-shadow: none;
 }
 
-.html {
-  font-family: "Geneva", Serif;
-
+body {
+  background-image: url("https://storage.googleapis.com/west-coast-skateparks/music-tree-3.jpg" );
 }
-#page-container {
-  /*background-color: black;*/
+
+body:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,
+    255, 255, 0.7);
+}
+
+ /* // set font-family for most text // */
+div {
+  font-family: "Muli";
+}
+
+/* // set font-family for material-ui buttons // */
+button div div span {
+  text-transform: capitalize !important;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+
+.query {
+  font-family: "Muli" !important;
+}
+
+.header {
+  font-family: "Days One";
+  font-weight: bold;
+  font-size: 5em;
+  color: blue;
+}
+
+.no-results {
+  font-size: 2em;
+  font-weight: bold;
+  color: red;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.no-results-image {
+  margin-top: 2%;
+  height: 100px;
+}
+
+.search-form {
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 35%;
+  background-color: white;
 }
 
 .debug {
   border: 1px solid red;
 }
 
+.image {
+  width: 150px;
+  height: 150px;
+}
+
 .results-container {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.result-margin {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .multi-button-box {
   float: right;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .button-box {
   float: right;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .details-display {
@@ -48,12 +110,35 @@
 }
 
 .album-result-title {
-  /*clear: right;*/
   margin-left: 15%;
   margin-top: 5%;
   margin-bottom: 10%;
-  /*text-align: left;*/
+}
 
+/* ///  for detail and discog headers /// */
+.detail-discog-header {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  background-color: #E3E3E6;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.gray-background {
+  background-color: gray;
+}
+
+.two-em {
+  font-size: 2em;
+}
+
+.one-em {
+  font-size: 1em;
+}
+
+.one-five-em {
+  font-size: 1.5em;
 }
 
 .center-text {
@@ -62,6 +147,10 @@
 
 .left-text {
   text-align: left;
+}
+
+.line-height {
+  line-height: 25px;
 }
 
 .inline-block {
@@ -87,18 +176,6 @@
 .clear-right {
   clear: right;
 }
-
-
-.header-image {
-  margin: 0 auto;
-  width: 10%;
-}
-
-.big-text {
-  font-size: 1em;
-}
-
-
 
 .bold {
   font-weight: bold;
@@ -132,12 +209,25 @@
   margin-bottom: 2%;
 }
 
+.three-bottom {
+  margin-bottom: 2%;
+}
+
+.three-right {
+  margin-right: 3%;
+}
+
 .four-left {
   margin-left: 4%;
 }
 
 .four-bottom {
   margin-bottom: 4%;
+}
+
+.five-right {
+  margin-right: 5%;
+
 }
 
 .ten-right {
