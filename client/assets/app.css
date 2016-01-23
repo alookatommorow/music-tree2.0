@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Slab");
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 
@@ -13,16 +13,62 @@
   box-shadow: none;
 }
 
-.html {
-  font-family: "Geneva", Serif;
 
+
+body {
+  background-image: url("https://storage.googleapis.com/west-coast-skateparks/music-tree-3.jpg" );
 }
-#page-container {
-  /*background-color: black;*/
+
+body:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,
+    255, 255, 0.7);
+}
+
+
+div {
+  font-family: "Muli";
+}
+
+button div div span {
+  text-transform: capitalize !important;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+
+.query {
+  font-family: "Muli" !important;
+}
+
+
+.header {
+  font-family: "Days One";
+  font-weight: bold;
+  font-size: 5em;
+  color: blue;
+}
+
+.search-form {
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 35%;
+  background-color: white;
 }
 
 .debug {
   border: 1px solid red;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
 }
 
 .results-container {
@@ -48,12 +94,14 @@
 }
 
 .album-result-title {
-  /*clear: right;*/
   margin-left: 15%;
   margin-top: 5%;
   margin-bottom: 10%;
-  /*text-align: left;*/
+}
 
+.big-text span {
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .center-text {
@@ -89,10 +137,10 @@
 }
 
 
-.header-image {
+/*.header-image {
   margin: 0 auto;
   width: 10%;
-}
+}*/
 
 .big-text {
   font-size: 1em;

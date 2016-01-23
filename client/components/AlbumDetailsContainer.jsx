@@ -12,7 +12,7 @@ var AlbumDetailsContainer = React.createClass({
 
     return (
       <div className="details-display">
-        <div className="left-text bold two-bottom">
+        <div className="left-text bold one-bottom">
           {header}
         </div>
         <div className="left-text">

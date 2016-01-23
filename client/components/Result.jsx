@@ -99,13 +99,19 @@ var Result = React.createClass ({
   },
 
   render: function () {
+    var picSource
+    if (this.props.result.thumb === "") {
+      picSource = "https://storage.googleapis.com/west-coast-skateparks/muisc-tree-alt.jpg"
+    } else {
+      picSource = this.props.result.thumb
+    }
     var detailsContainer = <DetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.detailsDetails} queryType={this.props.queryType} />
     var discogContainer = <DiscogContainer origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     //if artist search
     if (this.props.queryType == "artist") {
-      var detailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Artist Details'/>
+      var detailsOpenButton = <RaisedButton className="change-font" onClick={this.handleDetailClick} label='Artist Details'/>
       var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
       var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
       var resultDisplay =
@@ -116,14 +122,14 @@ var Result = React.createClass ({
               {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
             </div>
             <div className="left ten-right">
-              <img src={this.props.result.thumb} alt="Pic unavailable"></img>
+              <img src={picSource} className="image"></img>
             </div>
             <div className="clear-right bold">
               {this.props.result.title}
             </div>
             <div className="clear-both"></div>
+            {this.state.showDetailsContainer ? detailsContainer : null}
           </ListItem>
-          {this.state.showDetailsContainer ? detailsContainer : null}
           {this.state.showDiscogContainer ? discogContainer : null}
           <Divider />
         </div>
@@ -137,7 +143,7 @@ var Result = React.createClass ({
               {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
             </div>
             <div className="left ten-right">
-              <img src={this.props.result.thumb}  ></img>
+              <img src={picSource} className="image" ></img>
             </div>
             <div className="clear-right">
               <div className="bold">
@@ -148,8 +154,8 @@ var Result = React.createClass ({
               </div>
             </div>
             <div className="clear-both"></div>
+            {this.state.showDetailsContainer ? detailsContainer : null}
           </ListItem>
-          {this.state.showDetailsContainer ? detailsContainer : null}
           <Divider />
         </div>
     }

@@ -1,6 +1,7 @@
 module Discogs
   class Client
     include HTTParty
+
     base_uri "https://api.discogs.com"
 
     def search(query)
@@ -16,22 +17,18 @@ module Discogs
     end
 
     def discog(query)
-
-      (self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100")).parsed_response["results"]
-      # (self.class.get("/artists/#{id}/releases?&per_page=100")).parsed_response["releases"]
-      # releases = []
-      # (1..2).each do |n|
-      #   releases.push((self.class.get("/database/search?type=master&artist=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100&page=#{n}")).parsed_response["results"])
-      # end
-      # (1..2).each do |n|
-      #   releases.push((self.class.get("/artists/#{id}/releases?&per_page=100&page=#{n}")).parsed_response["releases"])
-      # end
-      # releases.flatten
-      # releases.flatten
-    end
-
-    def headers
-      {"key" => ENV["CONSUMER_KEY"], "secret" => ENV["CONSUMER_SECRET"]}
+      ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (which can also break the search right now)
+      url = URI.parse("/database/search")
+      url.query = URI::encode_www_form(
+        {
+          'type' => "master",
+          'artist' => "#{query}",
+          'key' => "#{ENV['CONSUMER_KEY']}",
+          'secret' => "#{ENV['CONSUMER_SECRET']}",
+          'per_page' => 100
+        }
+      )
+      (self.class.get(url.to_s)).parsed_response["results"]
     end
 
   end

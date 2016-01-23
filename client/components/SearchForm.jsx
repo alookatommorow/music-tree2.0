@@ -13,16 +13,18 @@ var SearchForm = React.createClass ({
 
   render: function () {
     return (
-      <div>
+      <div className="search-form center-text" >
         <form onSubmit={this.props.handleSubmit} >
           <div>
-            <TextField className="query center-text" onChange={this.props.handleChange} hintText="Enter search..." />
+            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
           </div>
-          <SelectField value={this.props.queryType} onChange={this.props.handleSelect}>
+          <div>
+          <SelectField  value={this.props.queryType} onChange={this.props.handleSelect}>
               <MenuItem value={'artist'} primaryText="Artist"/>
               <MenuItem value={'master'} primaryText="Album"/>
           </SelectField>
-          <div>
+          </div>
+          <div className="search-button">
             <RaisedButton label="Search" secondary={true} onClick={this.props.handleSubmit} />
           </div>
         </form>
