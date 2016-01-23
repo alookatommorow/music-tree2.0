@@ -11,7 +11,6 @@ var SearchContainer = React.createClass({
       query: null,
       queryType: "artist",
       showSearchResults: false,
-
     };
   },
 

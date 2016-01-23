@@ -20612,3 +20612,111 @@ Started GET "/album_info?id=43242" for ::1 at 2016-01-22 17:02:14 -0800
 Processing by HomeController#album_info as */*
   Parameters: {"id"=>"43242"}
 Completed 200 OK in 231ms (Views: 2.4ms)
+
+
+Started GET "/search?query=motherboarsfsdcsdc" for ::1 at 2016-01-22 17:18:21 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motherboarsfsdcsdc"}
+Completed 200 OK in 259ms (Views: 1.6ms)
+
+
+Started GET "/search?query=zxdvzxcvxcvxvc" for ::1 at 2016-01-22 17:18:50 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zxdvzxcvxcvxvc"}
+Completed 200 OK in 207ms (Views: 0.2ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2016-01-22 17:18:56 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 763ms (Views: 25.8ms)
+
+
+Started GET "/search?query=motorhead" for ::1 at 2016-01-22 17:22:59 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorhead"}
+Completed 200 OK in 591ms (Views: 54.6ms)
+
+
+Started GET "/search?query=motorheadsdsdcsdzc" for ::1 at 2016-01-22 17:23:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"motorheadsdsdcsdzc"}
+Completed 200 OK in 181ms (Views: 0.2ms)
+
+
+Started GET "/search?query=sdszdcsdzcc" for ::1 at 2016-01-22 17:25:03 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"sdszdcsdzcc"}
+Completed 200 OK in 561ms (Views: 0.2ms)
+
+
+Started GET "/search?query=dfvdsfvzdvdzv" for ::1 at 2016-01-22 17:31:55 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"dfvdsfvzdvdzv"}
+Completed 200 OK in 187ms (Views: 0.1ms)
+
+
+Started GET "/search?query=asdfsdv" for ::1 at 2016-01-22 17:32:20 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"asdfsdv"}
+Completed 200 OK in 178ms (Views: 0.2ms)
+
+
+Started GET "/search?query=sdcscsdcc" for ::1 at 2016-01-22 17:33:04 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"sdcscsdcc"}
+Completed 200 OK in 193ms (Views: 0.2ms)
+
+
+Started GET "/search?query=sdfsdfsdf" for ::1 at 2016-01-22 17:38:14 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"sdfsdfsdf"}
+Completed 200 OK in 175ms (Views: 0.2ms)
+
+
+Started GET "/search?query=sadfasdf" for ::1 at 2016-01-22 17:39:15 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"sadfasdf"}
+Completed 200 OK in 193ms (Views: 0.1ms)
+
+
+Started GET "/search?query=zvcxzxcvzcxv" for ::1 at 2016-01-22 17:40:32 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zvcxzxcvzcxv"}
+Completed 200 OK in 178ms (Views: 0.3ms)
+
+
+Started GET "/search?query=zxcvzxcvzxcv" for ::1 at 2016-01-22 17:40:44 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zxcvzxcvzxcv"}
+Completed 200 OK in 191ms (Views: 0.1ms)
+
+
+Started GET "/search?query=zxcvzcxvzxcv" for ::1 at 2016-01-22 17:41:01 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zxcvzcxvzxcv"}
+Completed 200 OK in 193ms (Views: 0.2ms)
+
+
+Started GET "/search?query=zdvzdvzvd" for ::1 at 2016-01-22 17:41:51 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zdvzdvzvd"}
+Completed 200 OK in 188ms (Views: 0.1ms)
+
+
+Started GET "/search?query=asfddszfzds" for ::1 at 2016-01-22 17:43:02 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"asfddszfzds"}
+Completed 200 OK in 189ms (Views: 0.6ms)
+
+
+Started GET "/search?query=zsdvzvxvc" for ::1 at 2016-01-22 17:43:53 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zsdvzvxvc"}
+Completed 200 OK in 178ms (Views: 0.1ms)
+
+
+Started GET "/search?query=zxvzcvzcxv" for ::1 at 2016-01-22 17:44:05 -0800
+Processing by HomeController#search as HTML
+  Parameters: {"query"=>"zxvzcvzcxv"}
+Completed 200 OK in 200ms (Views: 0.2ms)
