@@ -87,6 +87,17 @@ button div div span {
   margin-right: 10%;
 }
 
+.search-bar {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+}
+
 .result-margin {
   margin-left: 1%;
   margin-right: 1%;
@@ -109,12 +120,6 @@ button div div span {
   margin-bottom: 2%;
 }
 
-.album-result-title {
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-}
-
 /* ///  for detail and discog headers /// */
 .detail-discog-header {
   font-weight: bold;
@@ -123,6 +128,10 @@ button div div span {
   background-color: #E3E3E6;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.white {
+  background-color: white;
 }
 
 .gray-background {

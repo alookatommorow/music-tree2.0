@@ -18,7 +18,7 @@ var Album = React.createClass({
           <div>
             <img src={this.props.album.thumb} alt="Pic unavailable" className="left two-right"></img>
           </div>
-          <div className="album-result-title">
+          <div className="clear-right">
             <div className="bold">
               {this.props.album.title}
             </div>
