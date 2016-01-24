@@ -6,7 +6,7 @@ MusicTree is a quick reference guide to recorded music.  Utilizing the [Discogs 
 
 ##Deployment
 
-West Coast Skateparks is deployed to Heroku. Visit the app [here](https://music-tree.herokuapp.com/)
+MusicTree is deployed to Heroku. Visit the app [here](https://music-tree.herokuapp.com/)
 
 ##Technology
 
@@ -14,7 +14,7 @@ Music Tree is a fully decoupled, single-page app built in [React](https://facebo
 
 ##Explore
 
-If you would like to explore the code and run it on your local machine, you will need to obtain your own tokens to access the Discogs API.  Go [here](http://www.discogs.com/developers/) and click "Create an App."" Once you obtain your tokens, you will need to store them in a secure place where the app can access it. One option for doing that is described [here](https://github.com/bkeepers/dotenv). Make sure you have [Ruby 2.2.0](https://rvm.io/rvm/install) and [Node 0.10.x](https://github.com/creationix/nvm) installed.  Once you have an access token do the following:
+If you would like to explore the code and run it on your local machine, you will need to obtain your own tokens to access the Discogs API.  Go [here](http://www.discogs.com/developers/) and click "Create an App."" Once you obtain your tokens, you will need to store them in a secure place accessible to the app. One option for doing that is described [here](https://github.com/bkeepers/dotenv). Make sure you have [Ruby 2.2.0](https://rvm.io/rvm/install) and [Node 0.10.x](https://github.com/creationix/nvm) installed.  Once you have Discog access tokens, do the following:
 
 Clone the repo from your command line:
 
@@ -37,11 +37,3 @@ Start the Node server:
 `npm run devserve`
 
 Open your browser and navigate to `localhost:8080`
-
-##Code Sample
-
-
-
-```javascript
-
-```

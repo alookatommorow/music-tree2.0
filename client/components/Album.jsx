@@ -12,7 +12,7 @@ var Album = React.createClass({
     return (
       <div>
         <ListItem className="left-text">
-          <div className='right'>
+          <div className='right one-bottom'>
             {this.props.showAlbumDetailsContainer ? closeButton : openButton }
           </div>
           <div>
