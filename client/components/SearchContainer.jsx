@@ -1,6 +1,7 @@
 var React = require('react');
-var ResultsContainer = require('./ResultsContainer.jsx')
-var SearchForm = require('./SearchForm.jsx')
+var ResultsContainer = require('./ResultsContainer.jsx');
+var SearchForm = require('./SearchForm.jsx');
+var LinearProgress = require('material-ui/lib/linear-progress');
 
 var SearchContainer = React.createClass({
   getInitialState: function () {
@@ -11,6 +12,7 @@ var SearchContainer = React.createClass({
       query: null,
       queryType: "artist",
       showSearchResults: false,
+      inProgress: false,
     };
   },
 
@@ -37,11 +39,12 @@ var SearchContainer = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
+    this.setState({showSearchResults: true, inProgress: true});
     this.executeSearch(this.state.query, this.state.queryType);
   },
 
   successFunction: function(response){
-    this.setState({results: response, showSearchResults: true});
+    this.setState({results: response, inProgress: false});
   },
 
   errorFunction: function(){
@@ -49,18 +52,29 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer results={this.state.results} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />
+    var searchResultsContainer
+    var searchForm = <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
+    if (this.state.inProgress === true) {
+      searchResultsContainer =
+        <div className='search-bar'>
+          <h3>Searching...</h3>
+          <LinearProgress mode="indeterminate" className="two-left two-right" />
+        </div>
+    } else {
+      searchResultsContainer = <ResultsContainer results={this.state.results} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />
+    }
     return (
       <div>
         <div >
-          <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
+          {searchForm}
         </div>
         <div className='results-container'>
           {this.state.showSearchResults ? searchResultsContainer: null}
         </div>
       </div>
-    );
+  );
   },
+
 });
 
 module.exports = SearchContainer;

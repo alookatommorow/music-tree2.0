@@ -7,7 +7,7 @@ var mui = require('material-ui');
 
 var App = React.createClass({
   getDefaultProps: function() {
-    // use this for heroku deployment
+    // use this for production
     return {
       origin: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : ''
     };

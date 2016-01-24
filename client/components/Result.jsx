@@ -10,6 +10,8 @@ var Result = React.createClass ({
     return {
       detailsDetails: null,
       discogDetails: null,
+      discogInProgress: false,
+      detailInProgress: false,
       discogEps: null,
       discogLps: null,
       artistInfoUrl: this.props.origin + "/artist_info",
@@ -23,6 +25,7 @@ var Result = React.createClass ({
 
   handleDetailClick: function() {
     if (this.state.detailsDetails === null) {
+      this.setState({detailInProgress: true, showDetailsContainer: true});
       this.executeDetail(this.props.resultsKey);
     } else {
       this.setState({showDetailsContainer: true})
@@ -31,6 +34,7 @@ var Result = React.createClass ({
 
   handleDiscogClick: function() {
     if (this.state.discogDetails === null) {
+      this.setState({discogInProgress: true, showDiscogContainer: true});
       this.executeDiscog(this.props.resultsKey);
     } else {
       this.setState({showDiscogContainer: true});
@@ -87,11 +91,11 @@ var Result = React.createClass ({
         eps.push(album)
       }
     });
-    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps, showDiscogContainer: true})
+    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps, discogInProgress: false})
   },
 
   detailSuccessFunction: function(response){
-    this.setState({detailsDetails: response, showDetailsContainer: true});
+    this.setState({detailsDetails: response, detailInProgress: false});
   },
 
   errorFunction: function(response){
@@ -105,8 +109,8 @@ var Result = React.createClass ({
     } else {
       picSource = this.props.result.thumb
     }
-    var detailsContainer = <DetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.detailsDetails} queryType={this.props.queryType} />
-    var discogContainer = <DiscogContainer origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var detailsContainer = <DetailsContainer inProgress={this.state.detailInProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.detailsDetails} queryType={this.props.queryType} />
+    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     //if artist search

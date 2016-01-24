@@ -6,6 +6,13 @@ var ResultsContainer = React.createClass ({
 
   render: function () {
     var searchResults
+    var noResults =
+      <div className="center-text">
+        <img className="no-results-image" src="https://storage.googleapis.com/west-coast-skateparks/no-results.jpg"></img>
+        <div className="no-results">
+          No Results For Your Query
+        </div>
+      </div>
     if (this.props.results.length > 0){
       searchResults = this.props.results.map(function(result, index){
         if (result.type === this.props.queryType) {
@@ -13,13 +20,7 @@ var ResultsContainer = React.createClass ({
         }
       }.bind(this))
     } else {
-      searchResults =
-        <div className="center-text">
-          <img className="no-results-image" src="https://storage.googleapis.com/west-coast-skateparks/no-results.jpg"></img>
-          <div className="no-results">
-            No Results For Your Query
-          </div>
-        </div>
+      searchResults = noResults
     }
     return (
         <div>
