@@ -49,6 +49,8 @@ var Result = React.createClass ({
     this.setState({showDetailsContainer: false});
   },
 
+
+
   executeDetail: function(resultsKey) {
     if (this.props.queryType == "artist"){
       var url = this.state.artistInfoUrl;

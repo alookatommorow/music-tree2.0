@@ -3,6 +3,7 @@ var List = require('material-ui/lib/lists/list');
 var Result = require('./Result.jsx');
 var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
+var ArtistResult = require('./ArtistResult.jsx');
 
 var ResultsContainer = React.createClass ({
 
@@ -16,7 +17,7 @@ var ResultsContainer = React.createClass ({
     // }
 
     var artistResults = this.props.artistResults.map(function(result, index){
-        return <Result key={result.uri} result={result} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.results} resultsKey={index} />
+        return <ArtistResult key={result.uri} result={result} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.artistResults} resultsKey={index} />
       }.bind(this));
 
     var albumResults = this.props.albumResults.map(function(result, index){

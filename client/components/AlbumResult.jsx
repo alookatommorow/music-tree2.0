@@ -26,6 +26,10 @@ var AlbumResult = React.createClass({
     }
   },
 
+  detailSuccessFunction: function(response){
+    this.setState({detailsDetails: response, detailInProgress: false});
+  },
+
   handleDetailCloseClick: function(){
     this.setState({showDetailsContainer: false});
   },
@@ -48,11 +52,6 @@ var AlbumResult = React.createClass({
   },
 
   render: function(){
-    if (this.props.result.thumb === "") {
-      picSource = "https://storage.googleapis.com/west-coast-skateparks/muisc-tree-alt.jpg"
-    } else {
-      picSource = this.props.result.thumb
-    }
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
     var detailsContainer = <DetailsContainer inProgress={this.state.detailInProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.details} queryType={this.props.queryType} />
@@ -63,7 +62,7 @@ var AlbumResult = React.createClass({
               {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
             </div>
             <div className="left three-right">
-              <img src={picSource} className="image" ></img>
+              <img src={this.props.result.thumb} className="image" ></img>
             </div>
             <div className="clear-right">
               <div className="bold one-five-em">
