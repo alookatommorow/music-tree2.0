@@ -50,31 +50,26 @@ var Result = React.createClass ({
   },
 
   executeDetail: function(resultsKey) {
-    var data = {id: this.props.results[resultsKey]["id"]};
     if (this.props.queryType == "artist"){
       var url = this.state.artistInfoUrl;
     } else if (this.props.queryType == "master"){
       var url = this.state.albumInfoUrl;
     }
-
     $.ajax({
       url: url,
-      data: data,
-      dataType: 'json',
-      success: this.detailSuccessFunction,
-      error: this.errorFunction,
-    });
+      data: {id: this.props.results[resultsKey]["id"]},
+    })
+    .done(this.detailSuccessFunction)
+    .fail(this.errorFunction);
   },
 
   executeDiscog: function(resultsKey) {
-    var data = {query: this.props.results[resultsKey]["title"]}
     $.ajax({
       url: this.state.discogUrl,
-      data: data,
-      dataType: 'json',
-      success: this.discogSuccessFunction,
-      error: this.errorFunction,
-    });
+      data: {query: this.props.results[resultsKey]["title"]},
+    })
+    .done(this.discogSuccessFunction)
+    .fail(this.errorFunction);;
   },
 
   discogSuccessFunction: function(response){
@@ -113,7 +108,7 @@ var Result = React.createClass ({
     var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
-    //if artist search
+    // if artist search
     if (this.props.queryType == "artist") {
       var detailsOpenButton = <RaisedButton className="change-font" onClick={this.handleDetailClick} label='Artist Details'/>
       var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>

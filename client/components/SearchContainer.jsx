@@ -8,6 +8,8 @@ var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
       results: null,
+      artistResults: null,
+      albumResults: null,
       query: null,
       queryType: "artist",
       showSearchResults: false,
@@ -38,7 +40,22 @@ var SearchContainer = React.createClass({
     this.executeSearch(this.state.query, this.state.queryType);
   },
 
+  filterFunction: function(response) {
+    var artistResults = []
+    var albumResults = []
+    response.map(function(result){
+      if (result.type === "artist") {
+        artistResults.push(result)
+      } else if (result.type === "master") {
+        albumResults.push(result)
+      }
+    });
+    this.setState({artistResults: artistResults, albumResults: albumResults})
+
+  },
+
   successFunction: function(response){
+    this.filterFunction(response);
     this.setState({results: response, inProgress: false});
   },
 
@@ -48,10 +65,11 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer results={this.state.results} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchResultsContainer = <ResultsContainer results={this.state.results} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
     return (
+
       <div>
 
         <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
