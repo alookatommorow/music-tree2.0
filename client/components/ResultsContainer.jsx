@@ -23,7 +23,7 @@ var ResultsContainer = React.createClass ({
       searchResults = noResults
     }
     return (
-        <div>
+        <div className='results-container'>
           <List>
             {searchResults}
           </List>

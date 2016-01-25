@@ -1,14 +1,13 @@
 var React = require('react');
 var ResultsContainer = require('./ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
-var LinearProgress = require('material-ui/lib/linear-progress');
+var SearchIndicator = require('./SearchIndicator.jsx')
+
 
 var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
       results: null,
-      url: this.props.origin + '/search',
-      formMethod: 'get',
       query: null,
       queryType: "artist",
       showSearchResults: false,
@@ -25,16 +24,12 @@ var SearchContainer = React.createClass({
   },
 
   executeSearch: function(query) {
-    var data = {query: query};
-    var url = this.state.url;
-
     $.ajax({
-      url: url,
-      data: data,
-      dataType: 'json',
-      success: this.successFunction,
-      error: this.errorFunction,
-    });
+      url: this.props.origin + '/search',
+      data: {query: query},
+    })
+    .done(this.successFunction)
+    .fail(this.errorFunction);
   },
 
   handleSubmit: function(event) {
@@ -48,29 +43,21 @@ var SearchContainer = React.createClass({
   },
 
   errorFunction: function(){
+    this.setState({showSearchResults: false, inProgress: false});
     console.log("error");
   },
 
   render: function () {
-    var searchResultsContainer
-    var searchForm = <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} formAction={this.state.formAction} formMethod={this.state.formMethod} handleSubmit={this.handleSubmit} />
-    if (this.state.inProgress === true) {
-      searchResultsContainer =
-        <div className='search-bar'>
-          <h3>Searching...</h3>
-          <LinearProgress mode="indeterminate" className="two-left two-right" />
-        </div>
-    } else {
-      searchResultsContainer = <ResultsContainer results={this.state.results} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />
-    }
+    var searchResultsContainer = <ResultsContainer results={this.state.results} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchIndicator = <SearchIndicator text={"Searching..."}/>;
+    var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
     return (
       <div>
-        <div >
-          {searchForm}
-        </div>
-        <div className='results-container'>
-          {this.state.showSearchResults ? searchResultsContainer: null}
-        </div>
+
+        <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+
+        {this.state.showSearchResults ? searchProgress : null}
+
       </div>
   );
   },
