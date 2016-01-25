@@ -1,6 +1,6 @@
 var React = require('react');
 var ArtistProfileContainer = require('../details/ArtistProfileContainer.jsx');
-var DiscogContainer = require('../DiscogContainer.jsx');
+var DiscogContainer = require('../discogs/DiscogContainer.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 var ListItem = require('material-ui/lib/lists/list-item');
@@ -96,14 +96,18 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
-    var detailsContainer = <ArtistProfileContainer handleCloseClick={this.handleprofileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var profileContainer = <ArtistProfileContainer handleCloseClick={this.handleprofileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var profileCloseButton = <RaisedButton label='Close' onClick={this.handleProfileCloseClick}/>
     var profileOpenButton = <RaisedButton className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
     var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
+    var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
+    var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
+
+    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
-    var searchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
-    var profileProgress = this.state.profileInProgress ? searchIndicator : detailsContainer;
+    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
+    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
+
 
     return (
       <div className="result-margin">
@@ -121,7 +125,7 @@ var ArtistResult = React.createClass({
           <div className="clear-both"></div>
         </ListItem>
         {this.state.showProfileContainer ? profileProgress : null}
-        {this.state.showDiscogContainer ? discogContainer : null}
+        {this.state.showDiscogContainer ? discogProgress : null}
         <Divider />
       </div>
     );

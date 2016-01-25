@@ -1,9 +1,7 @@
 var React = require('react');
+
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
-
-
-
 
 var ListItem = require('material-ui/lib/lists/list-item');
 var RaisedButton = require('material-ui/lib/raised-button');

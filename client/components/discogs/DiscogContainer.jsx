@@ -1,8 +1,11 @@
 var React = require('react');
+
+var DiscogAlbumContainer = require('./DiscogAlbumContainer.jsx');
+var SearchIndicator = require('../search/SearchIndicator.jsx');
+
+var LinearProgress = require('material-ui/lib/linear-progress');
 var RaisedButton = require('material-ui/lib/raised-button');
 var ListItem = require('material-ui/lib/lists/list-item');
-var AlbumContainer = require('./AlbumContainer.jsx');
-var LinearProgress = require('material-ui/lib/linear-progress');
 
 var DiscogContainer = React.createClass({
   getInitialState: function(){
@@ -38,27 +41,16 @@ var DiscogContainer = React.createClass({
       var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
       var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
       var header = <div className="detail-discog-header">{this.props.title} Discography</div>
-
       var mixed = this.props.albums.map(function(album, index){
-        return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+        return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
       }.bind(this));
-
       var discogLps = this.props.lps.map(function(album, index){
-            return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+            return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
           }.bind(this));
-
       var discogEps= this.props.eps.map(function(album, index){
-          return <AlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+          return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
         }.bind(this));
-
-      var discogDisplay =
-        <div>
-          {this.state.showMixed ? mixed : null}
-          {this.state.showLps ? discogLps : null}
-          {this.state.showEps ? discogEps : null}
-        </div>
-
-      return(
+      var discog =
         <div className="details-display">
           <div className="center-text">
             {header}
@@ -69,10 +61,20 @@ var DiscogContainer = React.createClass({
             </div>
            </div>
           <div className="clear-right left-text">
-            {discogDisplay}
+            {this.state.showMixed ? mixed : null}
+            {this.state.showLps ? discogLps : null}
+            {this.state.showEps ? discogEps : null}
           </div>
         </div>
-      )
+
+      var noDiscog = <div className="no-results">Discography Unavailable</div>
+      var discogDisplay = (this.props.albums.length > 0) ? discog : noDiscog;
+
+      return(
+        <div>
+          {discogDisplay}
+        </div>
+      );
     }
   },
 

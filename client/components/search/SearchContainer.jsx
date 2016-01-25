@@ -70,13 +70,9 @@ var SearchContainer = React.createClass({
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
     return (
-
       <div>
-
         <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
-
         {this.state.showSearchResults ? searchProgress : null}
-
       </div>
   );
   },

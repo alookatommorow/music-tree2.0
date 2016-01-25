@@ -1,12 +1,12 @@
 var React = require('react');
-var AlbumDetailsContainer = require('./details/AlbumDetailsContainer.jsx')
+var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx')
 var RaisedButton = require('material-ui/lib/raised-button');
 var ListItem = require('material-ui/lib/lists/list-item');
 var Divider = require('material-ui/lib/divider');
 
-var Album = React.createClass({
+var DiscogAlbum = React.createClass({
   render: function(){
-    var detailsContainer = <AlbumDetailsContainer details={this.props.details}/>
+    var detailsContainer = <AlbumDetailsContainer tracklist={this.props.tracklist}/>
     var openButton = <RaisedButton onClick={this.props.handleDetailClick} label='Album Details'/>
     var closeButton = <RaisedButton label='Close' onClick={this.props.handleDetailCloseClick}/>
     return (
@@ -36,4 +36,4 @@ var Album = React.createClass({
 
 });
 
-module.exports = Album;
+module.exports = DiscogAlbum;
