@@ -53,6 +53,7 @@ button div div span {
 }
 
 .no-results {
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
   color: red;

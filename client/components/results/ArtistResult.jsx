@@ -1,7 +1,7 @@
 var React = require('react');
-var DetailsContainer = require('./DetailsContainer.jsx');
-var DiscogContainer = require('./DiscogContainer.jsx');
-
+var ArtistProfileContainer = require('../details/ArtistProfileContainer.jsx');
+var DiscogContainer = require('../DiscogContainer.jsx');
+var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 var ListItem = require('material-ui/lib/lists/list-item');
 var RaisedButton = require('material-ui/lib/raised-button');
@@ -13,30 +13,32 @@ var ArtistResult = React.createClass({
     return {
       profile: null,
       discogDetails: null,
+      profileInProgress: false,
       discogInProgress: false,
       discogEps: null,
       discogLps: null,
       discogUrl: this.props.origin + "/discog",
       showDiscogContainer: false,
+      showProfileContainer: false,
       altPicSource: "https://storage.googleapis.com/west-coast-skateparks/music-tree-alt.jpg"
     };
   },
 
-  executeDetail: function(resultsKey) {
+  executeProfile: function(resultsKey) {
     $.ajax({
       url: this.props.origin + "/artist_info",
       data: {id: this.props.results[resultsKey]["id"]},
     })
-    .done(this.detailSuccessFunction)
+    .done(this.profileSuccessFunction)
     .fail(this.errorFunction);
   },
 
-  handleDetailClick: function() {
+  handleProfileClick: function() {
     if (this.state.profile === null) {
-      this.setState({detailInProgress: true, showDetailsContainer: true});
-      this.executeDetail(this.props.resultsKey);
+      this.setState({profileInProgress: true, showProfileContainer: true});
+      this.executeProfile(this.props.resultsKey);
     } else {
-      this.setState({showDetailsContainer: true})
+      this.setState({showProfileContainer: true})
     }
   },
 
@@ -53,8 +55,8 @@ var ArtistResult = React.createClass({
     this.setState({showDiscogContainer: false});
   },
 
-  handleDetailCloseClick: function(){
-    this.setState({showDetailsContainer: false});
+  handleProfileCloseClick: function(){
+    this.setState({showProfileContainer: false});
   },
 
   executeDiscog: function(resultsKey) {
@@ -66,8 +68,8 @@ var ArtistResult = React.createClass({
     .fail(this.errorFunction);;
   },
 
-  detailSuccessFunction: function(response){
-    this.setState({profile: response['profile'], detailInProgress: false});
+  profileSuccessFunction: function(response){
+    this.setState({profile: response.profile, profileInProgress: false});
   },
 
   discogSuccessFunction: function(response){
@@ -94,17 +96,20 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
-    var detailsContainer = <DetailsContainer inProgress={this.state.detailInProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
+    var detailsContainer = <ArtistProfileContainer handleCloseClick={this.handleprofileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
-    var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
-    var detailsOpenButton = <RaisedButton className="change-font" onClick={this.handleDetailClick} label='Artist Details'/>
+    var profileCloseButton = <RaisedButton label='Close' onClick={this.handleProfileCloseClick}/>
+    var profileOpenButton = <RaisedButton className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
     var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
     var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
+    var searchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
+    var profileProgress = this.state.profileInProgress ? searchIndicator : detailsContainer;
+
     return (
       <div className="result-margin">
         <ListItem>
           <div className="multi-button-box">
-            {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton}
+            {this.state.showProfileContainer ? profileCloseButton : profileOpenButton}
             {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
           </div>
           <div className="left five-right">
@@ -115,7 +120,7 @@ var ArtistResult = React.createClass({
           </div>
           <div className="clear-both"></div>
         </ListItem>
-        {this.state.showDetailsContainer ? detailsContainer : null}
+        {this.state.showProfileContainer ? profileProgress : null}
         {this.state.showDiscogContainer ? discogContainer : null}
         <Divider />
       </div>

@@ -1,11 +1,12 @@
 var React = require('react');
 
-var ResultsContainer = require('./ResultsContainer.jsx');
+var ResultsContainer = require('../results/ResultsContainer.jsx');
 var RaisedButton = require('material-ui/lib/raised-button');
 var SelectField = require('material-ui/lib/select-field');
 var MenuItem = require('material-ui/lib/menus/menu-item');
 var TextField = require('material-ui/lib/text-field');
 var injectTapEventPlugin = require("react-tap-event-plugin");
+
 injectTapEventPlugin();
 
 

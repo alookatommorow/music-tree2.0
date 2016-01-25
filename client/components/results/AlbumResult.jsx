@@ -1,5 +1,8 @@
 var React = require('react');
-var DetailsContainer = require('./DetailsContainer.jsx');
+var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
+var SearchIndicator = require('../search/SearchIndicator.jsx');
+
+
 
 
 var ListItem = require('material-ui/lib/lists/list-item');
@@ -9,25 +12,20 @@ var Divider = require('material-ui/lib/divider');
 var AlbumResult = React.createClass({
   getInitialState: function(){
     return {
-      details: null,
-      detailInProgress: false,
+      tracklist: null,
+      inProgress: false,
       showDetailsContainer: false,
-      altPicSource: "https://storage.googleapis.com/west-coast-skateparks/music-tree-alt.jpg"
     };
   },
 
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
-    if (this.state.details === null) {
-      this.setState({detailInProgress: true, showDetailsContainer: true});
+    if (this.state.tracklist === null) {
+      this.setState({inProgress: true, showDetailsContainer: true});
       this.executeDetail(this.props.resultsKey);
     } else {
       this.setState({showDetailsContainer: true})
     }
-  },
-
-  detailSuccessFunction: function(response){
-    this.setState({detailsDetails: response, detailInProgress: false});
   },
 
   handleDetailCloseClick: function(){
@@ -44,7 +42,7 @@ var AlbumResult = React.createClass({
   },
 
   detailSuccessFunction: function(response){
-    this.setState({details: response, detailInProgress: false});
+    this.setState({tracklist: response.tracklist, inProgress: false});
   },
 
   errorFunction: function(response){
@@ -54,7 +52,9 @@ var AlbumResult = React.createClass({
   render: function(){
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
-    var detailsContainer = <DetailsContainer inProgress={this.state.detailInProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  details={this.state.details} queryType={this.props.queryType} />
+    var albumDetailsContainer = <AlbumDetailsContainer inProgress={this.state.inProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} queryType={this.props.queryType} />
+    var searchIndicator = <SearchIndicator text={"Fetching Details..."}/>
+    var detailProgress = this.state.inProgress ? searchIndicator : albumDetailsContainer;
     return (
         <div className="result-margin">
           <ListItem>
@@ -73,11 +73,11 @@ var AlbumResult = React.createClass({
               </div>
             </div>
             <div className="clear-both"></div>
-            {this.state.showDetailsContainer ? detailsContainer : null}
+            {this.state.showDetailsContainer ? detailProgress : null}
           </ListItem>
           <Divider />
         </div>
-      );
+    );
   },
 
 });

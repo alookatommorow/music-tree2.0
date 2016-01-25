@@ -1,5 +1,5 @@
 var React = require('react');
-var ResultsContainer = require('./ResultsContainer.jsx');
+var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx')
 
@@ -65,6 +65,7 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
+
     var searchResultsContainer = <ResultsContainer results={this.state.results} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;

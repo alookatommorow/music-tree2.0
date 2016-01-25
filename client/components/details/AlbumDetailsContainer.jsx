@@ -4,19 +4,20 @@ var RaisedButton = require('material-ui/lib/raised-button');
 var AlbumDetailsContainer = React.createClass({
 
   render: function(){
-
     var header = <div>Tracklist</div>
-    var detailsDisplay = this.props.details['tracklist'].map(function(track, index){
+    var tracklist = this.props.tracklist.map(function(track, index){
         return <div key={index}>{index+1}. {track['title']}</div>
       });
 
     return (
-      <div className="details-display">
-        <div className="left-text bold one-bottom">
-          {header}
-        </div>
-        <div className="left-text">
-          {detailsDisplay}
+      <div>
+        <div className="details-display">
+          <div className="left-text bold one-bottom">
+            {header}
+          </div>
+          <div className="left-text">
+            {tracklist}
+          </div>
         </div>
       </div>
     );

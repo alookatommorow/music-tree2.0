@@ -1,6 +1,6 @@
 var React = require('react');
 var List = require('material-ui/lib/lists/list');
-var Result = require('./Result.jsx');
+// var Result = require('./results/Result.jsx');
 var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');

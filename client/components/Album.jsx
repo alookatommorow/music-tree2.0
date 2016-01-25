@@ -1,5 +1,5 @@
 var React = require('react');
-var AlbumDetailsContainer = require('./AlbumDetailsContainer.jsx')
+var AlbumDetailsContainer = require('./details/AlbumDetailsContainer.jsx')
 var RaisedButton = require('material-ui/lib/raised-button');
 var ListItem = require('material-ui/lib/lists/list-item');
 var Divider = require('material-ui/lib/divider');
