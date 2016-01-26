@@ -16,7 +16,7 @@ var DiscogContainer = React.createClass({
   },
 
   handleAllClick: function(){
-    this.setState({showEps: false, showLps: true, showMixed: true,})
+    this.setState({showEps: false, showLps: false, showMixed: true,})
   },
 
   handleLpClick: function(){
