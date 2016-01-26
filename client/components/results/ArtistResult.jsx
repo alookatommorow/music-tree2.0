@@ -17,10 +17,8 @@ var ArtistResult = React.createClass({
       discogInProgress: false,
       discogEps: null,
       discogLps: null,
-      discogUrl: this.props.origin + "/discog",
       showDiscogContainer: false,
       showProfileContainer: false,
-      altPicSource: "https://storage.googleapis.com/west-coast-skateparks/music-tree-alt.jpg"
     };
   },
 
@@ -61,7 +59,7 @@ var ArtistResult = React.createClass({
 
   executeDiscog: function(resultsKey) {
     $.ajax({
-      url: this.state.discogUrl,
+      url: this.props.origin + "/discog",
       data: {query: this.props.results[resultsKey]["title"]},
     })
     .done(this.discogSuccessFunction)
@@ -108,10 +106,9 @@ var ArtistResult = React.createClass({
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
-
     return (
       <div className="result-margin">
-        <ListItem>
+        <ListItem className="hover-arrow">
           <div className="multi-button-box">
             {this.state.showProfileContainer ? profileCloseButton : profileOpenButton}
             {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}

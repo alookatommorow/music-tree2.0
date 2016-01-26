@@ -1,13 +1,12 @@
 var React = require('react');
+
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx')
 
-
 var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
-      results: null,
       artistResults: null,
       albumResults: null,
       query: null,
@@ -65,16 +64,16 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-
-    var searchResultsContainer = <ResultsContainer results={this.state.results} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchResultsContainer = <ResultsContainer albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
+
     return (
       <div>
         <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
         {this.state.showSearchResults ? searchProgress : null}
       </div>
-  );
+    );
   },
 
 });

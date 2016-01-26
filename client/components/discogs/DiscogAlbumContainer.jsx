@@ -5,7 +5,7 @@ var DiscogAlbumContainer = React.createClass ({
   getInitialState: function(){
     return {
       tracklist: null,
-      showAlbumDetailsContainer: false,
+      showDetailsContainer: false,
     };
   },
 
@@ -13,12 +13,12 @@ var DiscogAlbumContainer = React.createClass ({
     if (this.state.tracklist === null) {
       this.executeDetail(this.props.album["id"]);
     } else {
-      this.setState({showAlbumDetailsContainer: true});
+      this.setState({showDetailsContainer: true});
     }
   },
 
   handleDetailCloseClick: function(){
-    this.setState({showAlbumDetailsContainer: false});
+    this.setState({showDetailsContainer: false});
   },
 
   executeDetail: function(albumKey) {
@@ -31,7 +31,7 @@ var DiscogAlbumContainer = React.createClass ({
   },
 
   successFunction: function(response){
-    this.setState({tracklist: response.tracklist, showAlbumDetailsContainer: true});
+    this.setState({tracklist: response.tracklist, showDetailsContainer: true});
   },
 
   errorFunction: function(response){
@@ -40,7 +40,7 @@ var DiscogAlbumContainer = React.createClass ({
 
   render: function () {
     return (
-      <DiscogAlbum handleDetailCloseClick={this.handleDetailCloseClick} album={this.props.album} showAlbumDetailsContainer={this.state.showAlbumDetailsContainer} tracklist={this.state.tracklist} handleDetailClick={this.handleDetailClick}/>
+      <DiscogAlbum handleDetailCloseClick={this.handleDetailCloseClick} album={this.props.album} showDetailsContainer={this.state.showDetailsContainer} tracklist={this.state.tracklist} handleDetailClick={this.handleDetailClick}/>
     );
   },
 

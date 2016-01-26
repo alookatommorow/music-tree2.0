@@ -1,7 +1,6 @@
 var React = require('react');
 
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
-var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 var ListItem = require('material-ui/lib/lists/list-item');
 var RaisedButton = require('material-ui/lib/raised-button');
@@ -11,7 +10,6 @@ var AlbumResult = React.createClass({
   getInitialState: function(){
     return {
       tracklist: null,
-      inProgress: false,
       showDetailsContainer: false,
     };
   },
@@ -19,7 +17,6 @@ var AlbumResult = React.createClass({
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
     if (this.state.tracklist === null) {
-      this.setState({inProgress: true, showDetailsContainer: true});
       this.executeDetail(this.props.resultsKey);
     } else {
       this.setState({showDetailsContainer: true})
@@ -40,7 +37,7 @@ var AlbumResult = React.createClass({
   },
 
   detailSuccessFunction: function(response){
-    this.setState({tracklist: response.tracklist, inProgress: false});
+    this.setState({tracklist: response.tracklist, showDetailsContainer: true});
   },
 
   errorFunction: function(response){
@@ -50,9 +47,8 @@ var AlbumResult = React.createClass({
   render: function(){
     var detailsCloseButton = <RaisedButton label='Close' onClick={this.handleDetailCloseClick}/>
     var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
-    var albumDetailsContainer = <AlbumDetailsContainer inProgress={this.state.inProgress} handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} queryType={this.props.queryType} />
-    var searchIndicator = <SearchIndicator text={"Fetching Details..."}/>
-    var detailProgress = this.state.inProgress ? searchIndicator : albumDetailsContainer;
+    var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} queryType={this.props.queryType} />
+
     return (
         <div className="result-margin">
           <ListItem>
@@ -71,7 +67,7 @@ var AlbumResult = React.createClass({
               </div>
             </div>
             <div className="clear-both"></div>
-            {this.state.showDetailsContainer ? detailProgress : null}
+            {this.state.showDetailsContainer ? detailsContainer : null }
           </ListItem>
           <Divider />
         </div>
