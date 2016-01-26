@@ -1,0 +1,34 @@
+var React = require('react');
+var List = require('material-ui/lib/lists/list');
+// var Result = require('./results/Result.jsx');
+var NoResults = require('./NoResults.jsx');
+var AlbumResult = require('./AlbumResult.jsx');
+var ArtistResult = require('./ArtistResult.jsx');
+
+var ResultsContainer = React.createClass ({
+
+  render: function () {
+    var artistResults = this.props.artistResults.map(function(result, index){
+        return <ArtistResult key={result.uri} result={result} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.artistResults} resultsKey={index} />
+      }.bind(this));
+    var showArtistResults = (this.props.artistResults.length > 0) ? artistResults : <NoResults/>
+
+    var albumResults = this.props.albumResults.map(function(result, index){
+        return <AlbumResult key={result.uri} result={result} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.albumResults} resultsKey={index} />
+      }.bind(this));
+    var showAlbumResults = (this.props.albumResults.length > 0) ? albumResults : <NoResults/>
+
+    var searchResults = (this.props.queryType === 'artist') ? showArtistResults : showAlbumResults;
+
+    return (
+        <div className='results-container'>
+          <List>
+            {searchResults}
+          </List>
+        </div>
+    );
+  },
+
+});
+
+module.exports = ResultsContainer;

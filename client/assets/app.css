@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -41,18 +40,24 @@ button div div span {
   font-weight: bold !important;
 }
 
+.result-margin div:hover {
+  cursor: default;
+}
+
+button div:hover {
+  cursor: pointer !important;
+}
+
 .query {
   font-family: "Muli" !important;
 }
 
 .header {
-  font-family: "Days One";
-  font-weight: bold;
-  font-size: 5em;
-  color: blue;
+  height: 400px;
 }
 
 .no-results {
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
   color: red;

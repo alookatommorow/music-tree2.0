@@ -15,11 +15,11 @@ var DetailsContainer = React.createClass({
         )
     } else {
       if (this.props.queryType == "artist"){
-        if (this.props.details['profile'] === "") {
+        if (this.props.props === "") {
           header = <div>No Profile Available</div>
         } else {
         header = <div className="center-text detail-discog-header">{this.props.title} Profile</div>
-        detailsDisplay = <div>{this.props.details['profile']}</div>
+        detailsDisplay = <div>{this.props.profile}</div>
         }
       }
       else if (this.props.queryType == "master") {

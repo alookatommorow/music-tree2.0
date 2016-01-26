@@ -1,6 +1,6 @@
 var React = require('react');
 var Header = require('./Header.jsx');
-var SearchContainer = require('./SearchContainer.jsx');
+var SearchContainer = require('./search/SearchContainer.jsx');
 // var ThemeManager = require('material-ui/lib/styles/theme-manager');
 var mui = require('material-ui');
 
