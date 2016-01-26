@@ -53,7 +53,7 @@ button div:hover {
 }
 
 .header {
-  height: 400px;
+  height: 300px;
 }
 
 .no-results {
@@ -127,6 +127,7 @@ button div:hover {
 
 /* ///  for detail and discog headers /// */
 .detail-discog-header {
+  clear: right;
   font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 2%;
@@ -171,8 +172,8 @@ button div:hover {
   display: inline-block;
 }
 
-.red {
-  background-color: red;
+.red div div span {
+  color: red !important;
 }
 
 .right {

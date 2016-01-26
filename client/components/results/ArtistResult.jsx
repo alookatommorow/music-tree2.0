@@ -94,8 +94,7 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
-    var profileContainer = <ArtistProfileContainer handleCloseClick={this.handleprofileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
-    var profileCloseButton = <RaisedButton label='Close' onClick={this.handleProfileCloseClick}/>
+    var profileContainer = <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var profileOpenButton = <RaisedButton className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
     var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
@@ -110,8 +109,8 @@ var ArtistResult = React.createClass({
       <div className="result-margin">
         <ListItem className="hover-arrow">
           <div className="multi-button-box">
-            {this.state.showProfileContainer ? profileCloseButton : profileOpenButton}
-            {this.state.showDiscogContainer ? discogCloseButton : discogOpenButton}
+            {this.state.showProfileContainer ? null : profileOpenButton}
+            {this.state.showDiscogContainer ? null : discogOpenButton}
           </div>
           <div className="left five-right">
             <img src={picSource} className="image"></img>
