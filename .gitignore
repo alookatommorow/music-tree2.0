@@ -1,6 +1,7 @@
 .env
 .DS_Store
 log/*.log
+/tmp
 /node_modules
 /public/bundle.js
 /public/bundle.js.map

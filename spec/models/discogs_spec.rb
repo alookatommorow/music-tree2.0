@@ -1,22 +1,13 @@
 require 'rails_helper'
 
+RSpec.describe Discogs, type: :model do
 
-RSpec.describe Discog, type: :model do
   context '#search' do
-    it 'should retrieve search results from Discogs API'
-      expect
+    it 'should retrieve search results from Discogs API' do
+      query = "thin lizzy"
+      results = Discogs::Client.new.search(query).parsed_response["results"]
+      expect(results[0]['title'].downcase).to eq(query)
     end
-
-  end
-
-end
-
-describe 'post /search (execute search)' do
-  it 'returns json with search results' do
-
-    query = "thin lizzy"
-    get '/search', query: query
-    response.body.should.have_content(query)
   end
 
 end
