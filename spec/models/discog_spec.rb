@@ -6,7 +6,7 @@ RSpec.describe Discog, type: :model do
     it 'should retrieve search results from Discogs API' do
       query = "thin lizzy"
       results = Discog::Client.new.search(query)
-      expect(results[0]['title'].downcase).to eq(query)
+      expect(results[0]["title"].downcase).to eq(query)
     end
   end
 
@@ -30,7 +30,7 @@ RSpec.describe Discog, type: :model do
     it 'should retrieve discography from Discogs API' do
       query = "thin lizzy"
       results = Discog::Client.new.discog(query)
-      expect(results[0]['type']).to eq('master')
+      expect(results[0]["type"]).to eq('master')
     end
   end
 
