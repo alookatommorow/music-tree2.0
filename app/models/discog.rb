@@ -28,7 +28,7 @@ module Discog
           'per_page' => 100
         }
       )
-      (self.class.get(url.to_s)).parsed_response["results"]
+      self.class.get(url.to_s).parsed_response["results"]
     end
 
   end
