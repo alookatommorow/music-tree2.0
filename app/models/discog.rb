@@ -1,4 +1,4 @@
-module Discogs
+module Discog
   class Client
     include HTTParty
 

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Discogs, type: :model do
+RSpec.describe Discog, type: :model do
 
   context '#search' do
     it 'should retrieve search results from Discogs API' do
