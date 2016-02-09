@@ -5,7 +5,7 @@ module Discog
     base_uri "https://api.discogs.com"
 
     def search(query)
-      filter_search(self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["results"])
+      search_filter(self.class.get(format_search_url(query)).parsed_response["results"])
     end
 
     def artist_info(id)
@@ -17,26 +17,51 @@ module Discog
     end
 
     def discog(query)
-      ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (which can also break the search right now)
-      url = URI.parse("/database/search")
-      url.query = URI::encode_www_form(
-        {
-          'type' => "master",
-          'artist' => "#{query}",
-          'key' => "#{ENV['CONSUMER_KEY']}",
-          'secret' => "#{ENV['CONSUMER_SECRET']}",
-          'per_page' => 100
-        }
-      )
-      sort_discography(sort_by_year(self.class.get(url.to_s).parsed_response["results"]))
+      url = format_discog_url(query)
+      results = eliminate_nil(self.class.get(url).parsed_response["results"])
+      discography_filter(sort_by_year(results))
     end
 
     private
+
+      def format_discog_url(query)
+        ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
+        url = URI.parse("/database/search")
+        url.query = URI::encode_www_form(
+          {
+            'type' => "master",
+            'artist' => "#{query}",
+            'key' => "#{ENV['CONSUMER_KEY']}",
+            'secret' => "#{ENV['CONSUMER_SECRET']}",
+            'per_page' => 100
+          }
+        )
+        url.to_s
+      end
+
+      def format_search_url(query)
+        ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
+        url = URI.parse("/database/search")
+        url.query = URI::encode_www_form(
+          {
+            'q' => "#{query}",
+            'key' => "#{ENV['CONSUMER_KEY']}",
+            'secret' => "#{ENV['CONSUMER_SECRET']}",
+            'per_page' => 100
+          }
+        )
+        url.to_s
+      end
+
       def sort_by_year(results)
         results.sort_by {|item| item["year"] }
       end
 
-      def filter_search(results)
+      def eliminate_nil(results)
+        results.select {|result| result["year"]}
+      end
+
+      def search_filter(results)
         artistResults = []
         albumResults = []
         results.each do |result|
@@ -49,7 +74,7 @@ module Discog
         { artistResults: artistResults, albumResults: albumResults }
       end
 
-      def sort_discography(results)
+      def discography_filter(results)
         eps = []
         lps = []
         results.each do |album|

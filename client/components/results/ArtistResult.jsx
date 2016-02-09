@@ -66,11 +66,11 @@ var ArtistResult = React.createClass({
     .fail(this.errorFunction);;
   },
 
-  profileSuccessFunction: function(response){
+  profileSuccessFunction: function(response) {
     this.setState({profile: response.profile, profileInProgress: false});
   },
 
-  discogSuccessFunction: function(response){
+  discogSuccessFunction: function(response) {
     this.setState({discogDetails: response.all, lps: response.lps, eps: response.eps, discogInProgress: false})
   },
 
