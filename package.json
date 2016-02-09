@@ -12,7 +12,8 @@
     "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors",
     "probuild": "webpack -p --config webpack.pro.config.js --profile --progress --colors",
     "postinstall": "npm run probuild && npm run rejoice",
-    "rejoice": "echo yay!"
+    "rejoice": "echo yay!",
+    "test": "jest"
   },
   "author": "John Hess",
   "license": "ISC",
@@ -31,5 +32,8 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.8.2"
   }
 }
