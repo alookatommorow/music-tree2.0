@@ -33,15 +33,6 @@ var SearchContainer = React.createClass({
     .fail(errorFunction);
   },
 
-  // executeSearch: function(query) {
-  //   $.ajax({
-  //     url: this.props.origin + '/search',
-  //     data: {query: query},
-  //   })
-  //   .done(this.successFunction)
-  //   .fail(this.errorFunction);
-  // },
-
   handleSubmit: function(event) {
     event.preventDefault();
     this.setState({showSearchResults: true, inProgress: true});

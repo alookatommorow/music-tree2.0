@@ -12,8 +12,8 @@ module Discog
       self.class.get("/artists/#{query}").parsed_response
     end
 
-    def album_info(id)
-      self.class.get("/masters/#{id}").parsed_response
+    def album_info(query)
+      self.class.get("/masters/#{query}").parsed_response
     end
 
     def discog(query)

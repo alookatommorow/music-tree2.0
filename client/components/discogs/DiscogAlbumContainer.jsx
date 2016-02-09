@@ -11,7 +11,7 @@ var DiscogAlbumContainer = React.createClass ({
 
   handleDetailClick: function() {
     if (this.state.tracklist === null) {
-      this.executeDetail(this.props.album["id"]);
+      this.props.ajaxRequest(this.props.album["id"], '/album_info', this.successFunction, this.errorFunction )
     } else {
       this.setState({showDetailsContainer: true});
     }
@@ -19,15 +19,6 @@ var DiscogAlbumContainer = React.createClass ({
 
   handleDetailCloseClick: function(){
     this.setState({showDetailsContainer: false});
-  },
-
-  executeDetail: function(albumKey) {
-    $.ajax({
-      url: this.props.origin + "/album_info",
-      data: {id: albumKey},
-    })
-    .done(this.successFunction)
-    .fail(this.errorFunction);
   },
 
   successFunction: function(response){

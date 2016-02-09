@@ -17,7 +17,8 @@ var AlbumResult = React.createClass({
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
     if (this.state.tracklist === null) {
-      this.executeDetail(this.props.resultsKey);
+      var query = this.props.results[this.props.resultsKey]["id"]
+      this.props.ajaxRequest(query, '/album_info', this.successFunction, this.errorFunction);
     } else {
       this.setState({showDetailsContainer: true})
     }
@@ -27,16 +28,7 @@ var AlbumResult = React.createClass({
     this.setState({showDetailsContainer: false});
   },
 
-  executeDetail: function(resultsKey) {
-    $.ajax({
-      url: this.props.origin + "/album_info",
-      data: {id: this.props.results[resultsKey]["id"]},
-    })
-    .done(this.detailSuccessFunction)
-    .fail(this.errorFunction);
-  },
-
-  detailSuccessFunction: function(response){
+  successFunction: function(response){
     this.setState({tracklist: response.tracklist, showDetailsContainer: true});
   },
 
