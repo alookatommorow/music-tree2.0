@@ -24,19 +24,28 @@ var SearchContainer = React.createClass({
     this.setState({queryType: value});
   },
 
-  executeSearch: function(query) {
+  ajaxRequest: function(query, url, successFunction, errorFunction){
     $.ajax({
-      url: this.props.origin + '/search',
+      url: this.props.origin + url,
       data: {query: query},
     })
-    .done(this.successFunction)
-    .fail(this.errorFunction);
+    .done(successFunction)
+    .fail(errorFunction);
   },
+
+  // executeSearch: function(query) {
+  //   $.ajax({
+  //     url: this.props.origin + '/search',
+  //     data: {query: query},
+  //   })
+  //   .done(this.successFunction)
+  //   .fail(this.errorFunction);
+  // },
 
   handleSubmit: function(event) {
     event.preventDefault();
     this.setState({showSearchResults: true, inProgress: true});
-    this.executeSearch(this.state.query, this.state.queryType);
+    this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
   },
 
   successFunction: function(response){
@@ -49,7 +58,7 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchResultsContainer = <ResultsContainer ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
 

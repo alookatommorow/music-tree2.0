@@ -22,19 +22,20 @@ var ArtistResult = React.createClass({
     };
   },
 
-  executeProfile: function(resultsKey) {
-    $.ajax({
-      url: this.props.origin + "/artist_info",
-      data: {id: this.props.results[resultsKey]["id"]},
-    })
-    .done(this.profileSuccessFunction)
-    .fail(this.errorFunction);
-  },
+  // executeProfile: function(resultsKey) {
+  //   $.ajax({
+  //     url: this.props.origin + "/artist_info",
+  //     data: {query: this.props.results[resultsKey]["id"]},
+  //   })
+  //   .done(this.profileSuccessFunction)
+  //   .fail(this.errorFunction);
+  // },
 
   handleProfileClick: function() {
     if (this.state.profile === null) {
+      var query = this.props.results[this.props.resultsKey]["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
-      this.executeProfile(this.props.resultsKey);
+      this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
     } else {
       this.setState({showProfileContainer: true})
     }

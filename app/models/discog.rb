@@ -8,8 +8,8 @@ module Discog
       search_filter(self.class.get(format_url(query, false)).parsed_response["results"])
     end
 
-    def artist_info(id)
-      self.class.get("/artists/#{id}").parsed_response
+    def artist_info(query)
+      self.class.get("/artists/#{query}").parsed_response
     end
 
     def album_info(id)
