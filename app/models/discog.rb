@@ -28,12 +28,12 @@ module Discog
           'per_page' => 100
         }
       )
-      sort_by_year(self.class.get(url.to_s).parsed_response["results"])
+      sort_discography(sort_by_year(self.class.get(url.to_s).parsed_response["results"]))
     end
 
     private
       def sort_by_year(results)
-        results.sort_by {|item| item[:year] }
+        results.sort_by {|item| item["year"] }
       end
 
       def filter_search(results)
@@ -53,15 +53,12 @@ module Discog
         eps = []
         lps = []
         results.each do |album|
-          if (album["format"].includes('Album') || album.format.includes('Compilation')) {
+          if album["format"].include?('Album') || album["format"].include?('Compilation')
             lps.push(album);
-          }
-          else {
+          else
             eps.push(album)
-          }
-
+          end
         end
-
         {all: results, eps: eps, lps: lps}
       end
 
