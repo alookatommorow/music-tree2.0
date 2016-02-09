@@ -5,7 +5,7 @@ module Discog
     base_uri "https://api.discogs.com"
 
     def search(query)
-      self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["results"]
+      filter_search(self.class.get("/database/search?q=#{query}&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["results"])
     end
 
     def artist_info(id)
@@ -28,8 +28,42 @@ module Discog
           'per_page' => 100
         }
       )
-      self.class.get(url.to_s).parsed_response["results"]
+      sort_by_year(self.class.get(url.to_s).parsed_response["results"])
     end
+
+    private
+      def sort_by_year(results)
+        results.sort_by {|item| item[:year] }
+      end
+
+      def filter_search(results)
+        artistResults = []
+        albumResults = []
+        results.each do |result|
+          if result["type"] == "artist"
+            artistResults.push(result)
+          elsif result["type"] == "master"
+            albumResults.push(result)
+          end
+        end
+        { artistResults: artistResults, albumResults: albumResults }
+      end
+
+      def sort_discography(results)
+        eps = []
+        lps = []
+        results.each do |album|
+          if (album["format"].includes('Album') || album.format.includes('Compilation')) {
+            lps.push(album);
+          }
+          else {
+            eps.push(album)
+          }
+
+        end
+
+        {all: results, eps: eps, lps: lps}
+      end
 
   end
 

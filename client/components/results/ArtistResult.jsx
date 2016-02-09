@@ -71,12 +71,12 @@ var ArtistResult = React.createClass({
   },
 
   discogSuccessFunction: function(response){
-    var sortedAlbums = response.sort(function(a, b){
-      return a.year - b.year
-    });
+    // var sortedAlbums = response.sort(function(a, b){
+    //   return a.year - b.year
+    // });
     var lps = [];
     var eps = [];
-    sortedAlbums.map(function(album) {
+    response.map(function(album) {
       if (album.format.includes('Album') || album.format.includes('Compilation')) {
         lps.push(album);
       }
@@ -84,7 +84,7 @@ var ArtistResult = React.createClass({
         eps.push(album)
       }
     });
-    this.setState({discogDetails: sortedAlbums, lps: lps, eps: eps, discogInProgress: false})
+    this.setState({discogDetails: response, lps: lps, eps: eps, discogInProgress: false})
   },
 
   render: function(){

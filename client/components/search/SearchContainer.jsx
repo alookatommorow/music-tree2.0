@@ -39,23 +39,8 @@ var SearchContainer = React.createClass({
     this.executeSearch(this.state.query, this.state.queryType);
   },
 
-  filterFunction: function(response) {
-    var artistResults = []
-    var albumResults = []
-    response.map(function(result){
-      if (result.type === "artist") {
-        artistResults.push(result)
-      } else if (result.type === "master") {
-        albumResults.push(result)
-      }
-    });
-    this.setState({artistResults: artistResults, albumResults: albumResults})
-
-  },
-
   successFunction: function(response){
-    this.filterFunction(response);
-    this.setState({results: response, inProgress: false});
+    this.setState({artistResults: response.artistResults, albumResults: response.albumResults, inProgress: false})
   },
 
   errorFunction: function(){
