@@ -10,6 +10,12 @@ RSpec.describe Discog, type: :model do
   #   end
   # end
 
+  # context '#sort_by_year' do
+  #   it 'should return albums sorted by year' do
+
+  #   end
+  # end
+
   context '#artist_info' do
     it 'should retrieve artist info from Discogs API' do
       id = 136188
@@ -25,6 +31,9 @@ RSpec.describe Discog, type: :model do
       expect(results["title"]).to eq("Thin Lizzy")
     end
   end
+
+
+
 
   # context '#discog' do
   #   it 'should retrieve discography from Discogs API' do
