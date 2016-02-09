@@ -5,7 +5,7 @@ module Discog
     base_uri "https://api.discogs.com"
 
     def search(query)
-      search_filter(self.class.get(format_search_url(query)).parsed_response["results"])
+      search_filter(self.class.get(format_url(query, false)).parsed_response["results"])
     end
 
     def artist_info(id)
@@ -17,48 +17,37 @@ module Discog
     end
 
     def discog(query)
-      url = format_discog_url(query)
+      url = format_url(query, true)
       results = eliminate_nil(self.class.get(url).parsed_response["results"])
       discography_filter(sort_by_year(results))
     end
 
     private
 
-      def format_discog_url(query)
+      def format_url(query, is_discog)
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
         url = URI.parse("/database/search")
-        url.query = URI::encode_www_form(
-          {
-            'type' => "master",
-            'artist' => "#{query}",
+        search_keys = {'q' => "#{query}"}
+        discog_keys = {'type' => "master", 'artist' => "#{query}"}
+        required_keys = {
             'key' => "#{ENV['CONSUMER_KEY']}",
             'secret' => "#{ENV['CONSUMER_SECRET']}",
             'per_page' => 100
           }
-        )
-        url.to_s
-      end
-
-      def format_search_url(query)
-        ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
-        url = URI.parse("/database/search")
-        url.query = URI::encode_www_form(
-          {
-            'q' => "#{query}",
-            'key' => "#{ENV['CONSUMER_KEY']}",
-            'secret' => "#{ENV['CONSUMER_SECRET']}",
-            'per_page' => 100
-          }
-        )
+        if is_discog
+          url.query = URI::encode_www_form(discog_keys.merge(required_keys))
+        else
+          url.query = URI::encode_www_form(search_keys.merge(required_keys))
+        end
         url.to_s
       end
 
       def sort_by_year(results)
-        results.sort_by {|item| item["year"] }
+        results.sort_by { |item| item["year"] }
       end
 
       def eliminate_nil(results)
-        results.select {|result| result["year"]}
+        results.select { |result| result["year"] }
       end
 
       def search_filter(results)
@@ -79,7 +68,7 @@ module Discog
         lps = []
         results.each do |album|
           if album["format"].include?('Album') || album["format"].include?('Compilation')
-            lps.push(album);
+            lps.push(album)
           else
             eps.push(album)
           end

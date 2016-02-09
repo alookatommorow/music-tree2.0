@@ -33,6 +33,8 @@ RSpec.describe Discog, type: :model do
   end
 
 
+
+
   # context '#discog' do
   #   it 'should retrieve discography from Discogs API' do
   #     query = "thin lizzy"
