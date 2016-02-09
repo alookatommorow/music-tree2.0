@@ -22,19 +22,11 @@ var ArtistResult = React.createClass({
     };
   },
 
-  executeProfile: function(resultsKey) {
-    $.ajax({
-      url: this.props.origin + "/artist_info",
-      data: {id: this.props.results[resultsKey]["id"]},
-    })
-    .done(this.profileSuccessFunction)
-    .fail(this.errorFunction);
-  },
-
   handleProfileClick: function() {
     if (this.state.profile === null) {
+      var query = this.props.results[this.props.resultsKey]["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
-      this.executeProfile(this.props.resultsKey);
+      this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
     } else {
       this.setState({showProfileContainer: true})
     }
@@ -42,8 +34,9 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function() {
     if (this.state.discogDetails === null) {
+      var query = this.props.results[this.props.resultsKey]["title"]
       this.setState({discogInProgress: true, showDiscogContainer: true});
-      this.executeDiscog(this.props.resultsKey);
+      this.props.ajaxRequest(query, '/discog', this.discogSuccessFunction, this.errorFunction);
     } else {
       this.setState({showDiscogContainer: true});
     }
@@ -55,15 +48,6 @@ var ArtistResult = React.createClass({
 
   handleProfileCloseClick: function(){
     this.setState({showProfileContainer: false});
-  },
-
-  executeDiscog: function(resultsKey) {
-    $.ajax({
-      url: this.props.origin + "/discog",
-      data: {query: this.props.results[resultsKey]["title"]},
-    })
-    .done(this.discogSuccessFunction)
-    .fail(this.errorFunction);;
   },
 
   profileSuccessFunction: function(response) {
@@ -87,7 +71,7 @@ var ArtistResult = React.createClass({
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;

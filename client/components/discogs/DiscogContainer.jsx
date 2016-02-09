@@ -39,14 +39,14 @@ var DiscogContainer = React.createClass({
     var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div className="detail-discog-header">{this.props.title} Discography</div>
     var mixed = this.props.albums.map(function(album, index){
-      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
+      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
     }.bind(this));
     var discogLps = this.props.lps.map(function(album, index){
-          return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
-        }.bind(this));
+      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+    }.bind(this));
     var discogEps= this.props.eps.map(function(album, index){
-        return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} />
-      }.bind(this));
+      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+    }.bind(this));
     var discog =
       <div className="details-display">
         {closeButton}
