@@ -28,6 +28,11 @@ var DiscogContainer = React.createClass({
   },
 
   render: function(){
+    // var generateAlbumContainers = function(albums) {
+    //   albums.map(function(album, index){
+    //     return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+    //   }.bind(this));
+    // }.bind(this);
 
     var closeButton =
     <div className="right two-bottom">
@@ -38,7 +43,12 @@ var DiscogContainer = React.createClass({
     var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
     var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div className="detail-discog-header">{this.props.title} Discography</div>
-    var mixed = this.props.albums.map(function(album, index){
+
+    // var mixed = generateAlbumContainers(this.props.albums);
+    // var discogLps = generateAlbumContainers(this.props.lps);
+    // var discogEps = generateAlbumContainers(this.props.eps);
+
+    var mixed =this.props.albums.map(function(album, index){
       return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
     }.bind(this));
     var discogLps = this.props.lps.map(function(album, index){
@@ -47,6 +57,7 @@ var DiscogContainer = React.createClass({
     var discogEps= this.props.eps.map(function(album, index){
       return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
     }.bind(this));
+
     var discog =
       <div className="details-display">
         {closeButton}

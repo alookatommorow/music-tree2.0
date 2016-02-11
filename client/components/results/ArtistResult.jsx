@@ -24,7 +24,7 @@ var ArtistResult = React.createClass({
 
   handleProfileClick: function() {
     if (this.state.profile === null) {
-      var query = this.props.results[this.props.resultsKey]["id"];
+      var query = this.props.result["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
       this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
     } else {
@@ -34,7 +34,7 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function() {
     if (this.state.discogDetails === null) {
-      var query = this.props.results[this.props.resultsKey]["title"]
+      var query = this.props.result["title"]
       this.setState({discogInProgress: true, showDiscogContainer: true});
       this.props.ajaxRequest(query, '/discog', this.discogSuccessFunction, this.errorFunction);
     } else {
