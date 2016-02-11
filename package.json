@@ -12,7 +12,20 @@
     "devbuild": "webpack -d --config webpack.config.js --profile --progress --colors",
     "probuild": "webpack -p --config webpack.pro.config.js --profile --progress --colors",
     "postinstall": "npm run probuild && npm run rejoice",
-    "rejoice": "echo yay!"
+    "rejoice": "echo yay!",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ]
+  },
+  "babel": {
+    "presets": ["react"]
   },
   "author": "John Hess",
   "license": "ISC",
@@ -31,5 +44,10 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^6.0.1",
+    "jest-cli": "^0.8.2",
+    "react-addons-test-utils": "^0.14.7"
   }
 }
