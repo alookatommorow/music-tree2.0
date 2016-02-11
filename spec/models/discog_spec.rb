@@ -16,21 +16,21 @@ RSpec.describe Discog, type: :model do
   #   end
   # end
 
-  context '#artist_info' do
-    it 'should retrieve artist info from Discogs API' do
-      id = 136188
-      results = Discog::Client.new.artist_info(id)
-      expect(results["name"]).to eq("Thin Lizzy")
-    end
-  end
+  # context '#artist_info' do
+  #   it 'should retrieve artist info from Discogs API' do
+  #     id = 136188
+  #     results = Discog::Client.new.artist_info(id)
+  #     expect(results["name"]).to eq("Thin Lizzy")
+  #   end
+  # end
 
-  context '#album_info' do
-    it 'should retrieve album info from Discogs API' do
-      id = 211463
-      results = Discog::Client.new.album_info(id)
-      expect(results["title"]).to eq("Thin Lizzy")
-    end
-  end
+  # context '#album_info' do
+  #   it 'should retrieve album info from Discogs API' do
+  #     id = 211463
+  #     results = Discog::Client.new.album_info(id)
+  #     expect(results["title"]).to eq("Thin Lizzy")
+  #   end
+  # end
 
 
 
