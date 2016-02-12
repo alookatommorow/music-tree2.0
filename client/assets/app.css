@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Muli");
-@import url("https://fonts.googleapis.com/css?family=Cabin");
-@import url("https://fonts.googleapis.com/css?family=Vollkorn");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/*@import url("https://fonts.googleapis.com/css?family=Muli");*/
 
-* {
+html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -24,6 +21,8 @@ body:before{
   position: fixed;
   top: 0;
   left: 0;
+  background-color: rgb(255,
+    255, 255);
   background-color: rgba(255,
     255, 255, 0.7);
 }
@@ -96,10 +95,7 @@ button div:hover {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 1%;
-  padding-bottom: 4%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 1% 5% 4% 5%;
   background-color: white;
 }
 
@@ -119,10 +115,7 @@ button div:hover {
 }
 
 .details-display {
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 2% 3% 2% 3%;
 }
 
 /* ///  for detail and discog headers /// */
