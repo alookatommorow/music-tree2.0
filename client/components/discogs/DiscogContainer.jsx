@@ -1,6 +1,6 @@
 var React = require('react');
 
-var DiscogAlbumContainer = require('./DiscogAlbumContainer.jsx');
+var AlbumResult = require('../results/AlbumResult.jsx');
 
 var LinearProgress = require('material-ui/lib/linear-progress');
 var RaisedButton = require('material-ui/lib/raised-button');
@@ -28,7 +28,6 @@ var DiscogContainer = React.createClass({
   },
 
   render: function(){
-
     var closeButton =
     <div className="right two-bottom">
       <RaisedButton className="red" onClick={this.props.handleCloseClick} label="Close" />
@@ -38,15 +37,19 @@ var DiscogContainer = React.createClass({
     var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
     var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div className="detail-discog-header">{this.props.title} Discography</div>
+
     var mixed = this.props.albums.map(function(album, index){
-      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
+
     var discogLps = this.props.lps.map(function(album, index){
-      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
+
     var discogEps= this.props.eps.map(function(album, index){
-      return <DiscogAlbumContainer origin={this.props.origin} key={album.uri} album={album} albumKey={index} ajaxRequest={this.props.ajaxRequest} />
+      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
+
     var discog =
       <div className="details-display">
         {closeButton}

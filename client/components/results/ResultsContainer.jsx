@@ -8,12 +8,12 @@ var ResultsContainer = React.createClass ({
 
   render: function () {
     var artistResults = this.props.artistResults.map(function(result, index){
-        return <ArtistResult key={result.uri} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.artistResults} resultsKey={index} />
+        return <ArtistResult key={result.uri} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />
       }.bind(this));
     var showArtistResults = (this.props.artistResults.length > 0) ? artistResults : <NoResults/>
 
     var albumResults = this.props.albumResults.map(function(result, index){
-        return <AlbumResult key={result.uri} ajaxRequest={this.props.ajaxRequest} result={result} origin={this.props.origin} query={this.props.query} queryType={this.props.queryType} results={this.props.albumResults} resultsKey={index} />
+        return <AlbumResult key={result.uri} ajaxRequest={this.props.ajaxRequest} result={result} origin={this.props.origin} />
       }.bind(this));
     var showAlbumResults = (this.props.albumResults.length > 0) ? albumResults : <NoResults/>
 
