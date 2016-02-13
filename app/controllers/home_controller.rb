@@ -5,7 +5,7 @@ class HomeController < ApplicationController
     end
 
     def artist_info
-        results = Discog::Client.new.artist_info(params[:query])
+        results = {profile: Discog::Client.new.artist_info(params[:query])}
         render json: results
     end
 

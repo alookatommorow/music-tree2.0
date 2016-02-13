@@ -9,7 +9,7 @@ module Discog
     end
 
     def artist_info(query)
-      self.class.get("/artists/#{query}").parsed_response
+      self.class.get("/artists/#{query}").parsed_response["profile"]
     end
 
     def album_info(query)
@@ -67,7 +67,7 @@ module Discog
         eps = []
         lps = []
         results.each do |album|
-          if album["format"].include?('Album') || album["format"].include?('Compilation')
+          if (album["format"] & ['Album', 'Compilation']).any?
             lps.push(album)
           else
             eps.push(album)
