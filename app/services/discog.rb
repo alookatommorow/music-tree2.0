@@ -11,8 +11,7 @@ module Discog
     base_uri "https://api.discogs.com"
 
     def search
-      search_filter(parsed_results)
-      # Filter.new.search
+      Filter.new(results).search
     end
 
     def artist_info
@@ -24,8 +23,7 @@ module Discog
     end
 
     def discog
-      discography_filter(parsed_results)
-      # Filter.new(query).discography
+      Filter.new(results).discography
     end
 
     private
@@ -45,7 +43,7 @@ module Discog
         end
       end
 
-      def parsed_results
+      def results
         self.class.get(url).parsed_response["results"]
       end
 
