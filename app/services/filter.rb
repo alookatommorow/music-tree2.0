@@ -4,7 +4,7 @@ class Filter
   end
 
   def search
-    filtered_results = { artistResults: [], albumResults: []}.tap do |fr|
+    { artistResults: [], albumResults: []}.tap do |fr|
       results.each do |result|
         if result["type"] == "artist"
           fr[:artistResults].push(result)
@@ -16,7 +16,7 @@ class Filter
   end
 
   def discography
-    filtered_results = {all: sort_by_year, eps: [], lps: []}.tap do |fr|
+    {all: sort_by_year, eps: [], lps: []}.tap do |fr|
       sort_by_year.each do |album|
         if (album["format"] & ['Album', 'Compilation']).any?
           fr[:lps].push(album)
