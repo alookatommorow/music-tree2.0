@@ -1,21 +1,21 @@
 class HomeController < ApplicationController
     def search
-        results = Discog::Client.new.search(params[:query])
+        results = Discog::Client.new(params[:query]).search
         render json: results
     end
 
     def artist_info
-        results = Discog::Client.new.artist_info(params[:query])
+        results = {profile: Discog::Client.new(params[:query]).artist_info}
         render json: results
     end
 
     def album_info
-        results = Discog::Client.new.album_info(params[:query])
+        results = Discog::Client.new(params[:query]).album_info
         render json: results
     end
 
     def discog
-        results = Discog::Client.new.discog(params[:query])
+        results = Discog::Client.new(params[:query], true).discog
         render json: results
     end
 

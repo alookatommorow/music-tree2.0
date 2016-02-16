@@ -4,7 +4,6 @@ ruby '2.2.3'
 
 gem 'rails', '4.2.5.1'
 gem 'rails-api'
-gem 'spring', :group => :development
 gem 'pg'
 gem 'puma'
 gem 'jquery-rails'
@@ -13,10 +12,16 @@ gem 'httparty'
 
 group :development do
   gem 'web-console', '~> 3.1.1'
+  gem 'spring'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'awesome_print'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
