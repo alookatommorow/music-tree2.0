@@ -154,6 +154,8 @@ GEM
     safe_yaml (1.0.4)
     slop (3.6.0)
     spring (1.6.3)
+    spring-commands-rspec (1.0.4)
+      spring (>= 0.9.1)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -198,6 +200,7 @@ DEPENDENCIES
   rails_12factor
   rspec-rails
   spring
+  spring-commands-rspec
   therubyracer
   web-console (~> 3.1.1)
   webmock
