@@ -29,13 +29,32 @@ RSpec.describe Discog, type: :model do
     end
   end
 
-  # context '#album_info' do
-  #   it 'should retrieve album info from Discogs API' do
-  #     id = 211463
-  #     results = Discog::Client.new.album_info(id)
-  #     expect(results["title"]).to eq("Thin Lizzy")
-  #   end
-  # end
+  context '#discog' do
+    it 'should retrieve artist discography from Discogs API' do
+      stub_request(:get, "https://api.discogs.com/database/search?type=master&artist=obituary&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").
+         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
+         to_return(:status => 200, :body => File.open('spec/support/discog.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
+
+      results = Discog::Client.new("obituary", true).discog
+      response = JSON.parse(File.open('spec/support/discog.json').read)
+      expected = Filter.new(response["results"]).discography
+
+      expect(results).to eq(expected)
+    end
+  end
+
+  context '#album_info' do
+    it 'should retrieve album info from Discogs API' do
+      stub_request(:get, "https://api.discogs.com/artists/136188").
+         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
+         to_return(:status => 200, :body => File.open('spec/support/artist_info.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
+
+      expected = JSON.parse(File.open('spec/support/artist_info.json').read)["profile"]
+      results = Discog::Client.new(136188).artist_info
+
+      expect(results).to eq(expected)
+    end
+  end
 
 
 
