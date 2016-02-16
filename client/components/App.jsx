@@ -8,14 +8,14 @@ var mui = require('material-ui');
 var App = React.createClass({
   getDefaultProps: function() {
     // use this for production
-    // return {
-    //   origin: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : ''
-    // };
-
-    // use this when in development
     return {
-      origin: 'http://localhost:3000',
+      origin: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : ''
     };
+
+    // use this when in development please
+    // return {
+    //   origin: 'http://localhost:3000',
+    // };
   },
 
   childContextTypes: {
