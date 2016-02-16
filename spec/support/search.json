@@ -1,0 +1,3746 @@
+{
+"pagination": {
+"per_page": 100,
+"items": 963,
+"page": 1,
+"urls": {
+"last": "https://api.discogs.com/database/search?q=weezer&per_page=100&secret=NMdgwkmItkMGnJNGtMZtlYojButGQGCz&page=10&key=DFSLnVDpgbvdKScCyurY",
+"next": "https://api.discogs.com/database/search?q=weezer&per_page=100&secret=NMdgwkmItkMGnJNGtMZtlYojButGQGCz&page=2&key=DFSLnVDpgbvdKScCyurY"
+},
+"pages": 10
+},
+"results": [
+{
+"thumb": "https://api-img.discogs.com/KFOAreRH1RRiMOMH2dQQSu6KlCk=/150x150/smart/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/A-105730-1412524451-8257.jpeg.jpg",
+"title": "Weezer",
+"uri": "/artist/105730-Weezer",
+"resource_url": "https://api.discogs.com/artists/105730",
+"type": "artist",
+"id": 105730
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/XhSjvf_HEqK66PuUFDo-V-8QZ4Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-472533-1241059996.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"7 20642 46292 8",
+"IFPI L325",
+"IFPI 501B",
+"IFPI 50AA",
+"DIDX-022077 1",
+"DIDX-022077 5",
+"B000003TAW",
+"DIDX 022077",
+"AAD"
+],
+"uri": "/Weezer-Weezer/master/35266",
+"community": {
+"have": 7632,
+"want": 5295
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/masters/35266",
+"type": "master",
+"id": 35266
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/NQ0ZhnFj82u5ErkvtxufwniJNMA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3923945-1349387674-2892.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Reissue",
+"Remastered",
+"Limited Edition",
+"Numbered"
+],
+"country": "US",
+"barcode": [
+"8 21797 13901 4",
+"821797139014",
+"MFSL1-390 A3 KW @ MoFi 20551.1(3)",
+"MFSL1-390 B2 KW @ MoFi 20520.2(3)"
+],
+"uri": "/Weezer-Weezer/release/3923945",
+"community": {
+"have": 2629,
+"want": 1161
+},
+"label": [
+"Mobile Fidelity Sound Lab",
+"Geffen Records",
+"Record Technology Incorporated",
+"Electric Lady Studios",
+"Mobile Fidelity Sound Lab",
+"GAIN 2™ Ultra Analog LP 180g Series",
+"Original Master Recording"
+],
+"catno": "MFSL 1-390",
+"year": "2012",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3923945",
+"type": "release",
+"id": 3923945
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/0QE1vmfLFWXLQsnsw-HC_UsrOTk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-368184-1384978619-8293.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"6 06949 30452 2"
+],
+"uri": "/Weezer-Weezer/master/35285",
+"community": {
+"have": 2660,
+"want": 1388
+},
+"label": [
+"Geffen Records",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "069493045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/masters/35285",
+"type": "master",
+"id": 35285
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/eoxWs__ocYE2auBj1CTyOhBVSj4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-551992-1401369415-7065.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Reissue"
+],
+"country": "Europe",
+"barcode": [
+"0 28942 46291 5",
+"LC 07266",
+"BIEM/MCPS",
+"D33 424 629-1-S1=2 320",
+"D33 424 629-1-S2=2 320"
+],
+"uri": "/Weezer-Weezer/release/551992",
+"community": {
+"have": 1242,
+"want": 577
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "424 629-1",
+"year": "2002",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/551992",
+"type": "release",
+"id": 551992
+},
+{
+"style": [
+"Indie Rock",
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/YM8JvOwQ3ekoQc8817kBeFWvZYA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1464495-1385766600-4992.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Stereo"
+],
+"country": "US",
+"barcode": [
+"6 02517 67183 6",
+"IFPI L007",
+"IFPI 0333",
+"B00 111 3502R2 01%% EDC"
+],
+"uri": "/Weezer-Weezer/master/35292",
+"community": {
+"have": 1171,
+"want": 629
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Interscope Records",
+"Interscope Records",
+"Universal Music Distribution",
+"Universal Music Distribution",
+"EDC, USA"
+],
+"catno": "B0011135-02",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/masters/35292",
+"type": "master",
+"id": 35292
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/kzACjB4oqv08-bQweTOdNWCXzbc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2128317-1436086371-5188.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album"
+],
+"country": "US",
+"barcode": [
+"6 06949 30451 5",
+"606949304515",
+"06949-3045-1-A",
+"06949-3045-1-B"
+],
+"uri": "/Weezer-Weezer/release/2128317",
+"community": {
+"have": 549,
+"want": 509
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Universal Music & Video Distribution, Inc.",
+"Universal Music & Video Distribution, Inc.",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "069493045-1",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2128317",
+"type": "release",
+"id": 2128317
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/efguzEecZM6Qhb52bPwbe6PBHBo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1387446-1283312699.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Limited Edition"
+],
+"country": "US",
+"barcode": [
+"6 0251773074 8",
+"B0011135-01 A",
+"B0011135-01 B",
+"B001927H54"
+],
+"uri": "/Weezer-Weezer/release/1387446",
+"community": {
+"have": 550,
+"want": 330
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Universal Music Distribution",
+"Universal Music Distribution",
+"Interscope Records",
+"Interscope Records",
+"United Record Pressing"
+],
+"catno": "B0011135-01",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1387446",
+"type": "release",
+"id": 1387446
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/X87f5rFXB3WQKo-TlRcTudV2Pzk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1376672-1290108389.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album"
+],
+"country": "UK",
+"barcode": [
+"720642462911",
+"7 20642 46291 1"
+],
+"uri": "/Weezer-Weezer/release/1376672",
+"community": {
+"have": 260,
+"want": 926
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"MCA Records Ltd.",
+"BMG Records (UK) Ltd.",
+"Electric Lady Studios",
+"Sterling Sound",
+"Copyright Control",
+"Manuskript"
+],
+"catno": "GEF 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1376672",
+"type": "release",
+"id": 1376672
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/nDuyY8mA-j7oZHVF_4LGRasj1bs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4760354-1374639531-3974.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Limited Edition",
+"Numbered",
+"Reissue",
+"Remastered"
+],
+"country": "US",
+"barcode": [
+"8 21797 13941 0",
+"MFSL 1-394 A1",
+"MFSL 1-394 B1",
+"20934.1(3)",
+"20934.2(3)",
+"KW @ MoFi"
+],
+"uri": "/Weezer-Weezer/release/4760354",
+"community": {
+"have": 545,
+"want": 373
+},
+"label": [
+"Mobile Fidelity Sound Lab",
+"Geffen Records",
+"Geffen Records",
+"Universal Music Enterprises",
+"Mobile Fidelity Sound Lab, Inc.",
+"Universal Music Enterprises",
+"Mobile Fidelity Sound Lab",
+"Mobile Fidelity Sound Lab",
+"Record Technology Incorporated",
+"GAIN 2™ Ultra Analog LP 180g Series",
+"Original Master Recording"
+],
+"catno": "MFSL 1-394",
+"year": "2013",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4760354",
+"type": "release",
+"id": 4760354
+},
+{
+"style": [
+"Alternative Rock",
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/V6MXvsFHB_9b4GVXAxCPhE5aKXk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3842890-1346582798-6931.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Limited Edition",
+"Reissue"
+],
+"country": "UK & Europe",
+"barcode": [
+"6 00753 38537 1",
+"BIEM/SDRM",
+"LC 07266",
+"101096E1/A www.gzvinyl.com - 5338537 -A",
+"101096E2/A 5338537 -B"
+],
+"uri": "/Weezer-Weezer/release/3842890",
+"community": {
+"have": 435,
+"want": 403
+},
+"label": [
+"Back To Black",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Publishing Designee",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Universal Music",
+"www.gzvinyl.com",
+"GZ Digital Media",
+"Back To Black"
+],
+"catno": "0600753385371",
+"year": "2012",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3842890",
+"type": "release",
+"id": 3842890
+},
+{
+"style": [
+"Alternative Rock",
+"Grunge",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/ZBVTYeI_XiYs-rK21_g-1yXn2OI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-368178-1115977675.jpg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Germany",
+"barcode": [
+"7 2064-24629-2 8",
+"SONOPRESS I-2913-1/ GED24629 A",
+"IFPI L030",
+"IFPI 0723",
+"F: BM650",
+"LC 7266",
+"BIEM / GEMA",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/368178",
+"community": {
+"have": 711,
+"want": 47
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc."
+],
+"catno": "GED 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/368178",
+"type": "release",
+"id": 368178
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/XhSjvf_HEqK66PuUFDo-V-8QZ4Y=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-472533-1241059996.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"7 20642 46292 8",
+"IFPI L325",
+"IFPI 501B",
+"IFPI 50AA",
+"DIDX-022077 1",
+"DIDX-022077 5",
+"B000003TAW",
+"DIDX 022077",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/472533",
+"community": {
+"have": 760,
+"want": 63
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/472533",
+"type": "release",
+"id": 472533
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/Crj5t7cErdU_WdivkwPkaUeetx8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1118004-1282718582.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/1118004",
+"community": {
+"have": 165,
+"want": 341
+},
+"label": [
+"Geffen Records"
+],
+"catno": "069493045-1",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1118004",
+"type": "release",
+"id": 1118004
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/0QE1vmfLFWXLQsnsw-HC_UsrOTk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-368184-1384978619-8293.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"6 06949 30452 2"
+],
+"uri": "/Weezer-Weezer/release/368184",
+"community": {
+"have": 456,
+"want": 25
+},
+"label": [
+"Geffen Records",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "069493045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/368184",
+"type": "release",
+"id": 368184
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/psVfg8zp4O7Mm_FQlcElh5LWHlI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3638562-1338395867-6025.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album"
+],
+"country": "UK",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/3638562",
+"community": {
+"have": 40,
+"want": 413
+},
+"label": [
+"Geffen Records"
+],
+"catno": "GEF 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3638562",
+"type": "release",
+"id": 3638562
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/pAvr6LdM-lUv5u-uYs8ukkeXuDs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1441236-1423994375-2580.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [
+"6 06949 30452 2",
+"BIEM / MCPS",
+"LC 06406",
+"06069 493 045-2 01 + 51130660",
+"MADE IN GERMANY BY UNIVERSAL M & L",
+"IFPI L002",
+"IFPI 0125",
+"IFPI 01CG"
+],
+"uri": "/Weezer-Weezer/release/1441236",
+"community": {
+"have": 366,
+"want": 12
+},
+"label": [
+"Geffen Records",
+"Interscope Records",
+"Interscope Records",
+"UMG Recordings, Inc.",
+"Universal M & L, Germany",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "493 045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1441236",
+"type": "release",
+"id": 1441236
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/k7PpsMYttY_q788-DLwqC24T4LE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5391501-1392216367-4483.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album"
+],
+"country": "Japan",
+"barcode": [
+"201020100295"
+],
+"uri": "/Weezer-Weezer/release/5391501",
+"community": {
+"have": 31,
+"want": 248
+},
+"label": [
+"Geffen Records",
+"Universal Music K.K.",
+"MCA Records Ltd."
+],
+"catno": "UW-001 (GEF 24629)",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5391501",
+"type": "release",
+"id": 5391501
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/0CkwzpDcWZUA-8PULcbw5-kIIyY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2398480-1281795528.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Repress"
+],
+"country": "Europe",
+"barcode": [
+"7 2064-24629-2 8",
+"BIEM / MCPS",
+"LC 07266",
+"F: BM650",
+"AAD",
+"07206 424 629-2 02 * 51004233",
+"MADE IN GERMANY BY UNIVERSAL M & L",
+"IFPI LV26",
+"IFPI 0125"
+],
+"uri": "/Weezer-Weezer/release/2398480",
+"community": {
+"have": 246,
+"want": 36
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Universal M & L, Germany",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Pub. Designee"
+],
+"catno": "GED24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2398480",
+"type": "release",
+"id": 2398480
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/2S3iSjAxLsGznojUFrDoWPvpZYQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3454255-1331052566.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Deluxe Edition",
+"Limited Edition",
+"Reissue",
+"Remastered"
+],
+"country": "US",
+"barcode": [
+"WEEZER DELUXELP - A  KPG@ATM  17700.1(3)···",
+"WEEZER DELUXE LP- B  KPG@ATM  17700.2(3)···",
+"WEEZER DELUXE LP- C  KPG@ATM  17700 .3(3)-··",
+"WEEZER DELUX LP- D  KPG@ATM  17700.4(3)-··"
+],
+"uri": "/Weezer-Weezer/release/3454255",
+"community": {
+"have": 91,
+"want": 187
+},
+"label": [
+"Not On Label (Weezer Self-released)",
+"Interscope Records",
+"Interscope Records",
+"Shangri La",
+"Malibu Performing Arts Center",
+"Threshold Studios",
+"Avatar Studios",
+"Dave Collins Mastering",
+"E.O. Smith Music",
+"Fie!",
+"Nervous Breakdown",
+"SS711 Music",
+"Pilsung SCK",
+"AcousTech Mastering",
+"Record Technology Incorporated",
+"Stoughton Printing Co.",
+"G & M Graphics"
+],
+"catno": "none",
+"year": "2009",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3454255",
+"type": "release",
+"id": 3454255
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/ILwX24JcU8ylqQBENXlk5rJD4kM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5844271-1434210711-6386.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Reissue"
+],
+"country": "USA & Canada",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/5844271",
+"community": {
+"have": 16,
+"want": 222
+},
+"label": [
+"DGC"
+],
+"catno": "GEF 24629",
+"year": "2002",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5844271",
+"type": "release",
+"id": 5844271
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/w95qMENIWHQE01eNDMQhsCsfT88=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2326929-1277149369.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [
+"6 06949 30612 0",
+"BIEM/MCPS",
+"LC 07266",
+"4930612 01 6",
+"MADE IN THE UK BY UNIVERSAL M&L",
+"IFPI L136",
+"IFPI 04C1"
+],
+"uri": "/Weezer-Weezer/release/2326929",
+"community": {
+"have": 198,
+"want": 13
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Polydor Ltd. (UK)",
+"Universal M & L, UK",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios",
+"E.O. Smith Music"
+],
+"catno": "493 061-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2326929",
+"type": "release",
+"id": 2326929
+},
+{
+"style": [
+"Alternative Rock",
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/AB_5TCX2sCVQEOY8WSXzyRtidgs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-444909-1114367212.jpg.jpg",
+"format": [
+"CD",
+"Album",
+"Reissue",
+"Remastered",
+"Deluxe Edition"
+],
+"country": "UK & Europe",
+"barcode": [
+"6 02498 61907 0",
+"LC 07266",
+"BIEM/MCPS",
+"MADE IN GERMANY BY UNIVERSAL M & L",
+"06024 986 190-8 01 # 51481953",
+"06024 986 190-9 01 * 51481955",
+"IFPI L008",
+"IFPI LV26"
+],
+"uri": "/Weezer-Weezer/release/444909",
+"community": {
+"have": 161,
+"want": 53
+},
+"label": [
+"Geffen Records",
+"Deluxe Edition",
+"Geffen Records",
+"Geffen Records",
+"Universal M & L, Germany",
+"Ocean Way Recording",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound"
+],
+"catno": "0602498619070",
+"year": "2004",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/444909",
+"type": "release",
+"id": 444909
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/tHfLfjSGTDu9GMeXL9-Dprzjp-8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1159386-1197004356.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition"
+],
+"country": "US",
+"barcode": [
+"1/95  3DB3  105943D",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/1159386",
+"community": {
+"have": 99,
+"want": 36
+},
+"label": [
+"DGC",
+"BMG Direct Marketing, Inc.",
+"BMG Direct Marketing, Inc.",
+"BMG Direct Marketing, Inc.",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound"
+],
+"catno": "DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1159386",
+"type": "release",
+"id": 1159386
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/akae53TnEplXlln2ymyJ6NmKjC4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6127377-1412872918-2198.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Repress"
+],
+"country": "Unknown",
+"barcode": [
+"0720642462911"
+],
+"uri": "/Weezer-Weezer/release/6127377",
+"community": {
+"have": 42,
+"want": 137
+},
+"label": [
+"Geffen Records"
+],
+"catno": "GEF 24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6127377",
+"type": "release",
+"id": 6127377
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/-4-Rt1fN8zLqXRfKMkavqP-JjXI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1358726-1291576832.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Remastered",
+"Reissue",
+"CD",
+"Compilation"
+],
+"country": "US",
+"barcode": [
+"6 02498 61907 0",
+"B0001JXQEM",
+"B0002139-02 CD01",
+"B00 021 3902CD01 01@ A",
+"MADE IN USA BY UML",
+"IFPI L006",
+"IFPI 0340",
+"B0002139-02 CD02",
+"B00 021 3902CD02 01$ 1",
+"MADE IN USA BY UML",
+"IFPI L009",
+"IFPI 0319"
+],
+"uri": "/Weezer-Weezer/release/1358726",
+"community": {
+"have": 168,
+"want": 52
+},
+"label": [
+"Geffen Records",
+"Deluxe Edition",
+"Geffen Records",
+"Geffen Records",
+"Universal Music & Video Distribution, Corp.",
+"UML",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Ocean Way Recording",
+"Horizontal Boogie Bar",
+"Cat's Paw Studios",
+"S.I.R. Studios",
+"Sterling Sound",
+"E.O. Smith Music",
+"Fie!",
+"Ubermommasuprapoppa Music",
+"Mills Music, Inc."
+],
+"catno": "B0002139-02",
+"year": "2004",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1358726",
+"type": "release",
+"id": 1358726
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/QdbG7HzWstOoiueM_hbIL8o_FOA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1233146-1202510668.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "US",
+"barcode": [
+"720642462942"
+],
+"uri": "/Weezer-Weezer/release/1233146",
+"community": {
+"have": 71,
+"want": 87
+},
+"label": [
+"Geffen Records"
+],
+"catno": "DGCC-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1233146",
+"type": "release",
+"id": 1233146
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/kCBPsOle4F-d8SvwIXOy3rQdIsA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1777902-1317172503.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/1777902",
+"community": {
+"have": 89,
+"want": 36
+},
+"label": [
+"DGC",
+"MCA Records Canada",
+"MCA Records Canada"
+],
+"catno": "DGCSD 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1777902",
+"type": "release",
+"id": 1777902
+},
+{
+"style": [
+"Alternative Rock",
+"Grunge",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/s4pC1zskBXFrXpj3cbxsNislsns=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5743123-1415200963-5112.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Germany",
+"barcode": [
+"7 2064-24629-2 8",
+"IFPI L030",
+"IFPI 0757",
+"IFPI 0703",
+"IFPI 0741",
+"IFPI 0734",
+"SONOPRESS I-2913-1/ GED24629  A",
+"SONOPRESS I-2913-1/ GED24629  D",
+"BIEM / GEMA",
+"LC 7266",
+"F: BM650",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/5743123",
+"community": {
+"have": 115,
+"want": 29
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"BMG",
+"Sonopress",
+"Publishing Designee",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound"
+],
+"catno": "GED 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5743123",
+"type": "release",
+"id": 5743123
+},
+{
+"style": [
+"Indie Rock",
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/YM8JvOwQ3ekoQc8817kBeFWvZYA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1464495-1385766600-4992.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Stereo"
+],
+"country": "US",
+"barcode": [
+"6 02517 67183 6",
+"IFPI L007",
+"IFPI 0333",
+"B00 111 3502R2 01%% EDC"
+],
+"uri": "/Weezer-Weezer/release/1464495",
+"community": {
+"have": 127,
+"want": 11
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Interscope Records",
+"Interscope Records",
+"Universal Music Distribution",
+"Universal Music Distribution",
+"EDC, USA"
+],
+"catno": "B0011135-02",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1464495",
+"type": "release",
+"id": 1464495
+},
+{
+"thumb": "",
+"title": "Weezer",
+"uri": "/label/559164-Weezer",
+"resource_url": "https://api.discogs.com/labels/559164",
+"type": "label",
+"id": 559164
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/dMRGqBDEXbzR9c21oaf3KeW2m4A=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3726184-1386813616-2013.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"6 06949 30452 2",
+"069 493 0452 01!",
+"IFPI L003",
+"IFPI 0389",
+"MADE IN USA BY PMDC"
+],
+"uri": "/Weezer-Weezer/release/3726184",
+"community": {
+"have": 110,
+"want": 11
+},
+"label": [
+"Geffen Records",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios",
+"Geffen Records",
+"Geffen Records",
+"Geffen Records",
+"Geffen Records",
+"Universal Music & Video Distribution, Inc.",
+"Universal Music & Video Distribution, Inc."
+],
+"catno": "069493045-2IN02",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3726184",
+"type": "release",
+"id": 3726184
+},
+{
+"style": [
+"Alternative Rock",
+"Grunge",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/Lx45Qf_oUIAm7bwOB81wIa4uw0s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7359623-1443468227-9987.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Germany",
+"barcode": [
+"7 2064-24629-2 8",
+"SONOPRESS I-2913 / GED24629 A 3",
+"IFPI 0765",
+"SONOPRESS I-2913-1 / GED24629 D 3",
+"IFPI 0734",
+"F: BM650",
+"LC 7266",
+"BIEM / GEMA",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/7359623",
+"community": {
+"have": 78,
+"want": 13
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound"
+],
+"catno": "GED 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7359623",
+"type": "release",
+"id": 7359623
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/3NqslQESJnqWORRAfT1nQ3bicsE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1189488-1287094627.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/1189488",
+"community": {
+"have": 48,
+"want": 37
+},
+"label": [
+"DGC"
+],
+"catno": "DGCBD-24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1189488",
+"type": "release",
+"id": 1189488
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock",
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/OcDJ6TC-d1HJAGFCq1mqPk3JYsI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6152824-1417563607-9668.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Repress"
+],
+"country": "US",
+"barcode": [
+"7 20642 46292 8",
+"720642462928",
+"IFPI L327",
+"IFPI 507B",
+"DIDX-145875 3 A02",
+"DIDX 022077",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/6152824",
+"community": {
+"have": 76,
+"want": 24
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6152824",
+"type": "release",
+"id": 6152824
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/zdggCW4a7NAqWQD0A36XBH8WKfA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1699484-1237768283.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [
+"6 06949 30452 2",
+"606949304522",
+"L382",
+"IFPI6000",
+"#10423W12 0694930452 L382 CINRAM"
+],
+"uri": "/Weezer-Weezer/release/1699484",
+"community": {
+"have": 93,
+"want": 6
+},
+"label": [
+"Geffen Records"
+],
+"catno": "0694930452",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1699484",
+"type": "release",
+"id": 1699484
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/pwiCfzkNV1b_IPduOe5W5aeJCPU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2414978-1282793336.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Australasia",
+"barcode": [
+"7 20642 46292 8",
+"0064450000000 01",
+"IFPI L681 IFPI 6519"
+],
+"uri": "/Weezer-Weezer/release/2414978",
+"community": {
+"have": 53,
+"want": 35
+},
+"label": [
+"Geffen Records"
+],
+"catno": "GEFD-24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2414978",
+"type": "release",
+"id": 2414978
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/sc2-viTKkjg8HtGAWJK_LCnvma8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3222658-1321378966.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition"
+],
+"country": "Canada",
+"barcode": [
+"7 7749-909846 6 0 2"
+],
+"uri": "/Weezer-Weezer/release/3222658",
+"community": {
+"have": 51,
+"want": 34
+},
+"label": [
+"DGC",
+"Columbia House",
+"Cinram"
+],
+"catno": "*CDGCD 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3222658",
+"type": "release",
+"id": 3222658
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/yL6Ydx8Ij528e_3af9YKQYrGBV4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6628342-1423412032-9688.jpeg.jpg",
+"format": [
+"SACD",
+"Hybrid",
+"Stereo",
+"Album",
+"Limited Edition",
+"Numbered",
+"Remastered"
+],
+"country": "US",
+"barcode": [
+"8 21797 21606 7"
+],
+"uri": "/Weezer-Weezer/release/6628342",
+"community": {
+"have": 34,
+"want": 37
+},
+"label": [
+"Mobile Fidelity Sound Lab",
+"Geffen Records",
+"Electric Lady Studios",
+"Mobile Fidelity Sound Lab",
+"Original Master Recording"
+],
+"catno": "UDSACD 2160",
+"year": "2014",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6628342",
+"type": "release",
+"id": 6628342
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/QDKG1YZttSXEk4z9YLj1onrYcrk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4771538-1375124745-8261.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition",
+"Reissue"
+],
+"country": "US",
+"barcode": [
+"0 20831-1016-2 01",
+"X15884 5 DGD 24629-2 RE-1 01 M1S3",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/4771538",
+"community": {
+"have": 19,
+"want": 31
+},
+"label": [
+"DGC",
+"Columbia House",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Columbia House",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"WEA Mfg. Olyphant",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "DGCD-24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4771538",
+"type": "release",
+"id": 4771538
+},
+{
+"style": [
+"Power Pop",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/L-2JbMLudG2F3AeTWEwaIV3vPnc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4143212-1365600038-1385.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "UK",
+"barcode": [
+"7 20642 46294 2"
+],
+"uri": "/Weezer-Weezer/release/4143212",
+"community": {
+"have": 8,
+"want": 54
+},
+"label": [
+"Geffen Records",
+"BMG Records (UK) Ltd.",
+"MCA Records Ltd."
+],
+"catno": "GEC 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4143212",
+"type": "release",
+"id": 4143212
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/W5ctAkhbMLLy2nbTJZH_SvAnx8w=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4660923-1371404433-5405.jpeg.jpg",
+"format": [
+"Cassette",
+"Album",
+"Club Edition"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/4660923",
+"community": {
+"have": 3,
+"want": 51
+},
+"label": [
+"Geffen Records"
+],
+"catno": "DGCC-24629 C105943",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4660923",
+"type": "release",
+"id": 4660923
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/XocRpIsi_XW9DP1rDKM830Ey1iQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6500394-1420681593-2823.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"7 20642 46292 8",
+"MFG BY UNIVERSAL DGCD24629 0652513934",
+"none",
+"IFPI 2A43",
+"DIDX 022077",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/6500394",
+"community": {
+"have": 24,
+"want": 21
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee",
+"Universal"
+],
+"catno": "DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6500394",
+"type": "release",
+"id": 6500394
+},
+{
+"style": [
+"Garage Rock"
+],
+"thumb": "https://api-img.discogs.com/KurYQlz_jVClauUbVZYGfxeQb5M=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4485902-1412561956-2856.jpeg.jpg",
+"format": [
+"CD",
+"Compilation",
+"Reissue"
+],
+"country": "US",
+"barcode": [
+"602527288413",
+"B002WHT0WS"
+],
+"uri": "/Weezer-Weezer/release/4485902",
+"community": {
+"have": 13,
+"want": 34
+},
+"label": [
+"Geffen Records",
+"UMe",
+"Rarities Edition",
+"Geffen Records",
+"Geffen Records",
+"Universal Music Distribution"
+],
+"catno": "B0013860-02",
+"year": "2010",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4485902",
+"type": "release",
+"id": 4485902
+},
+{
+"thumb": "",
+"title": "Not On Label (Weezer Self-released)",
+"uri": "/label/207829-Not-On-Label-Weezer-Self-released",
+"resource_url": "https://api.discogs.com/labels/207829",
+"type": "label",
+"id": 207829
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/c_YwYPblC6levXudty9KYZPlhN8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1517582-1250905033.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/1517582",
+"community": {
+"have": 48,
+"want": 8
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "06025 177 449-2",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1517582",
+"type": "release",
+"id": 1517582
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/h3W8UHAZD0EPzrDlHwt8YCX3e78=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2927507-1307705870.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [
+"6 02517 74492 9"
+],
+"uri": "/Weezer-Weezer/release/2927507",
+"community": {
+"have": 51,
+"want": 6
+},
+"label": [
+"Interscope Records",
+"DGC"
+],
+"catno": "0602517744929",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2927507",
+"type": "release",
+"id": 2927507
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/XwxeS58kjzXAEXKV3sdhh3u3zog=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5558609-1447120191-4284.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "Canada",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/5558609",
+"community": {
+"have": 9,
+"want": 35
+},
+"label": [
+"Geffen Records"
+],
+"catno": "DGCC-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5558609",
+"type": "release",
+"id": 5558609
+},
+{
+"style": [
+"Modern"
+],
+"thumb": "https://api-img.discogs.com/reSNZPgs3p4yzupAYpJbqAtFVDA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5611198-1397949017-1442.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Remastered",
+"Limited Edition"
+],
+"country": "US",
+"barcode": [
+"0 27297 16141 2",
+"LP-1614-A S-89449 gB",
+"LP-1614-B S-89450 gB"
+],
+"uri": "/Vitamin-String-Quartet-Performs-Weezers-Pinkerton/release/5611198",
+"community": {
+"have": 117,
+"want": 26
+},
+"label": [
+"Vitamin",
+"Rainbo Records",
+"Rainbo Records",
+"Vitamin Records, LLC",
+"Vitamin Records, LLC"
+],
+"catno": "LP 1614",
+"year": "2014",
+"genre": [
+"Classical"
+],
+"title": "Vitamin String Quartet* - Performs Weezer's Pinkerton",
+"resource_url": "https://api.discogs.com/releases/5611198",
+"type": "release",
+"id": 5611198
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/vH1dSHQ9dR6oXVAVo7AmE54f-zs=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3422391-1329788371.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Australia",
+"barcode": [
+"6 06949 30452 2"
+],
+"uri": "/Weezer-Weezer/release/3422391",
+"community": {
+"have": 54,
+"want": 7
+},
+"label": [
+"Geffen Records"
+],
+"catno": "493 045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3422391",
+"type": "release",
+"id": 3422391
+},
+{
+"style": [],
+"thumb": "https://api-img.discogs.com/CVwxl7ckwxM4n6QAxlleTDG_jm8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2148524-1266656586.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "UK",
+"barcode": [
+"6 02517 74496 7"
+],
+"uri": "/Weezer-Weezer/release/2148524",
+"community": {
+"have": 36,
+"want": 7
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "1774496",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2148524",
+"type": "release",
+"id": 2148524
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/ZnccRWTC68ZUGOrNrVmJOK6KFL0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1358016-1215843780.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/1358016",
+"community": {
+"have": 34,
+"want": 7
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "B001133602",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/1358016",
+"type": "release",
+"id": 1358016
+},
+{
+"style": [
+"Alternative Rock",
+"Pop Rock"
+],
+"thumb": "https://api-img.discogs.com/qYdYVGgjYMyLbUeMebitMUq1QsY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3341430-1428442737-3710.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Promo"
+],
+"country": "US",
+"barcode": [
+"DIPX 022010"
+],
+"uri": "/Weezer-Weezer-Advance-CD/release/3341430",
+"community": {
+"have": 7,
+"want": 34
+},
+"label": [
+"DGC",
+"DGC"
+],
+"catno": "DGCD-A-24629",
+"year": "1994",
+"genre": [
+"Rock",
+"Pop"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3341430",
+"type": "release",
+"id": 3341430
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/unAjH7DI2FwWyGy114WbBAy-YDE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3348765-1442654495-7167.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Japan",
+"barcode": [
+"¥ 2,500"
+],
+"uri": "/Weezer-Weezer/release/3348765",
+"community": {
+"have": 5,
+"want": 34
+},
+"label": [
+"MCA Victor, Inc."
+],
+"catno": "MVCG-172",
+"year": "1995",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3348765",
+"type": "release",
+"id": 3348765
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/fYmTZzxmoGBsQLuA1VJKhuireq4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6461784-1420242082-7108.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Australia",
+"barcode": [
+"7 20642 46292 8",
+"MADE BY DISCTRONICS B ** GEFD24629 ** #01"
+],
+"uri": "/Weezer-Weezer/release/6461784",
+"community": {
+"have": 13,
+"want": 20
+},
+"label": [
+"Geffen Records",
+"Disctronics B",
+"BMG Australia Limited"
+],
+"catno": "GEFD-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6461784",
+"type": "release",
+"id": 6461784
+},
+{
+"thumb": "",
+"title": "Weezer Records",
+"uri": "/label/365469-Weezer-Records",
+"resource_url": "https://api.discogs.com/labels/365469",
+"type": "label",
+"id": 365469
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/3_wRnGpZVyHtiWtHP1m80fq4IjU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1406473-1245117226.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Deluxe Edition"
+],
+"country": "US",
+"barcode": [
+"602517726451"
+],
+"uri": "/Weezer-Weezer-Deluxe/release/1406473",
+"community": {
+"have": 88,
+"want": 10
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Interscope Records",
+"Interscope Records",
+"Shangri La",
+"Malibu Performing Arts Center",
+"Threshold Studios",
+"Avatar Studios"
+],
+"catno": "B0011336-02",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer (Deluxe)",
+"resource_url": "https://api.discogs.com/releases/1406473",
+"type": "release",
+"id": 1406473
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/i57NXuYxm92LuMm3H7A1aIZR1J8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5642082-1398731414-2940.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition"
+],
+"country": "US",
+"barcode": [
+"069 493 0452 01! AP",
+"IFPI L005",
+"IFPI 0321",
+"MADE IN USA BY UML"
+],
+"uri": "/Weezer-Weezer/release/5642082",
+"community": {
+"have": 21,
+"want": 6
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios",
+"Geffen Records",
+"Geffen Records",
+"Universal Music & Video Distribution, Inc.",
+"Universal Music & Video Distribution, Inc.",
+"BMG Direct Marketing, Inc."
+],
+"catno": "069493045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5642082",
+"type": "release",
+"id": 5642082
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/vFtjDDO1UxZtqYQTFHN0rlw4pFw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5270400-1389207948-9065.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Reissue"
+],
+"country": "Europe",
+"barcode": [
+"6 06949 30452 2",
+"BIEM/MCPS",
+"SIAE",
+"LC 06406",
+"006069 493 045-2 02 * 51130660",
+"MADE IN GERMANY BY EDC",
+"IFPI LV26",
+"IFPI 0129"
+],
+"uri": "/Weezer-Weezer/release/5270400",
+"community": {
+"have": 22,
+"want": 7
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records",
+"UMG Recordings, Inc.",
+"EDC, Germany",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "493 045-2",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5270400",
+"type": "release",
+"id": 5270400
+},
+{
+"style": [
+"Alternative Rock",
+"Emo",
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/_VZ2_K4RSFEEpTCZRX17Mb560Lg=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3729099-1342018424-2682.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/3729099",
+"community": {
+"have": 3,
+"want": 32
+},
+"label": [
+"Interscope Records"
+],
+"catno": "B00005J729",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3729099",
+"type": "release",
+"id": 3729099
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/TP__Alla3xrElDgdwjs8hOC_uf0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3925757-1349457093-5807.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Deluxe Edition",
+"Limited Edition"
+],
+"country": "Europe",
+"barcode": [
+"6 02517 74495 0",
+"602517744950",
+"LC 06406"
+],
+"uri": "/Weezer-Weezer/release/3925757",
+"community": {
+"have": 30,
+"want": 7
+},
+"label": [
+"DGC Records",
+"Interscope Records",
+"Interscope Records",
+"Interscope Records",
+"DGC",
+"DGC",
+"Shangri La",
+"Malibu Performing Arts Center",
+"Threshold Studios",
+"Avatar Studios"
+],
+"catno": "0602517744950",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3925757",
+"type": "release",
+"id": 3925757
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/9lCM2b5Fy88xezM7zfgR1pstcBk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5746172-1401515222-2346.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "Malaysia",
+"barcode": [
+"720642462942"
+],
+"uri": "/Weezer-Weezer/release/5746172",
+"community": {
+"have": 5,
+"want": 29
+},
+"label": [
+"DGC",
+"Universal Music Sdn. Bhd."
+],
+"catno": "DGCC24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5746172",
+"type": "release",
+"id": 5746172
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/QrYnl71-ZkLg9r_qDEkOaFB4dQ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6817349-1427238861-1383.jpeg.jpg",
+"format": [
+"Cassette",
+"Album",
+"Club Edition"
+],
+"country": "US",
+"barcode": [
+"020831 - 1016 - 4 91"
+],
+"uri": "/Weezer-Weezer/release/6817349",
+"community": {
+"have": 2,
+"want": 22
+},
+"label": [
+"Geffen Records"
+],
+"catno": "DGCC-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6817349",
+"type": "release",
+"id": 6817349
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/_k00Zx2j0ULI8ssat5uqNXwy-XE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3305839-1324966877.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [
+"602517744936"
+],
+"uri": "/Weezer-Weezer/release/3305839",
+"community": {
+"have": 24,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "1774493",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3305839",
+"type": "release",
+"id": 3305839
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/NHfILPofZfXOemFVYo-ZzNfdM8s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3357526-1327188299.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Japan",
+"barcode": [
+"4 988005 268594"
+],
+"uri": "/Weezer-Weezer/release/3357526",
+"community": {
+"have": 20,
+"want": 8
+},
+"label": [
+"Geffen Records",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "UICF 1002",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3357526",
+"type": "release",
+"id": 3357526
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/NvnEfwbm04VefgUYVzZ2m4cF4co=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2140283-1266181372.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"DVD",
+"DVD-Video"
+],
+"country": "Japan",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/2140283",
+"community": {
+"have": 15,
+"want": 15
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Universal International"
+],
+"catno": "UICF-9057",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/2140283",
+"type": "release",
+"id": 2140283
+},
+{
+"style": [
+"Power Pop",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/1uwT9YB7Xp6Lk4xMYHlAKv8kzNA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6089789-1410797543-4442.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "Poland",
+"barcode": [
+"BIEM ZAIKS",
+"LC 7266",
+"181/F"
+],
+"uri": "/Weezer-Weezer/release/6089789",
+"community": {
+"have": 3,
+"want": 28
+},
+"label": [
+"Geffen Records",
+"BMG Records (UK) Ltd.",
+"BMG",
+"TAKT"
+],
+"catno": "GEC 24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6089789",
+"type": "release",
+"id": 6089789
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/D70lDp9V72UouMTpu_6fGMqm0Kc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5925788-1406490371-5456.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Japan",
+"barcode": [
+"4988005429605",
+"UICY-6155 1R V",
+"IFPI 4011",
+"IFPI L235",
+"JASRAC"
+],
+"uri": "/Weezer-Weezer/release/5925788",
+"community": {
+"have": 4,
+"want": 26
+},
+"label": [
+"Geffen Records",
+"My Generation, My Music",
+"Geffen Records",
+"Geffen Records",
+"Universal Music K.K.",
+"Universal Music K.K."
+],
+"catno": "UICY-6155",
+"year": "2006",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5925788",
+"type": "release",
+"id": 5925788
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/L43zSkOS1z2Vyzx9kHBWTiloVtE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7861224-1450372620-6540.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Album",
+"Limited Edition",
+"Reissue",
+"Remastered",
+"Test Pressing"
+],
+"country": "US",
+"barcode": [
+"MFSL1-390 A3 KW @ MoFi 20551.1(3)",
+"MFSL1-390 B2 KW @ MoFi 20520.2(3)"
+],
+"uri": "/Weezer-Weezer/release/7861224",
+"community": {
+"have": 7,
+"want": 22
+},
+"label": [
+"Mobile Fidelity Sound Lab",
+"Geffen Records",
+"Electric Lady Studios",
+"Mobile Fidelity Sound Lab",
+"GAIN 2™ Ultra Analog LP 180g Series",
+"Original Master Recording",
+"Record Technology Incorporated"
+],
+"catno": "MFSL 1-390",
+"year": "2012",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7861224",
+"type": "release",
+"id": 7861224
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/-zgLyo5xSbkabCyENvryGAYUZmQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5925668-1406488833-6977.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"6 02517 53816 0",
+"IFPI 0383",
+"DGC D24 629 02%",
+"DIDX 022077",
+"MADE IN USA BY UML",
+"IFPI L007"
+],
+"uri": "/Weezer-Weezer/release/5925668",
+"community": {
+"have": 1,
+"want": 26
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee",
+"Circuit City"
+],
+"catno": "B0010427-02",
+"year": "2007",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5925668",
+"type": "release",
+"id": 5925668
+},
+{
+"style": [
+"Alternative Rock",
+"Pop Rock"
+],
+"thumb": "https://api-img.discogs.com/ybqpj4LO2yqIxsTwrh77L_xEeCQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5298342-1389921397-9799.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition"
+],
+"country": "US",
+"barcode": [
+"293183070000"
+],
+"uri": "/Weezer-Weezer/release/5298342",
+"community": {
+"have": 10,
+"want": 6
+},
+"label": [
+"Geffen Records"
+],
+"catno": "*GEFD 93045",
+"year": "2001",
+"genre": [
+"Rock",
+"Pop"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5298342",
+"type": "release",
+"id": 5298342
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/XYK7To20VXA02ATyNrAu5w1SZh0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5376563-1391898404-9693.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Europe",
+"barcode": [
+"6 06949 30452 2",
+"BIEM/MCPS",
+"LC 06406",
+"493 045 - 2 00 1A Made in France by Cinram Optical Discs",
+"IFPI L004",
+"IFPI 0275"
+],
+"uri": "/Weezer-Weezer/release/5376563",
+"community": {
+"have": 18,
+"want": 5
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records",
+"UMG Recordings, Inc.",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios"
+],
+"catno": "493 045-2",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5376563",
+"type": "release",
+"id": 5376563
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/UjmgENa5lP5RT1Tx_OgEiwU8yvY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6936697-1429908528-1075.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"7 20642 46292 8",
+"MFG BY JVC DGCD24629 1H",
+"none",
+"AAD"
+],
+"uri": "/Weezer-Weezer/release/6936697",
+"community": {
+"have": 5,
+"want": 15
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Uni Distribution Corp.",
+"Uni Distribution Corp.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee",
+"JVC"
+],
+"catno": "DGCD-24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6936697",
+"type": "release",
+"id": 6936697
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/yDS8GtQrcphFvXXZYxy2vzLJ7-k=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3717613-1345318572-4547.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Australasia",
+"barcode": [
+"602517744929"
+],
+"uri": "/Weezer-Weezer/release/3717613",
+"community": {
+"have": 15,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "1774492",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3717613",
+"type": "release",
+"id": 3717613
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [
+"7 20642 46292 8"
+],
+"uri": "/Weezer-Weezer/release/6965950",
+"community": {
+"have": 10,
+"want": 14
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Universal Music",
+"Universal Music"
+],
+"catno": "DGCBD 24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6965950",
+"type": "release",
+"id": 6965950
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/4HnpfJVsUoRly5xuP9MEslzwqSA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7363147-1451047450-8600.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Repress"
+],
+"country": "Europe",
+"barcode": [
+"7 2064-24629-2 8",
+"BIEM / MCPS",
+"LC 07266",
+"F: BM650",
+"AAD",
+"424 629-2 00",
+"Made in the E.U. by Cinram Optical Discs",
+"IFPI L003",
+"IFPI 0284"
+],
+"uri": "/Weezer-Weezer/release/7363147",
+"community": {
+"have": 9,
+"want": 12
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Cinram Optical Discs",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Pub. Designee"
+],
+"catno": "GED 24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7363147",
+"type": "release",
+"id": 7363147
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/5ENZ0fWN5sCKgbUtW_lJOi4RbB0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4488815-1429225475-1353.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [
+"6 02517 67183 6"
+],
+"uri": "/Weezer-Weezer/release/4488815",
+"community": {
+"have": 19,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Interscope Records",
+"Interscope Records",
+"Universal Music Canada",
+"Universal Music Canada"
+],
+"catno": "B001113502",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4488815",
+"type": "release",
+"id": 4488815
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/tbEG462Xyghuv0bXtsgYfBLklvY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6949482-1430208462-8853.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/6949482",
+"community": {
+"have": 8,
+"want": 15
+},
+"label": [
+"The David Geffen Company"
+],
+"catno": "*DGCD-24629",
+"year": "1994",
+"genre": [
+"Rock",
+"Pop"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6949482",
+"type": "release",
+"id": 6949482
+},
+{
+"style": [],
+"thumb": "https://api-img.discogs.com/Bk0KTgKHljero_btUU7EPX0Geac=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5432934-1393232858-1274.jpeg.jpg",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "Malaysia",
+"barcode": [
+"606949304546"
+],
+"uri": "/Weezer-Weezer/release/5432934",
+"community": {
+"have": 2,
+"want": 16
+},
+"label": [
+"Geffen Records",
+"Universal Music Sdn. Bhd."
+],
+"catno": "606949304546",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/5432934",
+"type": "release",
+"id": 5432934
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/18K9IqZ5zweqKojdMwMMZxa08sA=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6797178-1437099395-3362.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Repress"
+],
+"country": "Europe",
+"barcode": [
+"7 2064-24629-2 8",
+"BIEM / MCPS",
+"LC 07266",
+"F: BM650",
+"AAD",
+"GED24629 424 629-2 01 /",
+"MADE IN GERMANY BY UNIVERSAL M & L F",
+"IFPI L001",
+"IFPI 0126",
+"IFPI 0122",
+"IFPI 0142"
+],
+"uri": "/Weezer-Weezer/release/6797178",
+"community": {
+"have": 5,
+"want": 15
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Universal M & L, Germany",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Pub. Designee"
+],
+"catno": "GED24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6797178",
+"type": "release",
+"id": 6797178
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/MylKZLXk3wtJY2wXCvqll9Qrslw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4730820-1392221764-5393.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Japan",
+"barcode": [
+"4988005517869"
+],
+"uri": "/Weezer-Weezer/release/4730820",
+"community": {
+"have": 9,
+"want": 7
+},
+"label": [
+"DGC",
+"Interscope Records",
+"Universal Music K.K."
+],
+"catno": "UICF-1102",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4730820",
+"type": "release",
+"id": 4730820
+},
+{
+"style": [],
+"thumb": "https://api-img.discogs.com/OLiiSbQ6kQ16R_ka_XzdgeClWqo=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3581498-1421398585-1363.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "UK",
+"barcode": [
+"6 02517 74493 6"
+],
+"uri": "/Weezer-Weezer/release/3581498",
+"community": {
+"have": 14,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records"
+],
+"catno": "1774493",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3581498",
+"type": "release",
+"id": 3581498
+},
+{
+"style": [
+"Alternative Rock"
+],
+"thumb": "https://api-img.discogs.com/AmKDUI4OpTpVCO4smhXi4zhjSkQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7456632-1441851821-8298.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Canada",
+"barcode": [
+"7 20642 46292",
+"72064246292"
+],
+"uri": "/Weezer-Weezer/release/7456632",
+"community": {
+"have": 5,
+"want": 12
+},
+"label": [
+"DGC",
+"Universal Music",
+"Universal Music"
+],
+"catno": "DGCBD-24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7456632",
+"type": "release",
+"id": 7456632
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/6N3tFiiP56CGdStzATuk10nX-Ew=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7265819-1437561636-4984.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Special Edition"
+],
+"country": "UK",
+"barcode": [
+"6 06949 30612 0",
+"BIEM/MCPS",
+"LC 07266",
+"4930612 02 5",
+"MADE IN THE UK BY UNIVERSAL M&L",
+"IFPI L135",
+"IFPI 04C1"
+],
+"uri": "/Weezer-Weezer/release/7265819",
+"community": {
+"have": 18,
+"want": 1
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Polydor Ltd. (UK)",
+"Universal M & L, UK",
+"Cello Studios",
+"South Beach Studios",
+"Sony Music Studios",
+"E.O. Smith Music"
+],
+"catno": "493 061-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7265819",
+"type": "release",
+"id": 7265819
+},
+{
+"style": [
+"Punk",
+"Pop Punk"
+],
+"thumb": "https://api-img.discogs.com/XvarjgWIspVeTeMnlgXmTJRT08s=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-5611781-1397956176-8354.jpeg.jpg",
+"format": [
+"Lathe Cut",
+"9\"",
+"Single Sided",
+"EP",
+"Limited Edition",
+"33 ⅓ RPM"
+],
+"country": "Germany",
+"barcode": [],
+"uri": "/Yac%C3%B8ps%C3%A6-Deep-2-Weezer-Yac%C3%B8ps%C3%A6-Deep-Weezer/release/5611781",
+"community": {
+"have": 3,
+"want": 75
+},
+"label": [
+"Peter King Lathe Cut Records",
+"ARBIL ’91"
+],
+"catno": "",
+"year": "2003",
+"genre": [
+"Rock"
+],
+"title": "Yacøpsæ, Deep (2), Weezer - Yacøpsæ / Deep / Weezer",
+"resource_url": "https://api.discogs.com/releases/5611781",
+"type": "release",
+"id": 5611781
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/qZYHJzVkL6eINH-y1v0uoID1tnU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7380538-1440254273-5249.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Repress"
+],
+"country": "Europe",
+"barcode": [
+"7 2064-24629-2 8",
+"BIEM/MCPS",
+"LC 07266",
+"F: BM650",
+"AAD",
+"GED24629 424 629-2 01 /",
+"MADE IN GERMANY A",
+"IFPI L001",
+"IFPI 01BC"
+],
+"uri": "/Weezer-Weezer/release/7380538",
+"community": {
+"have": 6,
+"want": 12
+},
+"label": [
+"Geffen Records",
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Pub. Designee"
+],
+"catno": "GED24629",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7380538",
+"type": "release",
+"id": 7380538
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/lPuBV0nXzINNz5GC3SFI_-GugGY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6010937-1408857824-2015.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "New Zealand",
+"barcode": [
+"6 02517 74492 9",
+"602517744929",
+"STEBBING IFPI P801 1774492 7490A",
+"[Universal logo]",
+"IFPI P801",
+"LC06406",
+"BIEM/SABAM"
+],
+"uri": "/Weezer-Weezer/release/6010937",
+"community": {
+"have": 10,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records",
+"DGC",
+"Interscope Records",
+"DGC",
+"Interscope Records",
+"Stebbing Recording Centre Ltd."
+],
+"catno": "0602517744929",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/6010937",
+"type": "release",
+"id": 6010937
+},
+{
+"style": [
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/tn37bSn0O3DSHHOoHBELH6FLo-0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4156785-1357176029-1270.jpeg.jpg",
+"format": [
+"Vinyl",
+"7\"",
+"Single",
+"45 RPM"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Fig-Dish-vs-Everready-Eyesore-Weezer/master/506962",
+"community": {
+"have": 44,
+"want": 23
+},
+"label": [
+"Liquid Meat"
+],
+"catno": "LM-011",
+"genre": [
+"Rock"
+],
+"title": "Fig Dish vs. Everready - Eyesore / Weezer",
+"resource_url": "https://api.discogs.com/masters/506962",
+"type": "master",
+"id": 506962
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/yMCmOIjgbP6K6zSlfA2aGdUT2pM=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7562941-1444080980-2782.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "Spain",
+"barcode": [
+"7 20642 46292 8"
+],
+"uri": "/Weezer-Weezer/release/7562941",
+"community": {
+"have": 4,
+"want": 10
+},
+"label": [
+"Geffen Records",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"MCA Music Entertainment S.A.",
+"BMG Ariola S.A.",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Servicios Ibéricos Entertainment, S.A."
+],
+"catno": "GED 24629",
+"year": "1995",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7562941",
+"type": "release",
+"id": 7562941
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/AlC7fi_8ahrjOiBu-0SG7ot9Icw=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4582667-1369060428-7589.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Club Edition"
+],
+"country": "Canada",
+"barcode": [
+"7 77497 48798 9"
+],
+"uri": "/Weezer-Weezer/release/4582667",
+"community": {
+"have": 9,
+"want": 5
+},
+"label": [
+"Geffen Records",
+"Columbia House"
+],
+"catno": "CGEFD 93045",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/4582667",
+"type": "release",
+"id": 4582667
+},
+{
+"style": [
+"Alternative Rock",
+"Punk",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/n48dnKtx3ZcsIHGZg5aUwcXxnZ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2360838-1356913367-1385.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Compilation"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Various-Rock-Music-A-Tribute-To-Weezer/master/392300",
+"community": {
+"have": 68,
+"want": 30
+},
+"label": [
+"Dead Droid Records"
+],
+"catno": "D&D006",
+"year": "2002",
+"genre": [
+"Rock"
+],
+"title": "Various - Rock Music: A Tribute To Weezer",
+"resource_url": "https://api.discogs.com/masters/392300",
+"type": "master",
+"id": 392300
+},
+{
+"style": [
+"Power Pop"
+],
+"thumb": "https://api-img.discogs.com/iV3hz4a2WPH9ZSQRxNVdc869ssk=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-7599562-1444861097-2770.jpeg.jpg",
+"format": [
+"CD",
+"Album",
+"Reissue"
+],
+"country": "Japan",
+"barcode": [],
+"uri": "/Weezer-Weezer/release/7599562",
+"community": {
+"have": 1,
+"want": 11
+},
+"label": [
+"Geffen Records",
+"My Generation, My Music - Back To The Rock Years 1993-1997",
+"Geffen Records",
+"Geffen Records",
+"Universal Music LLC",
+"Universal Music LLC"
+],
+"catno": "UICY-25049",
+"year": "2011",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7599562",
+"type": "release",
+"id": 7599562
+},
+{
+"style": [
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/vpTUCsUWZue0MWT0sY-U13cEqUU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1418804-1218198179.jpeg.jpg",
+"format": [
+"Vinyl",
+"7\"",
+"Single",
+"45 RPM"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Fig-Dish-vs-Everready-Eyesore-Weezer/release/1418804",
+"community": {
+"have": 19,
+"want": 10
+},
+"label": [
+"Liquid Meat"
+],
+"catno": "LM-011",
+"genre": [
+"Rock"
+],
+"title": "Fig Dish vs. Everready - Eyesore / Weezer",
+"resource_url": "https://api.discogs.com/releases/1418804",
+"type": "release",
+"id": 1418804
+},
+{
+"style": [
+"Alternative Rock",
+"Punk",
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/n48dnKtx3ZcsIHGZg5aUwcXxnZ8=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2360838-1356913367-1385.jpeg.jpg",
+"format": [
+"Vinyl",
+"LP",
+"Compilation"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Various-Rock-Music-A-Tribute-To-Weezer/release/2360838",
+"community": {
+"have": 41,
+"want": 20
+},
+"label": [
+"Dead Droid Records"
+],
+"catno": "D&D006",
+"year": "2002",
+"genre": [
+"Rock"
+],
+"title": "Various - Rock Music: A Tribute To Weezer",
+"resource_url": "https://api.discogs.com/releases/2360838",
+"type": "release",
+"id": 2360838
+},
+{
+"style": [
+"Indie Rock"
+],
+"thumb": "https://api-img.discogs.com/5y7NcDuu1mOZg-a93m-t57djzgU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3979570-1351255914-9204.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"B00 111 3502R2 01%% AN EDC",
+"MADE IN USA BY UML",
+"IFPI L007",
+"IFPI 0383"
+],
+"uri": "/Weezer-Weezer/release/3979570",
+"community": {
+"have": 5,
+"want": 5
+},
+"label": [
+"DGC",
+"Interscope Records",
+"BMG Direct Marketing, Inc.",
+"Interscope Records",
+"Interscope Records",
+"Universal Music Distribution",
+"Universal Music Distribution",
+"UML",
+"EDC",
+"Shangri La",
+"Malibu Performing Arts Center",
+"Threshold Studios",
+"Avatar Studios",
+"Malibu Performing Arts Center",
+"Dave Collins Mastering"
+],
+"catno": "B0011135-02",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3979570",
+"type": "release",
+"id": 3979570
+},
+{
+"style": [
+"Alternative Rock",
+"Pop Rock"
+],
+"thumb": "https://api-img.discogs.com/GrN3lHU49ZU0XdGL8iapcb1o5fY=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2314633-1276313839.jpeg.jpg",
+"format": [
+"File",
+"MP3",
+"EP"
+],
+"country": "US",
+"barcode": [
+"B001NBIME6"
+],
+"uri": "/Weezer-Christmas-With-Weezer/release/2314633",
+"community": {
+"have": 17,
+"want": 12
+},
+"label": [
+"DGC"
+],
+"catno": "none",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Christmas With Weezer",
+"resource_url": "https://api.discogs.com/releases/2314633",
+"type": "release",
+"id": 2314633
+},
+{
+"style": [
+"Alternative Rock",
+"Indie Rock"
+],
+"thumb": "",
+"format": [
+"Cassette",
+"Album"
+],
+"country": "Saudi Arabia",
+"barcode": [
+"7 20642 46294 2"
+],
+"uri": "/Weezer-Weezer/release/7969195",
+"community": {
+"have": 1,
+"want": 5
+},
+"label": [
+"DGC",
+"Geffen Records, Inc.",
+"Geffen Records, Inc.",
+"Stallions Records",
+"Stallions Records",
+"Electric Lady Studios",
+"Electric Lady Studios",
+"Sterling Sound",
+"Publishing Designee"
+],
+"catno": "DGCC-24629",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/7969195",
+"type": "release",
+"id": 7969195
+},
+{
+"style": [
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/tn37bSn0O3DSHHOoHBELH6FLo-0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4156785-1357176029-1270.jpeg.jpg",
+"format": [
+"Vinyl",
+"7\"",
+"Single",
+"45 RPM"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Fig-Dish-vs-Everready-Eyesore-Weezer/release/4156785",
+"community": {
+"have": 10,
+"want": 7
+},
+"label": [
+"Liquid Meat"
+],
+"catno": "LM-011",
+"genre": [
+"Rock"
+],
+"title": "Fig Dish vs. Everready - Eyesore / Weezer",
+"resource_url": "https://api.discogs.com/releases/4156785",
+"type": "release",
+"id": 4156785
+},
+{
+"style": [
+"Alternative Rock",
+"Emo"
+],
+"thumb": "https://api-img.discogs.com/yKEIqI6Uatd8g2B_nXpSfFYR6vE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3639575-1338434980-4953.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "South Korea",
+"barcode": [
+"8 808678 221121"
+],
+"uri": "/Weezer-Weezer/release/3639575",
+"community": {
+"have": 1,
+"want": 5
+},
+"label": [
+"Geffen Records",
+"Universal Music Korea"
+],
+"catno": "493 045-2",
+"year": "2001",
+"genre": [
+"Rock"
+],
+"title": "Weezer - Weezer",
+"resource_url": "https://api.discogs.com/releases/3639575",
+"type": "release",
+"id": 3639575
+},
+{
+"style": [
+"Punk"
+],
+"thumb": "https://api-img.discogs.com/XRTlJzeI2KIHQcXu7b6D1kqdILQ=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4156783-1357175977-1511.jpeg.jpg",
+"format": [
+"Vinyl",
+"7\"",
+"Single",
+"45 RPM"
+],
+"country": "US",
+"barcode": [],
+"uri": "/Fig-Dish-vs-Everready-Eyesore-Weezer/release/4156783",
+"community": {
+"have": 15,
+"want": 6
+},
+"label": [
+"Liquid Meat"
+],
+"catno": "LM-011",
+"genre": [
+"Rock"
+],
+"title": "Fig Dish vs. Everready - Eyesore / Weezer",
+"resource_url": "https://api.discogs.com/releases/4156783",
+"type": "release",
+"id": 4156783
+}
+]
+}
