@@ -45,27 +45,14 @@ RSpec.describe Discog, type: :model do
 
   context '#album_info' do
     it 'should retrieve album info from Discogs API' do
-      stub_request(:get, "https://api.discogs.com/artists/136188").
+      stub_request(:get, "https://api.discogs.com/masters/38356").
          with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
-         to_return(:status => 200, :body => File.open('spec/support/artist_info.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
+         to_return(:status => 200, :body => File.open('spec/support/album_info.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
 
-      expected = JSON.parse(File.open('spec/support/artist_info.json').read)["profile"]
-      results = Discog::Client.new(136188).artist_info
+      expected = JSON.parse(File.open('spec/support/album_info.json').read)
+      results = Discog::Client.new(38356).album_info
 
       expect(results).to eq(expected)
     end
   end
-
-
-
-
-  # context '#discog' do
-  #   it 'should retrieve discography from Discogs API' do
-  #     query = "thin lizzy"
-  #     results = Discog::Client.new.discog(query)
-  #     expect(results[0]["type"]).to eq('master')
-  #   end
-  # end
-
-
 end
