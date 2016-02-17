@@ -1,5 +1,6 @@
 #MusicTree
 [![Dependency Status](https://gemnasium.com/alookatommorow/music-tree2.0.svg)](https://gemnasium.com/alookatommorow/music-tree2.0)
+[![Build Status](https://travis-ci.org/alookatommorow/music-tree2.0.svg?branch=master)](https://travis-ci.org/alookatommorow/music-tree2.0)
 
 MusicTree is a quick reference guide to recorded music.  Utilizing the [Discogs API](https://www.discogs.com/developers/), MusicTree provides an easy-to-use interface enabling the user to search and browse artist discographies.
 
