@@ -33,7 +33,7 @@ class Filter
 
     def sort_by_year
       results.select { |result| result["year"] }.
-        sort_by { |item| item["year"] }
+        sort_by { |item| [ item["year"], item["title"] ] }
     end
 
 
