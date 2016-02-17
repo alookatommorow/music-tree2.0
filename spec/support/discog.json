@@ -46,47 +46,6 @@
 "style": [
 "Death Metal"
 ],
-"thumb": "https://api-img.discogs.com/mZxvdVGkvYgfZw13N59FfibtuJc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6270425-1415246982-5652.jpeg.jpg",
-"format": [
-"CD",
-"Album"
-],
-"country": "US",
-"barcode": [
-"7 81676 72962 3",
-"09/19/2014 12:29:05.AM #132718 RR7296 2597331 02",
-"IFPI LN08",
-"IFPI JI06"
-],
-"uri": "/Obituary-Inked-In-Blood/master/750842",
-"community": {
-"want": 229,
-"have": 693
-},
-"label": [
-"Relapse Records",
-"Gibtown Records",
-"Gibtown Music, Inc.",
-"Gibtown Music, Inc.",
-"Relapse Records, Inc.",
-"Gibtown Music, Inc.",
-"Redneck Studios",
-"Audiosiege"
-],
-"catno": "RR7297",
-"year": "2014",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Inked In Blood",
-"resource_url": "https://api.discogs.com/masters/750842",
-"type": "master",
-"id": 750842
-},
-{
-"style": [
-"Death Metal"
-],
 "thumb": "https://api-img.discogs.com/hcAg10UnFGWIIwCv22yrdUE03FI=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3885638-1348068844-2675.jpeg.jpg",
 "format": [
 "CD",
@@ -118,6 +77,91 @@
 "style": [
 "Death Metal"
 ],
+"thumb": "https://api-img.discogs.com/mZxvdVGkvYgfZw13N59FfibtuJc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-6270425-1415246982-5652.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"7 81676 72962 3",
+"09/19/2014 12:29:05.AM #132718 RR7296 2597331 02",
+"IFPI LN08",
+"IFPI JI06"
+],
+"uri": "/Obituary-Inked-In-Blood/master/750842",
+"community": {
+"want": 235,
+"have": 694
+},
+"label": [
+"Relapse Records",
+"Gibtown Records",
+"Gibtown Music, Inc.",
+"Gibtown Music, Inc.",
+"Relapse Records, Inc.",
+"Gibtown Music, Inc.",
+"Redneck Studios",
+"Audiosiege"
+],
+"catno": "RR7297",
+"year": "2014",
+"genre": [
+"Rock"
+],
+"title": "Obituary - Inked In Blood",
+"resource_url": "https://api.discogs.com/masters/750842",
+"type": "master",
+"id": 750842
+},
+{
+"style": [
+"Death Metal"
+],
+"thumb": "https://api-img.discogs.com/ow3Suw1qSNKM-17KVPTN0wLbIC4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-914087-1359499129-3443.jpeg.jpg",
+"format": [
+"CD",
+"EP"
+],
+"country": "USA & Canada",
+"barcode": [
+"016861236724",
+"0 16861 23672 4",
+"SONOPRESS USA RR2367-2 01# + + 42217",
+"B00000DEOK",
+"ASCAP",
+"ADD"
+],
+"uri": "/Obituary-Dont-Care/master/105653",
+"community": {
+"want": 80,
+"have": 81
+},
+"label": [
+"Roadrunner Records",
+"Roadrunner Records",
+"The All Blacks B.V.",
+"The All Blacks B.V.",
+"Sonopress USA",
+"Relativity Entertainment Distribution",
+"Attic",
+"Roadblock Music, Inc.",
+"Obituary Music"
+],
+"catno": "RR 2367-2",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Obituary - Don't Care",
+"resource_url": "https://api.discogs.com/masters/105653",
+"type": "master",
+"id": 105653
+},
+{
+"style": [
+"Death Metal"
+],
 "thumb": "https://api-img.discogs.com/7JyalbIR85duIaWIHyyxRVGlI_U=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-591907-1157045761.jpeg.jpg",
 "format": [
 "CD",
@@ -134,7 +178,7 @@
 ],
 "uri": "/Obituary-Frozen-In-Time/master/346279",
 "community": {
-"want": 178,
+"want": 188,
 "have": 746
 },
 "label": [
@@ -177,8 +221,8 @@
 ],
 "uri": "/Obituary-Xecutioners-Return/master/105656",
 "community": {
-"want": 212,
-"have": 575
+"want": 219,
+"have": 576
 },
 "label": [
 "Candlelight Records USA",
@@ -200,142 +244,6 @@
 "resource_url": "https://api.discogs.com/masters/105656",
 "type": "master",
 "id": 105656
-},
-{
-"style": [
-"Death Metal"
-],
-"thumb": "https://api-img.discogs.com/yZ7-oym_znpbO4hcZgmCr3Rtgn0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1891112-1280669067.jpeg.jpg",
-"format": [
-"CD",
-"EP",
-"Enhanced",
-"Limited Edition"
-],
-"country": "UK",
-"barcode": [
-"8 03341 23416 1",
-"EDC Blackburn Ltd CANDLE230CD 01",
-"IFPI L135",
-"IFPI 0410",
-"LC 13005",
-"mcps",
-"MADE IN THE UK"
-],
-"uri": "/Obituary-Left-To-Die/master/249415",
-"community": {
-"want": 125,
-"have": 296
-},
-"label": [
-"Candlelight Records",
-"Gibtown Records",
-"Tanglade Ltd",
-"Abstract Sounds",
-"Tanglade Music",
-"Redneck Studios",
-"Redneck Studios",
-"Red Room Recorders",
-"Morrisound Studios",
-"Obituary Music",
-"Celtic Frost"
-],
-"catno": "CANDLE230CD",
-"year": "2008",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Left To Die",
-"resource_url": "https://api.discogs.com/masters/249415",
-"type": "master",
-"id": 249415
-},
-{
-"style": [
-"Death Metal"
-],
-"thumb": "https://api-img.discogs.com/aKeyBlgNkNQVirnGF_DMV_xvgsE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4427627-1364586469-3341.jpeg.jpg",
-"format": [
-"CD",
-"Album"
-],
-"country": "US",
-"barcode": [
-"0 16861-9370-2 7",
-"016861937027",
-"DISC MFG, INC. (H) W.O. 15123-1 RCD9370",
-"AAD"
-],
-"uri": "/Obituary-Cause-Of-Death/master/105650",
-"community": {
-"want": 1581,
-"have": 2613
-},
-"label": [
-"R/C Records",
-"Important Record Distributors, Inc.",
-"Roadrunner Records And Music Publishing Co., Inc.",
-"Roadrunner Records And Music Publishing Co., Inc.",
-"Disc Manufacturing, Inc., Huntsville",
-"Roadblock Music",
-"Wintrup Music America Inc.",
-"Morrisound Studios",
-"Morrisound Studios",
-"Fullersound"
-],
-"catno": "RCD 9370",
-"year": "1990",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Cause Of Death",
-"resource_url": "https://api.discogs.com/masters/105650",
-"type": "master",
-"id": 105650
-},
-{
-"style": [
-"Death Metal"
-],
-"thumb": "https://api-img.discogs.com/ow3Suw1qSNKM-17KVPTN0wLbIC4=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-914087-1359499129-3443.jpeg.jpg",
-"format": [
-"CD",
-"EP"
-],
-"country": "USA & Canada",
-"barcode": [
-"016861236724",
-"0 16861 23672 4",
-"SONOPRESS USA RR2367-2 01# + + 42217",
-"B00000DEOK",
-"ASCAP",
-"ADD"
-],
-"uri": "/Obituary-Dont-Care/master/105653",
-"community": {
-"want": 79,
-"have": 81
-},
-"label": [
-"Roadrunner Records",
-"Roadrunner Records",
-"The All Blacks B.V.",
-"The All Blacks B.V.",
-"Sonopress USA",
-"Relativity Entertainment Distribution",
-"Attic",
-"Roadblock Music, Inc.",
-"Obituary Music"
-],
-"catno": "RR 2367-2",
-"year": "1994",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Don't Care",
-"resource_url": "https://api.discogs.com/masters/105653",
-"type": "master",
-"id": 105653
 },
 {
 "style": [
@@ -445,7 +353,7 @@
 ],
 "uri": "/Obituary-Back-From-The-Dead/master/417352",
 "community": {
-"want": 176,
+"want": 184,
 "have": 519
 },
 "label": [
@@ -463,6 +371,98 @@
 "resource_url": "https://api.discogs.com/masters/417352",
 "type": "master",
 "id": 417352
+},
+{
+"style": [
+"Death Metal"
+],
+"thumb": "https://api-img.discogs.com/yZ7-oym_znpbO4hcZgmCr3Rtgn0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-1891112-1280669067.jpeg.jpg",
+"format": [
+"CD",
+"EP",
+"Enhanced",
+"Limited Edition"
+],
+"country": "UK",
+"barcode": [
+"8 03341 23416 1",
+"EDC Blackburn Ltd CANDLE230CD 01",
+"IFPI L135",
+"IFPI 0410",
+"LC 13005",
+"mcps",
+"MADE IN THE UK"
+],
+"uri": "/Obituary-Left-To-Die/master/249415",
+"community": {
+"want": 129,
+"have": 296
+},
+"label": [
+"Candlelight Records",
+"Gibtown Records",
+"Tanglade Ltd",
+"Abstract Sounds",
+"Tanglade Music",
+"Redneck Studios",
+"Redneck Studios",
+"Red Room Recorders",
+"Morrisound Studios",
+"Obituary Music",
+"Celtic Frost"
+],
+"catno": "CANDLE230CD",
+"year": "2008",
+"genre": [
+"Rock"
+],
+"title": "Obituary - Left To Die",
+"resource_url": "https://api.discogs.com/masters/249415",
+"type": "master",
+"id": 249415
+},
+{
+"style": [
+"Death Metal"
+],
+"thumb": "https://api-img.discogs.com/aKeyBlgNkNQVirnGF_DMV_xvgsE=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-4427627-1364586469-3341.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"0 16861-9370-2 7",
+"016861937027",
+"DISC MFG, INC. (H) W.O. 15123-1 RCD9370",
+"AAD"
+],
+"uri": "/Obituary-Cause-Of-Death/master/105650",
+"community": {
+"want": 1583,
+"have": 2616
+},
+"label": [
+"R/C Records",
+"Important Record Distributors, Inc.",
+"Roadrunner Records And Music Publishing Co., Inc.",
+"Roadrunner Records And Music Publishing Co., Inc.",
+"Disc Manufacturing, Inc., Huntsville",
+"Roadblock Music",
+"Wintrup Music America Inc.",
+"Morrisound Studios",
+"Morrisound Studios",
+"Fullersound"
+],
+"catno": "RCD 9370",
+"year": "1990",
+"genre": [
+"Rock"
+],
+"title": "Obituary - Cause Of Death",
+"resource_url": "https://api.discogs.com/masters/105650",
+"type": "master",
+"id": 105650
 },
 {
 "style": [
@@ -508,6 +508,69 @@
 "style": [
 "Death Metal"
 ],
+"thumb": "https://api-img.discogs.com/SR7LryHDAYPRPfQEXyTezQm1a9c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3017343-1311894462.jpeg.jpg",
+"format": [
+"CD",
+"Album"
+],
+"country": "US",
+"barcode": [
+"0 20831-1071-2 02"
+],
+"uri": "/Obituary-World-Demise/master/105652",
+"community": {
+"want": 460,
+"have": 1233
+},
+"label": [
+"Roadrunner Records"
+],
+"catno": "RRD 8995",
+"year": "1994",
+"genre": [
+"Rock"
+],
+"title": "Obituary - World Demise",
+"resource_url": "https://api.discogs.com/masters/105652",
+"type": "master",
+"id": 105652
+},
+{
+"style": [
+"Death Metal"
+],
+"thumb": "https://api-img.discogs.com/XivX3PM5LlDTfDFxQvqfcHEEno0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3490505-1332457259.jpeg.jpg",
+"format": [
+"DVD"
+],
+"country": "Poland",
+"barcode": [
+"0 22891 45579 0"
+],
+"uri": "/Obituary-Frozen-Alive/master/475043",
+"community": {
+"want": 14,
+"have": 67
+},
+"label": [
+"Metal Mind Productions",
+"Metal Mind Productions",
+"Music Video Distributors"
+],
+"catno": "MMP DVD 0090",
+"year": "2006",
+"genre": [
+"Rock"
+],
+"title": "Obituary - Frozen Alive",
+"resource_url": "https://api.discogs.com/masters/475043",
+"type": "master",
+"id": 475043
+},
+{
+"style": [
+"Death Metal"
+],
 "thumb": "https://api-img.discogs.com/CEKOtdIpP_RPamkS58y4DQRElcU=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-907990-1197413417.jpeg.jpg",
 "format": [
 "CD",
@@ -522,7 +585,7 @@
 ],
 "uri": "/Obituary-Dead/master/105654",
 "community": {
-"want": 131,
+"want": 137,
 "have": 276
 },
 "label": [
@@ -537,40 +600,6 @@
 "resource_url": "https://api.discogs.com/masters/105654",
 "type": "master",
 "id": 105654
-},
-{
-"style": [
-"Death Metal"
-],
-"thumb": "https://api-img.discogs.com/C8f4hVOMRDRTU8Jt0_LaI2Jgcqc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2827630-1302838495.jpeg.jpg",
-"format": [
-"CD",
-"Album"
-],
-"country": "US",
-"barcode": [
-"803341249936",
-"1151344 01    6/2/2009 9:58:08 PM",
-"IFPI LN07",
-"IFPI JI04"
-],
-"uri": "/Obituary-Darkest-Day/master/228577",
-"community": {
-"want": 206,
-"have": 388
-},
-"label": [
-"Candlelight Records USA"
-],
-"catno": "CDL436CD",
-"year": "2009",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Darkest Day",
-"resource_url": "https://api.discogs.com/masters/228577",
-"type": "master",
-"id": 228577
 },
 {
 "style": [
@@ -633,64 +662,35 @@
 "style": [
 "Death Metal"
 ],
-"thumb": "https://api-img.discogs.com/SR7LryHDAYPRPfQEXyTezQm1a9c=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3017343-1311894462.jpeg.jpg",
+"thumb": "https://api-img.discogs.com/C8f4hVOMRDRTU8Jt0_LaI2Jgcqc=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-2827630-1302838495.jpeg.jpg",
 "format": [
 "CD",
 "Album"
 ],
 "country": "US",
 "barcode": [
-"0 20831-1071-2 02"
+"803341249936",
+"1151344 01    6/2/2009 9:58:08 PM",
+"IFPI LN07",
+"IFPI JI04"
 ],
-"uri": "/Obituary-World-Demise/master/105652",
+"uri": "/Obituary-Darkest-Day/master/228577",
 "community": {
-"want": 447,
-"have": 1233
+"want": 212,
+"have": 388
 },
 "label": [
-"Roadrunner Records"
+"Candlelight Records USA"
 ],
-"catno": "RRD 8995",
-"year": "1994",
+"catno": "CDL436CD",
+"year": "2009",
 "genre": [
 "Rock"
 ],
-"title": "Obituary - World Demise",
-"resource_url": "https://api.discogs.com/masters/105652",
+"title": "Obituary - Darkest Day",
+"resource_url": "https://api.discogs.com/masters/228577",
 "type": "master",
-"id": 105652
-},
-{
-"style": [
-"Death Metal"
-],
-"thumb": "https://api-img.discogs.com/XivX3PM5LlDTfDFxQvqfcHEEno0=/fit-in/150x150/filters:strip_icc():format(jpeg):mode_rgb()/discogs-images/R-3490505-1332457259.jpeg.jpg",
-"format": [
-"DVD"
-],
-"country": "Poland",
-"barcode": [
-"0 22891 45579 0"
-],
-"uri": "/Obituary-Frozen-Alive/master/475043",
-"community": {
-"want": 14,
-"have": 67
-},
-"label": [
-"Metal Mind Productions",
-"Metal Mind Productions",
-"Music Video Distributors"
-],
-"catno": "MMP DVD 0090",
-"year": "2006",
-"genre": [
-"Rock"
-],
-"title": "Obituary - Frozen Alive",
-"resource_url": "https://api.discogs.com/masters/475043",
-"type": "master",
-"id": 475043
+"id": 228577
 },
 {
 "style": [
@@ -711,8 +711,8 @@
 ],
 "uri": "/Obituary-Slowly-We-Rot/master/105649",
 "community": {
-"want": 1812,
-"have": 2275
+"want": 1822,
+"have": 2279
 },
 "label": [
 "R/C Records",
@@ -754,7 +754,7 @@
 "uri": "/Obituary-The-End-Complete/master/105651",
 "community": {
 "want": 941,
-"have": 1883
+"have": 1885
 },
 "label": [
 "R/C Records",
@@ -789,7 +789,7 @@
 "barcode": [],
 "uri": "/Obituary-HC-feat-Jonny-B-Harder-Better-EF-Core-EP/master/172783",
 "community": {
-"want": 66,
+"want": 68,
 "have": 92
 },
 "label": [
