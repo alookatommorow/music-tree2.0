@@ -10,7 +10,8 @@ var ResultsContainer = React.createClass ({
       textTransform: 'capitalize',
       fontSize: '1.2em',
       fontWeight: 'bold',
-      color: 'red'
+      color: 'red',
+      cursor: 'hover'
     }
     var artistResults = this.props.artistResults.map(function(result, index){
         return <ArtistResult closeButtonStyle={closeButtonStyle} buttonStyle={this.props.buttonStyle} key={result.uri} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />

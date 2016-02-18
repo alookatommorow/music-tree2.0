@@ -20,6 +20,10 @@ require 'webmock/rspec'
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 
+WebMock.disable_net_connect!(
+  allow_localhost: true,
+  allow: /codeclimate/)
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
