@@ -13,20 +13,24 @@ injectTapEventPlugin();
 var SearchForm = React.createClass ({
 
   render: function () {
+
+    var queryStyle = {
+      fontFamily: "Muli"
+    }
     return (
       <div className="search-form center-text" >
         <form onSubmit={this.props.handleSubmit} >
           <div>
-            <TextField className="query" onChange={this.props.handleChange} hintText="Enter search..." />
+            <TextField className="query" inputStyle={queryStyle} onChange={this.props.handleChange} hintText="Enter search..." />
           </div>
           <div>
-          <SelectField  value={this.props.queryType} onChange={this.props.handleSelect}>
-              <MenuItem value={'artist'} primaryText="Artist"/>
-              <MenuItem value={'master'} primaryText="Album"/>
+          <SelectField value={this.props.queryType} onChange={this.props.handleSelect}>
+            <MenuItem value={'artist'} primaryText="Artist"/>
+            <MenuItem value={'master'} primaryText="Album"/>
           </SelectField>
           </div>
           <div className="search-button">
-            <RaisedButton label="Search" secondary={true} onClick={this.props.handleSubmit} />
+            <RaisedButton label="Search" secondary={true} labelStyle={this.props.buttonStyle} onClick={this.props.handleSubmit} />
           </div>
         </form>
       </div>

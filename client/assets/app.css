@@ -1,4 +1,3 @@
-/*@import url("https://fonts.googleapis.com/css?family=Muli");*/
 
 html {
   -webkit-box-sizing: border-box;
@@ -32,23 +31,12 @@ div {
   font-family: "Muli";
 }
 
-/* // set font-family for material-ui buttons // */
-button div div span {
-  text-transform: capitalize !important;
-  font-size: 1.2em !important;
-  font-weight: bold !important;
+.lowercase {
+  text-transform: capitalize;
 }
 
 .result-margin div:hover {
   cursor: default;
-}
-
-button div:hover {
-  cursor: pointer !important;
-}
-
-.query {
-  font-family: "Muli" !important;
 }
 
 .header {
@@ -163,10 +151,6 @@ button div:hover {
 
 .inline-block {
   display: inline-block;
-}
-
-.red div div span {
-  color: red !important;
 }
 
 .right {

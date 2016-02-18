@@ -30,24 +30,24 @@ var DiscogContainer = React.createClass({
   render: function(){
     var closeButton =
     <div className="right two-bottom">
-      <RaisedButton className="red" onClick={this.props.handleCloseClick} label="Close" />
+      <RaisedButton labelStyle={this.props.closeButtonStyle} className="red" onClick={this.props.handleCloseClick} label="Close" />
     </div>
 
-    var allButton = <RaisedButton label='All' onClick={this.handleAllClick}/>
-    var lpButton = <RaisedButton label='Full Length Albums' onClick={this.handleLpClick}/>
-    var epButton = <RaisedButton label='Singles and Other' onClick={this.handleEpClick}/>
+    var allButton = <RaisedButton labelStyle={this.props.buttonStyle} label='All' onClick={this.handleAllClick}/>
+    var lpButton = <RaisedButton labelStyle={this.props.buttonStyle} label='Full Length Albums' onClick={this.handleLpClick}/>
+    var epButton = <RaisedButton labelStyle={this.props.buttonStyle} label='Singles and Other' onClick={this.handleEpClick}/>
     var header = <div className="detail-discog-header">{this.props.title} Discography</div>
 
     var mixed = this.props.albums.map(function(album, index){
-      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
+      return <AlbumResult closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
 
     var discogLps = this.props.lps.map(function(album, index){
-      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
+      return <AlbumResult closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
 
     var discogEps= this.props.eps.map(function(album, index){
-      return <AlbumResult key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
+      return <AlbumResult closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} key={album.uri} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />
     }.bind(this));
 
     var discog =

@@ -6,7 +6,7 @@ var ArtistProfileContainer = React.createClass({
 
   render: function(){
     var closeButton =
-    <RaisedButton className="red" onClick={this.props.handleCloseClick} label="Close" />
+    <RaisedButton labelStyle={this.props.closeButtonStyle} className="red" onClick={this.props.handleCloseClick} label="Close" />
 
     var noProfile =
       <div>
