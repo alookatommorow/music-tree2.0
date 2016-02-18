@@ -65,14 +65,13 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
-    var profileContainer = <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
-    var profileOpenButton = <RaisedButton className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
-    var discogOpenButton = <RaisedButton onClick={this.handleDiscogClick} label='Discography'/>
+    var profileContainer = <ArtistProfileContainer closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
+    var profileOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
+    var discogOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} onClick={this.handleDiscogClick} label='Discography'/>
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
-    var discogCloseButton = <RaisedButton label='Close' onClick={this.handleDiscogCloseClick}/>
+    var discogContainer = <DiscogContainer closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 

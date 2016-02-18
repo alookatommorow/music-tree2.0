@@ -37,8 +37,8 @@ var AlbumResult = React.createClass({
   },
 
   render: function(){
-    var detailsCloseButton = <RaisedButton className="red" label='Close' onClick={this.handleDetailCloseClick}/>
-    var albumDetailsOpenButton = <RaisedButton onClick={this.handleDetailClick} label='Album Details'/>
+    var detailsCloseButton = <RaisedButton labelStyle={this.props.closeButtonStyle} className="red" label='Close' onClick={this.handleDetailCloseClick}/>
+    var albumDetailsOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} onClick={this.handleDetailClick} label='Album Details'/>
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
     return (
