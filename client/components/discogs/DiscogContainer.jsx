@@ -36,14 +36,18 @@ var DiscogContainer = React.createClass({
       return albums;
     }.bind(this);
 
+    var generateButton = function(label, handler){
+      return <RaisedButton labelStyle={this.props.buttonStyle} label={label} onClick={handler}/>;
+    }.bind(this);
+
     var closeButton =
     <div className="right two-bottom">
       <RaisedButton labelStyle={this.props.closeButtonStyle} onClick={this.props.handleCloseClick} label="Close" />
     </div>
 
-    var allButton = <RaisedButton labelStyle={this.props.buttonStyle} label='All' onClick={this.handleAllClick}/>
-    var lpButton = <RaisedButton labelStyle={this.props.buttonStyle} label='Full Length Albums' onClick={this.handleLpClick}/>
-    var epButton = <RaisedButton labelStyle={this.props.buttonStyle} label='Singles and Other' onClick={this.handleEpClick}/>
+    var allButton = generateButton('All', this.handleAllClick);
+    var lpButton = generateButton('Full Length Albums', this.handleLpClick);
+    var epButton = generateButton('Singes and Other', this.handleEpClick);
     var header = <div className="detail-discog-header">{this.props.title} Discography</div>
 
     var mixed = generateDiscog(this.props.albums)
