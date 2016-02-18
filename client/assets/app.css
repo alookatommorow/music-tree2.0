@@ -1,12 +1,4 @@
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
+/*#shrimp*/
 
 body {
   background-image: url("https://storage.googleapis.com/west-coast-skateparks/music-tree-3.jpg" );
@@ -239,5 +231,5 @@ div {
 }
 
 .query input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
 }
