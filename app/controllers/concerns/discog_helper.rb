@@ -15,5 +15,4 @@ module DiscogHelper
         'per_page' => 100
       }
     end
-
 end
