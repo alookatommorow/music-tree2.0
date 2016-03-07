@@ -34,7 +34,7 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function() {
     if (this.state.discogDetails === null) {
-      var query = this.props.result["title"]
+      var query = this.props.result["id"]
       this.setState({discogInProgress: true, showDiscogContainer: true});
       this.props.ajaxRequest(query, '/discog', this.discogSuccessFunction, this.errorFunction);
     } else {
@@ -55,7 +55,7 @@ var ArtistResult = React.createClass({
   },
 
   discogSuccessFunction: function(response) {
-    this.setState({discogDetails: response.all, lps: response.lps, eps: response.eps, discogInProgress: false})
+    this.setState({discogDetails: response.all, discogInProgress: false})
   },
 
   render: function(){

@@ -16,25 +16,14 @@ class Filter
   end
 
   def discography
-    {all: sort_by_year, eps: [], lps: []}.tap do |fr|
-      sort_by_year.each do |album|
-        if (album["format"] & ['Album', 'Compilation']).any?
-          fr[:lps].push(album)
-        else
-          fr[:eps].push(album)
-        end
-      end
-    end
+    {all: filter_masters}
   end
 
   private
 
     attr_reader :results
 
-    def sort_by_year
-      results.select { |result| result["year"] }.
-        sort_by { |item| [ item["year"], item["title"] ] }
+    def filter_masters
+      results.select { |album| album["type"] == "master"}
     end
-
-
 end

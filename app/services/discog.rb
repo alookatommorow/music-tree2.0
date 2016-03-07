@@ -30,22 +30,26 @@ module Discog
 
       attr_reader :query, :is_discog
 
-      def url
+      def url(n = nil)
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
-        URI.parse("/database/search").tap {|url| format_url(url).to_s }
+        URI.parse("/database/search").tap {|url| format_url(url, n).to_s }
       end
 
-      def format_url(url)
+      def format_url(url, n)
         if is_discog
-          url.query = URI::encode_www_form(discog_keys.merge(required_keys))
+          page_num = {'page' => "#{n}"}
+          url.query = URI::encode_www_form(discog_keys.merge(page_num).merge(required_keys))
         else
           url.query = URI::encode_www_form(search_keys.merge(required_keys))
         end
       end
 
       def results
-        self.class.get(url).parsed_response["results"]
+        if is_discog
+          self.class.get("/artists/#{query}/releases?sort=year&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["releases"]
+        else
+          self.class.get(url).parsed_response["results"]
+        end
       end
-
   end
 end
