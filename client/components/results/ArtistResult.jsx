@@ -25,7 +25,6 @@ var ArtistResult = React.createClass({
   handleProfileClick: function() {
     if (this.state.profile === null) {
       var query = this.props.result["id"];
-      console.log(query);
       this.setState({profileInProgress: true, showProfileContainer: true});
       this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
     } else {
@@ -56,7 +55,6 @@ var ArtistResult = React.createClass({
   },
 
   discogSuccessFunction: function(response) {
-    console.log(response);
     this.setState({discogDetails: response.all, discogInProgress: false})
   },
 

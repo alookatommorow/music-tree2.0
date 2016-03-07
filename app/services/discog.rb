@@ -44,23 +44,6 @@ module Discog
         end
       end
 
-      def discog_search
-        results = []
-        iterator = 1
-        while iterator < 10
-          page_result = self.class.get(url(iterator)).parsed_response["results"]
-          if page_result
-            p true
-            results.push(page_result)
-            iterator += 1
-          else
-            p false
-            p results.flatten.length
-            return results.flatten
-          end
-        end
-      end
-
       def results
         if is_discog
           self.class.get("/artists/#{query}/releases?sort=year&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["releases"]

@@ -16,7 +16,7 @@ RSpec.describe Discog, type: :model do
       results = JSON.parse(File.open('spec/support/discog.json').read)
       expected = JSON.parse(File.open('spec/support/filtered_discog.json').read).symbolize_keys
 
-      expect(Filter.new(results["results"]).discography).to eq(expected)
+      expect(Filter.new(results["releases"]).discography).to eq(expected)
     end
   end
 end
