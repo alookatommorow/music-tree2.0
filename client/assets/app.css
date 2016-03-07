@@ -1,5 +1,6 @@
 /*#shrimp*/
 
+
 body {
   background-image: url("https://storage.googleapis.com/west-coast-skateparks/music-tree-3.jpg" );
 }
@@ -50,10 +51,10 @@ div {
 }
 
 .search-form {
-  margin: 0 auto;
+/*  margin: 0 auto;*/
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 35%;
+
   background-color: white;
 }
 

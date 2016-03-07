@@ -2,7 +2,13 @@ var React = require('react');
 
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
-var SearchIndicator = require('./SearchIndicator.jsx')
+var SearchIndicator = require('./SearchIndicator.jsx');
+
+var Button = require('react-bootstrap/lib/Button');
+
+var Grid = require('react-bootstrap/lib/Grid');
+var Row = require('react-bootstrap/lib/Row');
+var Col = require('react-bootstrap/lib/Col');
 
 var SearchContainer = React.createClass({
   getInitialState: function () {
@@ -60,10 +66,16 @@ var SearchContainer = React.createClass({
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
 
     return (
-      <div>
-        <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
-        {this.state.showSearchResults ? searchProgress : null}
-      </div>
+      <Grid>
+      <Row>
+        <Col lg={4} lgOffset={4} >
+          <Button>Default</Button>
+          <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+          {this.state.showSearchResults ? searchProgress : null}
+
+        </Col>
+      </Row>
+      </Grid>
     );
   },
 

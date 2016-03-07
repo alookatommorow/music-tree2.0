@@ -7,7 +7,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style!css' },
-      { test: /\.jsx$/, loader: 'jsx-loader' }
+      { test: /\.jsx$/, loader: 'jsx-loader' },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
     ]
   },
   plugins: []

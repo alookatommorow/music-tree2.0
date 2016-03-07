@@ -99,7 +99,7 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
-    puma (3.0.2)
+    puma (3.1.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -182,7 +182,7 @@ GEM
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
-    webmock (1.24.1)
+    webmock (1.24.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
