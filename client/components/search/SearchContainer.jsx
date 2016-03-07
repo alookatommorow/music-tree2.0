@@ -2,7 +2,7 @@ var React = require('react');
 
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
-var SearchIndicator = require('./SearchIndicator.jsx')
+var SearchIndicator = require('./SearchIndicator.jsx');
 
 var SearchContainer = React.createClass({
   getInitialState: function () {
