@@ -51,10 +51,10 @@ div {
 }
 
 .search-form {
-/*  margin: 0 auto;*/
+  margin: 0 auto;
   padding-top: 2%;
   padding-bottom: 2%;
-
+  text-align: center;
   background-color: white;
 }
 

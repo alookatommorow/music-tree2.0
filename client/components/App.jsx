@@ -28,17 +28,16 @@ var App = React.createClass({
 
   render: function () {
     return (
-      <div>
-
-        <Header/>
-
-        <SearchContainer origin={this.props.origin}/>
-
-      </div>
+      <Grid>
+        <Row>
+          <Header/>
+        </Row>
+        <Row>
+          <SearchContainer origin={this.props.origin}/>
+        </Row>
+      </Grid>
     );
   },
-
-
 });
 
 
