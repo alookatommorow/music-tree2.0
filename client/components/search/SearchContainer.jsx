@@ -4,6 +4,9 @@ var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx');
 
+var Col = require('react-bootstrap/lib/Col');
+var Row = require('react-bootstrap/lib/Row');
+
 var SearchContainer = React.createClass({
   getInitialState: function () {
     return {
@@ -61,8 +64,16 @@ var SearchContainer = React.createClass({
 
     return (
       <div>
-        <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
-        {this.state.showSearchResults ? searchProgress : null}
+        <Row>
+          <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
+            <div className="search-form" >
+              <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+            </div>
+          </Col>
+        </Row>
+        <div>
+          {this.state.showSearchResults ? searchProgress : null}
+        </div>
       </div>
     );
   },
