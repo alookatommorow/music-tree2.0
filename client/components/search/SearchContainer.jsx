@@ -15,6 +15,7 @@ var SearchContainer = React.createClass({
       query: null,
       queryType: "artist",
       showSearchResults: false,
+      showSearchForm: true,
       inProgress: false,
     };
   },
@@ -38,7 +39,7 @@ var SearchContainer = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    this.setState({showSearchResults: true, inProgress: true});
+    this.setState({showSearchForm: false, showSearchResults: true, inProgress: true});
     this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
   },
 
@@ -61,13 +62,14 @@ var SearchContainer = React.createClass({
     var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
+    var searchForm = <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
 
     return (
       <div>
         <Row>
           <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
-            <div className="search-form" >
-              <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+            <div>
+              { this.state.showSearchForm ? searchForm : true }
             </div>
           </Col>
         </Row>
