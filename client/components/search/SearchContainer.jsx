@@ -77,7 +77,6 @@ var SearchContainer = React.createClass({
       </div>
     );
   },
-
 });
 
 module.exports = SearchContainer;

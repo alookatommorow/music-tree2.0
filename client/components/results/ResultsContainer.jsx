@@ -1,5 +1,5 @@
 var React = require('react');
-var List = require('material-ui/lib/lists/list');
+var ListGroup = require('react-bootstrap/lib/ListGroup');
 var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');
@@ -26,14 +26,11 @@ var ResultsContainer = React.createClass ({
     var searchResults = (this.props.queryType === 'artist') ? showArtistResults : showAlbumResults;
 
     return (
-        <div className='results-container'>
-          <List>
-            {searchResults}
-          </List>
-        </div>
+      <ListGroup>
+        {searchResults}
+      </ListGroup>
     );
   },
-
 });
 
 module.exports = ResultsContainer;

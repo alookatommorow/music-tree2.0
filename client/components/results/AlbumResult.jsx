@@ -2,7 +2,7 @@ var React = require('react');
 
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
 
-var ListItem = require('material-ui/lib/lists/list-item');
+var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var RaisedButton = require('material-ui/lib/raised-button');
 var Divider = require('material-ui/lib/divider');
 
@@ -42,8 +42,8 @@ var AlbumResult = React.createClass({
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
     return (
-        <div className="result-margin">
-          <ListItem>
+
+          <ListGroupItem>
             <div className="button-box">
               {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
             </div>
@@ -60,12 +60,9 @@ var AlbumResult = React.createClass({
             </div>
             <div className="clear-both"></div>
             {this.state.showDetailsContainer ? detailsContainer : null }
-          </ListItem>
-          <Divider />
-        </div>
+          </ListGroupItem>
     );
   },
-
 });
 
 module.exports= AlbumResult;

@@ -3,7 +3,7 @@ var ArtistProfileContainer = require('../details/ArtistProfileContainer.jsx');
 var DiscogContainer = require('../discogs/DiscogContainer.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
 
-var ListItem = require('material-ui/lib/lists/list-item');
+var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var RaisedButton = require('material-ui/lib/raised-button');
 var Divider = require('material-ui/lib/divider');
 
@@ -76,8 +76,7 @@ var ArtistResult = React.createClass({
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
     return (
-      <div className="result-margin">
-        <ListItem className="hover-arrow">
+        <ListGroupItem>
           <div className="multi-button-box">
             {this.state.showProfileContainer ? null : profileOpenButton}
             {this.state.showDiscogContainer ? null : discogOpenButton}
@@ -89,14 +88,11 @@ var ArtistResult = React.createClass({
             {this.props.result.title}
           </div>
           <div className="clear-both"></div>
-        </ListItem>
-        {this.state.showProfileContainer ? profileProgress : null}
-        {this.state.showDiscogContainer ? discogProgress : null}
-        <Divider />
-      </div>
+          {this.state.showProfileContainer ? profileProgress : null}
+          {this.state.showDiscogContainer ? discogProgress : null}
+        </ListGroupItem>
     );
   },
-
 });
 
 module.exports = ArtistResult;
