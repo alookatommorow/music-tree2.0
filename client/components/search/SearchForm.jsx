@@ -4,14 +4,9 @@ var injectTapEventPlugin = require("react-tap-event-plugin");
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 
 var Input = require('react-bootstrap/lib/Input');
-var RaisedButton = require('material-ui/lib/raised-button');
-var SelectField = require('material-ui/lib/select-field');
+var Button = require('react-bootstrap/lib/Button');
 var MenuItem = require('material-ui/lib/menus/menu-item');
-var TextField = require('material-ui/lib/text-field');
 
-
-
-injectTapEventPlugin();
 
 var SearchForm = React.createClass ({
 
@@ -28,9 +23,7 @@ var SearchForm = React.createClass ({
             <option value='artist'>Artist</option>
             <option value="master">Album</option>
           </Input>
-          <div className="search-button">
-            <RaisedButton label="Search" secondary={true} labelStyle={this.props.buttonStyle} onClick={this.props.handleSubmit} />
-          </div>
+            <Button id="search-button" bsStyle="primary" onClick={this.props.handleSubmit}>Search</Button>
         </form>
       </div>
     );

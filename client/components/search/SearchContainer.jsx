@@ -24,8 +24,8 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  handleSelect: function(event, index, value){
-    this.setState({queryType: value});
+  changeQueryType: function(type) {
+    this.setState({queryType: type})
   },
 
   ajaxRequest: function(query, url, successFunction, errorFunction){
@@ -59,10 +59,10 @@ var SearchContainer = React.createClass({
       fontWeight: 'bold',
       cursor: 'pointer',
     }
-    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} changeQueryTye={this.changeQueryType} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
-    var searchForm = <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+    var searchForm = <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.changeQueryType} handleSubmit={this.handleSubmit} />
 
     return (
       <div>

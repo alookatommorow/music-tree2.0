@@ -57,6 +57,10 @@ div {
   background-color: white;
 }
 
+#search-button {
+  border-radius: 0;
+}
+
 .debug {
   border: 1px solid red;
 }
