@@ -42,25 +42,24 @@ var AlbumResult = React.createClass({
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
     return (
-
-          <ListGroupItem>
-            <div className="button-box">
-              {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
-            </div>
-            <div className="left three-right">
-              <img src={this.props.result.thumb} className="image" ></img>
-            </div>
-            <div className="clear-right">
-              <div className="bold one-five-em">
-                {this.props.result.title}
-              </div>
-              <div className="two-top one-five-em">
-                {this.props.result.year}
-              </div>
-            </div>
-            <div className="clear-both"></div>
-            {this.state.showDetailsContainer ? detailsContainer : null }
-          </ListGroupItem>
+      <ListGroupItem>
+        <div className="button-box">
+          {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
+        </div>
+        <div className="left three-right">
+          <img src={this.props.result.thumb} className="image" ></img>
+        </div>
+        <div className="clear-right">
+          <div className="bold one-five-em">
+            {this.props.result.title}
+          </div>
+          <div className="two-top one-five-em">
+            {this.props.result.year}
+          </div>
+        </div>
+        <div className="clear-both"></div>
+        {this.state.showDetailsContainer ? detailsContainer : null }
+      </ListGroupItem>
     );
   },
 });

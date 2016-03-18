@@ -3,6 +3,7 @@ var React = require('react');
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx');
+var ResultsNav = require('../results/ResultsNav.jsx');
 
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
@@ -24,8 +25,8 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  changeQueryType: function(type) {
-    this.setState({queryType: type})
+  changeQueryType: function(event) {
+    this.setState({queryType: event.target.value})
   },
 
   ajaxRequest: function(query, url, successFunction, errorFunction){
@@ -41,6 +42,10 @@ var SearchContainer = React.createClass({
     event.preventDefault();
     this.setState({showSearchForm: false, showSearchResults: true, inProgress: true});
     this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
+  },
+
+  showSearchForm: function() {
+    this.setState({showSearchForm: true})
   },
 
   successFunction: function(response){
@@ -59,20 +64,17 @@ var SearchContainer = React.createClass({
       fontWeight: 'bold',
       cursor: 'pointer',
     }
-    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} changeQueryTye={this.changeQueryType} />;
+    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} changeQueryType={this.changeQueryType} showSearchForm={this.showSearchForm} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
     var searchForm = <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.changeQueryType} handleSubmit={this.handleSubmit} />
+    var resultsNav = <ResultsNav changeQueryType={this.changeQueryType} showSearchForm={this.showSearchForm} />;
 
     return (
       <div>
-        <Row>
-          <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
-            <div>
-              { this.state.showSearchForm ? searchForm : true }
-            </div>
-          </Col>
-        </Row>
+        <div>
+          {this.state.showSearchForm ? searchForm : resultsNav }
+        </div>
         <div>
           {this.state.showSearchResults ? searchProgress : null}
         </div>

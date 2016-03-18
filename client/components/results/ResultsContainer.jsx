@@ -3,7 +3,7 @@ var ListGroup = require('react-bootstrap/lib/ListGroup');
 var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');
-var ResultsNav = require('./ResultsNav.jsx');
+
 
 var ResultsContainer = React.createClass ({
   render: function () {
@@ -17,7 +17,7 @@ var ResultsContainer = React.createClass ({
     var artistResults = this.props.artistResults.map(function(result, index){
         return <ArtistResult closeButtonStyle={closeButtonStyle} buttonStyle={this.props.buttonStyle} key={result.uri} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />
       }.bind(this));
-    var resultsNav = <ResultsNav />;
+
     var showArtistResults = (this.props.artistResults.length > 0) ? artistResults : <NoResults/>
 
     var albumResults = this.props.albumResults.map(function(result, index){
@@ -28,7 +28,6 @@ var ResultsContainer = React.createClass ({
 
     return (
       <div>
-        {resultsNav}
         <ListGroup>
           {searchResults}
         </ListGroup>
