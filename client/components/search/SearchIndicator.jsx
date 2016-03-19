@@ -11,7 +11,6 @@ var SearchIndicator = React.createClass({
       </div>
     );
   }
-
 });
 
 module.exports = SearchIndicator;

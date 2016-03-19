@@ -1,5 +1,4 @@
 var React = require('react');
-var RaisedButton = require('material-ui/lib/raised-button');
 
 var AlbumDetailsContainer = React.createClass({
 
@@ -22,7 +21,6 @@ var AlbumDetailsContainer = React.createClass({
       </div>
     );
   }
-
 });
 
 module.exports = AlbumDetailsContainer;

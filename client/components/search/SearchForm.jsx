@@ -33,7 +33,6 @@ var SearchForm = React.createClass ({
       </Row >
     );
   },
-
 });
 
 module.exports = SearchForm;
