@@ -3,20 +3,17 @@ var ArtistProfileContainer = require('../details/ArtistProfileContainer.jsx');
 var DiscogContainer = require('../discogs/DiscogContainer.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
 
-var ListItem = require('material-ui/lib/lists/list-item');
-var RaisedButton = require('material-ui/lib/raised-button');
-var Divider = require('material-ui/lib/divider');
+var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
+var Button = require('react-bootstrap/lib/Button');
+var ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 
 var ArtistResult = React.createClass({
-
   getInitialState: function(){
     return {
       profile: null,
       discogDetails: null,
       profileInProgress: false,
       discogInProgress: false,
-      discogEps: null,
-      discogLps: null,
       showDiscogContainer: false,
       showProfileContainer: false,
     };
@@ -65,38 +62,39 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
-    var profileContainer = <ArtistProfileContainer closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
-    var profileOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} className="change-font" onClick={this.handleProfileClick} label='Artist Profile'/>
-    var discogOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} onClick={this.handleDiscogClick} label='Discography'/>
+    var profileContainer =
+      <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
+    var profileOpenButton =
+      <Button bsStyle="primary" onClick={this.handleProfileClick} >Artist Profile</Button>
+    var discogOpenButton =
+      <Button bsStyle="primary" onClick={this.handleDiscogClick} >Discography</Button>
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
-    var discogContainer = <DiscogContainer closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
     return (
-      <div className="result-margin">
-        <ListItem className="hover-arrow">
-          <div className="multi-button-box">
+      <ListGroupItem>
+        <div className="multi-button-box">
+          <ButtonGroup>
             {this.state.showProfileContainer ? null : profileOpenButton}
             {this.state.showDiscogContainer ? null : discogOpenButton}
-          </div>
-          <div className="left five-right">
-            <img src={picSource} className="image"></img>
-          </div>
-          <div className="clear-right bold one-five-em">
-            {this.props.result.title}
-          </div>
-          <div className="clear-both"></div>
-        </ListItem>
+          </ButtonGroup>
+        </div>
+        <div className="left five-right">
+          <img src={picSource} className="image"></img>
+        </div>
+        <div className="clear-right bold one-five-em">
+          {this.props.result.title}
+        </div>
+        <div className="clear-both"></div>
         {this.state.showProfileContainer ? profileProgress : null}
         {this.state.showDiscogContainer ? discogProgress : null}
-        <Divider />
-      </div>
+      </ListGroupItem>
     );
   },
-
 });
 
 module.exports = ArtistResult;

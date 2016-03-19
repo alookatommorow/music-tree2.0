@@ -1,8 +1,6 @@
 var React = require('react');
-var RaisedButton = require('material-ui/lib/raised-button');
 
 var AlbumDetailsContainer = React.createClass({
-
   render: function(){
     var header = <div>Tracklist</div>
     var tracklist = this.props.tracklist.map(function(track, index){
@@ -22,7 +20,6 @@ var AlbumDetailsContainer = React.createClass({
       </div>
     );
   }
-
 });
 
 module.exports = AlbumDetailsContainer;

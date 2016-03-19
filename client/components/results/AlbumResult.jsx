@@ -1,10 +1,7 @@
 var React = require('react');
-
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
-
-var ListItem = require('material-ui/lib/lists/list-item');
-var RaisedButton = require('material-ui/lib/raised-button');
-var Divider = require('material-ui/lib/divider');
+var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
+var Button = require('react-bootstrap/lib/Button');
 
 var AlbumResult = React.createClass({
   getInitialState: function(){
@@ -37,35 +34,33 @@ var AlbumResult = React.createClass({
   },
 
   render: function(){
-    var detailsCloseButton = <RaisedButton labelStyle={this.props.closeButtonStyle} className="red" label='Close' onClick={this.handleDetailCloseClick}/>
-    var albumDetailsOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} onClick={this.handleDetailClick} label='Album Details'/>
+    var detailsCloseButton =
+      <Button onClick={this.handleDetailCloseClick} bsStyle="danger" >CLOSE</Button>
+    var albumDetailsOpenButton =
+      <Button onClick={this.handleDetailClick} bsStyle="primary" >Album Details</Button>
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
     return (
-        <div className="result-margin">
-          <ListItem>
-            <div className="button-box">
-              {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
-            </div>
-            <div className="left three-right">
-              <img src={this.props.result.thumb} className="image" ></img>
-            </div>
-            <div className="clear-right">
-              <div className="bold one-five-em">
-                {this.props.result.title}
-              </div>
-              <div className="two-top one-five-em">
-                {this.props.result.year}
-              </div>
-            </div>
-            <div className="clear-both"></div>
-            {this.state.showDetailsContainer ? detailsContainer : null }
-          </ListItem>
-          <Divider />
+      <ListGroupItem>
+        <div className="button-box">
+          {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
         </div>
+        <div className="left three-right">
+          <img src={this.props.result.thumb} className="image" ></img>
+        </div>
+        <div className="clear-right">
+          <div className="bold one-five-em">
+            {this.props.result.title}
+          </div>
+          <div className="two-top one-five-em">
+            {this.props.result.year}
+          </div>
+        </div>
+        <div className="clear-both"></div>
+        {this.state.showDetailsContainer ? detailsContainer : null }
+      </ListGroupItem>
     );
   },
-
 });
 
 module.exports= AlbumResult;

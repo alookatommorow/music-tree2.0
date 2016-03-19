@@ -1,12 +1,10 @@
 var React = require('react');
-var RaisedButton = require('material-ui/lib/raised-button');
-
+var Button = require('react-bootstrap/lib/Button');
 
 var ArtistProfileContainer = React.createClass({
-
   render: function(){
     var closeButton =
-    <RaisedButton labelStyle={this.props.closeButtonStyle} onClick={this.props.handleCloseClick} label="Close" />
+      <Button bsStyle="danger" onClick={this.props.handleCloseClick} >CLOSE</Button>
 
     var noProfile =
       <div>
@@ -26,14 +24,12 @@ var ArtistProfileContainer = React.createClass({
       </div>;
     var profileDisplay = (this.props.profile.length > 0) ? profile : noProfile;
 
-
     return (
       <div>
-          {profileDisplay}
+        {profileDisplay}
       </div>
     );
   }
-
 });
 
 module.exports = ArtistProfileContainer;

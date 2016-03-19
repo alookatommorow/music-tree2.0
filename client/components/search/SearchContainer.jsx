@@ -1,9 +1,7 @@
 var React = require('react');
-
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx');
-
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
 
@@ -15,6 +13,7 @@ var SearchContainer = React.createClass({
       query: null,
       queryType: "artist",
       showSearchResults: false,
+      showSearchForm: true,
       inProgress: false,
     };
   },
@@ -23,8 +22,8 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  handleSelect: function(event, index, value){
-    this.setState({queryType: value});
+  handleSelect: function(event) {
+    this.setState({queryType: event.target.value})
   },
 
   ajaxRequest: function(query, url, successFunction, errorFunction){
@@ -38,8 +37,12 @@ var SearchContainer = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    this.setState({showSearchResults: true, inProgress: true});
+    this.setState({showSearchForm: false, showSearchResults: true, inProgress: true});
     this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
+  },
+
+  toggleSearchForm: function() {
+    this.state.showSearchForm ? this.setState({showSearchForm: false}) : this.setState({showSearchForm: true})
   },
 
   successFunction: function(response){
@@ -52,32 +55,22 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var buttonStyle = {
-      textTransform: 'capitalize',
-      fontSize: '1.2em',
-      fontWeight: 'bold',
-      cursor: 'pointer',
-    }
-    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} />;
+    var searchResultsContainer = <ResultsContainer ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin}  toggleSearchForm={this.toggleSearchForm} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
+    var searchForm = <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
 
     return (
       <div>
-        <Row>
-          <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
-            <div className="search-form" >
-              <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
-            </div>
-          </Col>
-        </Row>
+        <div>
+          {this.state.showSearchForm ? searchForm : null }
+        </div>
         <div>
           {this.state.showSearchResults ? searchProgress : null}
         </div>
       </div>
     );
   },
-
 });
 
 module.exports = SearchContainer;
