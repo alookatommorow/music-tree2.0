@@ -1,10 +1,7 @@
 var React = require('react');
-
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
-
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
-var RaisedButton = require('material-ui/lib/raised-button');
-var Divider = require('material-ui/lib/divider');
+var Button = require('react-bootstrap/lib/Button');
 
 var AlbumResult = React.createClass({
   getInitialState: function(){
@@ -37,8 +34,10 @@ var AlbumResult = React.createClass({
   },
 
   render: function(){
-    var detailsCloseButton = <RaisedButton labelStyle={this.props.closeButtonStyle} className="red" label='Close' onClick={this.handleDetailCloseClick}/>
-    var albumDetailsOpenButton = <RaisedButton labelStyle={this.props.buttonStyle} onClick={this.handleDetailClick} label='Album Details'/>
+    var detailsCloseButton =
+      <Button onClick={this.handleDetailCloseClick} bsStyle="danger" >CLOSE</Button>
+    var albumDetailsOpenButton =
+      <Button onClick={this.handleDetailClick} bsStyle="primary" >Album Details</Button>
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
     return (
