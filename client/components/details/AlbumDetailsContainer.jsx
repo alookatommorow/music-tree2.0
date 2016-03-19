@@ -1,7 +1,6 @@
 var React = require('react');
 
 var AlbumDetailsContainer = React.createClass({
-
   render: function(){
     var header = <div>Tracklist</div>
     var tracklist = this.props.tracklist.map(function(track, index){

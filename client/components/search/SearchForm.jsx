@@ -1,21 +1,13 @@
 var React = require('react');
 var injectTapEventPlugin = require("react-tap-event-plugin");
-
 var ResultsContainer = require('../results/ResultsContainer.jsx');
-
 var Input = require('react-bootstrap/lib/Input');
 var Button = require('react-bootstrap/lib/Button');
-var MenuItem = require('material-ui/lib/menus/menu-item');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
 
 var SearchForm = React.createClass ({
-
   render: function () {
-
-    var queryStyle = {
-      fontFamily: "Muli"
-    }
     return (
       <Row className="two-bottom">
         <Col xs={10} md={8} lg={4} xsOffset={1} lgOffset={4} mdOffset={2} >

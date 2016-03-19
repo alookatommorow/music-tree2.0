@@ -3,11 +3,10 @@ var AlbumResult = require('../results/AlbumResult.jsx');
 var Button = require('react-bootstrap/lib/Button');
 
 var DiscogContainer = React.createClass({
-
   render: function(){
     var albums =
       this.props.albums.map(function(album, index){
-        return <AlbumResult closeButtonStyle={this.props.closeButtonStyle} buttonStyle={this.props.buttonStyle} key={album.id} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />;
+        return <AlbumResult key={album.id} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />;
       }.bind(this));
 
     var closeButton =
