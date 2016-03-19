@@ -39,7 +39,7 @@ var ResultsContainer = React.createClass ({
       }.bind(this));
     var showAlbumResults = (this.props.albumResults.length > 0) ? albumResults : <NoResults/>
     var searchResults = (this.props.queryType === 'artist') ? showArtistResults : showAlbumResults;
-    var resultsNav = <ResultsNav showArtistResults={this.showArtistResults} showAlbumResults={this.showAlbumResults} showSearchForm={this.props.showSearchForm} />;
+    var resultsNav = <ResultsNav showArtistResults={this.showArtistResults} showAlbumResults={this.showAlbumResults} toggleSearchForm={this.props.toggleSearchForm} />;
 
     return (
       <div>

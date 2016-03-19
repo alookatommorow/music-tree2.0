@@ -8,10 +8,10 @@ var SearchNav = React.createClass({
   render: function() {
     return (
       <div className="two-bottom">
-        <ButtonGroup justified >
-          <Button href="#" onClick={this.props.showArtistResults} >Artists</Button>
+        <ButtonGroup justified bsSize="large" >
+          <Button href="#" onClick={this.props.showArtistResults} className="gray-background">Artists</Button>
           <Button href="#" onClick={this.props.showAlbumResults} >Albums</Button>
-          <Button href="#" onClick={this.props.showSearchForm}>Search</Button>
+          <Button href="#" onClick={this.props.toggleSearchForm}>Search</Button>
         </ButtonGroup>
       </div>
     );

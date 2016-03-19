@@ -44,8 +44,8 @@ var SearchContainer = React.createClass({
     this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
   },
 
-  showSearchForm: function() {
-    this.setState({showSearchForm: true})
+  toggleSearchForm: function() {
+    this.state.showSearchForm ? this.setState({showSearchForm: false}) : this.setState({showSearchForm: true})
   },
 
   successFunction: function(response){
@@ -64,7 +64,7 @@ var SearchContainer = React.createClass({
       fontWeight: 'bold',
       cursor: 'pointer',
     }
-    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin}  showSearchForm={this.showSearchForm} />;
+    var searchResultsContainer = <ResultsContainer buttonStyle={buttonStyle} ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin}  toggleSearchForm={this.toggleSearchForm} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
     var searchForm = <SearchForm buttonStyle={buttonStyle} handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
