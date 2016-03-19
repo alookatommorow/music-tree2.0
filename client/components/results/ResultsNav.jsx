@@ -2,8 +2,6 @@ var React = require('react')
 var Button = require('react-bootstrap/lib/Button');
 var ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 
-
-
 var SearchNav = React.createClass({
   render: function() {
     return (
@@ -16,7 +14,6 @@ var SearchNav = React.createClass({
       </div>
     );
   }
-
 });
 
 module.exports = SearchNav;

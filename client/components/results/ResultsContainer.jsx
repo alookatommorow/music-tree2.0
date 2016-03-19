@@ -4,7 +4,7 @@ var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');
 var ResultsNav = require('./ResultsNav.jsx');
-
+var Col = require('react-bootstrap/lib/Col');
 
 var ResultsContainer = React.createClass ({
   getInitialState: function() {
@@ -42,12 +42,12 @@ var ResultsContainer = React.createClass ({
     var resultsNav = <ResultsNav showArtistResults={this.showArtistResults} showAlbumResults={this.showAlbumResults} toggleSearchForm={this.props.toggleSearchForm} />;
 
     return (
-      <div>
+      <Col lg={12}>
         {resultsNav}
         <ListGroup>
           {this.state.showArtistResults ? showArtistResults : showAlbumResults }
         </ListGroup>
-      </div>
+      </Col>
     );
   },
 });

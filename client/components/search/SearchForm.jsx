@@ -9,7 +9,6 @@ var MenuItem = require('material-ui/lib/menus/menu-item');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
 
-
 var SearchForm = React.createClass ({
 
   render: function () {
@@ -19,7 +18,7 @@ var SearchForm = React.createClass ({
     }
     return (
       <Row className="two-bottom">
-        <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
+        <Col xs={10} md={8} lg={4} xsOffset={1} lgOffset={4} mdOffset={2} >
           <div className="search-form">
             <form onSubmit={this.props.handleSubmit} >
               <Input className="query" type="text" placeholder="Enter search..." onChange={this.props.handleChange}/>
@@ -27,7 +26,7 @@ var SearchForm = React.createClass ({
                 <option value='artist'>Artist</option>
                 <option value="master">Album</option>
               </Input>
-                <Button id="search-button" bsStyle="primary" onClick={this.props.handleSubmit}>Search</Button>
+              <Button bsStyle="primary" onClick={this.props.handleSubmit}>Search</Button>
             </form>
           </div>
         </Col>
