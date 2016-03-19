@@ -18,7 +18,7 @@ var SearchForm = React.createClass ({
       fontFamily: "Muli"
     }
     return (
-      <Row>
+      <Row className="two-bottom">
         <Col xs={12} md={8} lg={4} lgOffset={4} mdOffset={2} >
           <div className="search-form">
             <form onSubmit={this.props.handleSubmit} >
@@ -31,7 +31,7 @@ var SearchForm = React.createClass ({
             </form>
           </div>
         </Col>
-      </Row>
+      </Row >
     );
   },
 

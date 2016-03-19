@@ -3,9 +3,24 @@ var ListGroup = require('react-bootstrap/lib/ListGroup');
 var NoResults = require('./NoResults.jsx');
 var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');
+var ResultsNav = require('./ResultsNav.jsx');
 
 
 var ResultsContainer = React.createClass ({
+  getInitialState: function() {
+    return {
+      showArtistResults: true,
+    };
+  },
+
+  showArtistResults: function() {
+    this.setState({showArtistResults: true});
+  },
+
+  showAlbumResults: function() {
+    this.setState({showArtistResults: false});
+  },
+
   render: function () {
     var closeButtonStyle = {
       textTransform: 'capitalize',
@@ -19,17 +34,18 @@ var ResultsContainer = React.createClass ({
       }.bind(this));
 
     var showArtistResults = (this.props.artistResults.length > 0) ? artistResults : <NoResults/>
-
     var albumResults = this.props.albumResults.map(function(result, index){
         return <AlbumResult closeButtonStyle={closeButtonStyle} buttonStyle={this.props.buttonStyle} key={result.uri} ajaxRequest={this.props.ajaxRequest} result={result} origin={this.props.origin} />
       }.bind(this));
     var showAlbumResults = (this.props.albumResults.length > 0) ? albumResults : <NoResults/>
     var searchResults = (this.props.queryType === 'artist') ? showArtistResults : showAlbumResults;
+    var resultsNav = <ResultsNav showArtistResults={this.showArtistResults} showAlbumResults={this.showAlbumResults} showSearchForm={this.props.showSearchForm} />;
 
     return (
       <div>
+        {resultsNav}
         <ListGroup>
-          {searchResults}
+          {this.state.showArtistResults ? showArtistResults : showAlbumResults }
         </ListGroup>
       </div>
     );
