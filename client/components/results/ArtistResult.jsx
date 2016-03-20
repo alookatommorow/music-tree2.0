@@ -22,7 +22,8 @@ var ArtistResult = React.createClass({
     };
   },
 
-  handleProfileClick: function() {
+  handleProfileClick: function(event) {
+    event.preventDefault();
     if (this.state.profile === null) {
       var query = this.props.result["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
@@ -32,7 +33,8 @@ var ArtistResult = React.createClass({
     }
   },
 
-  handleDiscogClick: function() {
+  handleDiscogClick: function(event) {
+    event.preventDefault();
     if (this.state.discogDetails === null) {
       var query = this.props.result["id"]
       this.setState({discogInProgress: true, showDiscogContainer: true});
@@ -83,14 +85,14 @@ var ArtistResult = React.createClass({
         <Row>
           <Col xs={3}>
             <div className="left">
-            <Image src={picSource} responsive className="image" />
+              <Image src={picSource} responsive className="image" />
             </div>
           </Col>
           <Col xs={9} className="one-bottom right-align">
-              <ButtonGroup >
-                {profileOpenButton}
-                {discogOpenButton}
-              </ButtonGroup>
+            <ButtonGroup >
+              {profileOpenButton}
+              {discogOpenButton}
+            </ButtonGroup>
           </Col>
           <Col xs={9}>
             <div className="artist-result-title">
