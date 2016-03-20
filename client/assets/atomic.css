@@ -1,0 +1,120 @@
+.debug {
+  border: 1px solid red;
+}
+
+.two-em {
+  font-size: 2em;
+}
+
+.one-em {
+  font-size: 1em;
+}
+
+.one-five-em {
+  font-size: 1.5em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.line-height {
+  line-height: 25px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.one-left {
+  margin-left: 1%;
+}
+
+.one-bottom {
+  margin-bottom: 1%;
+}
+
+.one-top {
+  margin-top: 1%;
+}
+
+.two-right {
+  margin-right: 2%;
+}
+
+.two-left {
+  margin-left: 2%;
+}
+
+.two-top {
+  margin-top: 2%;
+}
+
+.two-bottom {
+  margin-bottom: 2%;
+}
+
+.three-bottom {
+  margin-bottom: 2%;
+}
+
+.three-right {
+  margin-right: 3%;
+}
+
+.four-left {
+  margin-left: 4%;
+}
+
+.four-bottom {
+  margin-bottom: 4%;
+}
+
+.five-right {
+  margin-right: 5%;
+
+}
+
+.ten-right {
+  margin-right: 10%;
+}
+
+.ten-top {
+  margin-top: 10%;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.relative {
+  position: relative;
+}

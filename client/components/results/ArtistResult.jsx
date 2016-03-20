@@ -6,6 +6,9 @@ var SearchIndicator = require('../search/SearchIndicator.jsx');
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var Button = require('react-bootstrap/lib/Button');
 var ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
+var Image = require('react-bootstrap/lib/Image');
+var Col = require('react-bootstrap/lib/Col');
+var Row = require('react-bootstrap/lib/Row');
 
 var ArtistResult = React.createClass({
   getInitialState: function(){
@@ -65,9 +68,9 @@ var ArtistResult = React.createClass({
     var profileContainer =
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var profileOpenButton =
-      <Button bsStyle="primary" onClick={this.handleProfileClick} >Artist Profile</Button>
+      <Button href="#" bsStyle="primary" bsSize="small" onClick={this.handleProfileClick}>Artist Profile</Button>
     var discogOpenButton =
-      <Button bsStyle="primary" onClick={this.handleDiscogClick} >Discography</Button>
+      <Button href="#" bsStyle="primary" bsSize="small" onClick={this.handleDiscogClick}>Discography</Button>
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
@@ -77,21 +80,28 @@ var ArtistResult = React.createClass({
 
     return (
       <ListGroupItem>
-        <div className="multi-button-box">
-          <ButtonGroup>
-            {this.state.showProfileContainer ? null : profileOpenButton}
-            {this.state.showDiscogContainer ? null : discogOpenButton}
-          </ButtonGroup>
+        <Row>
+          <Col xs={3}>
+            <div className="left">
+            <Image src={picSource} responsive className="image" />
+            </div>
+          </Col>
+          <Col xs={9} className="one-bottom right-align">
+              <ButtonGroup >
+                {profileOpenButton}
+                {discogOpenButton}
+              </ButtonGroup>
+          </Col>
+          <Col xs={9}>
+            <div className="artist-result-title">
+              {this.props.result.title}
+            </div>
+          </Col>
+        </Row>
+        <div className="clear-both">
+          {this.state.showProfileContainer ? profileProgress : null}
+          {this.state.showDiscogContainer ? discogProgress : null}
         </div>
-        <div className="left five-right">
-          <img src={picSource} className="image"></img>
-        </div>
-        <div className="clear-right bold one-five-em">
-          {this.props.result.title}
-        </div>
-        <div className="clear-both"></div>
-        {this.state.showProfileContainer ? profileProgress : null}
-        {this.state.showDiscogContainer ? discogProgress : null}
       </ListGroupItem>
     );
   },
