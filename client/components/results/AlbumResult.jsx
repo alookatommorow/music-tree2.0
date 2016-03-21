@@ -2,6 +2,9 @@ var React = require('react');
 var AlbumDetailsContainer = require('../details/AlbumDetailsContainer.jsx');
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var Button = require('react-bootstrap/lib/Button');
+var Image = require('react-bootstrap/lib/Image');
+var Col = require('react-bootstrap/lib/Col');
+var Row = require('react-bootstrap/lib/Row');
 
 var AlbumResult = React.createClass({
   getInitialState: function(){
@@ -42,22 +45,30 @@ var AlbumResult = React.createClass({
 
     return (
       <ListGroupItem>
-        <div className="button-box">
-          {this.state.showDetailsContainer ? detailsCloseButton : albumDetailsOpenButton}
+        <Row>
+          <Col xs={4}>
+            <div className="left">
+              <Image src={this.props.result.thumb} responsive className="image" />
+            </div>
+          </Col>
+          <Col xs={8}>
+            <div className="right">
+              {albumDetailsOpenButton}
+           </div>
+          </Col>
+          <Col xs={8}>
+            <div className="bold one-five-em">
+              {this.props.result.title}
+            </div>
+            <div className="one-top one-five-em">
+              {this.props.result.year}
+            </div>
+          </Col>
+        </Row>
+        <div className="clear-both">
+          {this.state.showDetailsContainer ? detailsContainer : null }
         </div>
-        <div className="left three-right">
-          <img src={this.props.result.thumb} className="image" ></img>
-        </div>
-        <div className="clear-right">
-          <div className="bold one-five-em">
-            {this.props.result.title}
-          </div>
-          <div className="two-top one-five-em">
-            {this.props.result.year}
-          </div>
-        </div>
-        <div className="clear-both"></div>
-        {this.state.showDetailsContainer ? detailsContainer : null }
+
       </ListGroupItem>
     );
   },
