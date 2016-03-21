@@ -39,7 +39,7 @@ var AlbumResult = React.createClass({
   render: function(){
     var detailsCloseButton =
       <Button onClick={this.handleDetailCloseClick} bsStyle="danger" >CLOSE</Button>
-    var albumDetailsOpenButton =
+    var detailsOpenButton =
       <Button onClick={this.handleDetailClick} bsStyle="primary" >Album Details</Button>
     var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
 
@@ -53,7 +53,7 @@ var AlbumResult = React.createClass({
           </Col>
           <Col xs={8}>
             <div className="right">
-              {albumDetailsOpenButton}
+              {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
            </div>
           </Col>
           <Col xs={8}>
@@ -68,7 +68,6 @@ var AlbumResult = React.createClass({
         <div className="clear-both">
           {this.state.showDetailsContainer ? detailsContainer : null }
         </div>
-
       </ListGroupItem>
     );
   },
