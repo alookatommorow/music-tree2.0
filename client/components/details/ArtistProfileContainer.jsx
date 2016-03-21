@@ -1,5 +1,6 @@
 var React = require('react');
 var Button = require('react-bootstrap/lib/Button');
+var Well = require('react-bootstrap/lib/Well');
 
 var ArtistProfileContainer = React.createClass({
   render: function(){
@@ -17,10 +18,8 @@ var ArtistProfileContainer = React.createClass({
         <div className="right two-bottom" >
           {closeButton}
         </div>
-        <div className="center-text detail-discog-header">{this.props.title} Profile</div>
-        <div className="left-text">
-          {this.props.profile}
-        </div>
+        <Well className="center-text detail-discog-header">{this.props.title} Profile</Well>
+        <Well className="left-text">{this.props.profile}</Well>
       </div>;
     var profileDisplay = (this.props.profile.length > 0) ? profile : noProfile;
 

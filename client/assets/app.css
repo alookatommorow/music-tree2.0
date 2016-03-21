@@ -1,11 +1,8 @@
-/*#shrimp*/
-
-
 body {
   background-image: url("https://storage.googleapis.com/west-coast-skateparks/music-tree-3.jpg" );
 }
 
-body:before{
+body:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -24,18 +21,6 @@ div {
   font-family: "Muli";
 }
 
-.lowercase {
-  text-transform: capitalize;
-}
-
-.result-margin div:hover {
-  cursor: default;
-}
-
-.header {
-  height: 300px;
-}
-
 .no-results {
   text-align: center;
   font-size: 2em;
@@ -43,6 +28,7 @@ div {
   color: red;
   margin-top: 2%;
   margin-bottom: 2%;
+  background-color: white;
 }
 
 .no-results-image {
@@ -58,8 +44,13 @@ div {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.debug {
-  border: 1px solid red;
+.search-bar {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1% 5% 2% 5%;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .image {
@@ -67,32 +58,15 @@ div {
   height: 150px;
 }
 
+.artist-result-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+}
+
 .results-container {
   margin-left: 10%;
   margin-right: 10%;
-}
-
-.search-bar {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 1% 5% 2% 5%;
-  background-color: white;
-}
-
-.result-margin {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.multi-button-box {
-  float: right;
-  margin-bottom: 2%;
-}
-
-.button-box {
-  float: right;
-  margin-bottom: 1%;
 }
 
 .details-display {
@@ -101,136 +75,9 @@ div {
 
 /* ///  for detail and discog headers /// */
 .detail-discog-header {
-  clear: right;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 2%;
-  background-color: #E3E3E6;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-.white {
-  background-color: white;
-}
-
-.gray-background {
-  background-color: gray;
-}
-
-.two-em {
-  font-size: 2em;
-}
-
-.one-em {
-  font-size: 1em;
-}
-
-.one-five-em {
-  font-size: 1.5em;
-}
-
-.center-text {
   text-align: center;
-}
-
-.left-text {
-  text-align: left;
-}
-
-.line-height {
-  line-height: 25px;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.clear-both {
-  clear: both;
-}
-
-.clear-right {
   clear: right;
-}
-
-.bold {
   font-weight: bold;
+  font-size: 1.5em;
 }
 
-.one-left {
-  margin-left: 1%;
-}
-
-.one-bottom {
-  margin-bottom: 1%;
-}
-
-.one-top {
-  margin-top: 1%;
-}
-
-.two-right {
-  margin-right: 2%;
-}
-
-.two-left {
-  margin-left: 2%;
-}
-
-.two-top {
-  margin-top: 2%;
-}
-
-.two-bottom {
-  margin-bottom: 2%;
-}
-
-.three-bottom {
-  margin-bottom: 2%;
-}
-
-.three-right {
-  margin-right: 3%;
-}
-
-.four-left {
-  margin-left: 4%;
-}
-
-.four-bottom {
-  margin-bottom: 4%;
-}
-
-.five-right {
-  margin-right: 5%;
-
-}
-
-.ten-right {
-  margin-right: 10%;
-}
-
-.ten-top {
-  margin-top: 10%;
-}
-
-.clear-right {
-  clear: right;
-}
-
-.relative {
-  position: relative;
-}
-
-.query input:-webkit-autofill {
-  box-shadow: 0 0 0 1000px white inset;
-}

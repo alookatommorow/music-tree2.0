@@ -18,7 +18,7 @@ var SearchForm = React.createClass ({
                 <option value='artist'>Artist</option>
                 <option value="master">Album</option>
               </Input>
-              <Button bsStyle="primary" onClick={this.props.handleSubmit}>Search</Button>
+              <Button bsStyle="primary" bsSize="large" onClick={this.props.handleSubmit}>Search</Button>
             </form>
           </div>
         </Col>

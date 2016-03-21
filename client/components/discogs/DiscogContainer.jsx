@@ -1,6 +1,7 @@
 var React = require('react');
 var AlbumResult = require('../results/AlbumResult.jsx');
 var Button = require('react-bootstrap/lib/Button');
+var Well = require('react-bootstrap/lib/Well');
 
 var DiscogContainer = React.createClass({
   render: function(){
@@ -14,7 +15,7 @@ var DiscogContainer = React.createClass({
         <Button bsStyle="danger" onClick={this.props.handleCloseClick}>CLOSE</Button>
       </div>
 
-    var header = <div className="detail-discog-header">{this.props.title} Discography</div>
+    var header = <Well className="detail-discog-header">{this.props.title} Discography</Well>
 
     var discog =
       <div className="details-display">
