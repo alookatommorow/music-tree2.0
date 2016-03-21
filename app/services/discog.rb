@@ -17,10 +17,6 @@ module Discog
       self.class.get("/artists/#{query}").parsed_response["profile"]
     end
 
-    def search_album_info
-
-    end
-
     def album_info
       @query = get_main_release
       self.class.get("/releases/#{query}").parsed_response

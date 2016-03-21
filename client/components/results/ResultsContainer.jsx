@@ -13,11 +13,13 @@ var ResultsContainer = React.createClass ({
     };
   },
 
-  showArtistResults: function() {
+  showArtistResults: function(event) {
+    event.preventDefault();
     this.setState({showArtistResults: true});
   },
 
-  showAlbumResults: function() {
+  showAlbumResults: function(event) {
+    event.preventDefault();
     this.setState({showArtistResults: false});
   },
 

@@ -2,9 +2,12 @@ var React = require('react');
 
 var AlbumDetailsContainer = React.createClass({
   render: function(){
+    var info = this.props.albumInfo;
     var stats = [];
     var header = <div>Tracklist</div>
-    var tracklist = this.props.tracklist.map(function(track, index){
+    var genre = <div>{info.genres[0]}</div>;
+
+    var tracklist = info.tracklist.map(function(track, index){
         return <div key={index}>{index+1}. {track['title']}</div>
       });
 
@@ -14,6 +17,7 @@ var AlbumDetailsContainer = React.createClass({
           <div className="left-text bold one-bottom">
             {header}
           </div>
+            {genre}
           <div className="left-text">
             {tracklist}
           </div>

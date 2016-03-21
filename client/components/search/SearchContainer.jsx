@@ -41,7 +41,8 @@ var SearchContainer = React.createClass({
     this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
   },
 
-  toggleSearchForm: function() {
+  toggleSearchForm: function(event) {
+    event.preventDefault();
     this.state.showSearchForm ? this.setState({showSearchForm: false}) : this.setState({showSearchForm: true})
   },
 

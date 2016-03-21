@@ -9,14 +9,14 @@ var Row = require('react-bootstrap/lib/Row');
 var AlbumResult = React.createClass({
   getInitialState: function(){
     return {
-      tracklist: null,
+      albumInfo: null,
       showDetailsContainer: false,
     };
   },
 
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
-    if (this.state.tracklist === null) {
+    if (this.state.albumInfo === null) {
       var query = this.props.result["id"];
       this.props.ajaxRequest(query, '/album_info', this.successFunction, this.errorFunction);
     } else {
@@ -30,7 +30,7 @@ var AlbumResult = React.createClass({
 
   successFunction: function(response){
     console.log(response);
-    this.setState({tracklist: response.tracklist, showDetailsContainer: true});
+    this.setState({albumInfo: response, showDetailsContainer: true});
   },
 
   errorFunction: function(response){
@@ -42,7 +42,7 @@ var AlbumResult = React.createClass({
       <Button onClick={this.handleDetailCloseClick} bsStyle="danger" >CLOSE</Button>
     var detailsOpenButton =
       <Button onClick={this.handleDetailClick} bsStyle="primary" >Album Details</Button>
-    var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
+    var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} albumInfo={this.state.albumInfo} />
 
     return (
       <ListGroupItem>
