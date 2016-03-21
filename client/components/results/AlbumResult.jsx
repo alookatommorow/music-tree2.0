@@ -17,7 +17,7 @@ var AlbumResult = React.createClass({
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
     if (this.state.tracklist === null) {
-      var query = this.props.result["id"]
+      var query = this.props.result["id"];
       this.props.ajaxRequest(query, '/album_info', this.successFunction, this.errorFunction);
     } else {
       this.setState({showDetailsContainer: true})
@@ -29,6 +29,7 @@ var AlbumResult = React.createClass({
   },
 
   successFunction: function(response){
+    console.log(response);
     this.setState({tracklist: response.tracklist, showDetailsContainer: true});
   },
 
