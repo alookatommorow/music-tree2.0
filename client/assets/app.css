@@ -21,18 +21,6 @@ div {
   font-family: "Muli";
 }
 
-.lowercase {
-  text-transform: capitalize;
-}
-
-.result-margin div:hover {
-  cursor: default;
-}
-
-.header {
-  height: 300px;
-}
-
 .no-results {
   text-align: center;
   font-size: 2em;
@@ -40,6 +28,7 @@ div {
   color: red;
   margin-top: 2%;
   margin-bottom: 2%;
+  background-color: white;
 }
 
 .no-results-image {
@@ -55,6 +44,14 @@ div {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.search-bar {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1% 5% 2% 5%;
+  background-color: white;
+  border-radius: 4px;
+}
 
 .image {
   width: 150px;
@@ -72,24 +69,6 @@ div {
   margin-right: 10%;
 }
 
-.search-bar {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 1% 5% 2% 5%;
-  background-color: white;
-}
-
-.result-margin {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.multi-button-box {
-  float: right;
-  margin-bottom: 2%;
-}
-
 .details-display {
   margin: 2% 3% 2% 3%;
 }
@@ -102,14 +81,3 @@ div {
   font-size: 1.5em;
 }
 
-.white {
-  background-color: white;
-}
-
-.gray-background {
-  background-color: gray;
-}
-
-.query input:-webkit-autofill {
-  box-shadow: 0 0 0 1000px white inset;
-}

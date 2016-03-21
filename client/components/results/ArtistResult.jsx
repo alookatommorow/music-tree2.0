@@ -67,12 +67,14 @@ var ArtistResult = React.createClass({
     } else {
       picSource = this.props.result.thumb
     }
+    var generateButton = function(text, clickHandler) {
+      return <Button href="#" bsStyle="primary" bsSize="small" onClick={clickHandler}>{text}</Button>
+    }
     var profileContainer =
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
-    var profileOpenButton =
-      <Button href="#" bsStyle="primary" bsSize="small" onClick={this.handleProfileClick}>Artist Profile</Button>
-    var discogOpenButton =
-      <Button href="#" bsStyle="primary" bsSize="small" onClick={this.handleDiscogClick}>Discography</Button>
+    var profileOpenButton = generateButton("Artist Profile", this.handleProfileClick)
+    var discogOpenButton = generateButton("Discography", this.handleDiscogClick)
+
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
