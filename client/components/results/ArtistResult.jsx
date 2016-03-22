@@ -63,7 +63,7 @@ var ArtistResult = React.createClass({
   render: function(){
     var picSource
     if (this.props.result.thumb === "") {
-      picSource = "https://storage.googleapis.com/west-coast-skateparks/muisc-tree-alt.jpg"
+      picSource = "https://storage.googleapis.com/music-tree/muisc-tree-alt.jpg"
     } else {
       picSource = this.props.result.thumb
     }

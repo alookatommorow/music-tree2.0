@@ -7,7 +7,7 @@ var Header = React.createClass ({
     return (
       <Col xs={6} s={6} md={4} lg={4} xsOffset={3} sOffset={3} lgOffset={4} mdOffset={4} >
         <div className="center-text">
-          <Image src="https://storage.googleapis.com/west-coast-skateparks/music-tree-logo.png" responsive />
+          <Image src="https://storage.googleapis.com/music-tree/music-tree-logo.png" responsive />
         </div>
       </Col>
     );
