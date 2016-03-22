@@ -6,7 +6,7 @@
 
 MusicTree is a quick reference guide to recorded music.  Utilizing the [Discogs API](https://www.discogs.com/developers/), MusicTree provides an easy-to-use interface enabling the user to search and browse artist discographies.
 
-![Screenshot](https://storage.googleapis.com/west-coast-skateparks/music-tree-screenshot.jpg)
+![Screenshot](https://storage.googleapis.com/music-tree/music-tree-screenshot.jpg)
 
 ##Deployment
 
