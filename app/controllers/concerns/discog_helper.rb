@@ -5,7 +5,10 @@ module DiscogHelper
     end
 
     def discog_keys
-      {'type' => "master", 'artist' => "#{query}"}
+      {
+        'sort' => 'year',
+        'page' => 1
+      }
     end
 
     def required_keys

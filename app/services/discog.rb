@@ -10,7 +10,7 @@ module Discog
     base_uri "https://api.discogs.com"
 
     def search
-      Filter.new(results).search
+      Filter.new(search_results).search
     end
 
     def artist_info
@@ -23,28 +23,36 @@ module Discog
     end
 
     def discog
-      Filter.new(results).discography
+      Filter.new(discog_results).discography
     end
 
     private
 
       attr_accessor :query
 
-      def url
+      def search_url
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
-        URI.parse("/database/search").tap {|url| format_url(url).to_s }
+        URI.parse("/database/search").tap {|url| format_url(url, search_keys).to_s }
       end
 
-      def format_url(url)
-        url.query = URI::encode_www_form(search_keys.merge(required_keys))
+      def discog_url
+        URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
+      end
+
+      def format_url(url, keys)
+        url.query = URI::encode_www_form(keys.merge(required_keys))
       end
 
       def get_main_release
         self.class.get("/masters/#{query}").parsed_response["main_release"]
       end
 
-      def results
-        self.class.get(url).parsed_response["results"]
+      def search_results
+        self.class.get(search_url).parsed_response["results"]
+      end
+
+      def discog_results
+        self.class.get(discog_url).parsed_response["releases"]
       end
   end
 end

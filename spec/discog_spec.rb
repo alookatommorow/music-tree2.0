@@ -35,7 +35,7 @@ RSpec.describe Discog, type: :model do
          with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
          to_return(:status => 200, :body => File.open('spec/support/discog.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
 
-      results = Discog::Client.new("obituary", true).discog
+      results = Discog::Client.new("obituary").discog
       response = JSON.parse(File.open('spec/support/discog.json').read)
       expected = Filter.new(response["releases"]).discography
 
