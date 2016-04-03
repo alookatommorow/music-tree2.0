@@ -85,14 +85,14 @@ var ArtistResult = React.createClass({
     return (
       <ListGroupItem>
         <Row>
-          <Col xs={10} xsOffset={1} sm={3} smOffset={0} >
+          <Col xs={10} xsOffset={1} sm={4} smOffset={0} >
             <div className="result-image">
               <div>
                 <Image src={picSource} className="image" />
               </div>
             </div>
           </Col>
-          <Col xsHidden={true} sm={9} smOffset={0} className="artist-buttons">
+          <Col xsHidden={true} sm={8} className="artist-buttons">
             <div className="one-right inline-block">
               {profileOpenButton}
             </div>
@@ -100,7 +100,7 @@ var ArtistResult = React.createClass({
               {discogOpenButton}
             </div>
           </Col>
-          <Col xs={10} xsOffset={1} sm={9} smOffset={0} >
+          <Col xs={10} xsOffset={1} sm={8} smOffset={0} >
             <div className="artist-result-title">
               {this.props.result.title}
             </div>

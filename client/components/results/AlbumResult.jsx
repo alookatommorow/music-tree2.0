@@ -46,23 +46,28 @@ var AlbumResult = React.createClass({
     return (
       <ListGroupItem>
         <Row>
-          <Col xs={4}>
+          <Col xs={10} xsOffset={1} sm={4} smOffset={0}>
             <div className="result-image">
               <Image src={this.props.result.thumb} className="image" />
             </div>
           </Col>
-          <Col xs={8}>
+          <Col xsHidden={true} sm={8}>
             <div className="album-button">
               {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
            </div>
           </Col>
-          <Col xs={8}>
-            <div className="bold one-five-em">
+          <Col xs={10} xsOffset={1} sm={8} smOffset={0}>
+            <div className="album-result-title">
               {this.props.result.title}
             </div>
-            <div className="one-top one-five-em">
+            <div className="album-result-year">
               {this.props.result.year}
             </div>
+          </Col>
+          <Col xs={10} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}>
+            <div className="album-button">
+              {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
+           </div>
           </Col>
         </Row>
         <div className="clear-both">

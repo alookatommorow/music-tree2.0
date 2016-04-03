@@ -63,10 +63,25 @@ div {
   margin-bottom: 1%;
 }
 
+.album-button {
+  text-align: right;
+  margin-bottom: 1%;
+}
+
 .artist-result-title {
   font-weight: bold;
   font-size: 1.5em;
   text-align: left;
+}
+
+.album-result-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.album-result-year {
+  margin-top: 1%;
+  font-size: 1.5em;
 }
 
 .results-container {
@@ -98,7 +113,20 @@ div {
     margin-bottom: 1%;
   }
 
+  .album-result-title {
+    text-align: center;
+  }
+
+  .album-result-year {
+    text-align: center;
+  }
+
   .artist-buttons {
     text-align: center;
+  }
+
+  .album-button {
+    text-align: center;
+    margin-top: 1%;
   }
 }
