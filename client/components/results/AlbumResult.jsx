@@ -29,7 +29,6 @@ var AlbumResult = React.createClass({
   },
 
   successFunction: function(response){
-    console.log(response);
     this.setState({albumInfo: response, showDetailsContainer: true});
   },
 

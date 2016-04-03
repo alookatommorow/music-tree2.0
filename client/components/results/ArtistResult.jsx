@@ -68,7 +68,7 @@ var ArtistResult = React.createClass({
       picSource = this.props.result.thumb
     }
     var generateButton = function(text, clickHandler) {
-      return <Button href="#" bsStyle="primary" bsSize="small" onClick={clickHandler}>{text}</Button>
+      return <Button href="#" bsStyle="primary" onClick={clickHandler}>{text}</Button>
     }
     var profileContainer =
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />

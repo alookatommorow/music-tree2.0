@@ -25,7 +25,7 @@ var ResultsContainer = React.createClass ({
 
   render: function () {
     var artistResults = this.props.artistResults.map(function(result, index){
-        return <ArtistResult key={result.uri} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />
+        return <ArtistResult key={result.id} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />
       }.bind(this));
 
     var showArtistResults = (this.props.artistResults.length > 0) ? artistResults : <NoResults/>
