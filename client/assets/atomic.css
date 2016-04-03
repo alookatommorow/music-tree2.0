@@ -30,8 +30,8 @@
   float: right;
 }
 
-.left {
-  float: left;
+.inline-block {
+  display: inline-block;
 }
 
 .clear-both {
@@ -48,6 +48,10 @@
 
 .one-left {
   margin-left: 1%;
+}
+
+.one-right {
+  margin-right: 1%;
 }
 
 .one-bottom {

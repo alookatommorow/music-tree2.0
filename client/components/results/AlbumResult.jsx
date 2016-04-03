@@ -47,12 +47,12 @@ var AlbumResult = React.createClass({
       <ListGroupItem>
         <Row>
           <Col xs={4}>
-            <div className="left">
-              <Image src={this.props.result.thumb} responsive className="image" />
+            <div className="result-image">
+              <Image src={this.props.result.thumb} className="image" />
             </div>
           </Col>
           <Col xs={8}>
-            <div className="right">
+            <div className="album-button">
               {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
            </div>
           </Col>
