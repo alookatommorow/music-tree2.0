@@ -6,7 +6,7 @@ var Well = require('react-bootstrap/lib/Well');
 var DiscogContainer = React.createClass({
   render: function(){
     var albums =
-      this.props.albums.map(function(album, index){
+      this.props.albums.map(function(album){
         return <AlbumResult key={album.id} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />;
       }.bind(this));
 

@@ -3,15 +3,14 @@ module Discog
     include HTTParty
     include DiscogHelper
 
-    def initialize(query, is_discog = false)
+    def initialize(query)
       @query = query
-      @is_discog = is_discog
     end
 
     base_uri "https://api.discogs.com"
 
     def search
-      Filter.new(results).search
+      Filter.new(search_results).search
     end
 
     def artist_info
@@ -19,37 +18,41 @@ module Discog
     end
 
     def album_info
-      self.class.get("/masters/#{query}").parsed_response
+      @query = get_main_release
+      self.class.get("/releases/#{query}").parsed_response
     end
 
     def discog
-      Filter.new(results).discography
+      Filter.new(discog_results).discography
     end
 
     private
 
-      attr_reader :query, :is_discog
+      attr_accessor :query
 
-      def url(n = nil)
+      def search_url
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
-        URI.parse("/database/search").tap {|url| format_url(url, n).to_s }
+        URI.parse("/database/search").tap {|url| format_url(url, search_keys).to_s }
       end
 
-      def format_url(url, n)
-        if is_discog
-          page_num = {'page' => "#{n}"}
-          url.query = URI::encode_www_form(discog_keys.merge(page_num).merge(required_keys))
-        else
-          url.query = URI::encode_www_form(search_keys.merge(required_keys))
-        end
+      def discog_url
+        URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
       end
 
-      def results
-        if is_discog
-          self.class.get("/artists/#{query}/releases?sort=year&key=#{ENV['CONSUMER_KEY']}&secret=#{ENV['CONSUMER_SECRET']}&per_page=100").parsed_response["releases"]
-        else
-          self.class.get(url).parsed_response["results"]
-        end
+      def format_url(url, keys)
+        url.query = URI::encode_www_form(keys.merge(required_keys))
+      end
+
+      def get_main_release
+        self.class.get("/masters/#{query}").parsed_response["main_release"]
+      end
+
+      def search_results
+        self.class.get(search_url).parsed_response["results"]
+      end
+
+      def discog_results
+        self.class.get(discog_url).parsed_response["releases"]
       end
   end
 end

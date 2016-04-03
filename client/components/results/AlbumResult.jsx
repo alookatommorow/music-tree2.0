@@ -9,15 +9,15 @@ var Row = require('react-bootstrap/lib/Row');
 var AlbumResult = React.createClass({
   getInitialState: function(){
     return {
-      tracklist: null,
+      albumInfo: null,
       showDetailsContainer: false,
     };
   },
 
   handleDetailClick: function() {
     //if details not yet loaded, fetch, else just display
-    if (this.state.tracklist === null) {
-      var query = this.props.result["id"]
+    if (this.state.albumInfo === null) {
+      var query = this.props.result["id"];
       this.props.ajaxRequest(query, '/album_info', this.successFunction, this.errorFunction);
     } else {
       this.setState({showDetailsContainer: true})
@@ -29,7 +29,7 @@ var AlbumResult = React.createClass({
   },
 
   successFunction: function(response){
-    this.setState({tracklist: response.tracklist, showDetailsContainer: true});
+    this.setState({albumInfo: response, showDetailsContainer: true});
   },
 
   errorFunction: function(response){
@@ -41,28 +41,33 @@ var AlbumResult = React.createClass({
       <Button onClick={this.handleDetailCloseClick} bsStyle="danger" >CLOSE</Button>
     var detailsOpenButton =
       <Button onClick={this.handleDetailClick} bsStyle="primary" >Album Details</Button>
-    var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} title={this.props.result.title}  tracklist={this.state.tracklist} />
+    var detailsContainer = <AlbumDetailsContainer handleCloseClick={this.handleDetailCloseClick} albumInfo={this.state.albumInfo} />
 
     return (
       <ListGroupItem>
         <Row>
-          <Col xs={4}>
-            <div className="left">
-              <Image src={this.props.result.thumb} responsive className="image" />
+          <Col xs={10} xsOffset={1} sm={4} smOffset={0}>
+            <div className="result-image">
+              <Image src={this.props.result.thumb} className="image" />
             </div>
           </Col>
-          <Col xs={8}>
-            <div className="right">
+          <Col xsHidden={true} sm={8}>
+            <div className="album-button">
               {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
            </div>
           </Col>
-          <Col xs={8}>
-            <div className="bold one-five-em">
+          <Col xs={10} xsOffset={1} sm={8} smOffset={0}>
+            <div className="album-result-title">
               {this.props.result.title}
             </div>
-            <div className="one-top one-five-em">
+            <div className="album-result-year">
               {this.props.result.year}
             </div>
+          </Col>
+          <Col xs={10} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}>
+            <div className="album-button">
+              {this.state.showDetailsContainer ? detailsCloseButton : detailsOpenButton }
+           </div>
           </Col>
         </Row>
         <div className="clear-both">

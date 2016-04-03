@@ -63,12 +63,12 @@ var ArtistResult = React.createClass({
   render: function(){
     var picSource
     if (this.props.result.thumb === "") {
-      picSource = "https://storage.googleapis.com/west-coast-skateparks/muisc-tree-alt.jpg"
+      picSource = "https://storage.googleapis.com/music-tree/music-tree-alt.jpg"
     } else {
       picSource = this.props.result.thumb
     }
     var generateButton = function(text, clickHandler) {
-      return <Button href="#" bsStyle="primary" bsSize="small" onClick={clickHandler}>{text}</Button>
+      return <Button href="#" bsStyle="primary" onClick={clickHandler}>{text}</Button>
     }
     var profileContainer =
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
@@ -85,20 +85,32 @@ var ArtistResult = React.createClass({
     return (
       <ListGroupItem>
         <Row>
-          <Col xs={3}>
-            <div className="left">
-              <Image src={picSource} responsive className="image" />
+          <Col xs={10} xsOffset={1} sm={4} smOffset={0} >
+            <div className="result-image">
+              <div>
+                <Image src={picSource} className="image" />
+              </div>
             </div>
           </Col>
-          <Col xs={9} className="one-bottom right-align">
-            <ButtonGroup >
+          <Col xsHidden={true} sm={8} className="artist-buttons">
+            <div className="one-right inline-block">
               {profileOpenButton}
+            </div>
+            <div className="inline-block">
               {discogOpenButton}
-            </ButtonGroup>
+            </div>
           </Col>
-          <Col xs={9}>
+          <Col xs={10} xsOffset={1} sm={8} smOffset={0} >
             <div className="artist-result-title">
               {this.props.result.title}
+            </div>
+          </Col>
+          <Col xs={10} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="artist-buttons">
+            <div className="one-right inline-block">
+              {profileOpenButton}
+            </div>
+            <div className="inline-block">
+              {discogOpenButton}
             </div>
           </Col>
         </Row>
