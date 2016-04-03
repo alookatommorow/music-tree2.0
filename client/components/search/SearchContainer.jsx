@@ -22,10 +22,6 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  handleSelect: function(event) {
-    this.setState({queryType: event.target.value})
-  },
-
   ajaxRequest: function(query, url, successFunction, errorFunction){
     $.ajax({
       url: this.props.origin + url,
@@ -46,6 +42,17 @@ var SearchContainer = React.createClass({
     this.state.showSearchForm ? this.setState({showSearchForm: false}) : this.setState({showSearchForm: true})
   },
 
+  toggleQueryType: function(event) {
+    event.preventDefault();
+    var type
+    if (event.target.value == null) {
+      type = event.target.target;
+    } else {
+      type = event.target.value;
+    }
+    this.setState({queryType: type});
+  },
+
   successFunction: function(response){
     this.setState({artistResults: response.artistResults, albumResults: response.albumResults, inProgress: false})
   },
@@ -56,10 +63,10 @@ var SearchContainer = React.createClass({
   },
 
   render: function () {
-    var searchResultsContainer = <ResultsContainer ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin}  toggleSearchForm={this.toggleSearchForm} />;
+    var searchResultsContainer = <ResultsContainer ajaxRequest={this.ajaxRequest} albumResults={this.state.albumResults} artistResults={this.state.artistResults} query={this.state.query} queryType={this.state.queryType} origin={this.props.origin} toggleQueryType={this.toggleQueryType} toggleSearchForm={this.toggleSearchForm} />;
     var searchIndicator = <SearchIndicator text={"Searching..."}/>;
     var searchProgress = this.state.inProgress ? searchIndicator : searchResultsContainer;
-    var searchForm = <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} handleSelect={this.handleSelect} handleSubmit={this.handleSubmit} />
+    var searchForm = <SearchForm handleChange={this.handleChange} queryType={this.state.queryType} toggleQueryType={this.toggleQueryType} handleSubmit={this.handleSubmit} />
 
     return (
       <div>

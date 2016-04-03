@@ -7,22 +7,6 @@ var ResultsNav = require('./ResultsNav.jsx');
 var Col = require('react-bootstrap/lib/Col');
 
 var ResultsContainer = React.createClass ({
-  getInitialState: function() {
-    return {
-      showArtistResults: true,
-    };
-  },
-
-  showArtistResults: function(event) {
-    event.preventDefault();
-    this.setState({showArtistResults: true});
-  },
-
-  showAlbumResults: function(event) {
-    event.preventDefault();
-    this.setState({showArtistResults: false});
-  },
-
   render: function () {
     var artistResults = this.props.artistResults.map(function(result, index){
         return <ArtistResult key={result.id} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />
@@ -34,13 +18,13 @@ var ResultsContainer = React.createClass ({
       }.bind(this));
     var showAlbumResults = (this.props.albumResults.length > 0) ? albumResults : <NoResults/>
     var searchResults = (this.props.queryType === 'artist') ? showArtistResults : showAlbumResults;
-    var resultsNav = <ResultsNav showArtistResults={this.showArtistResults} showAlbumResults={this.showAlbumResults} toggleSearchForm={this.props.toggleSearchForm} />;
+    var resultsNav = <ResultsNav toggleQueryType={this.props.toggleQueryType} toggleSearchForm={this.props.toggleSearchForm} />;
 
     return (
       <Col lg={12}>
         {resultsNav}
         <ListGroup>
-          {this.state.showArtistResults ? showArtistResults : showAlbumResults }
+          {searchResults}
         </ListGroup>
       </Col>
     );
