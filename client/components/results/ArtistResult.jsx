@@ -19,6 +19,7 @@ var ArtistResult = React.createClass({
       discogInProgress: false,
       showDiscogContainer: false,
       showProfileContainer: false,
+      numPages: null,
     };
   },
 
@@ -57,7 +58,11 @@ var ArtistResult = React.createClass({
   },
 
   discogSuccessFunction: function(response) {
-    this.setState({discogDetails: response.all, discogInProgress: false})
+    this.setState({
+      discogDetails: response.releases,
+      discogInProgress: false,
+      numPages: response.pages
+    });
   },
 
   render: function(){
@@ -78,7 +83,7 @@ var ArtistResult = React.createClass({
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
+    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} />
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 

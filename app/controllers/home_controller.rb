@@ -18,5 +18,4 @@ class HomeController < ApplicationController
         results = Discog::Client.new(params[:query]).discog
         render json: results
     end
-
 end

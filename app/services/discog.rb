@@ -23,7 +23,7 @@ module Discog
     end
 
     def discog
-      Filter.new(discog_results).discography
+      discog_results
     end
 
     private
@@ -52,7 +52,12 @@ module Discog
       end
 
       def discog_results
-        self.class.get(discog_url).parsed_response["releases"]
+        results = self.class.get(discog_url).parsed_response
+        filtered = Filter.new(results["releases"]).discography
+        {
+          releases: filtered,
+          pages: results["pagination"]["pages"]
+        }
       end
   end
 end
