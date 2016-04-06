@@ -1,12 +1,16 @@
 module DiscogHelper
 
     def search_keys
-      {'q' => "#{query}"}
+      {
+        'q' => "#{query}",
+        'per_page' => 100
+      }
     end
 
     def discog_keys
       {
         'sort' => 'year',
+        'per_page' => 50,
         'page' => 1
       }
     end
