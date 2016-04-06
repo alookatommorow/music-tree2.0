@@ -16,7 +16,7 @@ var ArtistResult = React.createClass({
       profile: null,
       discogDetails: null,
       profileInProgress: false,
-      discogInProgress: false,
+
       showDiscogContainer: false,
       showProfileContainer: false,
       numPages: null,
@@ -36,13 +36,21 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function(event) {
     event.preventDefault();
-    if (this.state.discogDetails === null) {
-      var query = this.props.result["id"]
+    this.getNumPages();
+  },
+
+  getNumPages: function() {
+    if (this.state.numPages === null) {
       this.setState({discogInProgress: true, showDiscogContainer: true});
-      this.props.ajaxRequest(query, '/discog', this.discogSuccessFunction, this.errorFunction);
+      this.props.ajaxRequest(this.props.result['id'], '/discog', this.numPagesSuccessFunction, this.errorFunction);
     } else {
       this.setState({showDiscogContainer: true});
     }
+  },
+
+  numPagesSuccessFunction: function(response) {
+    console.log(response+"fuck yeah");
+    this.setState({ numPages: response.pages, showDiscogContainer: true });
   },
 
   handleDiscogCloseClick: function(){
@@ -57,13 +65,6 @@ var ArtistResult = React.createClass({
     this.setState({profile: response.profile, profileInProgress: false});
   },
 
-  discogSuccessFunction: function(response) {
-    this.setState({
-      discogDetails: response.releases,
-      discogInProgress: false,
-      numPages: response.pages
-    });
-  },
 
   render: function(){
     var picSource
@@ -83,9 +84,9 @@ var ArtistResult = React.createClass({
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
 
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} />
-    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
-    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
+    var discogContainer = <DiscogContainer numPages={this.state.numPages} inProgress={this.state.discogInProgress} origin={this.props.origin} id={this.props.result.id} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} />
+
+    //var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
     return (
       <ListGroupItem>
@@ -121,7 +122,7 @@ var ArtistResult = React.createClass({
         </Row>
         <div className="clear-both">
           {this.state.showProfileContainer ? profileProgress : null}
-          {this.state.showDiscogContainer ? discogProgress : null}
+          {this.state.showDiscogContainer ? discogContainer : null}
         </div>
       </ListGroupItem>
     );
