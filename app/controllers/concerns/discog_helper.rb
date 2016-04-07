@@ -11,15 +11,14 @@ module DiscogHelper
       {
         'sort' => 'year',
         'per_page' => 50,
-        'page' => 1
+        'page' => "#{page}"
       }
     end
 
     def required_keys
       {
         'key' => "#{ENV['CONSUMER_KEY']}",
-        'secret' => "#{ENV['CONSUMER_SECRET']}",
-        'per_page' => 100
+        'secret' => "#{ENV['CONSUMER_SECRET']}"
       }
     end
 end

@@ -15,7 +15,7 @@ class HomeController < ApplicationController
     end
 
     def discog
-        results = Discog::Client.new(params[:query]).discog
+        results = Discog::Client.new(params[:query], params[:page]).discog
         render json: results
     end
 end

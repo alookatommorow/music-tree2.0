@@ -21,10 +21,10 @@ var AlbumDetailsContainer = React.createClass({
     var label = <div className="two-bottom">{info.labels[0].name}</div>;
     var country = <div className="two-bottom">{info.country}</div>;
     var genre = <div className="two-bottom">{info.genres[0]}</div>;
-    var styles = info.styles == null ? unknown : info.styles.map(function(style){
+    var styles = info.styles === null ? unknown : info.styles.map(function(style){
       return <div key={style}>{style}</div>;
     });
-    var formats = info.formats[0].descriptions == null ? unknown : info.formats[0].descriptions.map(function(style){
+    var formats = info.formats[0].descriptions === null ? unknown : info.formats[0].descriptions.map(function(style){
       return <div key={style}>{style}</div>;
     });
     var tracklist = info.tracklist.map(function(track, index){

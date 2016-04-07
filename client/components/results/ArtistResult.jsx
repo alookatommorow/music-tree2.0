@@ -16,7 +16,6 @@ var ArtistResult = React.createClass({
       profile: null,
       discogDetails: null,
       profileInProgress: false,
-
       showDiscogContainer: false,
       showProfileContainer: false,
       numPages: null,
@@ -49,7 +48,6 @@ var ArtistResult = React.createClass({
   },
 
   numPagesSuccessFunction: function(response) {
-    console.log(response+"fuck yeah");
     this.setState({ numPages: response.pages, showDiscogContainer: true });
   },
 
@@ -80,13 +78,9 @@ var ArtistResult = React.createClass({
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var profileOpenButton = generateButton("Artist Profile", this.handleProfileClick)
     var discogOpenButton = generateButton("Discography", this.handleDiscogClick)
-
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
-
-    var discogContainer = <DiscogContainer numPages={this.state.numPages} inProgress={this.state.discogInProgress} origin={this.props.origin} id={this.props.result.id} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} />
-
-    //var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
+    var discogContainer = <DiscogContainer numPages={this.state.numPages} inProgress={this.state.discogInProgress} origin={this.props.origin} result={this.props.result} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} />
 
     return (
       <ListGroupItem>

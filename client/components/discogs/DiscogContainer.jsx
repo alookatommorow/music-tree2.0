@@ -4,15 +4,13 @@ var Discog = require('./Discog.jsx');
 var Button = require('react-bootstrap/lib/Button');
 var Well = require('react-bootstrap/lib/Well');
 var Pagination = require('react-bootstrap/lib/Pagination');
-var SearchIndicator = require('../search/SearchIndicator.jsx');
+
 
 
 var DiscogContainer = React.createClass({
   getInitialState: function() {
     return {
       activePage: 1,
-      discogInProgress: true,
-      data: {},
     }
   },
 
@@ -31,26 +29,16 @@ var DiscogContainer = React.createClass({
     this.setState({
       activePage: selectedEvent.eventKey,
     });
-    // executeDiscog();
   },
-  // var albums =
-    //   this.props.albums.map(function(album){
-    //     return <AlbumResult key={album.id} ajaxRequest={this.props.ajaxRequest} result={album} origin={this.props.origin} query={this.props.query} />;
-    //   }.bind(this));
 
   render: function(){
-    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
-    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discog;
+
+
     var discogArray = []
 
-    for (var i = 1; i <= this.props.numPages; i++) {
-      if (i === 2) {
-        discogArray.push(<div>Hella Bitches</div>);
-      } else {
-        discogArray.push(<div>Tits</div>);
-      }
+    for (var i = 0; i <= this.props.numPages; i++) {
+      discogArray.push(<Discog key={i} pageNum={i} origin={this.props.origin} stringy="fuckbot" ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
     }
-    console.log(discogArray[1]);
 
 
     var closeButton =
@@ -60,7 +48,7 @@ var DiscogContainer = React.createClass({
 
     var header = <Well className="detail-discog-header">{this.props.title} Discography</Well>
 
-    var discog =
+    var discogDisplay =
       <div className="details-display">
         {closeButton}
         <div className="center-text">
@@ -73,7 +61,7 @@ var DiscogContainer = React.createClass({
             ellipsis
             boundaryLinks
             bsSize="large"
-            items={20}
+            items={this.props.numPages}
             maxButtons={5}
             activePage={this.state.activePage}
             onSelect={this.handleSelect} />
@@ -83,13 +71,7 @@ var DiscogContainer = React.createClass({
         </div>
       </div>
 
-    var noDiscog =
-      <div>
-        {closeButton}
-        <div className="no-results">Discography Unavailable</div>
-      </div>
 
-    var discogDisplay = this.state.data !== null ? discog : noDiscog;
 
     return(
       <div>
