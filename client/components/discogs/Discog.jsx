@@ -3,6 +3,7 @@ var AlbumResult = require('../results/AlbumResult.jsx');
 var Button = require('react-bootstrap/lib/Button');
 var Pagination = require('react-bootstrap/lib/Pagination');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
+var update = require('react-addons-update');
 
 var Discog = React.createClass({
   getInitialState: function() {
@@ -19,12 +20,12 @@ var Discog = React.createClass({
   },
 
   executeDiscog: function() {
-    $.ajax({
-      url: this.props.origin + '/discog',
-      data: {query: this.props.result['id'], page: this.props.pageNum},
-    })
-    .done(this.discogSuccessFunction)
-    .fail(this.errorFunction);
+    this.props.ajaxRequest(
+        {query: this.props.result['id'], page: this.props.pageNum},
+        '/discog',
+        this.discogSuccessFunction,
+        this.errorFunction
+      );
   },
 
   errorFunction: function(response) {
@@ -32,7 +33,6 @@ var Discog = React.createClass({
   },
 
   discogSuccessFunction: function(response) {
-    console.log(response);
     this.setState({ releases: response.releases, discogInProcess: false});
   },
 

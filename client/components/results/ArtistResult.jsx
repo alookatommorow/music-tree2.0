@@ -22,12 +22,18 @@ var ArtistResult = React.createClass({
     };
   },
 
+
+
   handleProfileClick: function(event) {
     event.preventDefault();
     if (this.state.profile === null) {
-      var query = this.props.result["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
-      this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
+      this.props.ajaxRequest(
+        {query: this.props.result["id"]},
+        '/artist_info',
+        this.profileSuccessFunction,
+        this.errorFunction
+      );
     } else {
       this.setState({showProfileContainer: true})
     }
@@ -41,7 +47,12 @@ var ArtistResult = React.createClass({
   getNumPages: function() {
     if (this.state.numPages === null) {
       this.setState({discogInProgress: true, showDiscogContainer: true});
-      this.props.ajaxRequest(this.props.result['id'], '/discog', this.numPagesSuccessFunction, this.errorFunction);
+      this.props.ajaxRequest(
+        {query: this.props.result["id"]},
+        '/discog',
+        this.numPagesSuccessFunction,
+        this.errorFunction
+      );
     } else {
       this.setState({showDiscogContainer: true});
     }
