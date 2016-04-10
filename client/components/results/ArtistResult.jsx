@@ -69,6 +69,15 @@ var ArtistResult = React.createClass({
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
     var discogContainer = <DiscogContainer numPages={this.state.numPages} origin={this.props.origin} result={this.props.result} discogInProgress={this.state.discogInProgress} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.firstDiscog} />
+    var buttons =
+      <div>
+        <div className="one-right inline-block">
+          {profileOpenButton}
+        </div>
+        <div className="inline-block">
+          {discogOpenButton}
+        </div>
+      </div>
 
     return (
       <ListGroupItem>
@@ -81,12 +90,7 @@ var ArtistResult = React.createClass({
             </div>
           </Col>
           <Col xsHidden={true} sm={8} className="artist-buttons">
-            <div className="one-right inline-block">
-              {profileOpenButton}
-            </div>
-            <div className="inline-block">
-              {discogOpenButton}
-            </div>
+            {buttons}
           </Col>
           <Col xs={10} xsOffset={1} sm={8} smOffset={0} >
             <div className="artist-result-title">
@@ -94,12 +98,7 @@ var ArtistResult = React.createClass({
             </div>
           </Col>
           <Col xs={10} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="artist-buttons">
-            <div className="one-right inline-block">
-              {profileOpenButton}
-            </div>
-            <div className="inline-block">
-              {discogOpenButton}
-            </div>
+            {buttons}
           </Col>
         </Row>
         <div className="clear-both">
