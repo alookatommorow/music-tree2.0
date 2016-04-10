@@ -38,7 +38,7 @@ module Discog
       end
 
       def discog_url
-        p URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
+        URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
       end
 
       def format_url(url, keys)
