@@ -56,10 +56,7 @@ module Discog
       def discog_results
         results = self.class.get(discog_url).parsed_response
         filtered = Filter.new(results["releases"]).discography
-        {
-          releases: filtered,
-          pages: results["pagination"]["pages"]
-        }
+
       end
   end
 end

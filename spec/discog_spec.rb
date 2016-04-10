@@ -31,11 +31,11 @@ RSpec.describe Discog, type: :model do
 
   context '#discog' do
     it 'should retrieve artist discography from Discogs API' do
-      stub_request(:get, "https://api.discogs.com/artists/obituary/releases?key=#{ENV['CONSUMER_KEY']}&page=1&per_page=100&secret=#{ENV['CONSUMER_SECRET']}&sort=year").
+      stub_request(:get, "https://api.discogs.com/artists/251635/releases?key=#{ENV['CONSUMER_KEY']}&page=1&per_page=50&secret=#{ENV['CONSUMER_SECRET']}&sort=year").
         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
         to_return(:status => 200, :body => File.open('spec/support/discog.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
 
-      results = Discog::Client.new("obituary").discog
+      results = Discog::Client.new(251635).discog
       response = JSON.parse(File.open('spec/support/discog.json').read)
       expected = Filter.new(response["releases"]).discography
 
