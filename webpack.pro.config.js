@@ -1,6 +1,5 @@
 var config = require('./webpack.config.js');
 var webpack = require('webpack');
-require('es6-promise').polyfill();
 
 config.plugins.push(
   new webpack.DefinePlugin({
