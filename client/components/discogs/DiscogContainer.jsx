@@ -26,7 +26,7 @@ var DiscogContainer = React.createClass({
 
   handleSelect: function(event, selectedEvent) {
     var currentPage = selectedEvent.eventKey;
-    if (this.state.pages[currentPage] === undefined) {
+    if (this.state.pages[currentPage] == null) {
       this.setState({discogInProgress: true, activePage: currentPage});
       this.getDiscog(this.discogSuccessFunction, currentPage);
     } else {
