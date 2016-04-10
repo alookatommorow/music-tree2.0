@@ -23,7 +23,7 @@ var Discog = React.createClass({
 
     return(
       <div>
-        {discografia}
+        {this.props.albums[this.props.pageNum].length > 0 ? discografia : noDiscog}
       </div>
     );
   },
