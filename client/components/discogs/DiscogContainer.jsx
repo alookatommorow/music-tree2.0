@@ -5,30 +5,74 @@ var Button = require('react-bootstrap/lib/Button');
 var Well = require('react-bootstrap/lib/Well');
 var Pagination = require('react-bootstrap/lib/Pagination');
 var update = require('react-addons-update');
+var SearchIndicator = require('../search/SearchIndicator.jsx');
+
 
 var DiscogContainer = React.createClass({
   getInitialState: function() {
     return {
+      numPages: null,
       activePage: 1,
-      pages: {
-        1: this.props.firstDiscog,
-      }
+      discogInProgress: false,
+      pages: {}
     }
+  },
+
+  componentDidMount: function() {
+    this.setState({discogInProgress: true});
+    this.getDiscog(this.firstSuccessFunction);
   },
 
   handleSelect: function(event, selectedEvent) {
     var currentPage = selectedEvent.eventKey;
+    if (this.state.pages[currentPage] === undefined) {
+      this.setState({discogInProgress: true, activePage: currentPage});
+      this.getDiscog(this.discogSuccessFunction, currentPage);
+    } else {
+      this.setState({activePage: currentPage})
+    }
+  },
+
+  getDiscog: function(successFunction, currentPage) {
+      this.props.ajaxRequest(
+        {query: this.props.result["id"], page: currentPage},
+        '/discog',
+        successFunction,
+        this.errorFunction
+      );
+  },
+
+  firstSuccessFunction: function(response) {
     var obj = {};
-    obj[currentPage] = "nutters";
-    var updatedState = update(this.state, {pages: {$merge: obj}, activePage: {$set: currentPage}});
+    obj[this.state.activePage] = response.releases;
+    var updatedState = update(this.state, {
+      discogInProgress: {$set: false},
+      numPages: {$set: Math.ceil(response.pages/4)},
+      pages: {$merge: obj},
+    });
+    this.setState(updatedState);
+  },
+
+  discogSuccessFunction: function(response) {
+    var obj = {};
+    obj[this.state.activePage] = response.releases;
+    var updatedState = update(this.state, {
+      discogInProgress: {$set: false},
+      pages: {$merge: obj},
+    });
     this.setState(updatedState);
   },
 
   render: function(){
     var discogArray = [];
-    for (var i = 0; i <= this.props.numPages; i++) {
-      discogArray.push(<Discog key={i} pageNum={i} albums={this.state.pages} origin={this.props.origin} ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
-    }
+
+      for (var i = 0; i <= this.state.numPages; i++) {
+        console.log("pushing album");
+        discogArray.push(<Discog key={i} pageNum={i} albums={this.state.pages} origin={this.props.origin} ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
+      }
+
+    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
+    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogArray[this.state.activePage];
 
     var closeButton =
       <div className="right two-bottom">
@@ -50,13 +94,13 @@ var DiscogContainer = React.createClass({
             ellipsis
             boundaryLinks
             bsSize="large"
-            items={this.props.numPages}
+            items={this.state.numPages}
             maxButtons={5}
             activePage={this.state.activePage}
             onSelect={this.handleSelect} />
         </div>
         <div className="clear-right left-text">
-          {discogArray[this.state.activePage]}
+          {discogProgress}
         </div>
       </div>
 

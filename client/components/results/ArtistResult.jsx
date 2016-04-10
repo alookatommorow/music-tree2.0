@@ -20,6 +20,7 @@ var ArtistResult = React.createClass({
       showProfileContainer: false,
       numPages: null,
       firstDiscog: null,
+      discogInProgress: false,
     };
   },
 
@@ -40,7 +41,7 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function(event) {
     event.preventDefault();
-    this.getDiscog();
+    this.setState({showDiscogContainer: true});
   },
 
   getDiscog: function() {
@@ -94,9 +95,9 @@ var ArtistResult = React.createClass({
     var discogOpenButton = generateButton("Discography", this.handleDiscogClick)
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
-    var discogContainer = <DiscogContainer numPages={this.state.numPages} origin={this.props.origin} result={this.props.result} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.firstDiscog} />
+    var discogContainer = <DiscogContainer numPages={this.state.numPages} origin={this.props.origin} result={this.props.result} discogInProgress={this.state.discogInProgress} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.firstDiscog} />
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
-    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
+    // var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
     return (
       <ListGroupItem>
@@ -132,7 +133,7 @@ var ArtistResult = React.createClass({
         </Row>
         <div className="clear-both">
           {this.state.showProfileContainer ? profileProgress : null}
-          {this.state.showDiscogContainer ? discogProgress : null}
+          {this.state.showDiscogContainer ? discogContainer : null}
         </div>
       </ListGroupItem>
     );
