@@ -37,7 +37,11 @@ RSpec.describe Discog, type: :model do
 
       results = Discog::Client.new(251635).discog
       response = JSON.parse(File.open('spec/support/discog.json').read)
-      expected = Filter.new(response["releases"]).discography
+      expected_releases = Filter.new(response["releases"]).discography
+      expected = {
+          releases: expected_releases,
+          pages: response["pagination"]["pages"]
+        }
 
       expect(results).to eq(expected)
     end
