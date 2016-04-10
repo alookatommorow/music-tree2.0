@@ -18,7 +18,7 @@ var AlbumResult = React.createClass({
     //if details not yet loaded, fetch, else just display
     if (this.state.albumInfo === null) {
       var query = this.props.result["id"];
-      this.props.ajaxRequest(query, '/album_info', this.successFunction, this.errorFunction);
+      this.props.ajaxRequest({query: query}, '/album_info', this.successFunction, this.errorFunction);
     } else {
       this.setState({showDetailsContainer: true})
     }

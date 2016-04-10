@@ -11,25 +11,30 @@ var AlbumDetailsContainer = React.createClass({
 
     var info = this.props.albumInfo;
     var unknown = <div>Unknown</div>
-    var genreHeader = generateHeader("Genre: ");
-    var labelHeader = generateHeader("Label: ");
-    var countryHeader = generateHeader("Country: ");
-    var stylesHeader = generateHeader("Styles: ");
-    var tracklistHeader = generateHeader("Tracklist: ");
-    var formatsHeader = generateHeader("Formats: ");
+    var genreHeader = generateHeader("Genre:");
+    var labelHeader = generateHeader("Label:");
+    var countryHeader = generateHeader("Country:");
+    var stylesHeader = generateHeader("Styles:");
+    var tracklistHeader = generateHeader("Tracklist:");
+    var formatsHeader = generateHeader("Formats:");
+    var artistHeader = generateHeader("Artist:");
 
     var label = <div className="two-bottom">{info.labels[0].name}</div>;
     var country = <div className="two-bottom">{info.country}</div>;
     var genre = <div className="two-bottom">{info.genres[0]}</div>;
-    var styles = info.styles == null ? unknown : info.styles.map(function(style){
+    var styles = info.styles === null ? unknown : info.styles.map(function(style){
       return <div key={style}>{style}</div>;
     });
-    var formats = info.formats[0].descriptions == null ? unknown : info.formats[0].descriptions.map(function(style){
+    var formats = info.formats[0].descriptions === null ? unknown : info.formats[0].descriptions.map(function(style){
       return <div key={style}>{style}</div>;
     });
     var tracklist = info.tracklist.map(function(track, index){
       return <div key={index}>{index+1}. {track['title']}</div>
     });
+    var generateXsHiddenCol = function(itemOne, itemTwo) {
+      return <Col sm={2} smOffset={0} xsHidden={true}> {itemOne} {itemTwo} </Col>
+    }
+
 
     return (
       <div>
@@ -38,26 +43,10 @@ var AlbumDetailsContainer = React.createClass({
             {genreHeader}
             {info.genres[0] == null ? unknown : genre}
           </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {countryHeader}
-            {info.country == null ? unknown : country}
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {stylesHeader}
-            <div className="two-bottom">
-              {styles}
-            </div>
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {labelHeader}
-            {info.labels[0] == null ? unknown : label}
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {formatsHeader}
-            <div className="two-bottom">
-              {formats}
-            </div>
-          </Col>
+          {generateXsHiddenCol(countryHeader, info.country == null ? unknown : country)}
+          {generateXsHiddenCol(stylesHeader, styles)}
+          {generateXsHiddenCol(labelHeader, info.labels == null ? unknown : label)}
+          {generateXsHiddenCol(formatsHeader, <div className="two-bottom">{formats}</div>)}
           <Col xs={5} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}>
             {genreHeader}
             {info.genres[0] == null ? unknown : genre}
@@ -78,8 +67,12 @@ var AlbumDetailsContainer = React.createClass({
           </Col>
         </Row>
         <Row>
-          <Col xs={10} xsOffset={1}>
+          <Col xs={10} xsOffset={0}>
             <Well>
+              <div className="two-bottom">
+                {artistHeader}
+                {info.artists[0].name}
+              </div>
               <div className="left-text bold">
                 {tracklistHeader}
               </div>
@@ -90,7 +83,6 @@ var AlbumDetailsContainer = React.createClass({
           </Col>
         </Row>
       </div>
-
     );
   }
 });

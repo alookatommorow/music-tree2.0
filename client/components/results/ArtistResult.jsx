@@ -5,7 +5,6 @@ var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var Button = require('react-bootstrap/lib/Button');
-var ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 var Image = require('react-bootstrap/lib/Image');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
@@ -16,7 +15,6 @@ var ArtistResult = React.createClass({
       profile: null,
       discogDetails: null,
       profileInProgress: false,
-      discogInProgress: false,
       showDiscogContainer: false,
       showProfileContainer: false,
     };
@@ -25,9 +23,13 @@ var ArtistResult = React.createClass({
   handleProfileClick: function(event) {
     event.preventDefault();
     if (this.state.profile === null) {
-      var query = this.props.result["id"];
       this.setState({profileInProgress: true, showProfileContainer: true});
-      this.props.ajaxRequest(query, '/artist_info', this.profileSuccessFunction, this.errorFunction);
+      this.props.ajaxRequest(
+        {query: this.props.result["id"]},
+        '/artist_info',
+        this.profileSuccessFunction,
+        this.errorFunction
+      );
     } else {
       this.setState({showProfileContainer: true})
     }
@@ -35,13 +37,7 @@ var ArtistResult = React.createClass({
 
   handleDiscogClick: function(event) {
     event.preventDefault();
-    if (this.state.discogDetails === null) {
-      var query = this.props.result["id"]
-      this.setState({discogInProgress: true, showDiscogContainer: true});
-      this.props.ajaxRequest(query, '/discog', this.discogSuccessFunction, this.errorFunction);
-    } else {
-      this.setState({showDiscogContainer: true});
-    }
+    this.setState({showDiscogContainer: true});
   },
 
   handleDiscogCloseClick: function(){
@@ -54,10 +50,6 @@ var ArtistResult = React.createClass({
 
   profileSuccessFunction: function(response) {
     this.setState({profile: response.profile, profileInProgress: false});
-  },
-
-  discogSuccessFunction: function(response) {
-    this.setState({discogDetails: response.all, discogInProgress: false})
   },
 
   render: function(){
@@ -74,13 +66,18 @@ var ArtistResult = React.createClass({
       <ArtistProfileContainer handleCloseClick={this.handleProfileCloseClick} title={this.props.result.title}  profile={this.state.profile} queryType={this.props.queryType} />
     var profileOpenButton = generateButton("Artist Profile", this.handleProfileClick)
     var discogOpenButton = generateButton("Discography", this.handleDiscogClick)
-
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
-
-    var discogContainer = <DiscogContainer inProgress={this.state.discogInProgress} origin={this.props.origin} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.discogDetails} eps={this.state.eps} lps={this.state.lps}/>
-    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
-    var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
+    var discogContainer = <DiscogContainer numPages={this.state.numPages} origin={this.props.origin} result={this.props.result} discogInProgress={this.state.discogInProgress} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.firstDiscog} />
+    var buttons =
+      <div>
+        <div className="one-right inline-block">
+          {profileOpenButton}
+        </div>
+        <div className="inline-block">
+          {discogOpenButton}
+        </div>
+      </div>
 
     return (
       <ListGroupItem>
@@ -93,12 +90,7 @@ var ArtistResult = React.createClass({
             </div>
           </Col>
           <Col xsHidden={true} sm={8} className="artist-buttons">
-            <div className="one-right inline-block">
-              {profileOpenButton}
-            </div>
-            <div className="inline-block">
-              {discogOpenButton}
-            </div>
+            {buttons}
           </Col>
           <Col xs={10} xsOffset={1} sm={8} smOffset={0} >
             <div className="artist-result-title">
@@ -106,17 +98,12 @@ var ArtistResult = React.createClass({
             </div>
           </Col>
           <Col xs={10} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="artist-buttons">
-            <div className="one-right inline-block">
-              {profileOpenButton}
-            </div>
-            <div className="inline-block">
-              {discogOpenButton}
-            </div>
+            {buttons}
           </Col>
         </Row>
         <div className="clear-both">
           {this.state.showProfileContainer ? profileProgress : null}
-          {this.state.showDiscogContainer ? discogProgress : null}
+          {this.state.showDiscogContainer ? discogContainer : null}
         </div>
       </ListGroupItem>
     );

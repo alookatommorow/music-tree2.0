@@ -22,10 +22,10 @@ var SearchContainer = React.createClass({
     this.setState({query: event.target.value});
   },
 
-  ajaxRequest: function(query, url, successFunction, errorFunction){
+  ajaxRequest: function(data, url, successFunction, errorFunction){
     $.ajax({
       url: this.props.origin + url,
-      data: {query: query},
+      data: data,
     })
     .done(successFunction)
     .fail(errorFunction);
@@ -34,7 +34,12 @@ var SearchContainer = React.createClass({
   handleSubmit: function(event) {
     event.preventDefault();
     this.setState({showSearchForm: false, showSearchResults: true, inProgress: true});
-    this.ajaxRequest(this.state.query, '/search', this.successFunction, this.errorFunction);
+    this.ajaxRequest(
+      {query: this.state.query},
+      '/search',
+      this.successFunction,
+      this.errorFunction
+    );
   },
 
   toggleSearchForm: function(event) {

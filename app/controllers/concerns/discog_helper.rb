@@ -1,21 +1,24 @@
 module DiscogHelper
 
     def search_keys
-      {'q' => "#{query}"}
+      {
+        'q' => "#{query}",
+        'per_page' => 100
+      }
     end
 
     def discog_keys
       {
         'sort' => 'year',
-        'page' => 1
+        'per_page' => 50,
+        'page' => "#{page}"
       }
     end
 
     def required_keys
       {
         'key' => "#{ENV['CONSUMER_KEY']}",
-        'secret' => "#{ENV['CONSUMER_SECRET']}",
-        'per_page' => 100
+        'secret' => "#{ENV['CONSUMER_SECRET']}"
       }
     end
 end

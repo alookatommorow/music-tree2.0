@@ -14,7 +14,7 @@ RSpec.describe Discog, type: :model do
   context '#discography' do
     it 'should sort search results into apporpriate categories' do
       results = JSON.parse(File.open('spec/support/discog.json').read)
-      expected = JSON.parse(File.open('spec/support/filtered_discog.json').read).symbolize_keys
+      expected = JSON.parse(File.open('spec/support/filtered_discog.json').read)
 
       expect(Filter.new(results["releases"]).discography).to eq(expected)
     end

@@ -16,23 +16,14 @@ class Filter
   end
 
   def discography
-    {all: clean_discog}
+    filter_masters.uniq { |album| album['id'] }
   end
 
   private
 
-    attr_accessor :results
-
-    def remove_dups
-      results.uniq! { |album| album['id'] }
-    end
+    attr_reader :results
 
     def filter_masters
       results.select { |album| album["type"] == "master"}
-    end
-
-    def clean_discog
-      remove_dups
-      filter_masters
     end
 end
