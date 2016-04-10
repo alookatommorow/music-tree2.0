@@ -31,6 +31,10 @@ var AlbumDetailsContainer = React.createClass({
     var tracklist = info.tracklist.map(function(track, index){
       return <div key={index}>{index+1}. {track['title']}</div>
     });
+    var generateXsHiddenCol = function(itemOne, itemTwo) {
+      return <Col sm={2} smOffset={0} xsHidden={true}> {itemOne} {itemTwo} </Col>
+    }
+
 
     return (
       <div>
@@ -39,26 +43,10 @@ var AlbumDetailsContainer = React.createClass({
             {genreHeader}
             {info.genres[0] == null ? unknown : genre}
           </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {countryHeader}
-            {info.country == null ? unknown : country}
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {stylesHeader}
-            <div className="two-bottom">
-              {styles}
-            </div>
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {labelHeader}
-            {info.labels[0] == null ? unknown : label}
-          </Col>
-          <Col sm={2} smOffset={0} xsHidden={true}>
-            {formatsHeader}
-            <div className="two-bottom">
-              {formats}
-            </div>
-          </Col>
+          {generateXsHiddenCol(countryHeader, info.country == null ? unknown : country)}
+          {generateXsHiddenCol(stylesHeader, styles)}
+          {generateXsHiddenCol(labelHeader, info.labels == null ? unknown : label)}
+          {generateXsHiddenCol(formatsHeader, <div className="two-bottom">{formats}</div>)}
           <Col xs={5} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}>
             {genreHeader}
             {info.genres[0] == null ? unknown : genre}
@@ -79,7 +67,7 @@ var AlbumDetailsContainer = React.createClass({
           </Col>
         </Row>
         <Row>
-          <Col xs={10} xsOffset={1}>
+          <Col xs={10} xsOffset={0}>
             <Well>
               <div className="two-bottom">
                 {artistHeader}
