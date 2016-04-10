@@ -5,7 +5,6 @@ var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var Button = require('react-bootstrap/lib/Button');
-var ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 var Image = require('react-bootstrap/lib/Image');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
@@ -18,9 +17,6 @@ var ArtistResult = React.createClass({
       profileInProgress: false,
       showDiscogContainer: false,
       showProfileContainer: false,
-      numPages: null,
-      firstDiscog: null,
-      discogInProgress: false,
     };
   },
 
@@ -44,28 +40,6 @@ var ArtistResult = React.createClass({
     this.setState({showDiscogContainer: true});
   },
 
-  getDiscog: function() {
-    if (this.state.numPages === null) {
-      this.setState({discogInProgress: true, showDiscogContainer: true});
-      this.props.ajaxRequest(
-        {query: this.props.result["id"], page: 1},
-        '/discog',
-        this.discogSuccessFunction,
-        this.errorFunction
-      );
-    } else {
-      this.setState({showDiscogContainer: true});
-    }
-  },
-
-  discogSuccessFunction: function(response) {
-    this.setState({
-      discogInProgress: false,
-      numPages: Math.ceil(response.pages/3),
-      firstDiscog: response.releases,
-    });
-  },
-
   handleDiscogCloseClick: function(){
     this.setState({showDiscogContainer: false});
   },
@@ -77,7 +51,6 @@ var ArtistResult = React.createClass({
   profileSuccessFunction: function(response) {
     this.setState({profile: response.profile, profileInProgress: false});
   },
-
 
   render: function(){
     var picSource
@@ -96,8 +69,6 @@ var ArtistResult = React.createClass({
     var profileSearchIndicator = <SearchIndicator text={"Fetching Profile..."}/>
     var profileProgress = this.state.profileInProgress ? profileSearchIndicator : profileContainer;
     var discogContainer = <DiscogContainer numPages={this.state.numPages} origin={this.props.origin} result={this.props.result} discogInProgress={this.state.discogInProgress} title={this.props.result.title} handleCloseClick={this.handleDiscogCloseClick} ajaxRequest={this.props.ajaxRequest} albums={this.state.firstDiscog} />
-    var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
-    // var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogContainer;
 
     return (
       <ListGroupItem>

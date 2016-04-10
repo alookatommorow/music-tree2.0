@@ -1,11 +1,12 @@
 var React = require('react');
+var update = require('react-addons-update');
 var AlbumResult = require('../results/AlbumResult.jsx');
 var Discog = require('./Discog.jsx');
+var SearchIndicator = require('../search/SearchIndicator.jsx');
+
 var Button = require('react-bootstrap/lib/Button');
 var Well = require('react-bootstrap/lib/Well');
 var Pagination = require('react-bootstrap/lib/Pagination');
-var update = require('react-addons-update');
-var SearchIndicator = require('../search/SearchIndicator.jsx');
 
 
 var DiscogContainer = React.createClass({
@@ -34,12 +35,12 @@ var DiscogContainer = React.createClass({
   },
 
   getDiscog: function(successFunction, currentPage) {
-      this.props.ajaxRequest(
-        {query: this.props.result["id"], page: currentPage},
-        '/discog',
-        successFunction,
-        this.errorFunction
-      );
+    this.props.ajaxRequest(
+      {query: this.props.result["id"], page: currentPage},
+      '/discog',
+      successFunction,
+      this.errorFunction
+    );
   },
 
   firstSuccessFunction: function(response) {
@@ -65,22 +66,17 @@ var DiscogContainer = React.createClass({
 
   render: function(){
     var discogArray = [];
-
-      for (var i = 0; i <= this.state.numPages; i++) {
-        console.log("pushing album");
-        discogArray.push(<Discog key={i} pageNum={i} albums={this.state.pages} origin={this.props.origin} ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
-      }
+    for (var i = 0; i <= this.state.numPages; i++) {
+      discogArray.push(<Discog key={i} pageNum={i} albums={this.state.pages} origin={this.props.origin} ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
+    }
 
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discogArray[this.state.activePage];
-
     var closeButton =
       <div className="right two-bottom">
         <Button bsStyle="danger" onClick={this.props.handleCloseClick}>CLOSE</Button>
       </div>
-
     var header = <Well className="detail-discog-header">{this.props.title} Discography</Well>
-
     var discogDisplay =
       <div className="details-display">
         {closeButton}
@@ -103,8 +99,6 @@ var DiscogContainer = React.createClass({
           {discogProgress}
         </div>
       </div>
-
-
 
     return(
       <div>
