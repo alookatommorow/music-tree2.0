@@ -67,7 +67,7 @@ var AlbumDetailsContainer = React.createClass({
           </Col>
         </Row>
         <Row>
-          <Col xs={10} xsOffset={0}>
+          <Col xs={10} xsOffset={1}>
             <Well>
               <div className="two-bottom">
                 {artistHeader}
