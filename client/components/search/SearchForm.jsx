@@ -1,5 +1,4 @@
 var React = require('react');
-var injectTapEventPlugin = require("react-tap-event-plugin");
 var ResultsContainer = require('../results/ResultsContainer.jsx');
 var Input = require('react-bootstrap/lib/Input');
 var Button = require('react-bootstrap/lib/Button');
