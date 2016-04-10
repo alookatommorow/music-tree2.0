@@ -14,7 +14,7 @@ MusicTree is deployed to Heroku. Visit the app [here](https://music-tree.herokua
 
 ##Technology
 
-Music Tree is a fully decoupled, single-page app built in [React](https://facebook.github.io/react/) and [Rails](rubyonrails.org). [Material-UI](http://www.material-ui.com/) helps it look nice.
+Music Tree is a fully decoupled, single-page app built in [React](https://facebook.github.io/react/) and [Rails](rubyonrails.org). [React-Bootstrap](https://react-bootstrap.github.io/) helps it look nice.
 
 ##Explore
 
