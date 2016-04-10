@@ -11,12 +11,13 @@ var AlbumDetailsContainer = React.createClass({
 
     var info = this.props.albumInfo;
     var unknown = <div>Unknown</div>
-    var genreHeader = generateHeader("Genre: ");
-    var labelHeader = generateHeader("Label: ");
-    var countryHeader = generateHeader("Country: ");
-    var stylesHeader = generateHeader("Styles: ");
-    var tracklistHeader = generateHeader("Tracklist: ");
-    var formatsHeader = generateHeader("Formats: ");
+    var genreHeader = generateHeader("Genre:");
+    var labelHeader = generateHeader("Label:");
+    var countryHeader = generateHeader("Country:");
+    var stylesHeader = generateHeader("Styles:");
+    var tracklistHeader = generateHeader("Tracklist:");
+    var formatsHeader = generateHeader("Formats:");
+    var artistHeader = generateHeader("Artist:");
 
     var label = <div className="two-bottom">{info.labels[0].name}</div>;
     var country = <div className="two-bottom">{info.country}</div>;
@@ -80,6 +81,10 @@ var AlbumDetailsContainer = React.createClass({
         <Row>
           <Col xs={10} xsOffset={1}>
             <Well>
+              <div className="two-bottom">
+                {artistHeader}
+                {info.artists[0].name}
+              </div>
               <div className="left-text bold">
                 {tracklistHeader}
               </div>
@@ -90,7 +95,6 @@ var AlbumDetailsContainer = React.createClass({
           </Col>
         </Row>
       </div>
-
     );
   }
 });
