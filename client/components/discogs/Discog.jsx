@@ -37,6 +37,7 @@ var Discog = React.createClass({
   },
 
   render: function(){
+    console.log(this.props.pageNum)
     var discogSearchIndicator = <SearchIndicator text={"Fetching Discography..."}/>
     var discogProgress = this.state.discogInProgress ? discogSearchIndicator : discografia;
     var noDiscog =

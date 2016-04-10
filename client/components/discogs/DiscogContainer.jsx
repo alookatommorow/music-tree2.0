@@ -10,31 +10,25 @@ var DiscogContainer = React.createClass({
   getInitialState: function() {
     return {
       activePage: 1,
-      pages: {}
+      pages: {
+        1: this.props.firstDiscog,
+      }
     }
   },
 
   handleSelect: function(event, selectedEvent) {
     var currentPage = selectedEvent.eventKey;
     var obj = {};
-    obj[currentPage] = "nutters"
+    obj[currentPage] = "nutters";
     var updatedState = update(this.state, {pages: {$merge: obj}, activePage: {$set: currentPage}});
     this.setState(updatedState);
-    // this.setState({
-    //   // currentPage: "nuts",
-    //   activePage: currentPage,
-    // });
   },
 
   render: function(){
-
-    console.log(this.state.pages[2]);
     var discogArray = [];
-
     for (var i = 0; i <= this.props.numPages; i++) {
-      discogArray.push(<Discog key={i} pageNum={i} origin={this.props.origin} stringy="fuckbot" ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
+      discogArray.push(<Discog key={i} pageNum={i} albums={this.state.pages} origin={this.props.origin} ajaxRequest={this.props.ajaxRequest} result={this.props.result} />);
     }
-
 
     var closeButton =
       <div className="right two-bottom">
