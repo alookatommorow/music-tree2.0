@@ -1,7 +1,7 @@
 module Discog
   class Client
     include HTTParty
-    include DiscogHelper
+    include UriHelper
 
     def initialize(query, page = 1)
       @query = query
@@ -30,19 +30,6 @@ module Discog
     private
 
       attr_reader :query, :page
-
-      def search_url
-        ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
-        URI.parse("/database/search").tap {|url| format_url(url, search_keys).to_s }
-      end
-
-      def discography_url
-        URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
-      end
-
-      def format_url(url, keys)
-        url.query = URI::encode_www_form(keys.merge(required_keys))
-      end
 
       def get_main_release
         self.class.get("/masters/#{query}").parsed_response["main_release"]
