@@ -1,6 +1,5 @@
 class DiscographiesController < ApplicationController
   def show
-    results = Discog::Client.new(params[:query], params[:page]).discog
-    render json: results
+    render json: Discog::Client.new(params[:query], params[:page]).discography
   end
 end
