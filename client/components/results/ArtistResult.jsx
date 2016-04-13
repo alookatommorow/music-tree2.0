@@ -13,7 +13,6 @@ var ArtistResult = React.createClass({
   getInitialState: function(){
     return {
       profile: null,
-      discogDetails: null,
       profileInProgress: false,
       showDiscogContainer: false,
       showProfileContainer: false,

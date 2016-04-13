@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   resources :artist_profiles, only: :show
   resources :album_details, only: :show
+  get 'discography', to: 'discographies#show'
   get '/search', to: 'searches#show'
-  get '/discog', to: 'home#discog'
-  # get  '*path', to: 'home#index'
-  root         to: 'home#index'
+
+  root 'home#index'
 end
