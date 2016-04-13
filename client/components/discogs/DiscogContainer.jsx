@@ -37,7 +37,7 @@ var DiscogContainer = React.createClass({
   getDiscog: function(successFunction, currentPage) {
     this.props.ajaxRequest(
       {query: this.props.result["id"], page: currentPage},
-      '/discog',
+      '/discography',
       successFunction,
       this.errorFunction
     );

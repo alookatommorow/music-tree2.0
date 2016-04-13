@@ -13,7 +13,6 @@ var ArtistResult = React.createClass({
   getInitialState: function(){
     return {
       profile: null,
-      discogDetails: null,
       profileInProgress: false,
       showDiscogContainer: false,
       showProfileContainer: false,
@@ -25,8 +24,8 @@ var ArtistResult = React.createClass({
     if (this.state.profile === null) {
       this.setState({profileInProgress: true, showProfileContainer: true});
       this.props.ajaxRequest(
-        {query: this.props.result["id"]},
-        '/artist_info',
+        {query: ''},
+        "/artist_profiles/"+this.props.result['id'],
         this.profileSuccessFunction,
         this.errorFunction
       );

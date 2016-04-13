@@ -14,30 +14,29 @@ module Discog
       Filter.new(search_results).search
     end
 
-    def artist_info
+    def artist_profile
       self.class.get("/artists/#{query}").parsed_response["profile"]
     end
 
-    def album_info
+    def album_details
       @query = get_main_release
       self.class.get("/releases/#{query}").parsed_response
     end
 
-    def discog
-      discog_results
+    def discography
+      discography_results
     end
 
     private
 
-      attr_accessor :query
-      attr_reader :page
+      attr_reader :query, :page
 
       def search_url
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
         URI.parse("/database/search").tap {|url| format_url(url, search_keys).to_s }
       end
 
-      def discog_url
+      def discography_url
         URI.parse("/artists/#{query}/releases").tap {|url| format_url(url, discog_keys).to_s }
       end
 
@@ -53,8 +52,8 @@ module Discog
         self.class.get(search_url).parsed_response["results"]
       end
 
-      def discog_results
-        results = self.class.get(discog_url).parsed_response
+      def discography_results
+        results = self.class.get(discography_url).parsed_response
         {
           releases: Filter.new(results["releases"]).discography,
           pages: results["pagination"]["pages"]
