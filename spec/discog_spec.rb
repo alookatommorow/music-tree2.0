@@ -16,26 +16,26 @@ RSpec.describe Discog, type: :model do
     end
   end
 
-  context '#artist_info' do
+  context '#artist_profile' do
     it 'should retrieve artist info from Discogs API' do
       stub_request(:get, "https://api.discogs.com/artists/136188").
         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
         to_return(:status => 200, :body => File.open('spec/support/artist_info.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
 
       expected = JSON.parse(File.open('spec/support/artist_info.json').read)["profile"]
-      results = Discog::Client.new(136188).artist_info
+      results = Discog::Client.new(136188).artist_profile
 
       expect(results).to eq(expected)
     end
   end
 
-  context '#discog' do
+  context '#discography' do
     it 'should retrieve artist discography from Discogs API' do
       stub_request(:get, "https://api.discogs.com/artists/251635/releases?key=#{ENV['CONSUMER_KEY']}&page=1&per_page=50&secret=#{ENV['CONSUMER_SECRET']}&sort=year").
         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
         to_return(:status => 200, :body => File.open('spec/support/discog.json').read, :headers => {"Content-type" => "application/json; charset=utf-8"})
 
-      results = Discog::Client.new(251635).discog
+      results = Discog::Client.new(251635).discography
       response = JSON.parse(File.open('spec/support/discog.json').read)
       expected_releases = Filter.new(response["releases"]).discography
       expected = {
@@ -47,7 +47,7 @@ RSpec.describe Discog, type: :model do
     end
   end
 
-  context '#album_info' do
+  context '#album_details' do
     it 'should retrieve album info from Discogs API' do
       stub_request(:get, "https://api.discogs.com/masters/38356").
         with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
@@ -59,7 +59,7 @@ RSpec.describe Discog, type: :model do
 
 
       expected = JSON.parse(File.open('spec/support/album_info.json').read)
-      results = Discog::Client.new(38356).album_info
+      results = Discog::Client.new(38356).album_details
 
       expect(results).to eq(expected)
     end

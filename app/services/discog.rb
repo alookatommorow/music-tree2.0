@@ -29,8 +29,7 @@ module Discog
 
     private
 
-      attr_accessor :query
-      attr_reader :page
+      attr_reader :query, :page
 
       def search_url
         ## this is workaround for characters like "ö" as in Motörhead being passed in as a query (something about utf vs. ascii )
