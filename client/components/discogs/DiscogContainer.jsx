@@ -24,13 +24,12 @@ var DiscogContainer = React.createClass({
     this.getDiscog(this.firstSuccessFunction);
   },
 
-  handleSelect: function(event, selectedEvent) {
-    var currentPage = selectedEvent.eventKey;
-    if (this.state.pages[currentPage] == null) {
-      this.setState({discogInProgress: true, activePage: currentPage});
-      this.getDiscog(this.discogSuccessFunction, currentPage);
+  handleSelect: function(eventKey) {
+    if (this.state.pages[eventKey] == null) {
+      this.setState({discogInProgress: true, activePage: eventKey});
+      this.getDiscog(this.discogSuccessFunction, eventKey);
     } else {
-      this.setState({activePage: currentPage})
+      this.setState({activePage: eventKey})
     }
   },
 
