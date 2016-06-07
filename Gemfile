@@ -11,7 +11,7 @@ gem 'therubyracer'
 gem 'httparty'
 
 group :development do
-  gem 'web-console', '~> 3.1.1'
+  gem 'web-console'
   gem 'spring'
   gem 'spring-commands-rspec'
 end
