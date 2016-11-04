@@ -18,6 +18,8 @@ Dotenv.load rescue nil
 
 module MusicTree20
   class Application < Rails::Application
+    config.assets_enabled = false
+    config.api_only = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
