@@ -2,13 +2,14 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'rails', '4.2.7.1'
-gem 'rails-api'
+gem 'rails', '5.0.0.1'
+# gem 'rails-api'
 gem 'pg'
 gem 'puma'
-gem 'jquery-rails'
+# gem 'jquery-rails'
 gem 'therubyracer'
 gem 'httparty'
+gem "sprockets-rails"
 
 group :development do
   gem 'web-console'
