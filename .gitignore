@@ -6,3 +6,4 @@ log/*.log
 /public/bundle.js
 /public/bundle.js.map
 /coverage
+npm-debug.log
