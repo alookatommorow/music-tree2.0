@@ -32,7 +32,7 @@
   "author": "John Hess",
   "license": "ISC",
   "engines": {
-    "node": "0.10.x"
+    "node": "7.5.0"
   },
   "dependencies": {
     "babel-jest": "^20.0.3",
