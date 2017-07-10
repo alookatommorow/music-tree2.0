@@ -1,8 +1,9 @@
 var React = require('react');
 var Button = require('react-bootstrap/lib/Button');
 var Well = require('react-bootstrap/lib/Well');
+var createReactClass = require('create-react-class');
 
-var ArtistProfileContainer = React.createClass({
+var ArtistProfileContainer = createReactClass({
   render: function(){
     var closeButton =
       <Button bsStyle="danger" onClick={this.props.handleCloseClick} >CLOSE</Button>

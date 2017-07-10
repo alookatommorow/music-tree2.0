@@ -3,13 +3,14 @@ var update = require('react-addons-update');
 var AlbumResult = require('../results/AlbumResult.jsx');
 var Discog = require('./Discog.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
+var createReactClass = require('create-react-class');
 
 var Button = require('react-bootstrap/lib/Button');
 var Well = require('react-bootstrap/lib/Well');
 var Pagination = require('react-bootstrap/lib/Pagination');
 
 
-var DiscogContainer = React.createClass({
+var DiscogContainer = createReactClass({
   getInitialState: function() {
     return {
       numPages: null,

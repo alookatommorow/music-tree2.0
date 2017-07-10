@@ -1,6 +1,7 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 
-var NoResults = React.createClass({
+var NoResults = createReactClass({
   render: function() {
     return (
       <div className="center-text">

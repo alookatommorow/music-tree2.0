@@ -2,11 +2,12 @@ var React = require('react');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
 var Well = require('react-bootstrap/lib/Well');
+var createReactClass = require('create-react-class');
 
-var AlbumDetailsContainer = React.createClass({
+var AlbumDetailsContainer = createReactClass({
   render: function(){
     var generateHeader = function(text) {
-      return <div className="bold one-em one-bottom">{text}</div>;
+      return <div className="bold one-em one-bottom">{text}</div>
     }
 
     var info = this.props.albumInfo;

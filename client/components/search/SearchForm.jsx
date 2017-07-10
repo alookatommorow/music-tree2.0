@@ -5,8 +5,9 @@ var FormControl = require('react-bootstrap/lib/FormControl');
 var Button = require('react-bootstrap/lib/Button');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
+var createReactClass = require('create-react-class');
 
-var SearchForm = React.createClass ({
+var SearchForm = createReactClass ({
   render: function () {
     return (
       <Row className="two-bottom">

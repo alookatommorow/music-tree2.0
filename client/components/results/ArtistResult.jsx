@@ -2,6 +2,7 @@ var React = require('react');
 var ArtistProfileContainer = require('../details/ArtistProfileContainer.jsx');
 var DiscogContainer = require('../discogs/DiscogContainer.jsx');
 var SearchIndicator = require('../search/SearchIndicator.jsx');
+var createReactClass = require('create-react-class');
 
 var ListGroupItem = require('react-bootstrap/lib/ListGroupItem');
 var Button = require('react-bootstrap/lib/Button');
@@ -9,7 +10,7 @@ var Image = require('react-bootstrap/lib/Image');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
 
-var ArtistResult = React.createClass({
+var ArtistResult = createReactClass({
   getInitialState: function(){
     return {
       profile: null,
