@@ -1,8 +1,9 @@
 var React = require('react');
 var update = require('react-addons-update');
 var AlbumResult = require('../results/AlbumResult.jsx');
+var createReactClass = require('create-react-class');
 
-var Discog = React.createClass({
+var Discog = createReactClass({
   render: function(){
     var noDiscog =
       <div>

@@ -5,8 +5,9 @@ var AlbumResult = require('./AlbumResult.jsx');
 var ArtistResult = require('./ArtistResult.jsx');
 var ResultsNav = require('./ResultsNav.jsx');
 var Col = require('react-bootstrap/lib/Col');
+var createReactClass = require('create-react-class');
 
-var ResultsContainer = React.createClass ({
+var ResultsContainer = createReactClass ({
   render: function () {
     var artistResults = this.props.artistResults.map(function(result, index){
         return <ArtistResult key={result.id} result={result} ajaxRequest={this.props.ajaxRequest} origin={this.props.origin} />

@@ -4,8 +4,9 @@ var SearchForm = require('./SearchForm.jsx');
 var SearchIndicator = require('./SearchIndicator.jsx');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
+var createReactClass = require('create-react-class');
 
-var SearchContainer = React.createClass({
+var SearchContainer = createReactClass({
   getInitialState: function () {
     return {
       artistResults: null,

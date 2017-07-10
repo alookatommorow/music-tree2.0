@@ -5,8 +5,9 @@ var Button = require('react-bootstrap/lib/Button');
 var Image = require('react-bootstrap/lib/Image');
 var Col = require('react-bootstrap/lib/Col');
 var Row = require('react-bootstrap/lib/Row');
+var createReactClass = require('create-react-class');
 
-var AlbumResult = React.createClass({
+var AlbumResult = createReactClass({
   getInitialState: function(){
     return {
       albumInfo: null,
@@ -20,7 +21,7 @@ var AlbumResult = React.createClass({
       var query = this.props.result["id"];
       this.props.ajaxRequest({query: query}, "/album_details/"+query, this.successFunction, this.errorFunction);
     } else {
-      this.setState({showDetailsContainer: true})
+      this.setState({showDetailsContainer: true});
     }
   },
 

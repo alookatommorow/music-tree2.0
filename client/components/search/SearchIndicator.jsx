@@ -1,8 +1,9 @@
 var React = require('react');
 var Col = require('react-bootstrap/lib/Col');
 var ProgressBar = require('react-bootstrap/lib/ProgressBar');
+var createReactClass = require('create-react-class');
 
-var SearchIndicator = React.createClass({
+var SearchIndicator = createReactClass({
   render: function() {
     return (
      <div className='search-bar'>
